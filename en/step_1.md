@@ -1,6 +1,8 @@
 ## Introduction
 
-Add project description here. What will learners be making?
+Now you’ve learned the basics of Scratch (and if you haven’t, check out the Beginner Scratch Sushi Cards) and made your first Scratch game. In this series you’re going to learn a few more cool tricks and make one of my favourite Scratch projects: It draws colourful patterns and, if you set it up right, can be really cool to watch. 
+ 
+![](images/pen1.png)
 
 ### What you will make
 
