@@ -55,8 +55,8 @@ Once you’ve got Scratch asking a question, you need it to remember the answer!
     set pen color to [#4a6cd4]
     pen down
     repeat until <touching [edge v] ?> 
-        move (5) steps
-        turn cw (15) degrees
+        move (steps) steps
+        turn cw (degrees) degrees
         change [steps v] by (increase)
     end
 ```
