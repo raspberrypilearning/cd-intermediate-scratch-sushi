@@ -2,7 +2,7 @@
 
 Now you’ve really got something awesome to look at! However, you may notice that, every now and then, the computer draws something that looks pretty... bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
 
-Do you remember a few cards back when I told you to write down some of your favourite values for `increase` {:class="blockdata"} and `degrees` {:class="blockdata"}, the ones that gave the best looking pictures? If not, don’t worry, you can just watch the random program run for a while and write down the combinations that give great results.
+Do you remember a few cards back when I told you to write down some of your favourite values for `increase`{:class="blockdata"} and `degrees`{:class="blockdata"}, the ones that gave the best looking pictures? If not, don’t worry, you can just watch the random program run for a while and write down the combinations that give great results.
 
 You’re going to teach Scratch those combinations of values, so it can use them to make nothing but awesome pictures!
 
@@ -23,7 +23,7 @@ To do this, you’ll need a **list**. You’ll find them with **variables**, und
 
 + Make sure that the degrees value at a position in the `Degrees List` matches the `increase` value at the same number position in the `Increase List`!
 
-You have lists, now you just need to get your code to read them and loop over them! To do this, you’re going to use a new **variable** called "counter", some incrementing and an `if then` {:class="blockcontrol"} **control** block. 
+You have lists, now you just need to get your code to read them and loop over them! To do this, you’re going to use a new **variable** called "counter", some incrementing and an `if then`{:class="blockcontrol"} **control** block. 
 
 + Just update your code to look like this one and you’ll get it:
  

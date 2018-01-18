@@ -11,7 +11,7 @@ It all relies on the **pen** tool, which is controlled by blocks in the **pen** 
     turn cw (15) degrees
 ```
 
-Cool! Now, time to test out the pen! From the **pen** section, select the `pen down` {:class="blockpen"} block and add it to the start of your program, like this: 
+Cool! Now, time to test out the pen! From the **pen** section, select the `pen down`{:class="blockpen"} block and add it to the start of your program, like this: 
 
 ```blocks
     when green flag clicked
@@ -23,7 +23,7 @@ Cool! Now, time to test out the pen! From the **pen** section, select the `pen d
 
 If you can see the lines behind the cat then the pen is working and you can start making it draw really cool patterns!
 
-+ First, you should get rid of the cat! It’s getting in the way of the drawing! Just add a `hide` {:class="blocklooks"} block from **looks** to the start of the program and it’ll disappear. 
++ First, you should get rid of the cat! It’s getting in the way of the drawing! Just add a `hide`{:class="blocklooks"} block from **looks** to the start of the program and it’ll disappear. 
 
 ```blocks
     when green flag clicked
@@ -31,13 +31,13 @@ If you can see the lines behind the cat then the pen is working and you can star
     pen down
 ```
 
-Now, you can change the colour of the pen with another block from the pen section, but this block is a little different to the others you’ve seen. It’s the `set pen color to ` {:class="blockpen"} block and looks like this: 
+Now, you can change the colour of the pen with another block from the pen section, but this block is a little different to the others you’ve seen. It’s the `set pen color to `{:class="blockpen"} block and looks like this: 
 
 ```blocks
     set pen color to [#4a6cd4]
 ```
 
-+ Drag one out onto your **sprite panel** and snap it in ahead of the `pen down` {:class="blockpen"} block. 
++ Drag one out onto your **sprite panel** and snap it in ahead of the `pen down`{:class="blockpen"} block. 
 
 ```blocks
     when green flag clicked
@@ -50,7 +50,7 @@ Now, you can change the colour of the pen with another block from the pen sectio
 
 If you’ve been clicking on the green flag to test your code, you’ll have noticed that the drawings made by the pen don’t go away. 
 
-+ Add a `clear` {:class="blockpen"} block from the **pen** section to the start of your code to take care of that! 
++ Add a `clear`{:class="blockpen"} block from the **pen** section to the start of your code to take care of that! 
 
 ```blocks
     when green flag clicked
