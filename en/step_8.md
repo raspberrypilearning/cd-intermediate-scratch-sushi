@@ -19,7 +19,7 @@ Your list, which is empty at the moment, will appear on the stage, and you'll se
 
 ![](images/helping2.png)
 
-+ Make sure that the degrees value at a position in the `Degrees List` matches the `increase` value at the same number position in the `Increase List`.
++ Make sure that the `degrees`{:class="blockdata"} value at a position in the `Degrees List`{:class="blockdata"} matches the `increase`{:class="blockdata"} value at the same number position in the `Increase List`{:class="blockdata"}.
 
 ![](images/listPairs.png)
 
@@ -88,7 +88,7 @@ Imagine your lists only have two pairs of values on them. This is what happens:
 10. Check if `counter`{:class="blockdata"} (1) is the same as the length of `Increase List`{:class="blockdata"} (2). It isn’t.
 11. Change `counter`{:class="blockdata"} by 2. Now `counter`{:class="blockdata"} = `2`.
 12. Set `steps`{:class="blockdata"} to `0`.
-13. Get the get the item at position counter (2) in the Increase List and put it in `increase`{:class="blockdata"}. 
+13. Get the get the item at position `counter`{:class="blockdata"} (2) in the `Increase List`{:class="blockdata"} and put it in `increase`{:class="blockdata"}. 
 14. Get the get the item at position `counter`{:class="blockdata"} (2) in the `Degrees List`{:class="blockdata"} and put it in `degrees`{:class="blockdata"} 
 15. Do all the stuff related to drawing the patterns.
 16. Restart the `forever`{:class="blockcontrol"} loop.

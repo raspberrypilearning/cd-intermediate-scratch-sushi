@@ -52,7 +52,6 @@ It’s because the loop only runs until it reaches the edge of the **stage**.
     end
 ```
 
-Now you’ve really got something awesome to look at! 
-However, you may notice that, every now and then, the computer draws something that looks pretty... bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices. On the next card you'll help the computer to pick only good combinations.
+Now you’ve really got something awesome to look at! However, you may notice that, every now and then, the computer draws something that looks pretty... bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices. On the next card you'll help the computer to pick only good combinations.
 
 

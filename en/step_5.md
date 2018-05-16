@@ -14,7 +14,7 @@ Ok, this is getting pretty cool, but it’s a bit of a headache to have to edit 
 
 Now you need to ask for values for these two **variables** and store them. You do this using a sensing block called `Ask and wait`{:class="blocksensing"}, which you can type a question into. 
 
-+ Pull the block `Ask and wait`{:class="blocksensing"} into your **sprite panel** and change the question to `How many steps should I grow by?`, then add it to your program, just after you set `steps`{:class="blockdata"} to `0`, like this: 
++ Pull the block `Ask and wait`{:class="blocksensing"} into your **sprite panel** and change the question to `How many steps should I grow by?`{:class="blocksensing"}, then add it to your program, just after you set `steps`{:class="blockdata"} to `0`, like this: 
 
 ```blocks
     when green flag clicked
@@ -32,7 +32,7 @@ Once you’ve got Scratch asking a question, you need it to remember the answer!
     set [increase v] to (answer)
 ```
 
-+ Now, do the same thing with `degrees`{:class="blockdata"}, asking `How many degrees should I turn?` and storing the `answer`{:class="blocksensing"} in `degrees`{:class="blockdata"}: 
++ Now, do the same thing with `degrees`{:class="blockdata"}, asking `How many degrees should I turn?`{:class="blocksensing"} and storing the `answer`{:class="blocksensing"} in `degrees`{:class="blockdata"}: 
 
 ```blocks
     set [increase v] to (answer)

@@ -13,7 +13,7 @@ So you want to use a different loop, which you’ll also find in the **control**
     end
 ```
 
-+ Now click the green flag to run the program a few times and see what happens! You’ll notice two things: It always starts by drawing a line into the middle of the **stage** and it doesn’t stop at the edge .
++ Now click the green flag to run the program a few times and see what happens. You’ll notice two things: It always starts by drawing a line into the middle of the **stage** and it doesn’t stop at the edge .
 
 --- collapse ---
 ---
@@ -40,7 +40,7 @@ Time to fix your `repeat until`{:class="blockcontrol"}. You’re looking to figu
     end
 ```
 
-+ Before you test your program, change the number of steps to `5` and check that it matches this one: 
++ Change the number of steps to `5` and check that your program matches this one before you test it: 
 
 ```blocks
     when green flag clicked
