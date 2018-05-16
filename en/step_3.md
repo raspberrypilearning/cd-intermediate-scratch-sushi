@@ -11,7 +11,9 @@ It all relies on the **pen** tool, which is controlled by blocks in the **pen** 
     turn cw (15) degrees
 ```
 
-Cool! Now, time to test out the pen! From the **pen** section, select the `pen down`{:class="blockpen"} block and add it to the start of your program, like this: 
+Cool! Now, time to test out the pen! 
+
++ From the **pen** section, select the `pen down`{:class="blockpen"} block and add it to the start of your program, like this: 
 
 ```blocks
     when green flag clicked
