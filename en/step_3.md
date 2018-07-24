@@ -1,4 +1,4 @@
-## Pen tool
+## Using the Pen tool
 
 The project you're going to make relies on the **Pen** tool, which is controlled by blocks in the **Pen** group. These blocks draw a line behind the centre of a sprite as it moves. You’re going to learn to use it now!
 
