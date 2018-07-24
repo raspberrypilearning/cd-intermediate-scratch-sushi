@@ -1,5 +1,4 @@
-## Drawing loops
-
+## Drawing patterns
 Now you’ve got a program that draws a line, but it only draws one line. That’s a bit dull! You could use 
 `forever`{:class="blockcontrol"} loop to draw something over and over again, but then you’ll get drawings that go off the Stage!
 
