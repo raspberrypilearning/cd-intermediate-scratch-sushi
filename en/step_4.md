@@ -1,10 +1,11 @@
 ## Drawing loops
 
-Now you’ve got a program that draws a line, but it only draws one line. That’s a bit dull! You can use a loop, like `forever`{:class="blockcontrol"}, to draw over and over again. Of course, if you just use `forever`{:class="blockcontrol"} then you’ll get drawings that go off the stage!
+Now you’ve got a program that draws a line, but it only draws one line. That’s a bit dull! You could use 
+`forever`{:class="blockcontrol"} loop to draw something over and over again, but then you’ll get drawings that go off the Stage!
 
-So you want to use a different loop, which you’ll also find in the **control** section, called `repeat until`{:class="blockcontrol"} which will do something over and over again, until a true/false condition becomes true. 
+So you need use a different type of loop called `repeat until`{:class="blockcontrol"}, which you’ll also find in the **Control** section. This type of loop will do something over and over again, until a True/False condition is met. 
 
-+ Take a `repeat until`{:class="blockcontrol"} block from **control** and wrap it around your `move`{:class="blockmotion"} and `turn`{:class="blockmotion"} blocks like so: 
++ Take a `repeat until`{:class="blockcontrol"} block from the **Control** section, and put the `move`{:class="blockmotion"} and `turn`{:class="blockmotion"} blocks inside it, like so: 
 
 ```blocks
     repeat until <> 
@@ -13,24 +14,24 @@ So you want to use a different loop, which you’ll also find in the **control**
     end
 ```
 
-+ Now click the green flag to run the program a few times and see what happens. You’ll notice two things: It always starts by drawing a line into the middle of the **stage** and it doesn’t stop at the edge .
++ Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge.
 
 --- collapse ---
 ---
-title: Why?
+title: Why does the pen do this?
 ---
 
-The first is because the first **motion** block that runs after the `pen down`{:class="blockpen"} is `go to x: 0 y: 0`{:class="blockmotion"}. So the sprite will draw a line as it moves to the centre of the stage.
+The pen always starts drawing in the direction of the middle, because the first **Motion** block that runs after the `pen down`{:class="blockpen"} block is `go to x: 0 y: 0`{:class="blockmotion"}. So the pen will draw a line as it moves to the centre of the Stage.
 
-The second is because you haven’t yet told it what it’s checking, so the answer will never be true. Basically, right now, it’s working like a `forever`{:class="blockcontrol"} loop.
+The spen doesn't stop at the edge of the Stage, because you haven’t yet told the `repeat until`{:class="blockcontrol"} loop what condition it’s checking. This means the condition can never be met, so the loop will run on and on. This means that right now, the loop is working like a `forever`{:class="blockcontrol"} loop.
 
 --- /collapse ---
 
-+ Move the `go to x: 0 y: 0`{:class="blockmotion"} block to before the `pen down`{:class="blockpen"} block and add, from **pen**, a `pen up`{:class="blockpen"} block right at the start of your code.
++ Move the `go to x: 0 y: 0`{:class="blockmotion"} block to before the `pen down`{:class="blockpen"} block and add, from the **Pen** section, a `pen up`{:class="blockpen"} block right at the start of your code.
 
-Time to fix your `repeat until`{:class="blockcontrol"}. You’re looking to figure out if the (invisible) sprite is touching the edge of the **stage**, so you need a **sensing** block. In this case, the `touching ?`{:class="blocksensing"} block. 
+Time to fix your `repeat until`{:class="blockcontrol"} loop so that it stops when you want it to. You’re looking to figure out if the (invisible) sprite is touching the edge of the Stage, so you need a **Sensing** block — in this case, the `touching ?`{:class="blocksensing"} block. 
 
-+ Snap a `touching ?`{:class="blocksensing"} into your `repeat until`{:class="blockcontrol"} and select `edge`. 
++ Add a `touching ?`{:class="blocksensing"} block into your `repeat until`{:class="blockcontrol"} loop, and select `edge`. 
 
 ```blocks
     pen down
@@ -40,7 +41,7 @@ Time to fix your `repeat until`{:class="blockcontrol"}. You’re looking to figu
     end
 ```
 
-+ Change the number of steps to `5` and check that your program matches this one before you test it: 
++ Change the number of steps in the `move`{:class="blockmotion"} block to `5`, and check that your program matches this one before you test it: 
 
 ```blocks
     when green flag clicked
@@ -56,13 +57,13 @@ Time to fix your `repeat until`{:class="blockcontrol"}. You’re looking to figu
     end
 ```
 
-When you run the code now you’ll see that the drawing stays on the **stage**.
+When you run the code now, you’ll see that the drawing the pen makes stays on the Stage.
 
-Not only that, but your program has turned into a circle drawing program! What's happening here is that those 15 degree turns eventually add up to 360 and you turn a full circle. You're going to change that to make it take slightly longer steps each time, so it spirals out. For this, you’re going to need a **variable**.
+And not only that, but your program has turned into a circle-drawing program! What's happening here is that those 15-degree turns eventually add up to 360 degrees, and so your pen turns in a full circle. You're going to change the way it moves slightly to make it take slightly a longer step each time, so it spirals out. For this, you’re going to need a **variable**.
 
-You’ve seen **variables** before, in the Beginner series. They're basically labeled places to store numbers that you care about. You can create them in the **data** blocks category and then find their associated blocks there too.
+You’ve seen variables before, in the Beginner series. They're basically labeled places to store numbers or other information that you care about. You can create them in the **Data** blocks section, and afterwards you'll find their associated blocks there too.
 
-+ Make a **variable** called `steps`{:class="blockdata"} and add `set steps to 0`{:class="blockdata"} at the start of your program.
++ Make a variable called `steps`{:class="blockdata"}, and then add a `set steps to 0`{:class="blockdata"} block at the start of your program.
 
 ```blocks
     when green flag clicked
@@ -70,7 +71,7 @@ You’ve seen **variables** before, in the Beginner series. They're basically la
     pen up
 ```
 
-+ Then use its value instead of the `5` in `move 5 steps`{:class="blockmotion"} and add `change steps by 1`{:class="blockdata"} as part of your loop:
++ Then use the value of `steps`{:class="blockdata"} instead of the `5` in the `move`{:class="blockmotion"} block, and add `change steps by 1`{:class="blockdata"} as part of your loop:
 
 ```blocks
     pen down
@@ -83,5 +84,3 @@ You’ve seen **variables** before, in the Beginner series. They're basically la
  Do you think it matters where in the loop you put the `change steps by 1`{:class="blockdata"} block?
 
 + Now run it, and try changing the number of degrees around (try `76` and `120`)!
-
-
