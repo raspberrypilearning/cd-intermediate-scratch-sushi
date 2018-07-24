@@ -3,7 +3,7 @@
 Now you’ve got a program that draws a line, but it only draws one line. That’s a bit dull! You could use 
 `forever`{:class="blockcontrol"} loop to draw something over and over again, but then you’ll get drawings that go off the Stage!
 
-So you need use a different type of loop called `repeat until`{:class="blockcontrol"}, which you’ll also find in the **Control** section. This type of loop will do something over and over again, until a True/False condition is met. 
+So you need use a different type of loop called `repeat until`{:class="blockcontrol"}, which you’ll also find in the **Control** section. This type of loop will do something over and over again, **until** a True/False condition is met. 
 
 + Take a `repeat until`{:class="blockcontrol"} block from the **Control** section, and put the `move`{:class="blockmotion"} and `turn`{:class="blockmotion"} blocks inside it, like so: 
 
@@ -31,7 +31,7 @@ The spen doesn't stop at the edge of the Stage, because you haven’t yet told t
 
 Time to fix your `repeat until`{:class="blockcontrol"} loop so that it stops when you want it to. You’re looking to figure out if the (invisible) sprite is touching the edge of the Stage, so you need a **Sensing** block — in this case, the `touching ?`{:class="blocksensing"} block. 
 
-+ Add a `touching ?`{:class="blocksensing"} block into your `repeat until`{:class="blockcontrol"} loop, and select `edge`. 
++ Add a `touching ?`{:class="blocksensing"} block into your `repeat until`{:class="blockcontrol"} loop, and select `edge`. Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
 
 ```blocks
     pen down
