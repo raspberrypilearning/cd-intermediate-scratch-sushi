@@ -66,7 +66,7 @@ You will use a variable to act as a counter to keep track of what position you'r
 
 + Notice the new blocks that:
  1. Set `counter`{:class="blockdata"} to `0`, outside all the loops.
- 2. Check if the number stored in `counter`{:class="blockdata"} is the length of the list, and if so, set `counter`{:class="blockdata"} to `0`. This means that this variable will always be the number of an position in the lists.
+ 2. Check if the number stored in `counter`{:class="blockdata"} is the length of the list, and if so, set `counter`{:class="blockdata"} to `0`. This means that this variable will always be the number of a position in the lists, and won't get any bigger than that.
  3. Add `1` to `counter`{:class="blockdata"}.
  4. Pick the item from `Increase List`{:class="blockdata"} that is at the position described by `counter`{:class="blockdata"}, and put it in the `increase`{:class="blockdata"} variable. Do the same for the `Degrees List`{:class="blockdata"} and `degrees`{:class="blockdata"} variable.
 
@@ -75,7 +75,7 @@ You will use a variable to act as a counter to keep track of what position you'r
 title: How does the code work?
 ---
 
-Imagine your lists only have two pairs of values on them. This is what happens:
+Imagine you only have two pairs of values in your lists. Then this is what happens when you run your program:
 
 1. Set `counter`{:class="blockdata"} to `0`.
 2. Start the `forever`{:class="blockcontrol"} loop.
