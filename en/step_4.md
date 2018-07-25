@@ -82,4 +82,17 @@ You’ve seen variables before, in the Beginner series. They're basically labele
 ```
  Do you think it matters where in the loop you put the `change steps by 1`{:class="blockdata"} block?
 
+--- collapse ---
+---
+title: Putting code in the right order
+---
+
+When you're deciding which order to put blocks in, think about what each block does and what you want your code to do.
+
+In this case, you want the sprite to move, then turn, over and over. Each time it repeats, you want to move one extra step.
+
+So it makes sense to put the `change steps by 1`{:class="blockdata"} block **after** the `move`{:class="blockmove"}. However, after moving, it doesn't really matter if you turn first and then change the number of steps or change the number of steps first and then turn.
+
+--- /collapse ---
+
 + Now run it, and try changing the number of degrees around (try `76` and `120`)!

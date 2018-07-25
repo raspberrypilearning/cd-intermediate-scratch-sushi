@@ -16,7 +16,7 @@ Your list, which is empty at the moment, will appear on the Stage, and you'll se
 
 + Make another list called `Increase List`!
 
-+ Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the pairs of values of `increase`{:class="blockdata"} and `degrees`{:class="blockdata"} you liked, each value into the right list. 
++ Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="blockdata"} and `degrees`{:class="blockdata"} you liked, each value into the right list. Do this again and add the second pair of values. This will be enough for now, you'll add the rest later!
 
 ![](images/helping2.png)
 
@@ -75,7 +75,7 @@ You will use a variable to act as a counter to keep track of what position you'r
 title: How does the code work?
 ---
 
-Imagine you only have two pairs of values in your lists. Then this is what happens when you run your program:
+This is what happens when you run your program:
 
 1. Set `counter`{:class="blockdata"} to `0`.
 2. Start the `forever`{:class="blockcontrol"} loop.
@@ -98,5 +98,7 @@ Imagine you only have two pairs of values in your lists. Then this is what happe
 19. Continue from **step 4** of this list, in a neverending loop!
 
 --- /collapse ---
+
++ Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="blockdata"} and the `Increase List`{:class="blockdata"}. 
 
 And that's it! Sit back and watch your program keep drawing lovely patterns in a neverending loop! If you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
