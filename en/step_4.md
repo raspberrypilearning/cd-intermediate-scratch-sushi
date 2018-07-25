@@ -89,10 +89,10 @@ title: Putting code in the right order
 
 When you're deciding which order to put blocks in, think about what each block does and what you want your code to do.
 
-In this case, you want the sprite to move, then turn, over and over. Each time it repeats, you want to move one extra step.
+In this case, you want the pen to move, then turn, over and over. Each time it does this, you want to move one extra step.
 
-So it makes sense to put the `change steps by 1`{:class="blockdata"} block **after** the `move`{:class="blockmove"}. However, after moving, it doesn't really matter if you turn first and then change the number of steps or change the number of steps first and then turn.
+So it makes sense to put the `change steps by 1`{:class="blockdata"} block **after** the `move`{:class="blockmove"} block. However, after moving, it doesn't really matter if the pen turns first and then the number of steps changes, or if the number of steps changes first and then the pen turns instead.
 
 --- /collapse ---
 
-+ Now run it, and try changing the number of degrees around (try `76` and `120`)!
++ Now run the program, and also try changing the number of degrees around (try `76` and `120`)!
