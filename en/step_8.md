@@ -22,9 +22,7 @@ Your list, which is empty at the moment, will appear on the Stage, and you'll se
 
 + Make sure that the `degrees`{:class="blockdata"} value and the `increase`{:class="blockdata"} value that worked well together to make a patterns are at the same position in the `Degrees List`{:class="blockdata"} and the `Increase List`{:class="blockdata"}. This is so your program can match them up again using their position!
 
-![](images/listPairs.png)
-
-You have lists, now you just need to get your code to read them and loop over them! To do this, you’re going to use a new variable to act as a counter, some **incrementing**, and an `if then`{:class="blockcontrol"} **Control** block. 
+You now have the lists, and you just need to get your code to read them and loop over them! To do this, you’re going to use a new variable to act as a counter, some **incrementing**, and an `if then`{:class="blockcontrol"} **Control** block. 
 
 --- collapse ---
 ---
