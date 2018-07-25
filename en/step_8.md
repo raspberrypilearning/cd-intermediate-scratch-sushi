@@ -16,7 +16,7 @@ Your list, which is empty at the moment, will appear on the Stage, and you'll se
 
 + Make another list called `Increase List`!
 
-+ Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="blockdata"} and `degrees`{:class="blockdata"} you liked, each value into the right list. Do this again and add the second pair of values. This will be enough for now, you'll add the rest later!
++ Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="blockdata"} and `degrees`{:class="blockdata"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
 
 ![](images/helping2.png)
 
@@ -101,4 +101,4 @@ This is what happens when you run your program:
 
 + Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="blockdata"} and the `Increase List`{:class="blockdata"}. 
 
-And that's it! Sit back and watch your program keep drawing lovely patterns in a neverending loop! If you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
+And that's it! Sit back and watch your program keep drawing lovely patterns in a neverending loop! And if you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
