@@ -93,10 +93,10 @@ This is what happens when you run your program:
 16. Restart the `forever`{:class="blockcontrol"} loop:
 17. Check if `counter`{:class="blockdata"} (`2`) is the same as the length of the `Increase List`{:class="blockdata"} (`2`). It is!
 18. Set `counter`{:class="blockdata"} to `0`.
-19. Continue from **step 4** of this list, in a neverending loop!
+19. Continue from **step 4** of this list, in a never-ending loop!
 
 --- /collapse ---
 
 + Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="blockdata"} and the `Increase List`{:class="blockdata"}. 
 
-And that's it! Sit back and watch your program keep drawing lovely patterns in a neverending loop! And if you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
+And that's it! Sit back and watch your program keep drawing lovely patterns in a never-ending loop! And if you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
