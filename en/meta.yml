@@ -12,7 +12,7 @@ technologies: scratch
 site_areas: coderdojo
 hardware: 
 software: scratch
-version: 1
+version: 4.0.0
 last_tested: 2017-01-01
 steps: 
 - title: Introduction
