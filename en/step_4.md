@@ -22,7 +22,7 @@ title: Why does the pen do this?
 
 The pen always starts drawing in the direction of the middle, because the first **Motion** block that runs after the `pen down`{:class="blockpen"} block is `go to x: 0 y: 0`{:class="blockmotion"}. So the pen will draw a line as it moves to the centre of the Stage.
 
-The spen doesn't stop at the edge of the Stage, because you haven’t yet told the `repeat until`{:class="blockcontrol"} loop what condition it’s checking. This means the condition can never be met, so the loop will run on and on. This means that right now, the loop is working like a `forever`{:class="blockcontrol"} loop.
+The pen doesn't stop at the edge of the Stage, because you haven’t yet told the `repeat until`{:class="blockcontrol"} loop what condition it’s checking. This means the condition can never be met, so the loop will run on and on. This means that right now, the loop is working like a `forever`{:class="blockcontrol"} loop.
 
 --- /collapse ---
 
