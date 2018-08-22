@@ -12,7 +12,10 @@ Here's a project I've prepared:
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/205355399/?autostart=false" frameborder="0"></iframe>
 </div>
 
-### What you will learn
+--- collapse ---
+---
+title: What you will learn
+---
 
 In the Intermediate Scratch Sushi Cards, you'll find out about:
 
@@ -21,3 +24,20 @@ In the Intermediate Scratch Sushi Cards, you'll find out about:
 + Using Repeat Until loops
 + Getting input values with ask blocks
 + Using multiple lists with properties related by index
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: What you will need
+---
+
+### Hardware
+
++ A computer capable of running Scratch 2.0
+
+### Software
+
++ Scratch 2.0 (either [online](https://scratch.mit.edu/projects/editor/){:target="_blank"} or [offline](https://scratch.mit.edu/scratch2download/){:target="_blank"})
+
+--- /collapse ---
