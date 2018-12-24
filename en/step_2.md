@@ -1,6 +1,6 @@
 ## Using the Pen tool
 
-The project you're going to make relies on the **Pen** tool, which is controlled by blocks in the **Pen** group. These blocks draw a line behind the centre of a sprite as it moves. You’re going to learn to use it now!
+The project you're going to make relies on the **Pen** tool. These blocks draw a line behind the centre of a sprite as it moves. You’re going to learn to use it now!
 
 + Open a new Scratch file, select the Scratch Cat sprite, and drag in a few of the blocks you’re familiar with from the Beginner Sushi Cards, until it looks like this: 
 
@@ -11,7 +11,21 @@ The project you're going to make relies on the **Pen** tool, which is controlled
     turn cw (15) degrees
 ```
 
-Now, time to test out the pen! 
+Now, time to test out the pen!
+
+To use the Pen blocks in Scratch, you need add the **Pen extension**.
+
++ Click on the **Add extension** button in the bottom left-hand corner.
+
+![add extension button highlighted](images/add-extension-annotated.png)
+
++ Click on the **Pen** extension to add it.
+
+![pen extension highlighted](images/click-pen-annotated.png)
+
++ The Pen section then appears at the bottom of the blocks menu.
+
+![pen extension blocks](images/pen-extension-blocks.png)
 
 + From the **Pen** section, select the `pen down`{:class="block3extensions"} block and add it to the start of your program, like this: 
 
