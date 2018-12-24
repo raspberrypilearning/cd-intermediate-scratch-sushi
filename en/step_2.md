@@ -62,9 +62,7 @@ Now, you can change the colour of the pen with another block from the **Pen** se
     pen down
 ```
 
-+ Now, click on the box of colour (in the code above it’s the blue one), and you’ll see the mouse pointer turn into a hand.
-
-+ Move the pointer around the screen and notice how the colour in the box changes to the colour of whatever the pointer hovers over. When you click, Scratch will save that colour as the colour of your pen.
++ Now, click on the box of colour (in the code above it’s the blue one), and choose a colour.
 
 If you’ve been clicking on the green flag to test your code, you’ll have noticed that the drawings the pen makes don’t go away. 
 

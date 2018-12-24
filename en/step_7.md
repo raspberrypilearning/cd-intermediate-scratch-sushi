@@ -4,13 +4,13 @@ Do you remember a few cards back, where I told you to write down some of your fa
 
 You’re going to teach Scratch those combinations of values, so it can use them to make nothing but awesome pictures!
 
-To do this, you’ll need a **list**. You’ll find lists with the variables in the **Data** section. Just like you did with your variables, you’ll need to create your list first! 
+To do this, you’ll need a **list**. You’ll find lists with the variables in the **Variables** section. Just like you did with your variables, you’ll need to create your list first! 
 
 + Click **Make a List**, and enter `Degrees List` as the name.
 
 ![](images/makeAList.png) ![](images/nameList.png)
 
-Your list, which is empty at the moment, will appear on the Stage, and you'll see a bunch of blocks for it in **Data**.
+Your list, which is empty at the moment, will appear on the Stage, and you'll see a bunch of blocks for it in **Variables**.
 
 ![](images/listBlocks.png)
 

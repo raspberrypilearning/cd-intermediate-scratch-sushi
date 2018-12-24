@@ -60,7 +60,7 @@ When you run the code now, you’ll see that the drawing the pen makes stays on 
 
 And not only that, but your program has turned into a circle-drawing program! What's happening here is that those 15-degree turns eventually add up to 360 degrees, and so your pen turns in a full circle. You're going to change the way it moves slightly to make it take slightly a longer step each time, so it spirals out. For this, you’re going to need a **variable**.
 
-You’ve seen variables before, in the Beginner series. They're basically labeled places to store numbers or other information that you care about. You can create them in the **Data** blocks section, and afterwards you'll find their associated blocks there too.
+You’ve seen variables before, in the Beginner series. They're basically labeled places to store numbers or other information that you care about. You can create them in the **Variables** blocks section.
 
 + Make a variable called `steps`{:class="block3variables"}, and then add a `set steps to 0`{:class="block3variables"} block at the start of your program.
 
