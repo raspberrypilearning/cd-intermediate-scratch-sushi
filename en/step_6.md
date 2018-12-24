@@ -2,11 +2,11 @@
 
 You can actually use random numbers to make the whole program run over and over, changing the pattern each time! It'll look a bit like screen savers did in the 1990s...which you won't remember, but ask one of your Dojo mentors!
 
-You need a few changes to make this happen. The first one is that you need to set the `increase`{:class="blockdata"} and `degrees`{:class="blockdata"} variables randomly rather than asking for them from the user. So you need to change some of your code blocks. 
+You need a few changes to make this happen. The first one is that you need to set the `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} variables randomly rather than asking for them from the user. So you need to change some of your code blocks. 
 
 + Find this bit:
 
-```blocks
+```blocks3
     when green flag clicked
     set [steps v] to [0]
     ask [How many steps should I grow by?] and wait
@@ -18,7 +18,7 @@ You need a few changes to make this happen. The first one is that you need to se
 
 + Change it to:
 
-```blocks
+```blocks3
     when green flag clicked
     set [steps v] to [0]
     set [increase v] to (pick random (1) to (10))
@@ -30,9 +30,9 @@ You need a few changes to make this happen. The first one is that you need to se
 
 It’s because the loop only runs until it reaches the edge of the Stage. 
 
-+ You need another loop that runs forever (so a `forever`{:class="blockcontrol"} block then!) outside the current one to keep it going over and over! Just drag one out of the **Control** section, and add all your other code into it. 
++ You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over! Just drag one out of the **Control** section, and add all your other code into it. 
 
-```blocks
+```blocks3
     when green flag clicked
     forever 
         set [steps v] to [0]

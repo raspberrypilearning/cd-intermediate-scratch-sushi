@@ -2,8 +2,8 @@
 
 ### Hardware
 
-+ A computer capable of running Scratch 2.0
++ A computer capable of running Scratch 3
 
 ### Software
 
-+ Scratch 2.0 (either [online](https://scratch.mit.edu/projects/editor/){:target="_blank"} or [offline](https://scratch.mit.edu/scratch2download/){:target="_blank"})
++ Scratch 3 (either [online](https://scratch.mit.edu/projects/editor/){:target="_blank"} or [offline](https://scratch.mit.edu/download/){:target="_blank"})
