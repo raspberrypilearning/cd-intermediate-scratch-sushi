@@ -6,12 +6,7 @@ So you need use a different type of loop called `repeat until`{:class="block3con
 
 + Take a `repeat until`{:class="block3control"} block from the **Control** section, and put the `move`{:class="block3motion"} and `turn`{:class="block3motion"} blocks inside it, like so: 
 
-```blocks3
-    repeat until <> 
-        move (50) steps
-        turn cw (15) degrees
-    end
-```
+![blocks_1546295779_353537](images/blocks_1546295779_353537.png)
 
 + Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge.
 
@@ -32,29 +27,11 @@ Time to fix your `repeat until`{:class="block3control"} loop so that it stops wh
 
 + Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class="block3control"} loop, and select `edge`. Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
 
-```blocks3
-    pen down
-    repeat until <touching [edge v] ?> 
-        move (50) steps
-        turn cw (15) degrees
-    end
-```
+![blocks_1546295780_4456708](images/blocks_1546295780_4456708.png)
 
 + Change the number of steps in the `move`{:class="block3motion"} block to `5`, and check that your program matches this one before you test it: 
 
-```blocks3
-    when green flag clicked
-    pen up
-    hide
-    clear
-    go to x: (0) y: (0)
-    set pen color to [#4a6cd4]
-    pen down
-    repeat until <touching [edge v] ?> 
-        move (5) steps
-        turn cw (15) degrees
-    end
-```
+![blocks_1546295781_5725482](images/blocks_1546295781_5725482.png)
 
 When you run the code now, you’ll see that the drawing the pen makes stays on the Stage.
 
@@ -64,22 +41,11 @@ You’ve seen variables before, in the Beginner series. They're basically labele
 
 + Make a variable called `steps`{:class="block3variables"}, and then add a `set steps to 0`{:class="block3variables"} block at the start of your program.
 
-```blocks3
-    when green flag clicked
-    set [steps v] to [0]
-    pen up
-```
+![blocks_1546295782_695368](images/blocks_1546295782_695368.png)
 
 + Then use the value of `steps`{:class="block3variables"} instead of the `5` in the `move`{:class="block3motion"} block, and add `change steps by 1`{:class="block3variables"} as part of your loop:
 
-```blocks3
-    pen down
-    repeat until <touching [edge v] ?> 
-        move (steps) steps
-        turn cw (76) degrees
-        change [steps v] by (1)
-    end
-```
+![blocks_1546295783_7652931](images/blocks_1546295783_7652931.png)
  Do you think it matters where in the loop you put the `change steps by 1`{:class="block3variables"} block?
 
 --- collapse ---

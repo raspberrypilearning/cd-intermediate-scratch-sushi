@@ -37,30 +37,7 @@ You will use a variable to act as a counter to keep track of what position you'r
 
 + Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
  
-```blocks3
-    when green flag clicked
-    set [counter v] to [0]
-    forever 
-        if <(counter) = (length of [Increase List v] :: list)> then 
-            set [counter v] to [0]
-        end
-        change [counter v] by (1)
-        set [steps v] to [0]
-        set [increase v] to (item (counter) of [Increase List v] :: list)
-        set [degrees v] to (item (counter) of [Degrees List v] :: list)
-        pen up
-        hide
-        clear
-        go to x: (0) y: (0)
-        set pen color to [#4a6cd4]
-        pen down
-        repeat until <touching [edge v] ?> 
-            move (steps) steps
-            turn cw (degrees) degrees
-            change [steps v] by (increase)
-        end
-    end
-```
+![blocks_1546295797_126674](images/blocks_1546295797_126674.png)
 
 + Notice the new blocks that:
  1. Set `counter`{:class="block3variables"} to `0`, outside all the loops.
