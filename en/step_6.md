@@ -1,35 +1,27 @@
-## Cooler lines
+## Randomise the whole thing
 
-Time to add colour! Right now, your line is one colour, but the **Pen** has blocks that can change its colour. And with the right **Operator** block, you can even change the colour randomly!
+You can actually use random numbers to make the whole program run over and over, changing the pattern each time! It'll look a bit like screen savers did in the 1990s...which you won't remember, but ask one of your Dojo mentors!
 
-The block for changing the **Pen** colour is `change pen color by `{:class="blockpen"}: 
+You need a few changes to make this happen. The first one is that you need to set the `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} variables randomly rather than asking for them from the user. So you need to change some of your code blocks. 
 
-```blocks
-    change pen color by (10)
-```
++ Find this bit:
 
-+ Grab one of those and put it into your `repeat until`{:class="blockcontrol"} loop, like this: 
+![blocks_1546295793_7237](images/blocks_1546295793_7237.png)
 
-```blocks
-    repeat until <touching [edge v] ?> 
-        change pen color by (10)
-        move (steps) steps
-        turn cw (degrees) degrees
-        change [steps v] by (increase)
-    end
-```
++ Change it to:
 
-That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly. 
+![blocks_1546295794_840461](images/blocks_1546295794_840461.png)
 
-+ Just put the random number **Operator** block into the `change pen color by `{:class="blockpen"} block and pick some values to go in it. I'd try `1` and `100` to start. 
++ If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
 
-```blocks
-    repeat until <touching [edge v] ?> 
-        change pen color by (pick random (1) to (100))
-        move (steps) steps
-        turn cw (degrees) degrees
-        change [steps v] by (increase)
-    end
-```
+It’s because the loop only runs until it reaches the edge of the Stage. 
 
-+ Try running it again, and watch the random rainbow!
++ You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over! Just drag one out of the **Control** section, and add all your other code into it. 
+
+![blocks_1546295795_946917](images/blocks_1546295795_946917.png)
+
+Now you’ve really got something awesome to look at!
+
+However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
+
+On the next card, you'll help the computer to pick only good combinations!

@@ -16,7 +16,6 @@ version: 4.0.0
 last_tested: 2017-01-01
 steps: 
 - title: Introduction
-- title: What you will need
 - title: Using the Pen tool
 - title: Drawing patterns
 - title: Asking for input
