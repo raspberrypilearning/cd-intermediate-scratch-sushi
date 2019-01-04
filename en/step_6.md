@@ -6,11 +6,11 @@ You need a few changes to make this happen. The first one is that you need to se
 
 + Find this bit:
 
-![blocks_1546295793_7237](images/blocks_1546295793_7237.png)
+![blocks_1546566147_463479](images/blocks_1546566147_463479.png)
 
 + Change it to:
 
-![blocks_1546295794_840461](images/blocks_1546295794_840461.png)
+![blocks_1546566148_581994](images/blocks_1546566148_581994.png)
 
 + If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
 
@@ -18,7 +18,7 @@ It’s because the loop only runs until it reaches the edge of the Stage.
 
 + You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over! Just drag one out of the **Control** section, and add all your other code into it. 
 
-![blocks_1546295795_946917](images/blocks_1546295795_946917.png)
+![blocks_1546566149_716198](images/blocks_1546566149_716198.png)
 
 Now you’ve really got something awesome to look at!
 

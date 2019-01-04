@@ -6,7 +6,7 @@ So you need use a different type of loop called `repeat until`{:class="block3con
 
 + Take a `repeat until`{:class="block3control"} block from the **Control** section, and put the `move`{:class="block3motion"} and `turn`{:class="block3motion"} blocks inside it, like so: 
 
-![blocks_1546295779_353537](images/blocks_1546295779_353537.png)
+![blocks_1546566133_0772722](images/blocks_1546566133_0772722.png)
 
 + Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge.
 
@@ -25,13 +25,13 @@ The pen doesn't stop at the edge of the Stage, because you haven’t yet told th
 
 Time to fix your `repeat until`{:class="block3control"} loop so that it stops when you want it to. You’re looking to figure out if the (invisible) sprite is touching the edge of the Stage, so you need a **Sensing** block — in this case, the `touching ?`{:class="block3sensing"} block. 
 
-+ Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class="block3control"} loop, and select `edge`. Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
++ Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class="block3control"} loop, and select `edge`{:class="block3sensing"} . Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
 
-![blocks_1546295780_4456708](images/blocks_1546295780_4456708.png)
+![blocks_1546566134_1502662](images/blocks_1546566134_1502662.png)
 
 + Change the number of steps in the `move`{:class="block3motion"} block to `5`, and check that your program matches this one before you test it: 
 
-![blocks_1546295781_5725482](images/blocks_1546295781_5725482.png)
+![blocks_1546566135_247514](images/blocks_1546566135_247514.png)
 
 When you run the code now, you’ll see that the drawing the pen makes stays on the Stage.
 
@@ -41,11 +41,11 @@ You’ve seen variables before, in the Beginner series. They're basically labele
 
 + Make a variable called `steps`{:class="block3variables"}, and then add a `set steps to 0`{:class="block3variables"} block at the start of your program.
 
-![blocks_1546295782_695368](images/blocks_1546295782_695368.png)
+![blocks_1546566136_368383](images/blocks_1546566136_368383.png)
 
 + Then use the value of `steps`{:class="block3variables"} instead of the `5` in the `move`{:class="block3motion"} block, and add `change steps by 1`{:class="block3variables"} as part of your loop:
 
-![blocks_1546295783_7652931](images/blocks_1546295783_7652931.png)
+![blocks_1546566137_44493](images/blocks_1546566137_44493.png)
  Do you think it matters where in the loop you put the `change steps by 1`{:class="block3variables"} block?
 
 --- collapse ---
@@ -57,7 +57,7 @@ When you're deciding which order to put blocks in, think about what each block d
 
 In this case, you want the pen to move, then turn, over and over. Each time it does this, you want to move one extra step.
 
-So it makes sense to put the `change steps by 1`{:class="block3variables"} block **after** the `move`{:class="blockmove"} block. However, after moving, it doesn't really matter if the pen turns first and then the number of steps changes, or if the number of steps changes first and then the pen turns instead.
+So it makes sense to put the `change steps by 1`{:class="block3variables"} block **after** the `move`{:class="block3motion"} block. However, after moving, it doesn't really matter if the pen turns first and then the number of steps changes, or if the number of steps changes first and then the pen turns instead.
 
 --- /collapse ---
 

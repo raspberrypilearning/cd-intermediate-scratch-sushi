@@ -6,7 +6,7 @@ You’re going to teach Scratch those combinations of values, so it can use them
 
 To do this, you’ll need a **list**. You’ll find lists with the variables in the **Variables** section. Just like you did with your variables, you’ll need to create your list first! 
 
-+ Click **Make a List**, and enter `Degrees List` as the name.
++ Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
 
 ![](images/makeAList.png) ![](images/nameList.png)
 
@@ -14,7 +14,7 @@ Your list, which is empty at the moment, will appear on the Stage, and you'll se
 
 ![](images/listBlocks.png)
 
-+ Make another list called `Increase List`!
++ Make another list called `Increase List`{:class="block3variables"} !
 
 + Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
 
@@ -37,7 +37,7 @@ You will use a variable to act as a counter to keep track of what position you'r
 
 + Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
  
-![blocks_1546295797_126674](images/blocks_1546295797_126674.png)
+![blocks_1546566150_9124532](images/blocks_1546566150_9124532.png)
 
 + Notice the new blocks that:
  1. Set `counter`{:class="block3variables"} to `0`, outside all the loops.
