@@ -9,7 +9,7 @@ To do this, you’ll need a **list**. You’ll find lists with the variables in 
 --- task ---
 Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
 
-![](images/makeAList.png) ![](images/nameList.png)
+![](images/makeAList.png)
 
 --- /task ---
 
