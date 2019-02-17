@@ -1,28 +1,36 @@
 ## Helping the computer
 
-Do you remember a few cards back, where I told you to write down some of your favourite values for `increase`{:class="block3variables"} and `degrees`{:class="block3variables"}, the ones that gave the best-looking patterns? If you didn't to this, don’t worry: you can just watch the random program run for a while now and write down the combinations that give great results.
+Do you remember a few steps back, where I told you to write down some of your favourite values for `increase`{:class="block3variables"} and `degrees`{:class="block3variables"}, the ones that gave the best-looking patterns? If you didn't do this, don’t worry: you can just watch the random program run for a while now and write down the combinations that give great results.
 
 You’re going to teach Scratch those combinations of values, so it can use them to make nothing but awesome pictures!
 
 To do this, you’ll need a **list**. You’ll find lists with the variables in the **Variables** section. Just like you did with your variables, you’ll need to create your list first! 
 
-+ Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
+--- task ---
+Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
 
 ![](images/makeAList.png) ![](images/nameList.png)
+
+--- /task ---
 
 Your list, which is empty at the moment, will appear on the Stage, and you'll see a bunch of blocks for it in **Variables**.
 
 ![](images/listBlocks.png)
 
-+ Make another list called `Increase List`{:class="block3variables"} !
+--- task ---
+Make another list called `Increase List`{:class="block3variables"}
+--- /task ---
 
-+ Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
+--- task ---
+Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
 
 ![](images/helping2.png)
 
-+ Make sure that the `degrees`{:class="block3variables"} value and the `increase`{:class="block3variables"} value that worked well together are at the same position in the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. They need to be there so your program can match them up again using their position!
+Make sure that the `degrees`{:class="block3variables"} value and the `increase`{:class="block3variables"} value that worked well together are at the same position in the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. They need to be there so your program can match them up again using their position!
 
-You now have the lists, and you just need to get your code to read them and loop over them! To do this, you’re going to use a new variable to act as a counter, some **incrementing**, and an `if then`{:class="block3control"} **Control** block. 
+--- /task ---
+
+Now you have the lists, you just need to get your code to read them and loop over them! To do this, you’re going to use a new variable to act as a counter, some **incrementing**, and an `if then`{:class="block3control"} **Control** block. 
 
 --- collapse ---
 ---
@@ -35,11 +43,36 @@ You will use a variable to act as a counter to keep track of what position you'r
 
 --- /collapse ---
 
-+ Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
+--- task ---
+Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
  
-![blocks_1546566150_9124532](images/blocks_1546566150_9124532.png)
+```blocks3
+    when green flag clicked
+    set [counter v] to [0]
+    forever 
++        if <(counter) = (length of [Increase List v] :: list)> then 
++            set [counter v] to [0]
+        end
++        change [counter v] by (1)
+        set [steps v] to [0]
++        set [increase v] to (item (counter) of [Increase List v] :: list)
++        set [degrees v] to (item (counter) of [Degrees List v] :: list)
+        pen up
+        hide
+        clear
+        go to x: (0) y: (0)
+        set pen color to [#4a6cd4]
+        pen down
+        repeat until <touching [edge v] ?> 
+            move (steps) steps
+            turn cw (degrees) degrees
+            change [steps v] by (increase)
+        end
+    end
+```
+--- /task ---
 
-+ Notice the new blocks that:
+Notice the new blocks that:
  1. Set `counter`{:class="block3variables"} to `0`, outside all the loops.
  2. Check if the number stored in `counter`{:class="block3variables"} is the length of the list, and if so, set `counter`{:class="block3variables"} to `0`. This means that this variable will always be the number of a position in the lists, and won't get any bigger than that.
  3. Add `1` to `counter`{:class="block3variables"}.
@@ -74,6 +107,8 @@ This is what happens when you run your program:
 
 --- /collapse ---
 
-+ Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. 
+--- task ---
+Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. 
+--- /task ---
 
-And that's it! Sit back and watch your program keep drawing lovely patterns in a never-ending loop! And if you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
+That's it! Sit back and watch your program keep drawing lovely patterns in a never-ending loop! If you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.

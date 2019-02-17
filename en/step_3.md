@@ -4,11 +4,20 @@ Now you’ve got a program that draws a line, but it only draws one line. That�
 
 So you need use a different type of loop called `repeat until`{:class="block3control"}, which you’ll also find in the **Control** section. This type of loop will do something over and over again, **until** a True/False condition is met. 
 
-+ Take a `repeat until`{:class="block3control"} block from the **Control** section, and put the `move`{:class="block3motion"} and `turn`{:class="block3motion"} blocks inside it, like so: 
+--- task ---
+Take a `repeat until`{:class="block3control"} block from the **Control** section, and put the `move`{:class="block3motion"} and `turn`{:class="block3motion"} blocks inside it, like so: 
 
-![blocks_1546566133_0772722](images/blocks_1546566133_0772722.png)
+```blocks3
++    repeat until <> 
+        move (50) steps
+        turn cw (15) degrees
+    end
+```
+--- /task ---
 
-+ Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge.
+--- task ---
+Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge.
+--- /task ---
 
 --- collapse ---
 ---
@@ -21,31 +30,71 @@ The pen doesn't stop at the edge of the Stage, because you haven’t yet told th
 
 --- /collapse ---
 
-+ Move the `go to x: 0 y: 0`{:class="block3motion"} block to before the `pen down`{:class="block3extensions"} block and add, from the **Pen** section, a `pen up`{:class="block3extensions"} block right at the start of your code.
+--- task ---
+Move the `go to x: 0 y: 0`{:class="block3motion"} block to before the `pen down`{:class="block3extensions"} block and add, from the **Pen** section, a `pen up`{:class="block3extensions"} block right at the start of your code.
+--- /task ---
 
 Time to fix your `repeat until`{:class="block3control"} loop so that it stops when you want it to. You’re looking to figure out if the (invisible) sprite is touching the edge of the Stage, so you need a **Sensing** block — in this case, the `touching ?`{:class="block3sensing"} block. 
 
-+ Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class="block3control"} loop, and select `edge`{:class="block3sensing"} . Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
+--- task ---
+Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class="block3control"} loop, and select `edge`{:class="block3sensing"} . Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
 
-![blocks_1546566134_1502662](images/blocks_1546566134_1502662.png)
+```blocks3
+    pen down
++    repeat until <touching [edge v] ?> 
+        move (50) steps
+        turn cw (15) degrees
+    end
+```
+--- /task ---
 
-+ Change the number of steps in the `move`{:class="block3motion"} block to `5`, and check that your program matches this one before you test it: 
+--- task ---
+Change the number of steps in the `move`{:class="block3motion"} block to `5`, and check that your program matches this one before you test it: 
 
-![blocks_1546566135_247514](images/blocks_1546566135_247514.png)
+```blocks3
+    when green flag clicked
+    pen up
+    hide
+    clear
+    go to x: (0) y: (0)
+    set pen color to [#4a6cd4]
+    pen down
+    repeat until <touching [edge v] ?> 
+        move (5) steps
+        turn cw (15) degrees
+    end
+```
+--- /task ---
 
-When you run the code now, you’ll see that the drawing the pen makes stays on the Stage.
+If you run the code now, you’ll see that the drawing the pen makes stays on the Stage.
 
-And not only that, but your program has turned into a circle-drawing program! What's happening here is that those 15-degree turns eventually add up to 360 degrees, and so your pen turns in a full circle. You're going to change the way it moves slightly to make it take slightly a longer step each time, so it spirals out. For this, you’re going to need a **variable**.
+Not only that, but your program has turned into a circle-drawing program! What's happening here is that those 15-degree turns eventually add up to 360 degrees, and so your pen turns in a full circle. You're going to change the way it moves slightly to make it take slightly a longer step each time, so it spirals out. For this, you’re going to need a **variable**.
 
-You’ve seen variables before, in the Beginner series. They're basically labeled places to store numbers or other information that you care about. You can create them in the **Variables** blocks section.
+Variables are basically labeled places to store numbers or other information that you care about. You can create them in the **Variables** blocks section.
 
-+ Make a variable called `steps`{:class="block3variables"}, and then add a `set steps to 0`{:class="block3variables"} block at the start of your program.
+--- task ---
+Make a variable called `steps`{:class="block3variables"}, and then add a `set steps to 0`{:class="block3variables"} block at the start of your program.
 
-![blocks_1546566136_368383](images/blocks_1546566136_368383.png)
+```blocks3
+    when green flag clicked
++   set [steps v] to [0]
+    pen up
+```
+--- /task ---
 
-+ Then use the value of `steps`{:class="block3variables"} instead of the `5` in the `move`{:class="block3motion"} block, and add `change steps by 1`{:class="block3variables"} as part of your loop:
+--- task ---
+Then use the value of `steps`{:class="block3variables"} instead of the `5` in the `move`{:class="block3motion"} block, and add `change steps by 1`{:class="block3variables"} as part of your loop:
 
-![blocks_1546566137_44493](images/blocks_1546566137_44493.png)
+```blocks3
+    pen down
+    repeat until <touching [edge v] ?> 
++       move (steps) steps
+        turn cw (76) degrees
++        change [steps v] by (1)
+    end
+```
+--- /task ---
+
  Do you think it matters where in the loop you put the `change steps by 1`{:class="block3variables"} block?
 
 --- collapse ---
@@ -61,4 +110,6 @@ So it makes sense to put the `change steps by 1`{:class="block3variables"} block
 
 --- /collapse ---
 
-+ Now run the program, and also try changing the number of degrees around (try `76` and `120`)!
+--- task ---
+Now run the program, and also try changing the number of degrees around (try `76` and `120`)!
+--- /task ---
