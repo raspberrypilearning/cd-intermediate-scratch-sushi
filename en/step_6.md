@@ -5,25 +5,15 @@ You can actually use random numbers to make the whole program run over and over,
 You need a few changes to make this happen. The first one is that you need to set the `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} variables randomly rather than asking for them from the user. So you need to change some of your code blocks. 
 
 --- task ---
-Find this bit:
+Remove the questions from your code, and update it to use random numbers instead.
 
 ```blocks3
     when green flag clicked
     set [steps v] to [0]
-    ask [How many steps should I grow by?] and wait
-    set [increase v] to (answer)
-    ask [How many degrees should I turn?] and wait
-    set [degrees v] to (answer)
-    pen up
-```
-
-Change it to:
-
-```blocks3
-    when green flag clicked
-    set [steps v] to [0]
-    set [increase v] to (pick random (1) to (10))
-    set [degrees v] to (pick random (1) to (180))
+-    ask [How many steps should I grow by?] and wait
++    set [increase v] to (pick random (1) to (10))
+-    ask [How many degrees should I turn?] and wait
++    set [degrees v] to (pick random (1) to (180))
     pen up
 ```
 --- /task ---
