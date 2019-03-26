@@ -1,77 +1,77 @@
-## Asking for input
+## Vragen om input
 
-Ok, this is getting pretty cool, but it’s a bit boring to have to edit your code every time you want to draw a different pattern. Wouldn’t it be good to get the program to ask you for values to use? You can do that!
+Ok, dit wordt best gaaf, maar het is wel een beetje saai om elke keer je code aan te passen als je een ander patroon wilt tekenen. Zou het niet handig zijn om het programma om input te laten vragen? Dat kun je!
 
-\--- task \--- First, go to the **Variables** section and create variables called `degrees`{:class="block3variables"} and `increase`{:class="block3variables"}. \--- /task \---
+\--- task \--- Ga eerst naar het **Variabelen** gedeelte en maak variabelen die `graden`{:class="block3variables"} en `toename`{:class="block3variables"} heten. \--- /task \---
 
-\--- task \--- Now add the new variables to your code like this:
+\--- task \--- Voeg nu de nieuwe variabelen als volgt aan je code toe:
 
 ```blocks3
-    repeat until <touching [edge v] ?> 
-        move (steps) steps
-        turn cw (degrees ::variables) degrees
-        change [steps v] by (increase ::variables)
-    end
+    herhaal tot <touching [edge v] ?>
+neem (stappen) stappen
+draai cw (graden ::variables) graden
+verander [stappen v] met (toename ::variables)
+end
 ```
 
 \--- /task \---
 
-Now you need to ask for values for these two variables and store them. You do this using a **Sensing** block called `Ask and wait`{:class="block3sensing"}, which you can type a question into.
+Nu moet je vragen naar waarden voor deze variabelen en ze opslaan. Hiervoor kun je een **Waarnemen** blok gebruiken dat `Vraag en wacht`{:class="block3sensing"} heet, en waarin je een vraag kunt stellen.
 
-\--- task \--- Pull the `Ask and wait`{:class="block3sensing"} block into your sprite panel and change the question to `How many steps should I grow by?`{:class="block3sensing"}
+\--- task \--- Sleep het `Vraag en wacht`{:class="block3sensing"} blok naar je script en verander de vraag naar `Hoeveel stappen moet ik nemen?`{:class="block3sensing"}
 
-Then add it to your program, just after you set `steps`{:class="block3variables"} to `0`, like this:
+Plaats het dan in de code, net na het `maak stappen 0`{:class="block3variables"} blok, zoals dit:
 
 ```blocks3
-    when green flag clicked
-    set [steps v] to [0]
-+    ask [How many steps should I grow by?] and wait
-    pen up
+    wanneer op groene vlag wordt geklikt
+maak [stappen v] [0]
++ vraag [Hoeveel stappen moet ik nemen?] en wacht
+pen op
 ```
 
 \--- /task \---
 
-Now you’ve got your program asking a question, you need it to remember the answer! It turns out that Scratch has a special variable called `answer`{:class="block3sensing"}, where it stores the most recent answer it has received. You can find this variable among the **Sensing** blocks.
+Nu je programma een vraag kan stellen, moet het ook het antwoord kunnen onthouden! Scratch heeft een speciale variable die `antwoord`{:class="block3sensing"} heet, waar het het laatste antwoord in opslaat. Deze variabele vind je bij de **Waarnemen** blokken.
 
-\--- task \--- Using a `set to`{:class="block3variables"} block from **Variables**, take the value of `answer`{:class="block3sensing"} and store it in the `increase`{:class="block3variables"} variable like so:
+\--- task \--- Gebruik een `maak`{:class="block3variables"} blok uit de **Variabelen**, en sleep het `antwoord`{:class="block3sensing"} blok in het `toename`{:class="block3variables"} blok, zoals dit:
 
 ```blocks3
-    ask [How many steps should I grow by?] and wait
-+    set [increase v] to (answer)
+    vraag [Hoeveel stappen  moet ik nemen?] en wacht
++ maak [toename v] (antwoord)
 ```
 
 \--- /task \---
 
-\--- task \--- Now, do the same thing with `degrees`{:class="block3variables"}, asking `How many degrees should I turn?`{:class="block3sensing"} and storing the value of `answer`{:class="block3sensing"} in `degrees`{:class="block3variables"}:
+\--- task \--- Doe nu hetzelfde met `graden`{:class="block3variables"}, vraag `Hoeveel graden moet ik draaien?`{:class="block3sensing"} en sla het `antwoord`{:class="block3sensing"} op in `graden`{:class="block3variables"}:
 
 ```blocks3
-    set [increase v] to (answer)
-+    ask [How many degrees should I turn?] and wait
-+    set [degrees v] to (answer)
+    maak [toename v] (antwoord)
++ vraag [Hoeveel graden moet ik draaien?] en wacht
++ maak [graden v] (antwoord)
 ```
 
 \--- /task \---
 
-\--- task \--- Check your program now looks like the one below, and run it a few times with different numbers. Write down the answers that make the coolest pictures. You’ll need them in a later step!
+\--- task \--- Kijk of jouw programma er zo uit ziet als hieronder en voer het een paar keer uit met verschillende getallen. Schrijf die getallen op die de mooiste tekeningen maken. Je hebt ze straks nog nodig!
 
 ```blocks3
-    when green flag clicked
-    set [steps v] to [0]
-    ask [How many steps should I grow by?] and wait
-    set [increase v] to (answer)
-    ask [How many degrees should I turn?] and wait
-    set [degrees v] to (answer)
-    pen up
-    hide
-    clear
-    go to x: (0) y: (0)
-    set pen color to [#4a6cd4]
-    pen down
-    repeat until <touching [edge v] ?> 
-        move (steps) steps
-        turn cw (degrees) degrees
-        change [steps v] by (increase)
-    end
+    wanneer op groene vlag wordt geklikt
+maak [stappen v] [0]
+vraag [Hoeveel stappen moet ik nemen?] en wacht
+maak [toename v] (antwoord)
+vraag [Hoeveel graden moet ik draaien?] en wacht
+maak [graden v] (antwoord)
+pen op
+verdwijn
+wis alles
+ga naar x: (0) y: (0)
+maak penkleur [#4a6cd4]
+pen neer
+herhaal tot <touching [edge v] ?>
+neem (stappen) stappen
+draai cw (graden) graden
+verander [stappen v] met (toename)
+end
 ```
 
 \--- /task \---
