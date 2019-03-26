@@ -1,18 +1,18 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2).
+Dit is de **Scratch 3** versie van dit project. Er is ook een [Scratch 2 versie van het project](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2).
 
 \--- /no-print \---
 
-## Introduction
+## Inleiding
 
-You’ve already learned the basics of Scratch (and if you haven’t, check out the Beginner Scratch Sushi Cards) to make your first Scratch game. Here you’re going to learn a few more cool tricks and make one of my favourite Scratch projects: it draws colourful patterns and, if you set it up right, can be really cool to watch.
+Je kent de basisregels van Scratch al (en zo niet, kijk naar de Beginner Scratch Sushi kaarten) waarmee je een spel maakt. Nu ga je wat gave trucjes leren en één van mijn favoriete Scratch projecten maken: het tekent kleurrijke patronen en kan, als je het juist invoert, erg cool zijn om naar te kijken.
 
 ![](images/pen1.png)
 
-### What you will make
+### Wat ga je maken
 
-Here's a project I've prepared:
+Hier staat een project dat ik gemaakt heb:
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/205355399/?autostart=false" frameborder="0"></iframe>
@@ -20,28 +20,28 @@ Here's a project I've prepared:
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: Wat ga je leren
 
-In the Intermediate Scratch Sushi Cards, you'll find out about:
+In deze Ervaren Scratch Sushi kaarten kom je meer te weten over:
 
-+ Using the Pen tool
-+ Using and updating variables in loops
-+ Using Repeat Until loops
-+ Getting input values with ask blocks
-+ Using multiple lists with properties related by index
++ De Pen gebruiken
++ Het gebruiken en aanpassen van variabelen in lussen
++ Herhaal Tot lussen gebruiken
++ Antwoorden krijgen met vraag blokken
++ Meerdere lijsten gebruiken met eigenschappen die gerelateerd zijn aan index
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Wat heb je nodig
 
 ### Hardware
 
-+ A computer capable of running Scratch 3
++ Een computer die Scratch 3 kan uitvoeren
 
 ### Software
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/projects/editor/){:target="_blank"} or [offline](https://scratch.mit.edu/download/){:target="_blank"})
++ Scratch 3 (of [online](https://scratch.mit.edu/projects/editor/){:target="_blank"] of [offline](https://scratch.mit.edu/download/){:target="_blank"})
 
 \--- /collapse \---
