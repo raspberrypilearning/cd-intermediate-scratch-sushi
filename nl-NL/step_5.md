@@ -1,39 +1,39 @@
-## Cooler lines
+## Gavere lijnen
 
-Time to add colour! Right now, your line is one colour, but the **Pen** has blocks that can change its colour. And with the right **Operator** block, you can even change the colour randomly!
+Hoog tijd om kleur toe te voegen! Nu is je lijn één kleur, maar de **Pen** heeft blokken die de kleur kunnen veranderen. En met het juiste **Functie** blok kun je de kleur zelfs willekeurig veranderen!
 
-The block for changing the **Pen** colour is `change pen color by`{:class="block3extensions"}:
+Het blok voor het veranderen van de **Pen** kleur is `verander pen kleur met`{:class="block3extensions"}:
 
 ```blocks3
-    change pen color by (10)
+    verander pen kleur met (10)
 ```
 
-\--- task \--- Grab one of those blocks and put it into your `repeat until`{:class="block3control"} loop, like this:
+\--- task \--- Sleep een van deze blokken naar je `herhaal tot`{:class="block3control"} lus, zoals dit:
 
 ```blocks3
-    repeat until <touching [edge v] ?> 
-+        change pen color by (10)
-        move (steps) steps
-        turn cw (degrees ::variables) degrees
-        change [steps v] by (increase ::variables)
-    end
-```
-
-\--- /task \---
-
-That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly.
-
-\--- task \--- Put the random number **Operator** block into the `change pen color by`{:class="block3extensions"} block and pick some values to go in it. I'd try `1` and `100` to start.
-
-```blocks3
-    repeat until <touching [edge v] ?> 
-+        change pen color by (pick random (1) to (100))
-        move (steps) steps
-        turn cw (degrees ::variables) degrees
-        change [steps v] by (increase ::variables)
-    end
+    herhaal tot <touching [edge v] ?>
++ verander pen kleur met (10)
+neem (stappen) stappen
+draai cw (graden ::variables) graden
+verander [stappen v] met (toename ::variables)
+end
 ```
 
 \--- /task \---
 
-\--- task \--- Try running it again, and watch the random rainbow! \--- /task \---
+Gaaf, maar een beetje voorspelbaar. Je kunt het leuker maken door er een willekeurig getal in te zetten, zodat de kleur willekeurig verandert.
+
+\--- task \--- Zet het willekeurig getal **Functie** blok in het `verander pen kleur met`{:class="block3extensions"} blok en zet er een paar getallen in. Begin eens met `1` en `100`.
+
+```blocks3
+    herhaal tot <touching [edge v] ?>
++ verander pen kleur met (willekeurig getal tussen (1) en (100))
+neem (stappen) stappen
+draai cw (graden ::variables) graden
+verander [stappen v] met (toename ::variables)
+end
+```
+
+\--- /task \---
+
+\--- task \--- Voer je programma weer uit en bekijk de willekeurige regenboog! \--- /task \---
