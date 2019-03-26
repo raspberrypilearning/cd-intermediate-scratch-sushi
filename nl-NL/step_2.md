@@ -1,85 +1,85 @@
-## Using the Pen tool
+## De Pen gebruiken
 
-The project you're going to make relies on the **Pen** tool, which draws a line behind the centre of a sprite as it moves. You’re going to learn to use it now!
+Het project dat je gaat maken gebruikt de **Pen**, die een lijn tekent achter het midden van een sprite terwijl die beweegt. We gaan je leren hoe je het gebruikt!
 
-\--- task \--- Open a new Scratch file, select the Scratch Cat sprite, and drag in a few blocks you may have already seen, until it looks like this:
+\--- task \--- Open een nieuw Scratch bestand, selecteer de Kat sprite en codeer hem met blokken die je al kent, tot het er zo uit ziet:
 
 ```blocks3
-    when green flag clicked
-    go to x: (0) y: (0)
-    move (50) steps
-    turn cw (15) degrees
+    wanneer op groene vlag wordt geklikt
+ga naar x: (0) y: (0)
+neem (50) stappen
+draai cw (15) graden
 ```
 
 \--- /task \---
 
-Now, time to test out the pen!
+Nu gaan we de pen uittesten!
 
-To use the Pen blocks in Scratch, you need add the **Pen extension**.
+Om de Pen blokken in Scratch te gebruiken, moet je de **Pen uitbreiding** toevoegen.
 
-\--- task \--- Click on the **Add extension** button in the bottom left-hand corner.
+\--- task \--- Klik op de **Voeg een uitbreiding toe** knop linksonder in de hoek.
 
-![add extension button highlighted](images/add-extension-annotated.png)
+![voeg een gemarkeerde knop als uitbreiding toe](images/add-extension-annotated.png)
 
-Click on the **Pen** extension to add it.
+Klik op de **Pen** uitbreiding om het toe te voegen.
 
-![pen extension highlighted](images/click-pen-annotated.png)
+![pen uitbreiding gemarkeerd](images/click-pen-annotated.png)
 
-The Pen section then appears at the bottom of the blocks menu.
+De Pen blokken verschijnen dan onderaan het blokkenmenu.
 
-![pen extension blocks](images/pen-extension-blocks.png)
+![pen uitbreiding blokken](images/pen-extension-blocks.png)
 
-From the **Pen** section, select the `pen down`{:class="block3extensions"} block and add it to the start of your program, like this:
+Uit het **Pen** gedeelte, kies het `pen neer`{:class="block3extensions"} blok en voeg het aan het begin van je code toe:
 
 ```blocks3
-    when green flag clicked
-+    pen down
-    go to x: (0) y: (0)
+    wanneer op groene vlag wordt geklikt
++    pen neer
+ga naar x: (0) y: (0)
 ```
 
 \--- /task \---
 
-\--- task \--- Now click the green flag a few times and watch what happens. \--- /task \---
+\--- task \--- Klik nu een paar keer op de groene vlag en kijk wat er gebeurt. \--- /task \---
 
-If you can see the lines behind the cat sprite, then the pen is working and you can start making it draw really cool patterns.
+Als je lijnen achter de kat ziet, dan werkt de pen en kun je beginnen met het maken van gave patronen.
 
-First, you should get rid of the sprite. It’s getting in the way of the drawing!
+Eerst moet je de sprite verwijderen. Het zit de tekening in de weg!
 
-\--- task \--- Add a `hide`{:class="block3looks"} block from **Looks** to the start of the program and it’ll disappear.
+\--- task \--- Voeg een `verdwijn`{:class="block3looks"} blok toe uit **Uiterlijken** aan het begin van de code en de kat zal verdwijnen.
 
 ```blocks3
-    when green flag clicked
-+    hide
-    pen down
+    wanneer op groene vlag wordt geklikt
++   verdwijn
+pen neer
 ```
 
 \--- /task \---
 
-Now, you can change the colour of the pen with another block from the **Pen** section, but the block is a little different to the others you’ve seen. It’s the `set pen color to`{:class="block3extensions"} block and looks like this:
+Nu kun je de kleur van de pen veranderen met een ander blok uit het **Pen** gedeelte, maar het ziet er anders uit dan andere blokken die je gezien hebt. Het is het `maak penkleur`{:class="blocks3extensions} blok en ziet er zo uit:
 
 ```blocks3
-    set pen color to [#4a6cd4]
+    maak penkleur [#4a6cd4]
 ```
 
-\--- task \--- Drag a `set pen color to`{:class="block3extensions"} block into your sprite panel, and snap it in above the `pen down`{:class="block3extensions"} block.
+\--- task \--- Sleep een `maak penkleur`{:class="blocks3extensions"} blok naar je werkgebied en zet het vast boven het `pen neer`{:class="blocks3extensions"} blok.
 
 ```blocks3
-    when green flag clicked
-    hide
-+    set pen color to [#4a6cd4]
-    pen down
+    wanneer op groene vlag wordt geklikt
+verdwijn
++ maak penkleur [#4a6cd4]
+pen neer
 ```
 
-Now, click on the box of colour (in the code above it’s the blue one), and choose a colour. \--- /task \---
+Klik nu in het vak met de kleur (in onze code is het blauw) en kies een kleur. \--- /task \---
 
-If you’ve been clicking on the green flag to test your code, you’ll have noticed that the drawings the pen makes don’t go away.
+Als je de code hebt getest door op de groene vlag te klikken, zul je gezien hebben dat de gemaakte tekeningen niet verdwijnen.
 
-\--- task \--- Add a `clear`{:class="block3extensions"} block from the **Pen** section to the start of your code to take care of that:
+\--- task \--- Voeg een `wis alles`{:class="block3extensions"} blok uit het **Pen** gedeelte toe aan het begin van je code om dat op te lossen:
 
 ```blocks3
-    when green flag clicked
-+    clear
-    hide
+    wanneer op groene vlag wordt geklikt
++   wis alles
+verdwijn
 ```
 
 \--- /task \---
