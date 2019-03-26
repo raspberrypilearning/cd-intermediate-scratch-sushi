@@ -1,107 +1,107 @@
-## Drawing patterns
+## Patronen tekenen
 
-Now you’ve got a program that draws a line, but it only draws one line. That’s a bit dull! You could use `forever`{:class="block3control"} loop to draw something over and over again, but then you’ll get drawings that go off the Stage!
+Nu heb je een programma dat een lijn tekent, maar het is slechts één lijn. Wat saai! Je kunt de `herhaal`{:class="block3control"} lus gebruiken om iets continu te tekenen, maar dan verdwijnt je tekening van het Speelveld!
 
-So you need use a different type of loop called `repeat until`{:class="block3control"}, which you’ll also find in the **Control** section. This type of loop will do something over and over again, **until** a True/False condition is met.
+Dus je hebt een andere lus nodig die `herhaal tot`{:class="block3control"} heet, die je in het **Besturen** gedeelte vindt. Deze lus doet continu iets, **totdat** voldaan is aan een True/False voorwaarde.
 
-\--- task \--- Take a `repeat until`{:class="block3control"} block from the **Control** section, and put the `move`{:class="block3motion"} and `turn`{:class="block3motion"} blocks inside it, like so:
+\--- task \--- Neem een `herhaal tot`{:class="block3control"} blok uit het **Besturen** gedeelte, en zet de `neem stappen`{:class="block3motion"} en `draai graden`{:class="block3motion"} blokken er als volgt in:
 
 ```blocks3
-+    repeat until <> 
-        move (50) steps
-        turn cw (15) degrees
-    end
++ herhaal tot <>
+neem (50) stappen
+draai cw (15) graden
+end
 ```
 
 \--- /task \---
 
-\--- task \--- Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge. \--- /task \---
+\--- task \--- Klik nu een paar keer op de groene vlag en kijk wat er gebeurt. Er vallen twee dingen op: de pen begint altijd met een rechte lijn naar het midden van het Speelveld, en het stopt niet bij de rand. \--- /task \---
 
 ## \--- collapse \---
 
-## title: Why does the pen do this?
+## title: Waarom doet de pen dit?
 
-The pen always starts drawing in the direction of the middle, because the first **Motion** block that runs after the `pen down`{:class="block3extensions"} block is `go to x: 0 y: 0`{:class="block3motion"}. So the pen will draw a line as it moves to the centre of the Stage.
+De pen begint altijd met een lijn naar het midden, omdat het eerste **Beweging** blok dat na het `pen neer`{:class="block3extensions"} blok komt het `ga naar x: 0 y:0`{:class="block3motion"} is. Dus zal de pen een lijn tekenen als het naar het midden van het Speelveld gaat.
 
-The pen doesn't stop at the edge of the Stage, because you haven’t yet told the `repeat until`{:class="block3control"} loop what condition it’s checking. This means the condition can never be met, so the loop will run on and on. This means that right now, the loop is working like a `forever`{:class="block3control"} loop.
+De pen stopt niet aan de rand van het Speelveld, omdat je nog niet gezegd hebt tegen de `herhaal tot`{:class="block3control"} lus welke voorwaarde het controleert. Dat betekent dat er nooit aan die voorwaarde voldaan kan worden, en dus blijft de lus doorgaan. Dat houdt in dat deze lus werkt als een `herhaal`{:class="block3control"} lus.
 
 \--- /collapse \---
 
-\--- task \--- Move the `go to x: 0 y: 0`{:class="block3motion"} block to before the `pen down`{:class="block3extensions"} block and add, from the **Pen** section, a `pen up`{:class="block3extensions"} block right at the start of your code. \--- /task \---
+\--- task \--- Sleep het `ga naar x: 0 y: 0`{:class="block3motion"} blok vóór het `pen neer`.{:class="block3extensions"} blok en voeg, uit het **Pen** gedeelte, een `pen op`{:class="block3extensions"} blok toe aan het begin van je code. \--- /task \---
 
-Time to fix your `repeat until`{:class="block3control"} loop so that it stops when you want it to. You’re looking to figure out if the (invisible) sprite is touching the edge of the Stage, so you need a **Sensing** block — in this case, the `touching ?`{:class="block3sensing"} block.
+Tijd om je `herhaal tot`{:class="block3control"} lus aan te passen zodat het stopt wanneer jij dat wilt. Je wilt weten of de (onzichtbare) sprite de rand van het Speelveld raakt, dus heb je een **Waarnemen** blok nodig - in dit geval, het `raak ik`{:class="block3sensing"} blok.
 
-\--- task \--- Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class="block3control"} loop, and select `edge`{:class="block3sensing"} . Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
+\--- task \--- Voeg een `raak ik ?`{:class="block3sensing"} blok toe aan je `herhaal tot`{:class+"block3control"} lus, en selecteer `rand`{:class="block3sensing"}. Dan wordt de lus uitgevoerd **totdat** de (onzichtbare) sprite de rand van het Speelveld raakt.
 
 ```blocks3
-    pen down
-+    repeat until <touching [edge v] ?> 
-        move (50) steps
-        turn cw (15) degrees
-    end
+    pen neer
++   herhaal tot <touching [edge v] ?>
+neem (50) stappen
+draai cw (15) graden
+end
 ```
 
 \--- /task \---
 
-\--- task \--- Change the number of steps in the `move`{:class="block3motion"} block to `5`, and check that your program matches this one before you test it:
+\--- task \--- Verander het aantal stappen in het `beweging`{:class="block3motion"} blok naar `5` en controleer of je programma er zo uit ziet:
 
 ```blocks3
-    when green flag clicked
-    pen up
-    hide
-    clear
-    go to x: (0) y: (0)
-    set pen color to [#4a6cd4]
-    pen down
-    repeat until <touching [edge v] ?> 
-        move (5) steps
-        turn cw (15) degrees
-    end
+    wanneer op groene vlag wordt geklikt
+pen op
+verdwijn
+wis alles
+ga naar x: (0) y: (0)
+maak penkleur [#4a6cd4]
+pen neer
+herhaal tot <touching [edge v] ?>
+neem (5) stappen
+draai cw (15) graden
+end
 ```
 
 \--- /task \---
 
-If you run the code now, you’ll see that the drawing the pen makes stays on the Stage.
+Als je nu je programma uitvoert, zul je zien dat de tekening die door de pen gemaakt wordt op het Speelveld blijft.
 
-Not only that, but your program has turned into a circle-drawing program! What's happening here is that those 15-degree turns eventually add up to 360 degrees, and so your pen turns in a full circle. You're going to change the way it moves slightly to make it take slightly a longer step each time, so it spirals out. For this, you’re going to need a **variable**.
+Dat niet alleen, je programma is verandert in een programma dat alleen maar cirkels tekent! Wat er gebeurt is dat de 15-graden draai oploopt tot 360 graden, dus je pen tekent een volledige cirkel. Je gaat de manier waarop het beweegt zo aanpassen dat het elke stap groter maakt zodat het een spiraal gaat tekenen. Hiervoor heb je een **variabele** nodig.
 
-Variables are basically labeled places to store numbers or other information that you care about. You can create them in the **Variables** blocks section.
+Variabelen zijn plekken met labels waarin je getallen of andere belangrijke informatie in opslaat. Je maakt ze in het **Variabelen** blok gedeelte.
 
-\--- task \--- Make a variable called `steps`{:class="block3variables"}, and then add a `set steps to 0`{:class="block3variables"} block at the start of your program.
+\--- task \--- Maak een variabele genaamd `stappen`{:class="block3variables"} en voeg dan een `maak stappen 0`{:class="block3variables"} blok toe aan het begin van je programma.
 
 ```blocks3
-    when green flag clicked
-+   set [steps v] to [0]
-    pen up
+    wanneer op groene vlag wordt geklikt
++ maak [stappen v] [0]
+pen op
 ```
 
 \--- /task \---
 
-\--- task \--- Then use the value of `steps`{:class="block3variables"} instead of the `5` in the `move`{:class="block3motion"} block, and add `change steps by 1`{:class="block3variables"} as part of your loop:
+\--- task \--- Gebruik dan de waarde van `stappen`{:class="block3variables"} in plaats van de `5` in het `bewegen`{:class="block3motion"} blok, en voeg `verander stappen met 1`{:class="block3variables"] toe aan je lus:
 
 ```blocks3
-    pen down
-    repeat until <touching [edge v] ?> 
-+       move (steps) steps
-        turn cw (76) degrees
-+        change [steps v] by (1)
-    end
+    pen neer
+herhaal tot <touching [edge v] ?>
++ neem (stappen) stappen
+draai cw (76) graden
++ verander [stappen v] met (1)
+end
 ```
 
 \--- /task \---
 
-Do you think it matters where in the loop you put the `change steps by 1`{:class="block3variables"} block?
+Denk je dat het uitmaakt waar je het `verander stappen met 1`{:class="block3variables"} blok in je lus zet?
 
 ## \--- collapse \---
 
-## title: Putting code in the right order
+## title: Code in de juiste volgorde zetten
 
-When you're deciding which order to put blocks in, think about what each block does and what you want your code to do.
+Als je gaat bepalen in welke volgorde je de blokken gaat zetten, bedenk dan wat elk blok doet en wat jij wilt dat je code doet.
 
-In this case, you want the pen to move, then turn, over and over. Each time it does this, you want to move one extra step.
+In dit geval wil je dat de pen beweegt en dan draait, steeds opnieuw. Elke keer dat het dit doet, wil je dat het een extra stap neemt.
 
-So it makes sense to put the `change steps by 1`{:class="block3variables"} block **after** the `move`{:class="block3motion"} block. However, after moving, it doesn't really matter if the pen turns first and then the number of steps changes, or if the number of steps changes first and then the pen turns instead.
+Dus het is logisch om het `verander stappen met 1`{:class="block3variables"} blok **na** het `beweging`{:class="block3motion"} blok te plaatsen. Maar ná het bewegen maakt het niet echt uit of de pen eerst draait en dan het aantal stappen verandert, of dat het eerst het aantal stappen verandert en daarna draait.
 
 \--- /collapse \---
 
-\--- task \--- Now run the program, and also try changing the number of degrees around (try `76` and `120`)! \--- /task \---
+\--- task \--- Voer de code uit en verander ook eens het aantal graden dat de pen draait (probeer `76` en `120`)! \--- /task \---
