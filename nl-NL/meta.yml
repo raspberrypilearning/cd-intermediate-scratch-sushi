@@ -1,14 +1,14 @@
 ---
-title: Intermediate Scratch Sushi Cards
+title: Ervaren Scratch Sushi Cards
 hero_image: images/banner.png
-description: Make a cool pattern generator
+description: Maak een gave patroongenerator
 theme: orange
 duration: 2
 listed: true
 ingredient: false
 copyedit: true
 curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
-interests: art
+interests: kunst
 technologies: scratch
 site_areas: coderdojo
 hardware:
@@ -17,16 +17,16 @@ version: 4.0.0
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: Inleiding
   - 
-    title: Using the Pen tool
+    title: De Pen gebruiken
   - 
-    title: Drawing patterns
+    title: Patronen tekenen
   - 
-    title: Asking for input
+    title: Input vragen
   - 
-    title: Cooler lines
+    title: Gavere lijnen
   - 
-    title: Randomise the whole thing
+    title: Alles willekeurig maken
   - 
-    title: Helping the computer
+    title: De computer helpen
