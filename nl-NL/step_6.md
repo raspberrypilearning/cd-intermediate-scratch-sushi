@@ -44,7 +44,7 @@ end
 end
 ```
 
----/task ---
+--- /task ---
 
 Nu heb je echt iets gaafs om naar te kijken!
 
