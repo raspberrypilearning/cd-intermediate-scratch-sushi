@@ -7,10 +7,10 @@ Ok, dit wordt best gaaf, maar het is wel een beetje saai om elke keer je code aa
 --- task --- Voeg nu de nieuwe variabelen als volgt aan je code toe:
 
 ```blocks3
-    herhaal tot <touching [edge v] ?>
+    herhaal tot <raak ik [edge v] ?>
 neem (stappen) stappen
-draai cw (graden ::variables) graden
-verander [stappen v] met (toename ::variables)
+draai (graden ::variables) graden naar rechts
+verander [stappen v] met (toename :: variables)
 end
 ```
 
@@ -23,7 +23,7 @@ Nu moet je vragen naar waarden voor deze variabelen en ze opslaan. Hiervoor kun 
 Plaats het dan in de code, net na het `maak stappen 0`{:class="block3variables"} blok, zoals dit:
 
 ```blocks3
-    wanneer op groene vlag wordt geklikt
+   wanneer groene vlag wordt aangeklikt
 maak [stappen v] [0]
 + vraag [Hoeveel stappen moet ik nemen?] en wacht
 pen op
@@ -55,7 +55,7 @@ Nu je programma een vraag kan stellen, moet het ook het antwoord kunnen onthoude
 --- task --- Kijk of jouw programma er zo uit ziet als hieronder en voer het een paar keer uit met verschillende getallen. Schrijf die getallen op die de mooiste tekeningen maken. Je hebt ze straks nog nodig!
 
 ```blocks3
-    wanneer op groene vlag wordt geklikt
+   wanneer groene vlag wordt aangeklikt
 maak [stappen v] [0]
 vraag [Hoeveel stappen moet ik nemen?] en wacht
 maak [toename v] (antwoord)
@@ -67,10 +67,10 @@ wis alles
 ga naar x: (0) y: (0)
 maak penkleur [#4a6cd4]
 pen neer
-herhaal tot <touching [edge v] ?>
+herhaal tot <raak ik [edge v] ?>
 neem (stappen) stappen
-draai cw (graden) graden
-verander [stappen v] met (toename)
+draai (graden :: variables) graden naar rechts
+verander [stappen v] met (toename :: variables)
 end
 ```
 

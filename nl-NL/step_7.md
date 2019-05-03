@@ -42,7 +42,7 @@ Je gaat een variabele gebruiken die als teller werkt en die bijhoudt op welke po
 --- task --- Maak een nieuwe variabele genaamd `teller`{:class="block3variables"} en pas je code als volgt aan:
 
 ```blocks3
-    wanneer op groene vlag wordt geklikt
+    wanneer groene vlag wordt aangeklikt
 maak [teller v] [0]
 herhaal
 + als <(teller) = (lengte van [Toenamelijst v] :: list)> dan
@@ -56,11 +56,11 @@ pen op
 verdwijn
 wis alles
 ga naar x: (0) y: (0)
-maak pen kleur [#4a6cd4]
+maak penkleur [#4a6cd4]
 pen neer
-herhaal tot <touching [edge v] ?>
+herhaal tot <raak ik [edge v] ?>
 neem (stappen) stappen
-draai cw (graden) graden
+draai (graden) graden naar rechts
 verander [stappen v] met (toename)
 end
 end
@@ -108,8 +108,9 @@ Dit is wat er gebeurt als je je programma uitvoert:
 
 Dat was het! Leun achterover en kijk hoe je programma prachtige tekeningen maakt in een oneindige lus! Als je meer patronen wilt toevoegen dan kan dat: voeg meer getallen toe aan de twee lijsten en herstart het programma.
 
+
 ### Door de community geleverde vertaling 
 
-Dit project werd vertaald door **Sanneke van der Meer** en gecontroleerd door **Cor Groot**. 
+Dit project werd vertaald door **Sanneke van der Meer** en gecontroleerd door **Cor Groot**.
 
-Onze geweldige vertalers helpen ons om kinderen over de hele wereld de kans te geven te leren coderen. Jij kunt ons helpen nog meer kinderen te bereiken door onze projecten te vertalen - lees meer op [rpf.io/translators](https://rpf.io/translators).
+ Onze geweldige vertalers helpen ons om kinderen over de hele wereld de kans te geven te leren coderen. Jij kunt ons helpen nog meer kinderen te bereiken door onze projecten te vertalen - lees meer op [rpf.io/translators](https://rpf.io/translators).
