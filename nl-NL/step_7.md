@@ -16,7 +16,7 @@ Jouw lijst, die nu leeg is, komt tevoorschijn op het Speelveld, en je ziet een a
 
 ![](images/listBlocks.png)
 
---- task --- Maak nog een lijst genaamd `Toenamelijst`{:class="block3variables"}
+--- task --- Maak nog een lijst genaamd `Toenamelijst`{:class="block3variables"} --- /task ---
 
 --- task --- Door op het kleine plustekentje (**+**) onderaan de lijst te klikken voeg je de eerste getallencombinatie toe voor `toename`{:class="block3variables} en `graden`{:class="block3variables"}, elk getal in de juiste lijst. Doe dit ook met de tweede getallen combinatie. Dat is eerst wel even genoeg - je andere favoriete getallen combinaties voeg je later toe!
 
