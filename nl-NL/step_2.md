@@ -5,7 +5,7 @@ Het project dat je gaat maken gebruikt de **Pen**, die een lijn tekent achter he
 --- task --- Open een nieuw Scratch bestand, selecteer de Kat sprite en codeer hem met blokken die je al kent, tot het er zo uit ziet:
 
 ```blocks3
-    wanneer op groene vlag wordt geklikt
+    wanneer groene vlag wordt aangeklikt
 ga naar x: (0) y: (0)
 neem (50) stappen
 draai (15) graden naar rechts
