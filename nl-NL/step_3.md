@@ -2,7 +2,7 @@
 
 Nu heb je een programma dat een lijn tekent, maar het is slechts één lijn. Wat saai! Je kunt de `herhaal`{:class="block3control"} lus gebruiken om iets continu te tekenen, maar dan verdwijnt je tekening van het Speelveld!
 
-Dus je hebt een andere lus nodig die `herhaal tot`{:class="block3control"} heet, die je in het **Besturen** gedeelte vindt. Deze lus doet continu iets, **totdat** voldaan is aan een True/False voorwaarde.
+Dus je hebt een andere lus nodig die `herhaal tot`{:class="block3control"} heet, die je in het **Besturen** gedeelte vindt. Deze lus doet continu iets, **totdat** voldaan is aan een Waar/Niet waar voorwaarde.
 
 \--- task \--- Neem een `herhaal tot`{:class="block3control"} blok uit het **Besturen** gedeelte, en zet de `neem stappen`{:class="block3motion"} en `draai graden`{:class="block3motion"} blokken er als volgt in:
 
