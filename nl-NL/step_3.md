@@ -27,11 +27,11 @@ De pen stopt niet aan de rand van het Speelveld, omdat je nog niet gezegd hebt t
 
 \--- /collapse \---
 
-\--- task \--- Sleep het `ga naar x: 0 y: 0`{:class="block3motion"} blok vóór het `pen neer`.{:class="block3extensions"} blok en voeg, uit het **Pen** gedeelte, een `pen op`{:class="block3extensions"} blok toe aan het begin van je code. \--- /task \---
+\--- task \--- Sleep het `ga naar x: 0 y: 0`{:class="block3motion"} blok vóór het `pen neer`{:class="block3extensions"} blok en voeg, uit het **Pen** gedeelte, een `pen op`{:class="block3extensions"} blok toe aan het begin van je code. \--- /task \---
 
-Tijd om je `herhaal tot`{:class="block3control"} lus aan te passen zodat het stopt wanneer jij dat wilt. Je wilt weten of de (onzichtbare) sprite de rand van het Speelveld raakt, dus heb je een **Waarnemen** blok nodig - in dit geval, het `raak ik`{:class="block3sensing"} blok.
+Tijd om je `herhaal tot`{:class="block3control"} lus aan te passen zodat het stopt wanneer jij dat wilt. Je wilt weten of de (onzichtbare) sprite de rand van het Speelveld raakt, dus heb je een **Waarnemen** blok nodig - in dit geval, het `raak ik ?`{:class="block3sensing"} blok.
 
-\--- task \--- Voeg een `raak ik ?`{:class="block3sensing"} blok toe aan je `herhaal tot`{:class+"block3control"} lus, en selecteer `rand`{:class="block3sensing"}. Dan wordt de lus uitgevoerd **totdat** de (onzichtbare) sprite de rand van het Speelveld raakt.
+\--- task \--- Voeg een `raak ik ?`{:class="block3sensing"} blok toe aan je `herhaal tot`{:class="block3control"} lus, en selecteer `rand`{:class="block3sensing"}. Dan wordt de lus uitgevoerd **totdat** de (onzichtbare) sprite de rand van het Speelveld raakt.
 
 ```blocks3
     pen neer
@@ -77,7 +77,7 @@ pen op
 
 \--- /task \---
 
-\--- task \--- Gebruik dan de waarde van `stappen`{:class="block3variables"} in plaats van de `5` in het `bewegen`{:class="block3motion"} blok, en voeg `verander stappen met 1`{:class="block3variables"] toe aan je lus:
+\--- task \--- Gebruik dan de waarde van `stappen`{:class="block3variables"} in plaats van de `5` in het `bewegen`{:class="block3motion"} blok, en voeg `verander stappen met 1`{:class="block3variables"} toe aan je lus:
 
 ```blocks3
     pen neer
