@@ -42,6 +42,6 @@ In deze Ervaren Scratch Sushi kaarten kom je meer te weten over:
 
 ### Software
 
-+ Scratch 3 (of [online](https://scratch.mit.edu/projects/editor/){:target="_blank"] of [offline](https://scratch.mit.edu/download/){:target="_blank"})
++ Scratch 3 ([online](https://scratch.mit.edu/projects/editor/){:target="_ blank"} of [offline](https://scratch.mit.edu/download/){:target="_ blank"})
 
 \--- /collapse \---
