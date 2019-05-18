@@ -1,6 +1,6 @@
 ## De Pen gebruiken
 
-Het project dat je gaat maken gebruikt de **Pen**, die een lijn tekent achter het midden van een sprite terwijl die beweegt. We gaan je leren hoe je het gebruikt!
+Het project dat je gaat maken gebruikt de **Pen**, die een lijn tekent achter het centrum van een sprite terwijl die beweegt. We gaan je leren hoe je het gebruikt!
 
 \--- task \--- Open een nieuw Scratch bestand, selecteer de Kat sprite en codeer hem met blokken die je al kent, tot het er zo uit ziet:
 
@@ -25,7 +25,7 @@ Klik op de **Pen** uitbreiding om het toe te voegen.
 
 ![pen uitbreiding gemarkeerd](images/click-pen-annotated.png)
 
-De Pen blokken verschijnen dan onderaan het blokkenmenu.
+De Pen sectie verschijnt dan onderaan het blokkenmenu.
 
 ![pen uitbreiding blokken](images/pen-extension-blocks.png)
 
