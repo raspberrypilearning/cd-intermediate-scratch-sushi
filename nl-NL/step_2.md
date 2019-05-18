@@ -55,13 +55,13 @@ pen neer
 
 \--- /task \---
 
-Nu kun je de kleur van de pen veranderen met een ander blok uit het **Pen** gedeelte, maar het ziet er anders uit dan andere blokken die je gezien hebt. Het is het `maak penkleur`{:class="blocks3extensions} blok en ziet er zo uit:
+Nu kun je de kleur van de pen veranderen met een ander blok uit het **Pen** gedeelte, maar het ziet er anders uit dan andere blokken die je gezien hebt. Het is het `maak penkleur`{:class="block3extensions"} blok en ziet er zo uit:
 
 ```blocks3
     maak penkleur [#4a6cd4]
 ```
 
-\--- task \--- Sleep een `maak penkleur`{:class="blocks3extensions"} blok naar je werkgebied en zet het vast boven het `pen neer`{:class="blocks3extensions"} blok.
+\--- task \--- Sleep een `maak penkleur`{:class="block3extensions"} blok naar je werkgebied en zet het vast boven het `pen neer`{:class="block3extensions"} blok.
 
 ```blocks3
     wanneer op groene vlag wordt geklikt
