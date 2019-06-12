@@ -1,5 +1,5 @@
 ---
-title: Ervaren Scratch Sushi Cards
+title: Patroonpen
 hero_image: images/banner.png
 description: Maak een gave patroongenerator
 theme: orange
@@ -19,7 +19,7 @@ steps:
   - title: Inleiding
   - title: De Pen gebruiken
   - title: Patronen tekenen
-  - title: Vragen om input
+  - title: Input vragen
   - title: Gavere lijnen
   - title: Alles willekeurig maken
   - title: De computer helpen
