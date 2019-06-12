@@ -6,7 +6,8 @@ Je gaat Scratch een aantal van deze getallen combinaties aanleren, zodat het die
 
 Hiervoor heb je een **lijst** nodig. Je vindt lijsten bij de variabelen in het **Variabelen** gedeelte. Net zoals je deed bij de variabelen, moet je eerst je eigen lijst maken!
 
---- task --- Klik **Maak een lijst**, en typ `Gradenlijst`{:class="block3variables"} als de naam.
+--- task --- 
+Klik **Maak een lijst**, en typ `Gradenlijst`{:class="block3variables"} als de naam.
 
 ![](images/makeAList.png)
 
@@ -16,7 +17,9 @@ Jouw lijst, die nu leeg is, komt tevoorschijn op het Speelveld, en je ziet een a
 
 ![](images/listBlocks.png)
 
---- task --- Maak nog een lijst genaamd `Toenamelijst`{:class="block3variables"}
+--- task --- 
+Maak nog een lijst genaamd `Toenamelijst`{:class="block3variables"}
+--- /task ---
 
 --- task --- Door op het kleine plustekentje (**+**) onderaan de lijst te klikken voeg je de eerste getallencombinatie toe voor `toename`{:class="block3variables"} en `graden`{:class="block3variables"}, elk getal in de juiste lijst. Doe dit ook met de tweede getallen combinatie. Dat is eerst wel even genoeg - je andere favoriete getallen combinaties voeg je later toe!
 
