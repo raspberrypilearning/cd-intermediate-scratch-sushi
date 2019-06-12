@@ -16,9 +16,9 @@ Jouw lijst, die nu leeg is, komt tevoorschijn op het Speelveld, en je ziet een a
 
 ![](images/listBlocks.png)
 
---- task --- Maak nog een lijst genaamd `Toenamelijst`{:class="block3variables"} --- /task ---
+--- task --- Maak nog een lijst genaamd `Toenamelijst`{:class="block3variables"}
 
---- task --- Door op het kleine plustekentje (**+**) onderaan de lijst te klikken voeg je de eerste getallencombinatie toe voor `toename`{:class="block3variables} en `graden`{:class="block3variables"}, elk getal in de juiste lijst. Doe dit ook met de tweede getallen combinatie. Dat is eerst wel even genoeg - je andere favoriete getallen combinaties voeg je later toe!
+--- task --- Door op het kleine plustekentje (**+**) onderaan de lijst te klikken voeg je de eerste getallencombinatie toe voor `toename`{:class="block3variables"} en `graden`{:class="block3variables"}, elk getal in de juiste lijst. Doe dit ook met de tweede getallen combinatie. Dat is eerst wel even genoeg - je andere favoriete getallen combinaties voeg je later toe!
 
 ![](images/helping2.png)
 
@@ -42,7 +42,7 @@ Je gaat een variabele gebruiken die als teller werkt en die bijhoudt op welke po
 --- task --- Maak een nieuwe variabele genaamd `teller`{:class="block3variables"} en pas je code als volgt aan:
 
 ```blocks3
-    wanneer groene vlag wordt aangeklikt
+    wanneer op groene vlag wordt geklikt
 maak [teller v] [0]
 herhaal
 + als <(teller) = (lengte van [Toenamelijst v] :: list)> dan
@@ -56,11 +56,11 @@ pen op
 verdwijn
 wis alles
 ga naar x: (0) y: (0)
-maak penkleur [#4a6cd4]
+maak pen kleur [#4a6cd4]
 pen neer
-herhaal tot <raak ik [edge v] ?>
+herhaal tot <touching [edge v] ?>
 neem (stappen) stappen
-draai (graden) graden naar rechts
+draai cw (graden) graden
 verander [stappen v] met (toename)
 end
 end
@@ -73,7 +73,7 @@ Merk op dat de nieuwe blokken:
 1. De `teller`{:class="block3variables"} op `0` zetten, buiten alle lussen om.
 2. Controleer of het getal dat opgeslagen is in `teller`{:class="block3variables"} de lengte van de lijst is, en zo ja, zet de `teller`{:class="block3variables"} op `0`. Dit betekent dat deze variabele altijd het getal van een positie in de lijsten is, en ook niet groter zal worden.
 3. `1` bij `teller`{:class="block3variables"} optellen.
-4. Neem het item uit de `Toenamelijst`{:class="block3variables"} waarvan de `teller`{:class="block3variables"} de positie aangeeft, en stop het in de `toename`{:class="block3variables"} variabele. Doe hetzelfde voor de `Gradenlijst`{:class="block3variables"} en de `graden` variabele.
+4. Neem het item uit de `Toenamelijst`{:class="block3variables"} waarvan de `teller`{:class="block3variables"} de positie aangeeft, en stop het in de `toename`{:class="block3variables"} variabele. Doe hetzelfde voor de `Gradenlijst`{:class="block3variables"} en de `graden`{:class="block3variables"} variabele.
 
 --- collapse ---
 ---
@@ -92,7 +92,7 @@ Dit is wat er gebeurt als je je programma uitvoert:
 8. Doe alles wat met het tekenen van patronen te maken heeft.
 9. Begin de `herhaal`{:class="block3control"} lus opnieuw:
 10. Kijk of `teller`{:class="block3variables"} (`1`) hetzelfde is als de lengte van de `Toenamelijst`{:class="block3variables"} (`2`). Dat is niet zo.
-11. Verander `teller`{:class="block3variables"} met `1`. Nu `teller`{:class="block3variabels"} = `2`.
+11. Verander `teller`{:class="block3variables"} met `1`. Nu `teller`{:class="block3variables"} = `2`.
 12. Maak `stappen`{:class="block3variables"} `0`.
 13. Pak het item in de positie die `teller`{:class="block3variables"} (`2`) in de `Toenamelijst`{:class="block3variables"} aangeeft, en zet het in `toename`{:class="block3variables"}.
 14. Pak het item in de positie die `teller`{:class="block3variables"} (`2`) in de `Gradenlijst`{:class="block3variables"} aangeeft, en zet het in `graden`{:class="block3variables"}.
@@ -109,8 +109,8 @@ Dit is wat er gebeurt als je je programma uitvoert:
 Dat was het! Leun achterover en kijk hoe je programma prachtige tekeningen maakt in een oneindige lus! Als je meer patronen wilt toevoegen dan kan dat: voeg meer getallen toe aan de twee lijsten en herstart het programma.
 
 
-### Door de community geleverde vertaling 
+**Door de community geleverde vertaling**
 
 Dit project werd vertaald door **Sanneke van der Meer** en gecontroleerd door **Cor Groot**.
 
- Onze geweldige vertalers helpen ons om kinderen over de hele wereld de kans te geven te leren coderen. Jij kunt ons helpen nog meer kinderen te bereiken door onze projecten te vertalen - lees meer op [rpf.io/translators](https://rpf.io/translators).
+Onze geweldige vertalers helpen ons om kinderen over de hele wereld de kans te geven te leren coderen. Jij kunt ons helpen nog meer kinderen te bereiken door onze projecten te vertalen - lees meer op [rpf.io/translators](https://rpf.io/translators).

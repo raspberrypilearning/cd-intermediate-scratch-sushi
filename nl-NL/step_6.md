@@ -7,7 +7,7 @@ Je zult wat moeten aanpassen om dit mogelijk te maken. Als eerste moet je de `to
 --- task --- Verwijder de vragen uit je code, en voeg willekeurige getallen toe.
 
 ```blocks3
-    wanneer groene vlag wordt aangeklikt
+    wanneer op groene vlag wordt geklikt
 maak [stappen v] [0]
 - vraag [Hoeveel stappen moet ik nemen?] en wacht
 + maak [toename v] (willekeurig getal tussen (1) en (10))
@@ -25,7 +25,7 @@ Dat komt omdat de lus tekent totdat het de rand van het Speelveld raakt.
 --- task --- Je hebt nog een lus nodig die eeuwig blijft herhalen (dus een `herhaal`{:class="block3control"} blok!) náást de huidige lus om continu het programma uit te voeren. Pak er een uit het **Besturen** gedeelte en zet al je code daarin.
 
 ```blocks3
-    wanneer groene vlag wordt aangeklikt
+    wanneer op groene vlag wordt geklikt
 + herhaal
 maak [stappen v] [0]
 maak [toename v] (willekeurig getal tussen (1) en (10))
@@ -36,9 +36,9 @@ wis alles
 ga naar x: (0) y: (0)
 maak penkleur [#4a6cd4]
 pen neer
-herhaal tot <raak ik [edge v] ?>
+herhaal tot <touching [edge v] ?>
 neem (stappen) stappen
-draai (graden) graden naar rechts
+draai cw (graden) graden
 verander [stappen v] met (toename)
 end
 end

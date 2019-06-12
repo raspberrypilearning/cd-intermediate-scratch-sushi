@@ -5,16 +5,16 @@ Hoog tijd om kleur toe te voegen! Nu is je lijn één kleur, maar de **Pen** hee
 Het blok voor het veranderen van de **Pen** kleur is `verander pen kleur met`{:class="block3extensions"}:
 
 ```blocks3
-    verander penkleur met (10)
+    verander pen kleur met (10)
 ```
 
 --- task --- Sleep een van deze blokken naar je `herhaal tot`{:class="block3control"} lus, zoals dit:
 
 ```blocks3
-    herhaal tot <raak ik [edge v] ?>
-+ verander penkleur met (10)
+    herhaal tot <touching [edge v] ?>
++ verander pen kleur met (10)
 neem (stappen) stappen
-draai (graden :: variables) graden naar rechts
+draai cw (graden ::variables) graden
 verander [stappen v] met (toename ::variables)
 end
 ```
@@ -26,10 +26,10 @@ Gaaf, maar een beetje voorspelbaar. Je kunt het leuker maken door er een willeke
 --- task --- Zet het willekeurig getal **Functie** blok in het `verander pen kleur met`{:class="block3extensions"} blok en zet er een paar getallen in. Begin eens met `1` en `100`.
 
 ```blocks3
-    herhaal tot <raak ik [edge v] ?>
-+ verander penkleur met (willekeurig getal tussen (1) en (100))
+    herhaal tot <touching [edge v] ?>
++ verander pen kleur met (willekeurig getal tussen (1) en (100))
 neem (stappen) stappen
-draai (graden :: variables) graden naar rechts
+draai cw (graden ::variables) graden
 verander [stappen v] met (toename ::variables)
 end
 ```
