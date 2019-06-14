@@ -10,7 +10,7 @@ Je kent de basisregels van Scratch al (en zo niet, kijk naar de Beginner Scratch
 
 ![](images/pen1.png)
 
-### Wat ga je maken
+### What you will make
 
 Hier staat een project dat ik gemaakt heb:
 
@@ -34,7 +34,7 @@ In deze Ervaren Scratch Sushi kaarten kom je meer te weten over:
 
 ## \--- collapse \---
 
-## title: Wat heb je nodig
+## title: What you will need
 
 ### Hardware
 
