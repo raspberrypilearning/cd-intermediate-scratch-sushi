@@ -1,107 +1,107 @@
-## Drawing patterns
+## Șabloane de desen
 
-Now you’ve got a program that draws a line, but it only draws one line. That’s a bit dull! You could use `forever`{:class="block3control"} loop to draw something over and over again, but then you’ll get drawings that go off the Stage!
+Acum, ai un program care desenează o linie, dar desenează o singură linie. E un pic plictisitor! Ai putea folosi bucla `la infinit`{:class="block3control"} pentru a desena ceva încontinuu, dar apoi vei obține desene care ies din Scenă!
 
-So you need use a different type of loop called `repeat until`{:class="block3control"}, which you’ll also find in the **Control** section. This type of loop will do something over and over again, **until** a True/False condition is met.
+Deci, ai nevoie să utilizezi un tip diferit de bucle de tip `repetă până când`{:class="block3control"}, pe care îl vei găsi în secțiunea **Control**. Acest tip de buclă va repeta o acțiune, **până când** o condiție adevărat/fals este îndeplinită.
 
-\--- task \--- Take a `repeat until`{:class="block3control"} block from the **Control** section, and put the `move`{:class="block3motion"} and `turn`{:class="block3motion"} blocks inside it, like so:
+\--- task \--- Alege un bloc `repetă până când`{:class="block3control"} din secțiunea **Control** și apoi pune blocurile `mergi`{:class="block3motion"} și `rotește-te`{:class="block3motion"} în interiorul acestuia, astfel:
 
 ```blocks3
-+    repeat until <> 
-        move (50) steps
-        turn cw (15) degrees
++    repetă până când <> 
+        mergi (50) pași
+        rotește-te cw (15) grade
     end
 ```
 
 \--- /task \---
 
-\--- task \--- Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge. \--- /task \---
+\--- task \--- Acum, dă click pe steagul verde pentru a rula programul de câteva ori și a vedea ce se întâmplă. Vei observa două lucruri: stiloul începe întotdeauna prin trasarea unei linii spre mijlocul scenei și nu se oprește la margine. \--- /task \---
 
 ## \--- collapse \---
 
-## title: Why does the pen do this?
+## title: De ce stiloul face acest lucru?
 
-The pen always starts drawing in the direction of the middle, because the first **Motion** block that runs after the `pen down`{:class="block3extensions"} block is `go to x: 0 y: 0`{:class="block3motion"}. So the pen will draw a line as it moves to the centre of the Stage.
+Stiloul începe întotdeauna să deseneze în direcția de mijloc, deoarece primul bloc de **Mișcare** care se execută după blocul `stilou jos`{:class="block3extensions"} este de tip `mergi la x: 0 y: 0`{:class="block3motion"}. Așadar, stiloul va desena o linie pe măsură ce se va deplasa spre centrul scenei.
 
-The pen doesn't stop at the edge of the Stage, because you haven’t yet told the `repeat until`{:class="block3control"} loop what condition it’s checking. This means the condition can never be met, so the loop will run on and on. This means that right now, the loop is working like a `forever`{:class="block3control"} loop.
+Stiloul nu se oprește la marginea scenei, pentru că nu a fost încă adaugată în bucla `repeta până când`{:class="block3control"} condiția ce trebuie verificată. Asta înseamnă că acea condiția nu poate fi îndeplinită, astfel încât buclă va rula încontinuu. Acest lucru înseamnă că acum, bucla funcționează ca o buclă `la infinit`{:class="block3control"}.
 
 \--- /collapse \---
 
-\--- task \--- Move the `go to x: 0 y: 0`{:class="block3motion"} block to before the `pen down`{:class="block3extensions"} block and add, from the **Pen** section, a `pen up`{:class="block3extensions"} block right at the start of your code. \--- /task \---
+\--- task \--- Mută blocul `mergi la x: 0 y: 0`{:class="block3motion"} înainte de blocul `stilou jos`{:class="block3extensions"} și adaugă, din secțiunea **Stilou**, un bloc `stilou sus`{:class="block3extensions"} chiar la începutul codului. \--- /task \---
 
-Time to fix your `repeat until`{:class="block3control"} loop so that it stops when you want it to. You’re looking to figure out if the (invisible) sprite is touching the edge of the Stage, so you need a **Sensing** block — in this case, the `touching ?`{:class="block3sensing"} block.
+Este timpul să rezolvi bucla `repetă până când`{:class="block3control"} astfel încât să se oprească atunci când dorești. Încearcă să îți dați seama dacă personajul (invizibil) atinge marginea scenei, iar dacă este cazul vei folosi un bloc din secțiunea **Detectare** , blocul `atinge ?`{:class="block3sensing"}.
 
-\--- task \--- Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class="block3control"} loop, and select `edge`{:class="block3sensing"} . Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
+\--- task \--- Adaugă blocul `atinge ?`{:class="block3sensing"} în bucla ta `repetă până când`{:class="block3control"} și selectează `marginea`{:class="block3sensing"}. Apoi bucla va rula **până când** personajul (invizibil) atinge marginea Scenei.
 
 ```blocks3
-    pen down
-+    repeat until <touching [edge v] ?> 
-        move (50) steps
-        turn cw (15) degrees
+    stilou jos
++    repeta până când <atinge [marginea v] ?> 
+        mergi (50) pași
+        rotește-te cw (15) grade
     end
 ```
 
 \--- /task \---
 
-\--- task \--- Change the number of steps in the `move`{:class="block3motion"} block to `5`, and check that your program matches this one before you test it:
+\--- task \--- Modifică numărul de pași din blocul `mergi`{:class="block3motion"} la `5` și verifică dacă programul tău se potrivește cu acesta înainte de a-l testa:
 
 ```blocks3
-    when green flag clicked
-    pen up
-    hide
-    clear
-    go to x: (0) y: (0)
-    set pen color to [#4a6cd4]
-    pen down
-    repeat until <touching [edge v] ?> 
-        move (5) steps
-        turn cw (15) degrees
+    când se dă click pe stegulețul verde
+    stilou sus
+    ascunde
+    șterge tot
+    mergi la x: (0) y: (0)
+    setează culoarea stiloului la [#4a6cd4]
+    stilou jos
+    repeta până când <atinge [marginea v] ?>
+        mergi (5) pași
+        rotește-te cw (15) grade
     end
 ```
 
 \--- /task \---
 
-If you run the code now, you’ll see that the drawing the pen makes stays on the Stage.
+Dacă rulezi codul acum, vei vedea că desenul stiloului se află întotdeauna pe Scenă.
 
-Not only that, but your program has turned into a circle-drawing program! What's happening here is that those 15-degree turns eventually add up to 360 degrees, and so your pen turns in a full circle. You're going to change the way it moves slightly to make it take slightly a longer step each time, so it spirals out. For this, you’re going to need a **variable**.
+Nu numai asta, dar programul tău s-a transformat într-un program de desenat cercuri! Ce se întâmplă aici este faptul că acele rotiri de 15 grade se cumuleaza până la 360 de grade, astfel încât stiloul tău se transformă într-un cerc complet. Vei schimba modul în care se mișcă acum pentru a face un pas să dureze mai mult de fiecare dată, pentru a ieși în spirală. Pentru aceasta, vei avea nevoie de o **variabilă**.
 
-Variables are basically labeled places to store numbers or other information that you care about. You can create them in the **Variables** blocks section.
+Variabilele sunt în general locuri etichetate pentru a stoca numere sau alte informații care te interesează. Poți să le creezi în secțiunea de blocuri **Variabile**.
 
-\--- task \--- Make a variable called `steps`{:class="block3variables"}, and then add a `set steps to 0`{:class="block3variables"} block at the start of your program.
+\--- task \--- Fă o variabilă numită `pași`{:class="block3variables"}, apoi adaugă un bloc de `setează pași la 0`{:class="block3variables"} la începutul programului.
 
 ```blocks3
-    when green flag clicked
-+   set [steps v] to [0]
-    pen up
+    când se dă click pe stegulețul verde
++   setează [pași v] la [0]
+    stilou sus
 ```
 
 \--- /task \---
 
-\--- task \--- Then use the value of `steps`{:class="block3variables"} instead of the `5` in the `move`{:class="block3motion"} block, and add `change steps by 1`{:class="block3variables"} as part of your loop:
+\--- task \--- Apoi, folosește valoarea `pași`{:class="block3variables"} în loc de `5` în blocul `mergi`{:class="block3motion"} și adaugă `modifică pași cu 1`{:class="block3variables"} ca parte din bucla ta:
 
 ```blocks3
-    pen down
-    repeat until <touching [edge v] ?> 
-+       move (steps) steps
-        turn cw (76) degrees
-+        change [steps v] by (1)
+    stilou jos
+    repeta până când <touching [edge v] ?> 
++       mergi (pași) pași
+        rotește-te cw (76) grade
++        modifică [pași v] cu (1)
     end
 ```
 
 \--- /task \---
 
-Do you think it matters where in the loop you put the `change steps by 1`{:class="block3variables"} block?
+Crezi că contează unde ai pus în buclă blocul `modifică pașii cu 1`{:class="block3variables"}?
 
 ## \--- collapse \---
 
-## title: Putting code in the right order
+## title: Introducerea codului în ordinea corectă
 
-When you're deciding which order to put blocks in, think about what each block does and what you want your code to do.
+Când decizi în ce ordine să introduci blocurile, gândește-te la ceea ce face fiecare bloc și la ce dorești să facă codul tău.
 
-In this case, you want the pen to move, then turn, over and over. Each time it does this, you want to move one extra step.
+În acest caz, dorești ca stiloul să se miște, apoi să se întoarcă, din nou și din nou. De fiecare dată când face acest lucru, vrei să mergi un pas în plus.
 
-So it makes sense to put the `change steps by 1`{:class="block3variables"} block **after** the `move`{:class="block3motion"} block. However, after moving, it doesn't really matter if the pen turns first and then the number of steps changes, or if the number of steps changes first and then the pen turns instead.
+Așadar, este logic să pui blocul `modifică pași cu 1`{:class="block3variables"} **după** blocul `mergi`{:class="block3motion"}. Cu toate acestea, după mutare, nu contează dacă stiloul se întoarce mai întâi și apoi se modifică numărul de pași sau dacă numărul de pași se schimbă mai întâi și apoi se schimbă stiloul.
 
 \--- /collapse \---
 
-\--- task \--- Now run the program, and also try changing the number of degrees around (try `76` and `120`)! \--- /task \---
+\--- task \--- Acum, rulează programul și încearcă, de asemenea, să schimbi numărul de grade (încearcă `76` și `120`)! \--- /task \---
