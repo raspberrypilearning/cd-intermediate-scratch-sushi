@@ -1,39 +1,39 @@
-## Cooler lines
+## Linii mai interesante
 
-Time to add colour! Right now, your line is one colour, but the **Pen** has blocks that can change its colour. And with the right **Operator** block, you can even change the colour randomly!
+Este timpul să adaugi culoare! Chiar acum, linia ta are o culoare, dar **Stilou** are blocuri care pot schimba culoarea. Iar cu blocul **Operator** potrivit, poți chiar schimba culoarea aleatoriu!
 
-The block for changing the **Pen** colour is `change pen color by`{:class="block3extensions"}:
+Blocul de schimbare a culorii **Stilou** este `schimbă culoarea stiloului cu`{:class="block3extensions"}:
 
 ```blocks3
-    change pen color by (10)
+    schimbă culoarea stiloului cu (10)
 ```
 
-\--- task \--- Grab one of those blocks and put it into your `repeat until`{:class="block3control"} loop, like this:
+\--- task \--- Ia unul din acele blocuri și pune-l în bucla `repetă până când`{:class="block3control"}, astfel:
 
 ```blocks3
-    repeat until <touching [edge v] ?> 
-+        change pen color by (10)
-        move (steps) steps
-        turn cw (degrees ::variables) degrees
-        change [steps v] by (increase ::variables)
+    repetă până când <atinge [marginea v] ?>
++        schimbă culoarea stiloului cu (10)
+        mergi (pași) pași
+        rotește-te cw (grade ::variables) grade
+        modifică [pași v] cu (creștere ::variables)
     end
 ```
 
 \--- /task \---
 
-That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly.
+E minunat, dar cam previzibil. Poți face un pic mai distractiv dacă adaugi un număr aleatoriu în ea, astfel încât culoarea să se schimbe aleatoriu.
 
-\--- task \--- Put the random number **Operator** block into the `change pen color by`{:class="block3extensions"} block and pick some values to go in it. I'd try `1` and `100` to start.
+\--- task \--- Introdu blocul **Operator** pentru număr aleator în blocul `schimbă culoarea stiloului cu`{:class="block3extensions"} și alege câteva valori pentru vedea ce se întâmplă. Aș încerca `1` și `100` pentru început.
 
 ```blocks3
-    repeat until <touching [edge v] ?> 
-+        change pen color by (pick random (1) to (100))
-        move (steps) steps
-        turn cw (degrees ::variables) degrees
-        change [steps v] by (increase ::variables)
+    repetă până când <atinge [marginea v] ?>
++        schimbă culoarea stiloului cu (alege aleator între (1) și (100))
+        mergi (pași) pași
+        rotește-te cw (grade ::variables) grade
+        modifică [pași v] cu (creștere ::variables)
     end
 ```
 
 \--- /task \---
 
-\--- task \--- Try running it again, and watch the random rainbow! \--- /task \---
+\--- task \--- Încearcă să-l rulezi din nou, și urmărește curcubeul aleator! \--- /task \---
