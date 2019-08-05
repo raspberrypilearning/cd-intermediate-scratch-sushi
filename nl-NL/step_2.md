@@ -5,7 +5,7 @@ Het project dat je gaat maken gebruikt de **Pen**, die een lijn tekent achter he
 \--- task \--- Open een nieuw Scratch bestand, selecteer de Kat sprite en codeer hem met blokken die je al kent, tot het er zo uit ziet:
 
 ```blocks3
-    wanneer op groene vlag wordt geklikt
+    wanneer groene vlag wordt aangeklikt
 ga naar x: (0) y: (0)
 neem (50) stappen
 draai cw (15) graden
@@ -32,7 +32,7 @@ De Pen sectie verschijnt dan onderaan het blokkenmenu.
 Uit het **Pen** gedeelte, kies het `pen neer`{:class="block3extensions"} blok en voeg het aan het begin van je code toe:
 
 ```blocks3
-    wanneer op groene vlag wordt geklikt
+    wanneer groene vlag wordt aangeklikt
 +    pen neer
 ga naar x: (0) y: (0)
 ```
@@ -48,7 +48,7 @@ Eerst moet je de sprite verwijderen. Het zit de tekening in de weg!
 \--- task \--- Voeg een `verdwijn`{:class="block3looks"} blok toe uit **Uiterlijken** aan het begin van de code en de kat zal verdwijnen.
 
 ```blocks3
-    wanneer op groene vlag wordt geklikt
+    wanneer groene vlag wordt aangeklikt
 +   verdwijn
 pen neer
 ```
@@ -64,7 +64,7 @@ Nu kun je de kleur van de pen veranderen met een ander blok uit het **Pen** gede
 \--- task \--- Sleep een `maak penkleur`{:class="block3extensions"} blok naar je werkgebied en zet het vast boven het `pen neer`{:class="block3extensions"} blok.
 
 ```blocks3
-    wanneer op groene vlag wordt geklikt
+    wanneer groene vlag wordt aangeklikt
 verdwijn
 + maak penkleur [#4a6cd4]
 pen neer
@@ -77,7 +77,7 @@ Als je de code hebt getest door op de groene vlag te klikken, zul je gezien hebb
 \--- task \--- Voeg een `wis alles`{:class="block3extensions"} blok uit het **Pen** gedeelte toe aan het begin van je code om dat op te lossen:
 
 ```blocks3
-    wanneer op groene vlag wordt geklikt
+    wanneer groene vlag wordt aangeklikt
 +   wis alles
 verdwijn
 ```
