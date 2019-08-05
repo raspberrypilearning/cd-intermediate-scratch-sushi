@@ -1,107 +1,107 @@
-## Helping the computer
+## Ajută computer-ul
 
-Do you remember a few steps back, where I told you to write down some of your favourite values for `increase`{:class="block3variables"} and `degrees`{:class="block3variables"}, the ones that gave the best-looking patterns? If you didn't do this, don’t worry: you can just watch the random program run for a while now and write down the combinations that give great results.
+Îți amintești când ți-am spus câțiva pași înapoi că trebuie să notezi unele dintre valorile tale preferate pentru `creștere`{:class="block3variables"} și `grade`{:class="block3variables"}, acelea care au generat cele mai faine șabloane? Dacă nu ai făcut acest lucru, nu îți fă griji: poți doar să urmărești programul la întâmplare pentru o vreme și să notezi combinațiile care dau rezultate excelente.
 
-You’re going to teach Scratch those combinations of values, so it can use them to make nothing but awesome pictures!
+O să înveți Scratch aceste combinații de valori, astfel încât să le poată folosi pentru a face doar imagini grozave!
 
-To do this, you’ll need a **list**. You’ll find lists with the variables in the **Variables** section. Just like you did with your variables, you’ll need to create your list first!
+Pentru a face acest lucru, vei avea nevoie de o **listă**. Vei găsi listele cu variabile în secțiunea **Variabile**. La fel ca și în cazul variabilelor tale, va trebui să îți creezi prima listă!
 
-\--- task \--- Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
+\--- task \--- Dă click pe **Creează o listă** și introdu numele `Listă grade`{:class="block3variables"}.
 
 ![](images/makeAList.png)
 
 \--- /task \---
 
-Your list, which is empty at the moment, will appear on the Stage, and you'll see a bunch of blocks for it in **Variables**.
+Lista ta, care este momentan goală, va apărea pe Scenă și vei vedea o grămadă de blocuri pentru ea în **Variabile**.
 
 ![](images/listBlocks.png)
 
-\--- task \--- Make another list called `Increase List`{:class="block3variables"} \--- /task \---
+\--- task \--- Fă o altă listă numită `Listă creștere`{:class="block3variables"} \--- /task \---
 
-\--- task \--- Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
+\--- task \--- Acum, dă click pe semnul plus (**+**) din partea de jos a listelor, adaugă prima pereche de valori `Creștere`{:class="block3variables"} și `Grade`{:class="block3variables"} care ți-au plăcut, fiecare valoare în lista potrivită. Fă același lucru din nou pentru a adăuga o a doua pereche de valori. Acest lucru va fi suficient pentru acum - vei adăuga restul perechilor de valori pe care le vrei mai târziu!
 
 ![](images/helping2.png)
 
-Make sure that the `degrees`{:class="block3variables"} value and the `increase`{:class="block3variables"} value that worked well together are at the same position in the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. They need to be there so your program can match them up again using their position!
+Asigură-te că valoarea `grade`{:class="block3variables"} și `creștere`{:class="block3variables"} care s-au potrivit bine împreună sunt în aceeași poziție în `Listă grade`{:class="block3variables"} și `Listă creștere`{:class="block3variables"}. Trebuie să fie acolo, astfel încât programul tău să poată să le potrivească din nou folosind poziția lor!
 
 \--- /task \---
 
-Now you have the lists, you just need to get your code to read them and loop over them! To do this, you’re going to use a new variable to act as a counter, some **incrementing**, and an `if then`{:class="block3control"} **Control** block.
+Acum că ai listele, trebuie doar să obții codul pentru a le citi și a le include în buclă împreună! Pentru a face acest lucru, vei folosi o nouă variabilă pentru a acționa ca un contor, niște **incrementări** și un bloc **Control** de tip `dacă atunci`{:class="block3control"}.
 
 ## \--- collapse \---
 
-## title: What does incrementing mean?
+## title: Ce înseamnă incrementare?
 
-To increment something means to add something to it.
+A incrementa înseamnă a crește ceva prin a adăuga o valoare.
 
-You will use a variable to act as a counter to keep track of what position you're at in your lists. To move through the lists, you'll keep incrementing the counter by `1` (so, adding `1` to it) until you get to the end of the list.
+Vei utiliza o variabilă care va a acționa ca un contor pentru a urmări poziția în care se află în listele tale. Pentru a vă deplasa prin liste, veți continua să creșteți contorul cu `1` (deci adăugați `1` la acesta) până când ajungeți la sfârșitul listei.
 
 \--- /collapse \---
 
-\--- task \--- Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
+\--- task \--- Creează o variabilă nouă numită `contor`{:class="block3variables"} și actualizează codul astfel încât să arate astfel:
 
 ```blocks3
-    when green flag clicked
-    set [counter v] to [0]
-    forever 
-+        if <(counter) = (length of [Increase List v] :: list)> then 
-+            set [counter v] to [0]
+    când se dă click pe stegulețul verde
+    setează [contor v] la [0]
+    la infinit 
++        dacă <(contor) = (lungimea lui [Listă creștere v] :: list)> atunci 
++        setează [contor v] la [0]
         end
-+        change [counter v] by (1)
-        set [steps v] to [0]
-+        set [increase v] to (item (counter) of [Increase List v] :: list)
-+        set [degrees v] to (item (counter) of [Degrees List v] :: list)
-        pen up
-        hide
-        clear
-        go to x: (0) y: (0)
-        set pen color to [#4a6cd4]
-        pen down
-        repeat until <touching [edge v] ?> 
-            move (steps) steps
-            turn cw (degrees) degrees
-            change [steps v] by (increase)
++        modifică [contor v] cu (1)
+        setează [pași v] la [0]
++        setează [creștere v] la (element (contor) din [Listă creștere v] :: list)
++        setează [grade v] la (element (contor) din [Listă grade v] :: list)
+        stilou sus
+        ascunde
+        șterge tot
+        mergi la x: (0) y: (0)
+        setează culoarea stiloului la [#4a6cd4]
+        stilou jos
+        repeta pana când < atinge [marginea v] ?>
+            mergi (pași) pași
+            rotește-te cw (grade) grade
+            modifică [pași v] cu (creștere)
         end
     end
 ```
 
 \--- /task \---
 
-Notice the new blocks that:
+Observă noile blocuri care:
 
-1. Set `counter`{:class="block3variables"} to `0`, outside all the loops.
-2. Check if the number stored in `counter`{:class="block3variables"} is the length of the list, and if so, set `counter`{:class="block3variables"} to `0`. This means that this variable will always be the number of a position in the lists, and won't get any bigger than that.
-3. Add `1` to `counter`{:class="block3variables"}.
-4. Pick the item from `Increase List`{:class="block3variables"} that is at the position described by `counter`{:class="block3variables"}, and put it in the `increase`{:class="block3variables"} variable. Do the same for the `Degrees List`{:class="block3variables"} and `degrees`{:class="block3variables"} variable.
+1. Setează `contor`{:class="block3variables"} la `0`, în afara tuturor buclelor.
+2. Verifică dacă numărul stocat în `counter`{:class="block3variables"} este egal cu lungimea listei și, dacă da, setează blocul `counter`{:class="block3variables"} la `0`. Asta înseamnă că această variabilă va avea întotdeauna numărul unei poziții din liste și nu va fi mai mare ca aceasta.
+3. Adaugă `1` la `contor`{:class="block3variables"}.
+4. Alege elementul din `Listă creștere`{:class="block3variables"} care este în poziția descrisă de `contor`{:class="block3variables"} și îl pune în în variabila `creștere`{:class="block3variables"}. Același lucru îl face și pentru `Listă grade`{:class="block3variables"} și variabila `grade`{:class="block3variables"}.
 
 ## \--- collapse \---
 
-## title: How does the code work?
+## title: Cum funcționează codul?
 
-This is what happens when you run your program:
+Asta se întâmplă atunci când rulezi programul:
 
-1. Set `counter`{:class="block3variables"} to `0`.
-2. Start the `forever`{:class="block3control"} loop.
-3. Check if `counter`{:class="block3variables"} (`0`) is the same as the length of `Increase List`{:class="block3variables"} (`2`). It isn’t.
-4. Change `counter`{:class="block3variables"} by `1`. Now `counter`{:class="block3variables"} = `1`.
-5. Set `steps`{:class="block3variables"} to `0`.
-6. Get the item at the position named by `counter`{:class="block3variables"} (`1`) in the `Increase List`{:class="block3variables"}, and put it in `increase`{:class="block3variables"}.
-7. Get the item at the position named by `counter`{:class="block3variables"} (`1`) in the `Degrees List`{:class="block3variables"}, and put it in `degrees`{:class="block3variables"}.
-8. Do all the stuff related to drawing the patterns.
-9. Restart the `forever`{:class="block3control"} loop:
-10. Check if `counter`{:class="block3variables"} (`1`) is the same as the length of `Increase List`{:class="block3variables"} (`2`). It isn’t.
-11. Change `counter`{:class="block3variables"} by `1`. Now `counter`{:class="block3variables"} = `2`.
-12. Set `steps`{:class="block3variables"} to `0`.
-13. Get the item at the position named by `counter`{:class="block3variables"} (`2`) in the `Increase List`{:class="block3variables"}, and put it in `increase`{:class="block3variables"}.
-14. Get the item at the position named by `counter`{:class="block3variables"} (`2`) in the `Degrees List`{:class="block3variables"}, and put it in `degrees`{:class="block3variables"}.
-15. Do all the stuff related to drawing the patterns.
-16. Restart the `forever`{:class="block3control"} loop:
-17. Check if `counter`{:class="block3variables"} (`2`) is the same as the length of the `Increase List`{:class="block3variables"} (`2`). It is!
-18. Set `counter`{:class="block3variables"} to `0`.
-19. Continue from **step 4** of this list, in a never-ending loop!
+1. Setează blocul `contor`{:class="block3variables"} la `0`.
+2. Pornește bucla `la infinit`{:class="block3control"}.
+3. Verifică dacă `contor`{:class="block3variables"} (`0`) este egal cu lungimea listei `Listă creștere`{:class="block3variables"} (`2`). Nu este.
+4. Schimbă `contorul`{:class="block3variables"} cu `1`. Acum, `contor`{:class="block3variables"} = `1`.
+5. Setează `pași`{:class="block3variables"} la `0`.
+6. Ia elementul din poziția indicată de `contor`{:class="block3variables"} (`1`) din `Listă creștere`{:class="block3variables"} și îl pune în `creștere`{:class="block3variables"}.
+7. Ia elementul din poziția indicată de `contor`{:class="block3variables"} (`1`) din `Listă grade`{:class="block3variables"} și îl pune în `grade`{:class="block3variables"}.
+8. Face toate lucrurile legate de desenarea șabloanelor.
+9. Repornește bucla `la infinit`{:class="block3control"}:
+10. Verifică dacă `contor`{:class="block3variables"} (`1`) este egal cu lungimea listei `Listă creștere`{:class="block3variables"} (`2`). Nu este.
+11. Schimbă `contorul`{:class="block3variables"} cu `1`. Acum, `contor`{:class="block3variables"} = `2`.
+12. Setează `pași`{:class="block3variables"} la `0`.
+13. Ia elementul din poziția indicată de `contor`{:class="block3variables"} (`2`) din `Listă creștere`{:class="block3variables"} și îl pune în `creștere`{:class="block3variables"}.
+14. Ia elementul din poziția indicată de `contor`{:class="block3variables"} (`2`) din `Listă grade`{:class="block3variables"} și îl pune în `grade`{:class="block3variables"}.
+15. Face toate lucrurile legate de desenarea șabloanelor.
+16. Repornește bucla `la infinit`{:class="block3control"}:
+17. Verifică dacă `contor`{:class="block3variables"} (`2`) este egal cu lungimea listei `Listă creștere`{:class="block3variables"} (`2`). Este!
+18. Setează `contor`{:class="block3variables"} la `0`.
+19. Continuă de la **pasul 4** din această listă, într-o buclă care rulează la infinit!
 
 \--- /collapse \---
 
-\--- task \--- Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. \--- /task \---
+\--- task \--- Odată ce ești mulțumit de cod, continuă și adaugă restul perechilor de valori pe care le-ai notat în `Listă grade`{:class="block3variables"} și `Listă creștere`{:class="block3variables"}. \--- /task \---
 
-That's it! Sit back and watch your program keep drawing lovely patterns in a never-ending loop! If you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
+Asta e totul! Relaxează-te și urmărește programul tău cum desenează șabloane frumoase într-o buclă care rulează la infinit! Dacă dorești să adaugi mai multe modele, o poți face: adaugă mai multe perechi de numere în cele două liste și repornește programul.
