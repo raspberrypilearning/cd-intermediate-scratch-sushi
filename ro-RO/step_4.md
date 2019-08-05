@@ -1,76 +1,76 @@
-## Asking for input
+## Obținerea datelor de intrare
 
-Ok, this is getting pretty cool, but it’s a bit boring to have to edit your code every time you want to draw a different pattern. Wouldn’t it be good to get the program to ask you for values to use? You can do that!
+Ok, acest lucru este destul de interesant, dar este un pic plictisitor faptul că trebuie să-ți editezi codul de fiecare dată când vrei să desenezi un șablon diferit. Nu ar fi mai bine ca programul să-ți ceară ce valori să folosești? Poți să faci asta!
 
-\--- task \--- First, go to the **Variables** section and create variables called `degrees`{:class="block3variables"} and `increase`{:class="block3variables"}. \--- /task \---
+\--- task \--- Mai întâi, mergi la secțiunea **Variabile** și creează variabilele numite `grade`{:class="block3variables"} și `creștere`{:class="block3variables"}. \--- /task \---
 
-\--- task \--- Now add the new variables to your code like this:
+\--- task \--- Acum, adaugă variabilele noi în codul tău astfel:
 
 ```blocks3
-    repeat until <touching [edge v] ?> 
-        move (steps) steps
-        turn cw (degrees ::variables) degrees
-        change [steps v] by (increase ::variables)
+    repetă până când <atinge [marginea v] ?> 
+        mergi (pași) pași
+        rotește-te cw (grade ::variables) grade
+        modifică [pași v] cu (creștere ::variables)
     end
 ```
 
 \--- /task \---
 
-Now you need to ask for values for these two variables and store them. You do this using a **Sensing** block called `Ask and wait`{:class="block3sensing"}, which you can type a question into.
+Acum, trebuie să soliciți valorile pentru aceste două variabile și să le păstrezi. Fă acest lucru utilizând un bloc **Detectare** numit `Întreabă și așteaptă`{:class="block3sensing"}, la care poți introduce o întrebare.
 
-\--- task \--- Pull the `Ask and wait`{:class="block3sensing"} block into your sprite panel and change the question to `How many steps should I grow by?`{:class="block3sensing"}
+\--- task \--- Trage blocul `Întreabă și așteaptă`{:class="block3sensing"} în panoul personajului tău și schimbă întrebarea cu `Cu câți pași trebuie să crească?`{:class="block3sensing"}
 
-Then add it to your program, just after you set `steps`{:class="block3variables"} to `0`, like this:
+Apoi adaug-o în programul tău, imediat după ce ai setat `pași`{:class="block3variables"} la `0`, astfel:
 
 ```blocks3
-    when green flag clicked
-    set [steps v] to [0]
-+    ask [How many steps should I grow by?] and wait
-    pen up
+    când se dă click pe stegulețul verde
+    modifică [pași v] cu [0]
++    întreabă [Cu câți pași trebuie să crească?] și așteaptă
+    stilou sus
 ```
 
 \--- /task \---
 
-Now you’ve got your program asking a question, you need it to remember the answer! It turns out that Scratch has a special variable called `answer`{:class="block3sensing"}, where it stores the most recent answer it has received. You can find this variable among the **Sensing** blocks.
+Acum că ai programul tău de întrebat, trebuie să-ți amintești răspunsul! Se pare că Scratch are o variabilă specială numită `răspuns`{:class="block3sensing"}, unde stochează cel mai recent răspuns pe care l-a primit. Poți găsi această variabilă în blocurile **Detectare**.
 
-\--- task \--- Using a `set to`{:class="block3variables"} block from **Variables**, take the value of `answer`{:class="block3sensing"} and store it in the `increase`{:class="block3variables"} variable like so:
+\--- task \--- Folosind un bloc `setează la`{:class="block3variables"} din **Variabile**, ia valoarea lui `răspuns`{:class="block3sensing"} și păstreaz-o în variabila `creștere`{:class="block3variables"}, astfel:
 
 ```blocks3
-    ask [How many steps should I grow by?] and wait
-+    set [increase v] to (answer)
+    întreabă [Cu câți pași ar trebui să crească?] și așteaptă
++    setează [creștere v] la (răspuns)
 ```
 
 \--- /task \---
 
-\--- task \--- Now, do the same thing with `degrees`{:class="block3variables"}, asking `How many degrees should I turn?`{:class="block3sensing"} and storing the value of `answer`{:class="block3sensing"} in `degrees`{:class="block3variables"}:
+\--- task \--- Fă același lucru cu `grade`{:class="block3variables"}, întrebând `Câte grade trebuie să mă întorc?`{:class="block3sensing"} și stochează valorile din `răspuns`{:class="block3sensing"} în `grade`{:class="block3variables"}:
 
 ```blocks3
-    set [increase v] to (answer)
-+    ask [How many degrees should I turn?] and wait
-+    set [degrees v] to (answer)
+    setează [creștere v] la (răspuns)
++    întreabă [Câte grade trebuie să mă întorc?] și așteaptă
++    setează [grade v] la (răspuns)
 ```
 
 \--- /task \---
 
-\--- task \--- Check your program now looks like the one below, and run it a few times with different numbers. Write down the answers that make the coolest pictures. You’ll need them in a later step!
+\--- task \--- Verifică programul tău dacă arată precum cel de mai jos și execută-l de câteva ori cu numere diferite. Scrie răspunsurile care fac cele mai tari poze. Vei avea nevoie de ele într-un pas ulterior!
 
 ```blocks3
-    when green flag clicked
-    set [steps v] to [0]
-    ask [How many steps should I grow by?] and wait
-    set [increase v] to (answer)
-    ask [How many degrees should I turn?] and wait
-    set [degrees v] to (answer)
-    pen up
-    hide
-    clear
-    go to x: (0) y: (0)
-    set pen color to [#4a6cd4]
-    pen down
-    repeat until <touching [edge v] ?> 
-        move (steps) steps
-        turn cw (degrees) degrees
-        change [steps v] by (increase)
+    când se dă click pe stegulețul verde
+    setează [pași v] la [0]
+    întreabă [Cu câți pași ar trebuie să crească?] și așteaptă
+    setează [creștere v] la (răspuns)
+    întreabă [Câte grade ar trebui să mă întorc?] și așteaptă
+    setează [grade v] la (răspuns)
+    stilou sus
+    ascunde
+    șterge tot
+    mergi la x: (0) y: (0)
+    setează culoarea stiloului la [#4a6cd4]
+    stilou jos
+    repetă până când <atinge [marginea v] ?>
+        mergi (pași) pași
+        rotește-te cw (grade) grade
+        modifică [pași v] cu (creștere)
     end
 ```
 
