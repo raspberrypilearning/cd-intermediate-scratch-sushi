@@ -1,18 +1,18 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2).
+Aceasta este versiunea **Scratch 3** a proiectului. Există, de asemenea, o versiune de [Scratch 2 a proiectului](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2).
 
 \--- /no-print \---
 
-## Introduction
+## Introducere
 
-You’ve already learned the basics of Scratch (and if you haven’t, check out the Beginner Scratch Sushi Cards) to make your first Scratch game. Here you’re going to learn a few more cool tricks and make one of my favourite Scratch projects: it draws colourful patterns and, if you set it up right, can be really cool to watch.
+Ai învățat deja elementele de bază despre Scratch (și, dacă nu ai făcut-o, verifică Cardurile Sushi Scratch pentru începtători) pentru a face primul joc Scratch. Aici vei învăța câteva trucuri mai interesante și vei face unul dintre proiectele mele preferate Scratch: desenarea modelelor colorate. Dacă o setezi corect, procesul poate fi foarte interesant de urmărit.
 
 ![](images/pen1.png)
 
-### What you will make
+### Ce vei face
 
-Here's a project I've prepared:
+Iată un proiect pe care l-am pregătit:
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/205355399/?autostart=false" frameborder="0"></iframe>
@@ -20,28 +20,28 @@ Here's a project I've prepared:
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: Ce vei învăța
 
-In the Intermediate Scratch Sushi Cards, you'll find out about:
+În Cardurile Sushi Scratch pentru intermediari, vei afla despre:
 
-+ Using the Pen tool
-+ Using and updating variables in loops
-+ Using Repeat Until loops
-+ Getting input values with ask blocks
-+ Using multiple lists with properties related by index
++ Utilizarea instrumentului Stilou
++ Utilizarea și actualizarea variabilelor în bucle
++ Utilizarea buclei Repetă până când
++ Obținerea valorilor de intrare cu blocurile de solicitare
++ Utilizarea mai multor liste cu proprietăți asociate indexului
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: De ce vei avea nevoie
 
 ### Hardware
 
-+ A computer capable of running Scratch 3
++ Un computer capabil de a rula Scratch 3
 
 ### Software
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/projects/editor/){:target="_blank"} or [offline](https://scratch.mit.edu/download/){:target="_blank"})
++ Scratch 3 (fie [online](https://scratch.mit.edu/projects/editor/){:target="_blank"} sau [offline](https://scratch.mit.edu/download/){:target="_blank"})
 
 \--- /collapse \---
