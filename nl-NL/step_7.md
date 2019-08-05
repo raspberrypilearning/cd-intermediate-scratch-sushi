@@ -41,7 +41,7 @@ Je gaat een variabele gebruiken die als teller werkt en die bijhoudt op welke po
 \--- task \--- Maak een nieuwe variabele genaamd `teller`{:class="block3variables"} en pas je code als volgt aan:
 
 ```blocks3
-    wanneer op groene vlag wordt geklikt
+    wanneer groene vlag wordt aangeklikt
 maak [teller v] [0]
 herhaal
 + als <(teller) = (lengte van [Toenamelijst v] :: list)> dan
@@ -57,7 +57,7 @@ wis alles
 ga naar x: (0) y: (0)
 maak pen kleur [#4a6cd4]
 pen neer
-herhaal tot <touching [edge v] ?>
+herhaal tot <raak ik [rand v] ?>
 neem (stappen) stappen
 draai cw (graden) graden
 verander [stappen v] met (toename)
