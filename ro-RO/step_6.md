@@ -1,53 +1,53 @@
-## Randomise the whole thing
+## Fă totul aleatoriu
 
-You can actually use random numbers to make the whole program run over and over, changing the pattern each time! It'll look a bit like screen savers did in the 1990s...which you probably won't remember, but ask one of your parents!
+De fapt, poți utiliza numere aleatorii pentru a face întreg programul să ruleze încontinuu, schimbând șablonul de fiecare dată! O să arate precum screensaver-ele realizate în anii 1990... pe care, probabil, nu ți le vei aminti, dar întreabă-l pe unul dintre părinții tăi!
 
-You need a few changes to make this happen. The first one is that you need to set the `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} variables randomly rather than asking for them from the user. So you need to change some of your code blocks.
+Ai nevoie de câteva modificări pentru a face acest lucru să se întâmple. Prima dintre ele este că trebuie să setezi variabilele `creștere`{:class="block3variables“} și `grade`{:class="block3variables"} cu valori adăugate în mod aleatoriu, în locul introducerii manuale de la tastatură de către utilizator. Deci, trebuie să schimbi unele dintre blocurile de cod.
 
-\--- task \--- Remove the questions from your code, and update it to use random numbers instead.
+\--- task \--- Elimină întrebările din codul tău și actualizează-l pentru a utiliza numere aleatorii în schimb.
 
 ```blocks3
-    when green flag clicked
-    set [steps v] to [0]
--    ask [How many steps should I grow by?] and wait
-+    set [increase v] to (pick random (1) to (10))
--    ask [How many degrees should I turn?] and wait
-+    set [degrees v] to (pick random (1) to (180))
-    pen up
+    când se dă click pe stegulețul verde
+    setează [pași v] la [0]
+-    întreabă [Cu câți pași trebuie să crească?] și așteaptă
++    setează [creștere v] la (alege aleator între (1) și (10))
+-    întreabă [Cu câte grade trebuie să mă întorc?] și așteaptă
++   setează [grade v] la (alege aleator între (1) și (180))
+    stilou sus
 ```
 
 \--- /task \---
 
-If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
+Dacă rulezi programul tău acum, vei observa că desenează un șablon aleatoriu, dar o singură dată. De ce crezi că se întâmplă asta?
 
-It’s because the loop only runs until it reaches the edge of the Stage.
+Asta se datorează faptului că bucla rulează numai până când ajunge la marginea Scenei.
 
-\--- task \--- You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
+\--- task \--- Ai nevoie de o altă buclă care rulează încontinuu (deci, un bloc `la infinit`{:class="block3control"}) în afara buclei curente pentru a o menține în mișcare mereu. Doar trage una din secțiunea **Control** și adaugă tot codul tău în ea.
 
 ```blocks3
-    when green flag clicked
-+    forever 
-        set [steps v] to [0]
-        set [increase v] to (pick random (1) to (10))
-        set [degrees v] to (pick random (1) to (180))
-        pen up
-        hide
-        clear
-        go to x: (0) y: (0)
-        set pen color to [#4a6cd4]
-        pen down
-        repeat until <touching [edge v] ?> 
-            move (steps) steps
-            turn cw (degrees) degrees
-            change [steps v] by (increase)
+    când se dă click pe stegulețul verde
++    la infinit 
+        setează [pași v] la [0]
+        setează [creștere v] la (alege aleator între (1) și (10))
+        setează [grade v] la (alege aleator între (1) și (180))
+        stilou sus
+        ascunde
+        șterge tot
+        mergi la x: (0) y: (0)
+        setează culoarea stiloului la [#4a6cd4]
+        stilou jos
+        repeta până când <atinge [marginea v] ?> 
+            mergi (pași) pași
+            rotește-te cw (grade) grade
+            modifică [pași v] cu (creștere)
         end
     end
 ```
 
 \--- /task \---
 
-Now you’ve really got something awesome to look at!
+Acum ai într-adevăr ceva minunat la care să te uiți!
 
-However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
+Cu toate acestea, poți observa că, din când în când, computerul desenează ceva care arată destul de... rău. Acest lucru se datorează faptului că unele numere pentru unele dintre aceste variabile sunt doar alegeri nepotrivite, iar unele **combinații ale acestor numere** sunt de asemenea alegeri nepotrivite.
 
-On the next card, you'll help the computer to pick only good combinations!
+Pe următorul card, vei ajuta computer-ul să aleagă numai combinații potrivite!
