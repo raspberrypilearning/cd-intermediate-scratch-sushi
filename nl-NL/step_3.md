@@ -35,7 +35,7 @@ Tijd om je `herhaal tot`{:class="block3control"} lus aan te passen zodat het sto
 
 ```blocks3
     pen neer
-+   herhaal tot <touching [edge v] ?>
++   herhaal tot <raak ik [rand v] ?>
 neem (50) stappen
 draai cw (15) graden
 end
@@ -46,14 +46,14 @@ end
 \--- task \--- Verander het aantal stappen in het `beweging`{:class="block3motion"} blok naar `5` en controleer of je programma er zo uit ziet:
 
 ```blocks3
-    wanneer op groene vlag wordt geklikt
+    wanneer groene vlag wordt aangeklikt
 pen op
 verdwijn
 wis alles
 ga naar x: (0) y: (0)
 maak penkleur [#4a6cd4]
 pen neer
-herhaal tot <touching [edge v] ?>
+herhaal tot <raak ik [rand v]?>
 neem (5) stappen
 draai cw (15) graden
 end
@@ -70,9 +70,9 @@ Variabelen zijn plekken met labels waarin je getallen of andere belangrijke info
 \--- task \--- Maak een variabele genaamd `stappen`{:class="block3variables"} en voeg dan een `maak stappen 0`{:class="block3variables"} blok toe aan het begin van je programma.
 
 ```blocks3
-    wanneer op groene vlag wordt geklikt
+    wanneer groene vlag wordt aangeklikt
 + maak [stappen v] [0]
-pen op
+pen
 ```
 
 \--- /task \---
@@ -81,7 +81,7 @@ pen op
 
 ```blocks3
     pen neer
-herhaal tot <touching [edge v] ?>
+herhaal tot <raak ik [rand v] ?>
 + neem (stappen) stappen
 draai cw (76) graden
 + verander [stappen v] met (1)
