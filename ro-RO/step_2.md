@@ -1,85 +1,85 @@
-## Using the Pen tool
+## Utilizarea instrumentului Stilou
 
-The project you're going to make relies on the **Pen** tool, which draws a line behind the centre of a sprite as it moves. You’re going to learn to use it now!
+Proiectul pe care îl vei face se bazează pe instrumentul **Stilou**, care trasează o linie în spatele centrului unui personaj în timp ce se mișcă. Vei învăța să îl utilizezi acum!
 
-\--- task \--- Open a new Scratch file, select the Scratch Cat sprite, and drag in a few blocks you may have already seen, until it looks like this:
+\--- task \--- Deschide un fișier nou Scratch, selectează personajul Pisică și trage câteva blocuri pe care le-ai văzut deja, până când arată astfel:
 
 ```blocks3
-    when green flag clicked
-    go to x: (0) y: (0)
-    move (50) steps
-    turn cw (15) degrees
+    când se dă click pe stegulețul verde
+    mergi la x: (0) y: (0)
+    mergi (50) pași
+    rotește-te cw (15) grade
 ```
 
 \--- /task \---
 
-Now, time to test out the pen!
+Acum, e timpul pentru a testa stiloul!
 
-To use the Pen blocks in Scratch, you need add the **Pen extension**.
+Pentru a utiliza blocurile Stilou în Scratch, trebuie să adăugi **extensia Stilou**.
 
-\--- task \--- Click on the **Add extension** button in the bottom left-hand corner.
+\--- task \--- Dă click pe butonul **Adaugă o extensie** în colțul din stânga jos.
 
-![add extension button highlighted](images/add-extension-annotated.png)
+![adăugă butonul de extensie evidențiat](images/add-extension-annotated.png)
 
-Click on the **Pen** extension to add it.
+Dă click pe extensia **Stilou** pentru a o adăuga.
 
-![pen extension highlighted](images/click-pen-annotated.png)
+![extensie stilou evidențiată](images/click-pen-annotated.png)
 
-The Pen section then appears at the bottom of the blocks menu.
+Secțiunea Stilou va apărea apoi în partea de jos a meniului blocurilor.
 
-![pen extension blocks](images/pen-extension-blocks.png)
+![blocuri din extensia Stilou](images/pen-extension-blocks.png)
 
-From the **Pen** section, select the `pen down`{:class="block3extensions"} block and add it to the start of your program, like this:
+Din secțiunea **Stilou**, selectează blocul `Stilou jos`{:class="block3extensions"} și adăugă-l la începutul programului, după cum urmează:
 
 ```blocks3
-    when green flag clicked
-+    pen down
-    go to x: (0) y: (0)
+    când se dă click pe stegulețul verde
++    stilou jos
+    mergi la x: (0) y: (0)
 ```
 
 \--- /task \---
 
-\--- task \--- Now click the green flag a few times and watch what happens. \--- /task \---
+\--- task \--- Acum, dă click pe stegulețul verde de câteva ori și urmărește ce se întâmplă. \--- /task \---
 
-If you can see the lines behind the cat sprite, then the pen is working and you can start making it draw really cool patterns.
+Dacă poți vedea liniile din spatele pisicii, atunci pixul funcționează și poți începe să faci șabloanele interesante.
 
-First, you should get rid of the sprite. It’s getting in the way of the drawing!
+Mai întâi, trebuie să scapi de personaj. Ea rămâne în calea desenului!
 
-\--- task \--- Add a `hide`{:class="block3looks"} block from **Looks** to the start of the program and it’ll disappear.
+\--- task \--- Adaugă blocul `ascunde`{:class="block3looks"} din **Aspect** la începutul programului și va dispărea.
 
 ```blocks3
-    when green flag clicked
-+    hide
-    pen down
+    când se dă click pe stegulețul verde
++    ascunde
+    stilou jos
 ```
 
 \--- /task \---
 
-Now, you can change the colour of the pen with another block from the **Pen** section, but the block is a little different to the others you’ve seen. It’s the `set pen color to`{:class="block3extensions"} block and looks like this:
+Acum, poți schimba culoarea stiloului cu un alt bloc din secțiunea **Stilou**, dar blocul este puțin diferit față de cele pe care le-ai văzut. Este blocul `seteaza culoarea stiloului la`{:class="block3extensions"} și arată astfel:
 
 ```blocks3
-    set pen color to [#4a6cd4]
+    setează culoarea stiloului la [#4a6cd4]
 ```
 
-\--- task \--- Drag a `set pen color to`{:class="block3extensions"} block into your sprite panel, and snap it in above the `pen down`{:class="block3extensions"} block.
+\--- task \--- Trage un bloc de tip `seteaza culoarea stiloului la`{:class="block3extensions"} în panoul personajului tău și adaugă-l peste blocul `stilou jos`{:class="block3extensions"}.
 
 ```blocks3
-    when green flag clicked
-    hide
-+    set pen color to [#4a6cd4]
-    pen down
+    când se dă click pe stegulețul verde
+    ascunde
++    setează culoarea stiloului la [#4a6cd4]
+    stilou jos
 ```
 
-Now, click on the box of colour (in the code above it’s the blue one), and choose a colour. \--- /task \---
+Dă click pe caseta de culoare (în codul de mai sus este cea albastră) și alege o culoare. \--- /task \---
 
-If you’ve been clicking on the green flag to test your code, you’ll have noticed that the drawings the pen makes don’t go away.
+Dacă ai dat click pe steagul verde pentru a testa codul, ai observat că desenele pe care le realizează stiloul nu dispar.
 
-\--- task \--- Add a `clear`{:class="block3extensions"} block from the **Pen** section to the start of your code to take care of that:
+\--- task \--- Adaugă blocul `șterge tot`{:class="block3extensions"} din secțiunea **Stilou** la începutul codului pentru a remedia problema:
 
 ```blocks3
-    when green flag clicked
-+    clear
-    hide
+    când se dă click pe stegulețul verde
++    șterge
+    ascunde
 ```
 
 \--- /task \---
