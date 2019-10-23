@@ -18,8 +18,9 @@ Tu devras donc utiliser un type de boucle différent, appelé `répéter jusqu'�
 --- task --- Maintenant, clique sur le drapeau vert pour exécuter le programme plusieurs fois et vois ce qui se passe. Tu remarqueras deux choses: le stylo commence toujours par tracer une ligne vers le milieu de la scène et il ne s’arrête pas au bord. --- /task ---
 
 --- collapse ---
-
-## title: Pourquoi le stylo fait-il cela?
+---
+title: Pourquoi le stylo fait-il cela?
+---
 
 Le stylo commence toujours à dessiner dans la direction du milieu, car le premier bloc **Mouvement** qui s'exécute après le `stylo en position d'écriture`{:class="block3extensions"} est `aller à x: 0 y: 0`{:class="block3motion"}. Ainsi, le stylo tracera une ligne lorsqu'il se déplacera au centre de la scène.
 
@@ -93,8 +94,9 @@ Les variables sont essentiellement des emplacements étiquetés pour stocker des
 Penses-tu qu’il importe de savoir où, dans la boucle, tu mets le bloc `changer étapes par 1`{:class="block3variables"}?
 
 --- collapse ---
-
-## title: Mettre le code dans le bon ordre
+---
+title: Mettre le code dans le bon ordre
+---
 
 Lorsque tu décides dans quel ordre placer des blocs, réfléchis à ce que chaque bloc fait et à ce que tu veux que ton code fasse.
 
