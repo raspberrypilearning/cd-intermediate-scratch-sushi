@@ -1,8 +1,8 @@
 ---
-title: Pattern pen
+title: Stylo à motif
 hero_image: images/banner.png
-description: Make a cool pattern generator
-theme: orange
+description: Faire un générateur de motif cool
+theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
 ingredient: false
@@ -14,19 +14,19 @@ site_areas: coderdojo
 hardware:
 software: scratch
 version: 4.0.0
-last_tested: 2017-01-01
+last_tested: 01/01/2017
 steps:
   - 
     title: Introduction
   - 
-    title: Using the Pen tool
+    title: Utiliser l'outil Plume
   - 
-    title: Drawing patterns
+    title: Motifs de dessin
   - 
-    title: Asking for input
+    title: Demander une contribution
   - 
-    title: Cooler lines
+    title: Lignes plus cool
   - 
-    title: Randomise the whole thing
+    title: Randomiser le tout
   - 
-    title: Helping the computer
+    title: Aider l'ordinateur
