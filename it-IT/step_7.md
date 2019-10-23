@@ -1,44 +1,44 @@
-## Helping the computer
+## Aiutare il computer
 
-Do you remember a few steps back, where I told you to write down some of your favourite values for `increase`{:class="block3variables"} and `degrees`{:class="block3variables"}, the ones that gave the best-looking patterns? If you didn't do this, don’t worry: you can just watch the random program run for a while now and write down the combinations that give great results.
+Ti ricordi alcuni passi indietro, in cui ti ho detto di scrivere alcuni dei tuoi valori preferiti per `incrementa`{: class = "block3variables"} e `Gradi`{: class = "block3variables"}, quelli che hanno dato i modelli più belli? Se non l'hai fatto, non ti preoccupare: puoi solo guardare il programma random per un po' di tempo e annotare le combinazioni che danno ottimi risultati.
 
-You’re going to teach Scratch those combinations of values, so it can use them to make nothing but awesome pictures!
+Insegnerai a Scratch quelle combinazioni di valori, in modo che possa usarli per creare solo immagini fantastiche!
 
-To do this, you’ll need a **list**. You’ll find lists with the variables in the **Variables** section. Just like you did with your variables, you’ll need to create your list first!
+Per fare ciò, avrai bisogno di una **lista**. Troverai le liste con le variabili nella sezione **Variabili**. Proprio come hai fatto con le tue variabili, devi prima creare la tua lista!
 
-\--- task \--- Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
+\--- task \--- Fare clic su **Crea una lista** e immetti come nome `Lista Gradi`{: class = "block3variables"}.
 
-![](images/makeAList.png)
-
-\--- /task \---
-
-Your list, which is empty at the moment, will appear on the Stage, and you'll see a bunch of blocks for it in **Variables**.
-
-![](images/listBlocks.png)
-
-\--- task \--- Make another list called `Increase List`{:class="block3variables"} \--- /task \---
-
-\--- task \--- Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
-
-![](images/helping2.png)
-
-Make sure that the `degrees`{:class="block3variables"} value and the `increase`{:class="block3variables"} value that worked well together are at the same position in the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. They need to be there so your program can match them up again using their position!
+![](images/magazine.png)
 
 \--- /task \---
 
-Now you have the lists, you just need to get your code to read them and loop over them! To do this, you’re going to use a new variable to act as a counter, some **incrementing**, and an `if then`{:class="block3control"} **Control** block.
+La tua lista, che al momento è vuota, apparirà sullo Stage, e vedrai un mucchio di blocchi **Variabili**.
+
+![](images / listBlocks.png)
+
+\--- task \--- Crea un'altra lista chiamata `Lista Incrementi`{: class = "block3variables"} \--- / task \---
+
+\--- task \--- Ora, facendo clic sul piccolo segno più (**+**) nella parte inferiore degli elenchi, aggiungi la prima coppia di valori di `Incrementa`{: class = "block3variables"} e `Gradi`{: class = "block3variables"} che ti è piaciuta, ogni valore nella giusta lista. Ripeti questa operazione per aggiungere la seconda coppia di valori. Questo per ora sarà sufficiente - aggiungerai il resto delle coppie di valori che ti piacciono più tardi!
+
+![](images / helping2.png)
+
+Assicurati che il valore `Gradi`{: class = "block3variables"} e il valore `incrementa`{: class = "block3variables"} che ha funzionato bene insieme siano nella stessa posizione nella lista `Lista Gradi`{: class = " block3variables "} e nella `Lista Incrementi`{: class =" block3variables "}. Devono essere lì in modo che il tuo programma possa abbinarli di nuovo usando la loro posizione!
+
+\--- /task \---
+
+Ora hai le liste, devi solo ottenere il tuo codice per leggerle e ripetere il ciclo! Per fare questo, utilizzerai una nuova variabile per agire come un contatore, alcuni **incrementando**e un `if then`{: class = "block3control"} da **Controllo**.
 
 ## \--- collapse \---
 
-## title: What does incrementing mean?
+## titolo: Cosa significa incremento?
 
-To increment something means to add something to it.
+Aumentare qualcosa significa aggiungervi qualcosa.
 
-You will use a variable to act as a counter to keep track of what position you're at in your lists. To move through the lists, you'll keep incrementing the counter by `1` (so, adding `1` to it) until you get to the end of the list.
+Utilizzerai una variabile per fungere da contatore e tenere traccia della posizione in cui ti trovi nei tuoi elenchi. Per spostarti tra gli elenchi, continuerai ad incrementare il contatore di `1` (quindi aggiungendo `1` ad esso) fino a raggiungere la fine dell'elenco.
 
 \--- /collapse \---
 
-\--- task \--- Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
+\--- task \--- Crea una nuova variabile chiamata ` contatore ` {: class = "block3variables"} e aggiorna il codice in questo modo:
 
 ```blocks3
     when green flag clicked
@@ -49,8 +49,8 @@ You will use a variable to act as a counter to keep track of what position you'r
         end
 +        change [counter v] by (1)
         set [steps v] to [0]
-+        set [increase v] to (item (counter) of [Increase List v] :: list)
-+        set [degrees v] to (item (counter) of [Degrees List v] :: list)
++        set [incrementa v] to (item (counter) of [Lista Incrementi v] :: list)
++        set [Gradi v] to (item (counter) of [Lista Gradi v] :: list)
         pen up
         hide
         clear
@@ -59,49 +59,49 @@ You will use a variable to act as a counter to keep track of what position you'r
         pen down
         repeat until <touching [edge v] ?> 
             move (steps) steps
-            turn cw (degrees) degrees
-            change [steps v] by (increase)
+            turn cw (Gradi ) degrees
+            change [steps v] by (incrementa)
         end
     end
 ```
 
 \--- /task \---
 
-Notice the new blocks that:
+Notare i nuovi blocchi che:
 
-1. Set `counter`{:class="block3variables"} to `0`, outside all the loops.
-2. Check if the number stored in `counter`{:class="block3variables"} is the length of the list, and if so, set `counter`{:class="block3variables"} to `0`. This means that this variable will always be the number of a position in the lists, and won't get any bigger than that.
-3. Add `1` to `counter`{:class="block3variables"}.
-4. Pick the item from `Increase List`{:class="block3variables"} that is at the position described by `counter`{:class="block3variables"}, and put it in the `increase`{:class="block3variables"} variable. Do the same for the `Degrees List`{:class="block3variables"} and `degrees`{:class="block3variables"} variable.
+1. Imposta `counter`{: class = "block3variables"} a `0`, fuori da tutti i loop.
+2. Verifica se il numero memorizzato in `counter`{: class = "block3variables"} è pari alla lunghezza dell'elenco e, in tal caso, imposta `counter`{: class = "block3variables"} a `0`. Ciò significa che questa variabile sarà sempre al massimo pari al numero di posizioni negli elenchi e non più grande.
+3. Aggiungi `1` a `counter`{: class = "block3variables"}.
+4. Scegli l'oggetto da `Lista Incrementi`{: class = "block3variables"} che è nella posizione descritta da `counter`{: class = "block3variables"}, e inseriscilo nella variabile `incrementa`{: class = "block3variables"}. Fai lo stesso per `Lista Gradi`{: class = "block3variables"} e la variabile `Gradi`{: class = "block3variables"}.
 
 ## \--- collapse \---
 
-## title: How does the code work?
+## titolo: Come funziona il codice?
 
-This is what happens when you run your program:
+Questo è quello che succede quando esegui il tuo programma:
 
-1. Set `counter`{:class="block3variables"} to `0`.
-2. Start the `forever`{:class="block3control"} loop.
-3. Check if `counter`{:class="block3variables"} (`0`) is the same as the length of `Increase List`{:class="block3variables"} (`2`). It isn’t.
-4. Change `counter`{:class="block3variables"} by `1`. Now `counter`{:class="block3variables"} = `1`.
-5. Set `steps`{:class="block3variables"} to `0`.
-6. Get the item at the position named by `counter`{:class="block3variables"} (`1`) in the `Increase List`{:class="block3variables"}, and put it in `increase`{:class="block3variables"}.
-7. Get the item at the position named by `counter`{:class="block3variables"} (`1`) in the `Degrees List`{:class="block3variables"}, and put it in `degrees`{:class="block3variables"}.
-8. Do all the stuff related to drawing the patterns.
-9. Restart the `forever`{:class="block3control"} loop:
-10. Check if `counter`{:class="block3variables"} (`1`) is the same as the length of `Increase List`{:class="block3variables"} (`2`). It isn’t.
-11. Change `counter`{:class="block3variables"} by `1`. Now `counter`{:class="block3variables"} = `2`.
-12. Set `steps`{:class="block3variables"} to `0`.
-13. Get the item at the position named by `counter`{:class="block3variables"} (`2`) in the `Increase List`{:class="block3variables"}, and put it in `increase`{:class="block3variables"}.
-14. Get the item at the position named by `counter`{:class="block3variables"} (`2`) in the `Degrees List`{:class="block3variables"}, and put it in `degrees`{:class="block3variables"}.
-15. Do all the stuff related to drawing the patterns.
-16. Restart the `forever`{:class="block3control"} loop:
-17. Check if `counter`{:class="block3variables"} (`2`) is the same as the length of the `Increase List`{:class="block3variables"} (`2`). It is!
-18. Set `counter`{:class="block3variables"} to `0`.
-19. Continue from **step 4** of this list, in a never-ending loop!
+1. Imposta `counter`{: class = "block3variables"} a `0`.
+2. Avvia il ciclo `forever`{: class = "block3control"}.
+3. Controlla se `counter`{: class = "block3variables"} (`0`) è uguale alla lunghezza di `Lista Incrementi`{: class = "block3variables"} (`2`). Non lo è.
+4. Cambia `counter`{: class = "block3variables"} di `1`. Ora `counter`{: class = "block3variables"} = `1`.
+5. Imposta `steps`{: class = "block3variables"} a `0`.
+6. Ottieni l'oggetto nella posizione indicata dal `counter`{: class = "block3variables"} (`1`) nel `Lista Incrementi`{: class = "block3variables"}, e mettilo in `incrementa`{: class = "block3variables"}.
+7. Ottieni l'oggetto nella posizione indicata da `counter`{: class = "block3variables"} (`1`) nella `Lista Gradi`{: class = "block3variables"}, e inseriscilo in `Gradi`{: class = "block3variables"}.
+8. Fai tutte le cose relative al disegno delle forme.
+9. Riavvia il ciclo `forever`{: class = "block3control"}:
+10. Controlla se `counter`{: class = "block3variables"} (`1`) è uguale alla lunghezza di `Lista Incrementi`{: class = "block3variables"} (`2`). Non lo è.
+11. Cambia `counter`{: class = "block3variables"} di `1`. Ora `counter`{: class = "block3variables"} = `2`.
+12. Imposta `steps`{: class = "block3variables"} a `0`.
+13. Ottieni l'oggetto nella posizione denominata da `counter`{: class = "block3variables"} (`2`) nella `Lista Incrementi`{: class = "block3variables"}, e mettilo in `incrementa`{: class = "block3variables"}.
+14. Ottieni l'oggetto nella posizione indicata da `counter`{: class = "block3variables"} (`2`) nella `Lista Gradi`{: class = "block3variables"}, e inseriscilo in `Gradi`{: class = "block3variables"}.
+15. Fai tutte le cose relative al disegno delle forme.
+16. Riavvia il ciclo `forever`{: class = "block3control"}:
+17. Controlla se `counter`{: class = "block3variables"} (`2`) è uguale alla lunghezza del `Lista Incrementi`{: class = "block3variables"} (`2`). Lo è!
+18. Imposta `counter`{: class = "block3variables"} a `0`.
+19. Continua dal **passo 4** di questa lista, in un ciclo senza fine!
 
 \--- /collapse \---
 
-\--- task \--- Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. \--- /task \---
+\--- task \--- Una volta che sei soddisfatto del codice, vai avanti e aggiungi il resto delle coppie di valori che hai annotato in `Lista Gradi`{: class = "block3variables"} e il `Lista Incrementi`{: class = "block3variables"}. \--- /task \---
 
-That's it! Sit back and watch your program keep drawing lovely patterns in a never-ending loop! If you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
+Questo è tutto! Siediti e guarda il tuo programma che continua a disegnare deliziosi disegni in un ciclo senza fine! Se vuoi aggiungere altre forme, puoi: basta aggiungere più coppie di numeri ai due elenchi e riavviare il programma.
