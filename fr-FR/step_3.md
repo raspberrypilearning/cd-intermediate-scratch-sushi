@@ -1,107 +1,107 @@
-## Drawing patterns
+## Motifs de dessin
 
-Now you’ve got a program that draws a line, but it only draws one line. That’s a bit dull! You could use `forever`{:class="block3control"} loop to draw something over and over again, but then you’ll get drawings that go off the Stage!
+Tu as maintenant un programme qui trace une ligne, mais il n'en trace qu'une. C'est un peu terne! Tu peux utiliser la boucle `répéter indéfiniment`{:class="block3control"} pour dessiner quelque chose, encore et encore, mais alors tu obtiendras des dessins qui sortent de la scène!
 
-So you need use a different type of loop called `repeat until`{:class="block3control"}, which you’ll also find in the **Control** section. This type of loop will do something over and over again, **until** a True/False condition is met.
+Tu devras donc utiliser un type de boucle différent, appelé `répéter jusqu'à`{:class="block3control"}, que tu trouveras également dans la section **Contrôle**. Ce type de boucle répétera quelque chose encore et encore, **jusqu'à** ce qu'une condition Vrai / Faux est remplie.
 
-\--- task \--- Take a `repeat until`{:class="block3control"} block from the **Control** section, and put the `move`{:class="block3motion"} and `turn`{:class="block3motion"} blocks inside it, like so:
+\--- task \--- Prends un bloc `répéter jusqu'à`{:class="block3control"} de la section **Contrôle** , et mets les blocs `déplacer`{:class="block3motion"} et `tourner`{:class="block3motion"} à l'intérieur, comme suit:
 
 ```blocks3
-+    repeat until <> 
-        move (50) steps
-        turn cw (15) degrees
-    end
++ répéter jusqu'à <> 
+        déplacer de (50) pas
+        tourner cw (15) degrés
+    fin
 ```
 
 \--- /task \---
 
-\--- task \--- Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge. \--- /task \---
+\--- task \--- Maintenant, clique sur le drapeau vert pour exécuter le programme plusieurs fois et vois ce qui se passe. Tu remarqueras deux choses: le stylo commence toujours par tracer une ligne vers le milieu de la scène et il ne s’arrête pas au bord. \--- /task \---
 
 ## \--- collapse \---
 
-## title: Why does the pen do this?
+## titre: Pourquoi le stylo fait-il cela?
 
-The pen always starts drawing in the direction of the middle, because the first **Motion** block that runs after the `pen down`{:class="block3extensions"} block is `go to x: 0 y: 0`{:class="block3motion"}. So the pen will draw a line as it moves to the centre of the Stage.
+Le stylo commence toujours à dessiner dans la direction du milieu, car le premier bloc **Mouvement** qui s'exécute après le `stylo en position d'écriture`{:class="block3extensions"} est `aller à x: 0 y: 0`{:class="block3motion"}. Ainsi, le stylo tracera une ligne lorsqu'il se déplacera au centre de la scène.
 
-The pen doesn't stop at the edge of the Stage, because you haven’t yet told the `repeat until`{:class="block3control"} loop what condition it’s checking. This means the condition can never be met, so the loop will run on and on. This means that right now, the loop is working like a `forever`{:class="block3control"} loop.
+Le stylo ne s'arrête pas au bord de la scène, parce que tu n'as pas encore dit au bloc `répéter jusqu'à`: boucle {:class=block3control"} quelle condition il vérifie. Cela signifie que la condition ne peut jamais être remplie, ainsi la boucle fonctionnera encore et encore. Cela signifie qu’à présent, la boucle fonctionne comme une boucle `répéter indéfiniment`{:class="block3control"}.
 
 \--- /collapse \---
 
-\--- task \--- Move the `go to x: 0 y: 0`{:class="block3motion"} block to before the `pen down`{:class="block3extensions"} block and add, from the **Pen** section, a `pen up`{:class="block3extensions"} block right at the start of your code. \--- /task \---
+\--- task \--- Déplace le bloc `aller à x: 0 y: 0`{:class="block3motion"} avant le `stylo en position d'écriture`{:class="block3extensions"} et ajoute, à partir de la section **Stylo** , un bloc `relever le stylo`{:class="block3extensions"} au début de ton code. \--- /task \---
 
-Time to fix your `repeat until`{:class="block3control"} loop so that it stops when you want it to. You’re looking to figure out if the (invisible) sprite is touching the edge of the Stage, so you need a **Sensing** block — in this case, the `touching ?`{:class="block3sensing"} block.
+Il est temps de corriger ta boucle `répéter jusqu'à` {:class ="block3control"} pour qu'elle s'arrête quand tu le désires. Tu cherches à savoir si le sprite (invisible) touche le bord de la scène, tu as donc besoin d'un bloc **Capteur** - dans ce cas, le bloc `touche ?`{:class="block3sensing"}.
 
-\--- task \--- Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class="block3control"} loop, and select `edge`{:class="block3sensing"} . Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
+\--- task \--- Ajoute un bloc `touche ?`{:class="block3sensing"} dans ta boucle `répétition jusqu'à`{:class="block3control"} et sélectionne `bord`{:class="block3sensing"}. Ensuite, la boucle va exécuter **jusqu'à** ce que le sprite (invisible) touche le bord de la scène.
 
 ```blocks3
-    pen down
-+    repeat until <touching [edge v] ?> 
-        move (50) steps
-        turn cw (15) degrees
-    end
+    stylo en position d'écriture
++ répétez jusqu'à <touching [edge v] ?> 
+        déplacer de (50) pas
+        tournez cw (15) degrés
+    fin
 ```
 
 \--- /task \---
 
-\--- task \--- Change the number of steps in the `move`{:class="block3motion"} block to `5`, and check that your program matches this one before you test it:
+\--- task \--- Modifie le nombre de pas dans le bloc `déplacer`{:class="block3motion"} en `5` et vérifie que ton programme correspond à celui-ci avant de le tester:
 
 ```blocks3
-    when green flag clicked
-    pen up
-    hide
-    clear
-    go to x: (0) y: (0)
-    set pen color to [#4a6cd4]
-    pen down
-    repeat until <touching [edge v] ?> 
-        move (5) steps
-        turn cw (15) degrees
-    end
+    lorsque le drapeau vert est cliqué
+    relever le stylo
+    masquer
+    effacer
+    aller à x: (0) y: (0)
+    définir la couleur du stylo sur [# 4a6cd4]
+    stylo en position d'écriture
+    répéter jusqu'à <touching [edge v] ?> 
+        déplacer de (5) pas
+        tourner cw ( 15) degrés
+    fin
 ```
 
 \--- /task \---
 
-If you run the code now, you’ll see that the drawing the pen makes stays on the Stage.
+Si tu exécutes le code maintenant, tu verras que le dessin du stylo reste sur la scène.
 
-Not only that, but your program has turned into a circle-drawing program! What's happening here is that those 15-degree turns eventually add up to 360 degrees, and so your pen turns in a full circle. You're going to change the way it moves slightly to make it take slightly a longer step each time, so it spirals out. For this, you’re going to need a **variable**.
+Non seulement cela, mais ton programme est devenu un programme de dessin de cercle! Ce qui se passe ici, c'est que ces tournants de 15 degrés totalisent finalement 360 degrés, de sorte que ton stylo tourne en rond. Tu vas changer la façon dont il bouge légèrement pour le rendre légèrement plus long à chaque fois de sorte qu'il fasse des spirales. Pour cela, tu auras besoin d'une **variable**.
 
-Variables are basically labeled places to store numbers or other information that you care about. You can create them in the **Variables** blocks section.
+Les variables sont essentiellement des emplacements étiquetés pour stocker des numéros ou d’autres informations qui t'intéressent. Tu peux les créer dans la section des blocs **Variables**.
 
-\--- task \--- Make a variable called `steps`{:class="block3variables"}, and then add a `set steps to 0`{:class="block3variables"} block at the start of your program.
+\--- task \--- Crée une variable appelée `étapes`{:class="block3variables"}, puis ajoute un bloc de `définir étapes à 0`{:class="block3variables"} au début de ton programme.
 
 ```blocks3
-    when green flag clicked
-+   set [steps v] to [0]
-    pen up
+    lorsque le drapeau vert est cliqué
++ définir [étapes v] sur [0]
+    relever le stylo
 ```
 
 \--- /task \---
 
-\--- task \--- Then use the value of `steps`{:class="block3variables"} instead of the `5` in the `move`{:class="block3motion"} block, and add `change steps by 1`{:class="block3variables"} as part of your loop:
+\--- task \--- Ensuite, utilise la valeur de `étapes`{:class="block3variables"} au lieu de`5` dans le bloc`déplacer` {:class="block3motion"} et ajoute `changer étapes par 1`{:class="block3variables"} en tant que partie de ta boucle:
 
 ```blocks3
-    pen down
-    repeat until <touching [edge v] ?> 
-+       move (steps) steps
-        turn cw (76) degrees
-+        change [steps v] by (1)
-    end
+    stylo en position d'écriture
+    répéter jusqu'à <touching [edge v] ?> 
++ déplacer (étapes) pas
+        tourner cw (76) degrés
++ changer [étapes v] par (1)
+    fin
 ```
 
 \--- /task \---
 
-Do you think it matters where in the loop you put the `change steps by 1`{:class="block3variables"} block?
+Penses-tu qu’il importe de savoir où, dans la boucle, tu mets le bloc `changer étapes par 1` {:class="block3variables"}?
 
 ## \--- collapse \---
 
-## title: Putting code in the right order
+## titre: Mettre le code dans le bon ordre
 
-When you're deciding which order to put blocks in, think about what each block does and what you want your code to do.
+Lorsque tu décides dans quel ordre placer des blocs, réfléchis à ce que chaque bloc fait et à ce que tu veux que ton code fasse.
 
-In this case, you want the pen to move, then turn, over and over. Each time it does this, you want to move one extra step.
+Dans ce cas, tu veux que le stylo bouge, puis tourne, encore et encore. Chaque fois que cela se produit, tu souhaites déplacer d'une étape supplémentaire.
 
-So it makes sense to put the `change steps by 1`{:class="block3variables"} block **after** the `move`{:class="block3motion"} block. However, after moving, it doesn't really matter if the pen turns first and then the number of steps changes, or if the number of steps changes first and then the pen turns instead.
+Il est donc logique de placer le bloc `changer étapes par 1`{:class="block3variables"} **après** le `déplacer`{:class="block3motion"}. Cependant, après le déplacement, peu importe si le stylo tourne en premier et ensuite le nombre d'étapes change, ou si le nombre d'étapes change en premier et ensuite le stylo tourne à la place.
 
 \--- /collapse \---
 
-\--- task \--- Now run the program, and also try changing the number of degrees around (try `76` and `120`)! \--- /task \---
+\--- task \--- Exécute maintenant le programme et essaie également de modifier le nombre de degrés autour (essayer `76` et `120`)! \--- /task \---
