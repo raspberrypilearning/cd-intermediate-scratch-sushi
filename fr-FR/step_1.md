@@ -1,18 +1,18 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2).
+Ceci est la version **Scratch 3** du projet. Il existe également une version [Scratch 2 du projet](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2).
 
 \--- /no-print \---
 
 ## Introduction
 
-You’ve already learned the basics of Scratch (and if you haven’t, check out the Beginner Scratch Sushi Cards) to make your first Scratch game. Here you’re going to learn a few more cool tricks and make one of my favourite Scratch projects: it draws colourful patterns and, if you set it up right, can be really cool to watch.
+Tu as déjà appris les bases de Scratch (et si tu ne l'as pas déjà fait, consulte les cartes pour débutants Scratch Sushi) pour créer ton premier jeu Scratch. Ici, tu vas apprendre quelques astuces supplémentaires et réaliser l'un de mes projets Scratch préférés: il dessine des motifs colorés et, si tu le configure correctement, il peut être vraiment cool à regarder.
 
 ![](images/pen1.png)
 
-### What you will make
+### Ce que tu feras
 
-Here's a project I've prepared:
+Voici un projet que j'ai préparé:
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/205355399/?autostart=false" frameborder="0"></iframe>
@@ -20,28 +20,28 @@ Here's a project I've prepared:
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: Ce que tu vas apprendre
 
-In the Intermediate Scratch Sushi Cards, you'll find out about:
+Dans les cartes de Sushi de Scratch Intermédiaire, tu trouveras les informations à propos de :
 
-+ Using the Pen tool
-+ Using and updating variables in loops
-+ Using Repeat Until loops
-+ Getting input values with ask blocks
-+ Using multiple lists with properties related by index
++ Utiliser l'outil Stylo
++ Utiliser et mettre à jour des variables dans des boucles
++ Utiliser les boucles Répéter jusqu'à
++ Obtenir des valeurs d'entrée avec des blocs demander
++ Utilisation de plusieurs listes avec des propriétés liées par index
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Ce que tu auras besoin
 
-### Hardware
+### Matériel informatique
 
-+ A computer capable of running Scratch 3
++ Un ordinateur capable d'exécuter Scratch 3
 
-### Software
+### Logiciel
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/projects/editor/){:target="_blank"} or [offline](https://scratch.mit.edu/download/){:target="_blank"})
++ Scratch 3 (soit [en ligne](https://scratch.mit.edu/projects/editor/){:target="_blank"} ou [hors ligne](https://scratch.mit.edu/download/){:target="_blank"})
 
 \--- /collapse \---
