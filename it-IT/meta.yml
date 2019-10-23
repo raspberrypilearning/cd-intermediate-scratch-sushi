@@ -1,14 +1,14 @@
 ---
-title: Pattern pen
+title: Penna modello
 hero_image: images/banner.png
-description: Make a cool pattern generator
-theme: orange
+description: Crea un fantastico generatore di modelli
+theme: arancio #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
 ingredient: false
 copyedit: true
 curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
-interests: art
+interests: arte
 technologies: scratch
 site_areas: coderdojo
 hardware:
@@ -17,16 +17,16 @@ version: 4.0.0
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: Introduzione
   - 
-    title: Using the Pen tool
+    title: Usare lo strumento Penna
   - 
-    title: Drawing patterns
+    title: Disegno dei modelli
   - 
-    title: Asking for input
+    title: Richiesta di immissione
   - 
-    title: Cooler lines
+    title: Linee più accattivanti
   - 
-    title: Randomise the whole thing
+    title: Rimescolare il tutto
   - 
-    title: Helping the computer
+    title: Aiutare il computer
