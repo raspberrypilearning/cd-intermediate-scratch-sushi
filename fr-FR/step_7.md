@@ -35,35 +35,35 @@ title: Que signifie incrémenter?
 
 Incrémenter quelque chose signifie ajouter quelque chose.
 
-Tu utiliseras une variable pour faire office de compteur et garder la trace de ta position dans tes listes. Pour te déplacer dans les listes, tu continueras à incrémenter le compteur de `1` (donc, en ajoutant `1` ) jusqu'à la fin de la liste.
+Tu utiliseras une variable pour faire office de compteur et garder la trace de ta position dans tes listes. Pour te déplacer dans les listes, tu continueras à incrémenter le compteur de `1` (donc, en ajoutant `1`) jusqu'à la fin de la liste.
 
 --- /collapse ---
 
 --- task --- Crée une nouvelle variable appelée `compteur`{:class="block3variables"} et mets à jour ton code afin qu'il ressemble à ceci:
 
 ```blocks3
-    lorsque le drapeau vert est cliqué 
-    définir [compteur v] sur [0]
+    quand le drapeau vert pressé
+    mettre [compteur v] à [0]
     répéter indéfiniment 
-+ si <(compteur) = (longueur de [Liste d'augmentation v] :: liste)> alors
-+ définir [compteur v] sur [0]
-        fin
-+      changer [compteur v] par (1)
-        définir [étapes v] sur [0]
-+ définir [augmenter v] sur (élément (compteur) de [List d'augmentation v] :: liste)
-+ définir [degrés v] sur (élément ( compteur) de [Liste des degrés v] :: liste)
-        relever le stylo 
-        masquer
-        effacer
++        si <(compteur) = (longueur de [Liste d'augmentation v])> alors 
++           mettre [compteur v] à [0]
+        end
++        ajouter (1) à [compteur v]
+        mettre [étapes v] à [0]
++        mettre [increase v] à (élément (compteur) de [Liste d'augmentation v])
++        mettre [degrés v] à (élément (compteur) de [Liste des degrés v])
+        relever le stylo
+        cacher
+        effacer tout
         aller à x: (0) y: (0)
-        définir la couleur du stylo sur [# 4a6cd4]
+        mettre la couleur du stylo à [#4a6cd4]
         stylo en position d'écriture
-        répéter jusqu'à <touching [edge v] ?> 
-            déplacer (étapes) pas
-            tourner cw (degrés) degrés
-            changer [étapes v] par (augmenter)
-        fin
-    fin
+        répéter jusqu'à ce que <touche le [bord v] ?> 
+            avancer de (étapes) pas
+            tourner droite de (degrés) degrés
+            ajouter (augmenter) à [étapes v]
+        end
+    end
 ```
 
 --- /task ---

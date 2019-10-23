@@ -5,10 +5,10 @@ Le projet que tu vas réaliser repose sur l'outil **Stylo**, qui trace une ligne
 --- task --- Ouvre un nouveau fichier Scratch, sélectionne le sprite Chat de Scratch et fais glisser quelques blocs que tu aurais déjà vus jusqu'à ce qu'il ressemble à ceci:
 
 ```blocks3
-    lorsque le drapeau vert est cliqué
+    quand le drapeau vert pressé
     aller à x: (0) y: (0)
-    déplacer de (50) pas
-    tourner de cw (15) degrés
+    avancer de (50) pas
+    tourner droite de (15) degrés
 ```
 
 --- /task ---
@@ -32,8 +32,8 @@ La section Stylo apparaît alors au bas du menu des blocs.
 Dans la section **Stylo**, sélectionne le bloc `stylo en position d'écriture`{:class="block3extensions"} et ajoute-le au début de ton programme, comme suit:
 
 ```blocks3
-    lorsque le drapeau vert est cliqué
-+ stylo en position d'écriture
+    quand le drapeau vert pressé
++    stylo en position d'écriture
     aller à x: (0) y: (0)
 ```
 
@@ -48,8 +48,8 @@ Tout d'abord, tu devrais te débarrasser du sprite. Ça gêne le dessin!
 --- task --- Ajoute un bloc `cacher`{:class="block3looks"} de **Attendre** au début du programme et il va disparaître.
 
 ```blocks3
-    lorsque le drapeau vert est cliqué 
-+ masquer
+    quand le drapeau vert pressé
++    cacher
     stylo en position d'écriture
 ```
 
@@ -58,15 +58,15 @@ Tout d'abord, tu devrais te débarrasser du sprite. Ça gêne le dessin!
 Maintenant, tu peux changer la couleur du stylo avec un autre bloc de la section **Stylo**, mais le bloc est un peu différent des autres que tu as vus. C'est le bloc `définir la couleur du stylo sur`{:class="block3extensions"} et qui ressemble à ceci:
 
 ```blocks3
-    définir la couleur du stylo sur [# 4a6cd4]
+    mettre la couleur du stylo à [#4a6cd4]
 ```
 
 --- task --- Fais glisser un bloc `définir la couleur du stylo sur`{:class="block3extensions"} dans ton panneau de sprite et clipse le au- dessus du bloc `stylo en position d'écriture`{:class="block3extensions"}.
 
 ```blocks3
-    lorsque le drapeau vert est cliqué
-    masquer
-+ définir la couleur du stylo sur [# 4a6cd4]
+    quand le drapeau vert pressé
+    cacher
++    mettre la couleur du stylo à [#4a6cd4]
     stylo en position d'écriture
 ```
 
@@ -74,11 +74,11 @@ Maintenant, clique sur la case de couleur (dans le code ci-dessus, c'est la bleu
 
 Si tu as cliqué sur le drapeau vert pour tester ton code, tu auras remarqué que les dessins du stylo ne disparaissent pas.
 
---- tâche --- Ajoute un `effacer`{:class="block3extensions"} bloc du **stylo** section au début de ton code pour s’occuper de cela:
+--- task --- Ajoute un `effacer`{:class="block3extensions"} bloc du **stylo** section au début de ton code pour s’occuper de cela:
 
 ```blocks3
-    lorsque le drapeau vert est cliqué
-+ effacer
+    quand le drapeau vert pressé
++    effacer tout
     cacher
 ```
 

@@ -7,12 +7,12 @@ Tu as besoin de quelques modifications pour y arriver. La première consiste à 
 --- task --- Supprime les questions de ton code et mets-le à jour afin qu'il utilise des nombres aléatoires.
 
 ```blocks3
-    lorsque le drapeau vert est cliqué
-    définir [étapes v] sur [0]
-- demandez à [Par combien d'étape devrais-je le grossir?] et attendre
-+ définir [augmenter v] sur (choisis au hasard de (1) à (10))
-- demander [Combien de degrés dois-je tourner?] et attendre
-+ définir [degrés v] sur (choisir au hasard de (1) à (180))
+    quand le drapeau vert pressé
+    mettre [étapes v] à [0]
+-    demander [Par combien d'étape devrais-je le grossir?] et attendre
++    mettre [augmenter v] à (nombre aléatoire entre (1) et (10))
+-    demander [Combien de degrés dois-je tourner?] et attendre
++    mettre [degrés v] à (nombre aléatoire entre (1) et (180))
     relever le stylo
 ```
 
@@ -25,23 +25,23 @@ C'est parce que la boucle s’exécute seulement jusqu'à ce qu'elle atteigne le
 --- task --- Tu as besoin d'une autre boucle qui tourne pour toujours (donc un bloc `répéter indéfiniment`{:class="block3control"}!) en dehors de la boucle actuelle pour qu'elle continue encore et encore. Il suffit de faire glisser l’un des éléments de la section **Contrôle** et d’y ajouter tous tes autres codes.
 
 ```blocks3
-    lorsque le drapeau vert est cliqué 
-+ répéter indéfiniment 
-        définir [étapes v] sur [0]
-        définir [augmenter v] sur (choisir au hasard de (1) à (10))
-        définir [degrés v] sur (choisir au hasard de (1) à (180) )
+    quand le drapeau vert pressé
++    répéter indéfiniment 
+        mettre [étapes v] à [0]
+        mettre [augmenter v] à (nombre aléatoire entre (1) et (10))
+        mettre [degrés v] à (nombre aléatoire entre (1) et (180))
         relever le stylo
-        masquer
-        effacer
+        cacher
+        effacer tout
         aller à x: (0) y: (0)
-        définir la couleur du stylo sur [# 4a6cd4]
+        mettre la couleur du stylo à [#4a6cd4]
         stylo en position d'écriture
-        répéter jusqu'à <touching [edge v] ?> 
-            déplacer (étapes) pas
-            tourner cw de (degrés) degrés 
-            changer [étapes v] sur (augmenter)
-        fin
-    fin
+        répéter jusqu'à ce que <touche le [bord v] ?> 
+            avancer de (étapes) pas
+            tourner droite de (degrés) degrés
+            ajouter (augmenter) à [étapes v]
+        end
+    end
 ```
 
 --- /task ---

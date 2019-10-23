@@ -7,10 +7,10 @@ Tu devras donc utiliser un type de boucle différent, appelé `répéter jusqu'�
 --- task --- Prends un bloc `répéter jusqu'à`{:class="block3control"} de la section **Contrôle**, et mets les blocs `déplacer`{:class="block3motion"} et `tourner`{:class="block3motion"} à l'intérieur, comme suit:
 
 ```blocks3
-+ répéter jusqu'à <> 
-        déplacer de (50) pas
-        tourner cw (15) degrés
-    fin
++   répéter jusqu'à ce que <> 
+        avancer de (50) pas
+        tourner droite de (15) degrés
+    end
 ```
 
 --- /task ---
@@ -36,10 +36,10 @@ Il est temps de corriger ta boucle `répéter jusqu'à`{:class ="block3control"}
 
 ```blocks3
     stylo en position d'écriture
-+ répétez jusqu'à <touching [edge v] ?> 
-        déplacer de (50) pas
-        tournez cw (15) degrés
-    fin
++    répéter jusqu'à ce que <touche le [bord v] ?> 
+        avancer de (50) pas
+        tourner droite de (15) degrés
+    end
 ```
 
 --- /task ---
@@ -47,17 +47,17 @@ Il est temps de corriger ta boucle `répéter jusqu'à`{:class ="block3control"}
 --- task --- Modifie le nombre de pas dans le bloc `déplacer`{:class="block3motion"} en `5` et vérifie que ton programme correspond à celui-ci avant de le tester:
 
 ```blocks3
-    lorsque le drapeau vert est cliqué
+    quand le drapeau vert pressé
     relever le stylo
-    masquer
-    effacer
+    cacher
+    effacer tout
     aller à x: (0) y: (0)
-    définir la couleur du stylo sur [# 4a6cd4]
+    mettre la couleur du stylo à [#4a6cd4]
     stylo en position d'écriture
-    répéter jusqu'à <touching [edge v] ?> 
-        déplacer de (5) pas
-        tourner cw ( 15) degrés
-    fin
+    répéter jusqu'à ce que <touche le [bord v] ?> 
+        avancer de (5) pas
+        tourner droite de (15) degrés
+    end
 ```
 
 --- /task ---
@@ -71,8 +71,8 @@ Les variables sont essentiellement des emplacements étiquetés pour stocker des
 --- task --- Crée une variable appelée `étapes`{:class="block3variables"}, puis ajoute un bloc de `définir étapes à 0`{:class="block3variables"} au début de ton programme.
 
 ```blocks3
-    lorsque le drapeau vert est cliqué
-+ définir [étapes v] sur [0]
+    quand le drapeau vert pressé
++    mettre [étapes v] à [0]
     relever le stylo
 ```
 
@@ -82,11 +82,11 @@ Les variables sont essentiellement des emplacements étiquetés pour stocker des
 
 ```blocks3
     stylo en position d'écriture
-    répéter jusqu'à <touching [edge v] ?> 
-+ déplacer (étapes) pas
-        tourner cw (76) degrés
-+ changer [étapes v] par (1)
-    fin
+    répéter jusqu'à ce que <touche le [bord v] ?> 
++       avancer de (étapes) pas
+        tourner droite de (76) degrés
++         ajouter (1) à [étapes v]
+    end
 ```
 
 --- /task ---
