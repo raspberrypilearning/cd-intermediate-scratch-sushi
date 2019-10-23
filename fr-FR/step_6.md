@@ -1,53 +1,53 @@
-## Randomise the whole thing
+## Randomiser le tout
 
-You can actually use random numbers to make the whole program run over and over, changing the pattern each time! It'll look a bit like screen savers did in the 1990s...which you probably won't remember, but ask one of your parents!
+Tu peux en fait utiliser des nombres aléatoires pour que tout le programme se répète, en modifiant le motif à chaque fois! Cela ressemblera un peu aux écrans de veille des années 1990 ... dont tu ne te souviens probablement pas, mais demande à l'un de tes parents!
 
-You need a few changes to make this happen. The first one is that you need to set the `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} variables randomly rather than asking for them from the user. So you need to change some of your code blocks.
+Tu as besoin de quelques modifications pour y arriver. La première consiste à définir les variables `augmenter`{:class="block3variables"} et `degrés`{:class="block3variables"} au hasard plutôt que de les demander à l'utilisateur. Tu dois donc modifier certains de tes blocs de code.
 
-\--- task \--- Remove the questions from your code, and update it to use random numbers instead.
+\--- task \--- Supprime les questions de ton code et mets-le à jour afin qu'il utilise des nombres aléatoires.
 
 ```blocks3
-    when green flag clicked
-    set [steps v] to [0]
--    ask [How many steps should I grow by?] and wait
-+    set [increase v] to (pick random (1) to (10))
--    ask [How many degrees should I turn?] and wait
-+    set [degrees v] to (pick random (1) to (180))
-    pen up
+    lorsque le drapeau vert est cliqué
+    définir [étapes v] sur [0]
+- demandez à [Par combien d'étape devrais-je le grossir?] et attendre
++ définir [augmenter v] sur (choisis au hasard de (1) à (10))
+- demander [Combien de degrés dois-je tourner?] et attendre
++ définir [degrés v] sur (choisir au hasard de (1) à (180))
+    relever le stylo
 ```
 
 \--- /task \---
 
-If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
+Si tu exécutes ton programme maintenant, tu constateras qu'il dessine un motif aléatoire, mais une seule fois. Pourquoi penses-tu que c'est le cas?
 
-It’s because the loop only runs until it reaches the edge of the Stage.
+C'est parce que la boucle s’exécute seulement jusqu'à ce qu'elle atteigne le bord de la scène.
 
-\--- task \--- You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
+\--- task \--- Tu as besoin d'une autre boucle qui tourne pour toujours (donc un bloc `répéter indéfiniment`{:class="block3control"}!) en dehors de la boucle actuelle pour qu'elle continue encore et encore. Il suffit de faire glisser l’un des éléments de la section **Contrôle** et d’y ajouter tous tes autres codes.
 
 ```blocks3
-    when green flag clicked
-+    forever 
-        set [steps v] to [0]
-        set [increase v] to (pick random (1) to (10))
-        set [degrees v] to (pick random (1) to (180))
-        pen up
-        hide
-        clear
-        go to x: (0) y: (0)
-        set pen color to [#4a6cd4]
-        pen down
-        repeat until <touching [edge v] ?> 
-            move (steps) steps
-            turn cw (degrees) degrees
-            change [steps v] by (increase)
-        end
-    end
+    lorsque le drapeau vert est cliqué 
++ répéter indéfiniment 
+        définir [étapes v] sur [0]
+        définir [augmenter v] sur (choisir au hasard de (1) à (10))
+        définir [degrés v] sur (choisir au hasard de (1) à (180) )
+        relever le stylo
+        masquer
+        effacer
+        aller à x: (0) y: (0)
+        définir la couleur du stylo sur [# 4a6cd4]
+        stylo en position d'écriture
+        répéter jusqu'à <touching [edge v] ?> 
+            déplacer (étapes) pas
+            tourner cw de (degrés) degrés 
+            changer [étapes v] sur (augmenter)
+        fin
+    fin
 ```
 
 \--- /task \---
 
-Now you’ve really got something awesome to look at!
+Maintenant, tu as vraiment quelque chose de génial à regarder!
 
-However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
+Cependant, tu remarqueras peut-être que de temps en temps, l'ordinateur dessine quelque chose qui a l'air joli… mauvais. En effet, certains nombres pour certaines de ces variables ne sont que de mauvais choix, et certaines **combinaisons** sont également de mauvais choix.
 
-On the next card, you'll help the computer to pick only good combinations!
+Sur la carte suivante, tu aideras l'ordinateur à choisir uniquement les bonnes combinaisons!
