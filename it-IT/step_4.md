@@ -1,66 +1,66 @@
-## Asking for input
+## Richiesta di immissione
 
-Ok, this is getting pretty cool, but it’s a bit boring to have to edit your code every time you want to draw a different pattern. Wouldn’t it be good to get the program to ask you for values to use? You can do that!
+Ok, questo sta diventando piuttosto interessante, ma è un po' noioso dover modificare il codice ogni volta che si desidera disegnare una forma diversa. Non sarebbe bello che il programma ti chieda i valori da usare? Ce la puoi fare!
 
-\--- task \--- First, go to the **Variables** section and create variables called `degrees`{:class="block3variables"} and `increase`{:class="block3variables"}. \--- /task \---
+\--- task \--- Prima cosa, vai alla sezione **Variabili** e crea le variabili chiamate `Gradi`{: class = "block3variables"} e `incrementa`{: class = "block3variables"}. \--- /task \---
 
-\--- task \--- Now add the new variables to your code like this:
+\--- task \--- Ora aggiungi le nuove variabili al tuo codice in questo modo:
 
 ```blocks3
     repeat until <touching [edge v] ?> 
         move (steps) steps
-        turn cw (degrees ::variables) degrees
-        change [steps v] by (increase ::variables)
+        turn cw (gradi::variables) degrees
+        change [steps v] by (incrementa::variables)
     end
 ```
 
 \--- /task \---
 
-Now you need to ask for values for these two variables and store them. You do this using a **Sensing** block called `Ask and wait`{:class="block3sensing"}, which you can type a question into.
+Ora devi chiedere i valori per queste due variabili e memorizzarle. Lo fai usando un blocco **Sensori** chiamato `Ask e wait`{: class = "block3sensing"}, in cui puoi inserire una domanda.
 
-\--- task \--- Pull the `Ask and wait`{:class="block3sensing"} block into your sprite panel and change the question to `How many steps should I grow by?`{:class="block3sensing"}
+\--- task \--- Trascina il blocco `Ask and wait`{: class = "block3sensing"} nel tuo pannello sprite e cambia la domanda in `Quanti passi devo fare?`{: class = "block3sensing"}
 
-Then add it to your program, just after you set `steps`{:class="block3variables"} to `0`, like this:
+Quindi aggiungilo al tuo programma, subito dopo aver impostato `steps`{: class = "block3variables"} a `0`, come questo:
 
 ```blocks3
     when green flag clicked
     set [steps v] to [0]
-+    ask [How many steps should I grow by?] and wait
++    ask [Quanti passi devo fare?] and wait
     pen up
 ```
 
 \--- /task \---
 
-Now you’ve got your program asking a question, you need it to remember the answer! It turns out that Scratch has a special variable called `answer`{:class="block3sensing"}, where it stores the most recent answer it has received. You can find this variable among the **Sensing** blocks.
+Ora hai il tuo programma che fa una domanda, ne hai bisogno per ricordare la risposta! Salta fuori che Scratch ha una variabile speciale chiamata `answer`{: class = "block3sensing"}, dove memorizza la risposta più recente che ha ricevuto. È possibile trovare questa variabile tra i blocchi **Sensori**.
 
-\--- task \--- Using a `set to`{:class="block3variables"} block from **Variables**, take the value of `answer`{:class="block3sensing"} and store it in the `increase`{:class="block3variables"} variable like so:
+\--- task \--- Usando un blocco porta...a `set to`{: class = "block3variables"} da **Variabili**, prendi il valore di `answer`{: class = "block3sensing"} e memorizzalo in `incrementa`{: class = "block3variables"} in questo modo:
 
 ```blocks3
-    ask [How many steps should I grow by?] and wait
-+    set [increase v] to (answer)
+    ask [Quanti passi devo fare?] and wait
++    set [incrementa v] to (answer)
 ```
 
 \--- /task \---
 
-\--- task \--- Now, do the same thing with `degrees`{:class="block3variables"}, asking `How many degrees should I turn?`{:class="block3sensing"} and storing the value of `answer`{:class="block3sensing"} in `degrees`{:class="block3variables"}:
+\--- task \--- Ora, fai la stessa cosa con `Gradi`{: class = "block3variables"}, chiedendo `Quanti gradi dovrei girare?`{: class = "block3sensing"} e memorizzando il valore di `answer`{: class = "block3sensing"} in `Gradi`{: class = "block3variables"}:
 
 ```blocks3
-    set [increase v] to (answer)
-+    ask [How many degrees should I turn?] and wait
-+    set [degrees v] to (answer)
+    set [incrementa v] to (answer)
++    ask [Quanti gradi devo girare?] and wait
++    set [Gradi v] to (answer)
 ```
 
 \--- /task \---
 
-\--- task \--- Check your program now looks like the one below, and run it a few times with different numbers. Write down the answers that make the coolest pictures. You’ll need them in a later step!
+\--- task \--- Controlla che il tuo programma ora assomigli a quello sotto, ed eseguilo alcune volte con numeri diversi. Annota le risposte che creano i disegni più belli. Ne avrai bisogno in un secondo momento!
 
 ```blocks3
     when green flag clicked
     set [steps v] to [0]
-    ask [How many steps should I grow by?] and wait
-    set [increase v] to (answer)
-    ask [How many degrees should I turn?] and wait
-    set [degrees v] to (answer)
+    ask [Quanti passi devo fare?] and wait
+    set [incrementa v] to (answer)
+    ask [Quanti gradi devo girare?] and wait
+    set [Gradi v] to (answer)
     pen up
     hide
     clear
@@ -69,8 +69,8 @@ Now you’ve got your program asking a question, you need it to remember the ans
     pen down
     repeat until <touching [edge v] ?> 
         move (steps) steps
-        turn cw (degrees) degrees
-        change [steps v] by (increase)
+        turn cw (Gradi) degrees
+        change [steps v] by (incrementa)
     end
 ```
 
