@@ -55,13 +55,13 @@ Tout d'abord, tu devrais te débarrasser du sprite. Ça gêne le dessin!
 
 --- /task ---
 
-Maintenant, tu peux changer la couleur du stylo avec un autre bloc de la section **Stylo**, mais le bloc est un peu différent des autres que tu as vus. C'est le bloc `définir la couleur du stylo sur`{:class="block3extensions"} et qui ressemble à ceci:
+Maintenant, tu peux changer la couleur du stylo avec un autre bloc de la section **Stylo**, mais le bloc est un peu différent des autres que tu as vus. C'est le bloc `mettre la couleur du stylo à`{:class="block3extensions"} et qui ressemble à ceci:
 
 ```blocks3
     mettre la couleur du stylo à [#4a6cd4]
 ```
 
---- task --- Fais glisser un bloc `définir la couleur du stylo sur`{:class="block3extensions"} dans ton panneau de sprite et clipse le au- dessus du bloc `stylo en position d'écriture`{:class="block3extensions"}.
+--- task --- Fais glisser un bloc `mettre la couleur du stylo à`{:class="block3extensions"} dans ton panneau de sprite et clipse le au- dessus du bloc `stylo en position d'écriture`{:class="block3extensions"}.
 
 ```blocks3
     quand le drapeau vert pressé
@@ -74,7 +74,7 @@ Maintenant, clique sur la case de couleur (dans le code ci-dessus, c'est la bleu
 
 Si tu as cliqué sur le drapeau vert pour tester ton code, tu auras remarqué que les dessins du stylo ne disparaissent pas.
 
---- task --- Ajoute un `effacer`{:class="block3extensions"} bloc du **stylo** section au début de ton code pour s’occuper de cela:
+--- task --- Ajoute un `effacer tout`{:class="block3extensions"} bloc du **stylo** section au début de ton code pour s’occuper de cela:
 
 ```blocks3
     quand le drapeau vert pressé

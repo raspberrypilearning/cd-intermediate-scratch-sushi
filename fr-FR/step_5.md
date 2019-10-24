@@ -2,13 +2,13 @@
 
 Il est temps d'ajouter de la couleur! À l’heure actuelle, ta ligne a une couleur, mais le **Stylo** contient des blocs qui peuvent changer de couleur. Et avec le bloc droit **Opérateur**, tu peux même changer la couleur au hasard!
 
-Le bloc pour changer la couleur **Stylo** est `changer la couleur du stylo par`{:class="block3extensions"}:
+Le bloc pour changer la couleur **Stylo** est `ajouter à la couleur du stylo`{:class="block3extensions"}:
 
 ```blocks3
     ajouter (10) à la couleur du stylo
 ```
 
---- task --- Prends un de ces blocs et mets-le dans ta boucle `répéter jusqu'à`{:class="block3control"}, comme ceci:
+--- task --- Prends un de ces blocs et mets-le dans ta boucle `répéter jusqu'à ce que`{:class="block3control"}, comme ceci:
 
 ```blocks3
     répéter jusqu'à ce que <touche le [bord v] ?> 
@@ -16,7 +16,6 @@ Le bloc pour changer la couleur **Stylo** est `changer la couleur du stylo par`{
         avancer de (étapes) pas
         tourner droite de (degrés :: variables) degrés
         ajouter (augmenter :: variables) à [étapes v]
-    end
 ```
 
 --- /task ---
@@ -27,11 +26,10 @@ C'est cool, mais un peu prévisible. Tu peux le rendre un peu plus amusant si tu
 
 ```blocks3
     répéter jusqu'à ce que <touche le [edge v] ?> 
-    +    ajouter (nombre aléatoire entre (1) et (100)) à la couleur du stylo
++        ajouter (nombre aléatoire entre (1) et (100)) à la couleur du stylo
         avancer de (étapes) pas
         tourner droite de (degrés :: variables) degrés
         ajouter (augmenter :: variables) à [étapes v]
-    end
 ```
 
 --- /task ---

@@ -4,13 +4,12 @@ Tu as maintenant un programme qui trace une ligne, mais il n'en trace qu'une. C'
 
 Tu devras donc utiliser un type de boucle différent, appelé `répéter jusqu'à`{:class="block3control"}, que tu trouveras également dans la section **Contrôle**. Ce type de boucle répétera quelque chose encore et encore, **jusqu'à** ce qu'une condition Vrai / Faux est remplie.
 
---- task --- Prends un bloc `répéter jusqu'à`{:class="block3control"} de la section **Contrôle**, et mets les blocs `déplacer`{:class="block3motion"} et `tourner`{:class="block3motion"} à l'intérieur, comme suit:
+--- task --- Prends un bloc `répéter jusqu'à ce que`{:class="block3control"} de la section **Contrôle**, et mets les blocs `avancer`{:class="block3motion"} et `tourner`{:class="block3motion"} à l'intérieur, comme suit:
 
 ```blocks3
 +   répéter jusqu'à ce que <> 
         avancer de (50) pas
         tourner droite de (15) degrés
-    end
 ```
 
 --- /task ---
@@ -24,27 +23,26 @@ title: Pourquoi le stylo fait-il cela?
 
 Le stylo commence toujours à dessiner dans la direction du milieu, car le premier bloc **Mouvement** qui s'exécute après le `stylo en position d'écriture`{:class="block3extensions"} est `aller à x: 0 y: 0`{:class="block3motion"}. Ainsi, le stylo tracera une ligne lorsqu'il se déplacera au centre de la scène.
 
-Le stylo ne s'arrête pas au bord de la scène, parce que tu n'as pas encore dit au bloc `répéter jusqu'à`: boucle {:class=block3control"} quelle condition il vérifie. Cela signifie que la condition ne peut jamais être remplie, ainsi la boucle fonctionnera encore et encore. Cela signifie qu’à présent, la boucle fonctionne comme une boucle `répéter indéfiniment`{:class="block3control"}.
+Le stylo ne s'arrête pas au bord de la scène, parce que tu n'as pas encore dit au bloc `répéter jusqu'à ce que`{:class=block3control"} boucle quelle condition il vérifie. Cela signifie que la condition ne peut jamais être remplie, ainsi la boucle fonctionnera encore et encore. Cela signifie qu’à présent, la boucle fonctionne comme une boucle `répéter indéfiniment`{:class="block3control"}.
 
 --- /collapse ---
 
 --- task --- Déplace le bloc `aller à x: 0 y: 0`{:class="block3motion"} avant le `stylo en position d'écriture`{:class="block3extensions"} et ajoute, à partir de la section **Stylo** , un bloc `relever le stylo`{:class="block3extensions"} au début de ton code. --- /task ---
 
-Il est temps de corriger ta boucle `répéter jusqu'à`{:class ="block3control"} pour qu'elle s'arrête quand tu le désires. Tu cherches à savoir si le sprite (invisible) touche le bord de la scène, tu as donc besoin d'un bloc **Capteur** - dans ce cas, le bloc `touche ?`{:class="block3sensing"}.
+Il est temps de corriger ta boucle `répéter jusqu'à ce que`{:class="block3control"} pour qu'elle s'arrête quand tu le désires. Tu cherches à savoir si le sprite (invisible) touche le bord de la scène, tu as donc besoin d'un bloc **Capteur** - dans ce cas, le bloc `touche ?`{:class="block3sensing"}.
 
---- task --- Ajoute un bloc `touche ?`{:class="block3sensing"} dans ta boucle `répétition jusqu'à`{:class="block3control"} et sélectionne `bord`{:class="block3sensing"}. Ensuite, la boucle va exécuter **jusqu'à** ce que le sprite (invisible) touche le bord de la scène.
+--- task --- Ajoute un bloc `touche ?`{:class="block3sensing"} dans ta boucle `répéter jusqu'à ce que`{:class="block3control"} et sélectionne `bord`{:class="block3sensing"}. Ensuite, la boucle va exécuter **jusqu'à** ce que le sprite (invisible) touche le bord de la scène.
 
 ```blocks3
     stylo en position d'écriture
 +    répéter jusqu'à ce que <touche le [bord v] ?> 
         avancer de (50) pas
         tourner droite de (15) degrés
-    end
 ```
 
 --- /task ---
 
---- task --- Modifie le nombre de pas dans le bloc `déplacer`{:class="block3motion"} en `5` et vérifie que ton programme correspond à celui-ci avant de le tester:
+--- task --- Modifie le nombre de pas dans le bloc `avancer`{:class="block3motion"} en `5` et vérifie que ton programme correspond à celui-ci avant de le tester:
 
 ```blocks3
     quand le drapeau vert pressé
@@ -57,7 +55,6 @@ Il est temps de corriger ta boucle `répéter jusqu'à`{:class ="block3control"}
     répéter jusqu'à ce que <touche le [bord v] ?> 
         avancer de (5) pas
         tourner droite de (15) degrés
-    end
 ```
 
 --- /task ---
@@ -68,7 +65,7 @@ Non seulement cela, mais ton programme est devenu un programme de dessin de cerc
 
 Les variables sont essentiellement des emplacements étiquetés pour stocker des numéros ou d’autres informations qui t'intéressent. Tu peux les créer dans la section des blocs **Variables**.
 
---- task --- Crée une variable appelée `étapes`{:class="block3variables"}, puis ajoute un bloc de `définir étapes à 0`{:class="block3variables"} au début de ton programme.
+--- task --- Crée une variable appelée `étapes`{:class="block3variables"}, puis ajoute un bloc de `mettre étapes à 0`{:class="block3variables"} au début de ton programme.
 
 ```blocks3
     quand le drapeau vert pressé
@@ -78,7 +75,7 @@ Les variables sont essentiellement des emplacements étiquetés pour stocker des
 
 --- /task ---
 
---- task --- Ensuite, utilise la valeur de `étapes`{:class="block3variables"} au lieu de `5` dans le bloc `déplacer`{:class="block3motion"} et ajoute `changer étapes par 1`{:class="block3variables"} en tant que partie de ta boucle:
+--- task --- Ensuite, utilise la valeur de `étapes`{:class="block3variables"} au lieu de `5` dans le bloc `avancer`{:class="block3motion"} et ajoute `ajouter 1 à étapes`{:class="block3variables"} en tant que partie de ta boucle:
 
 ```blocks3
     stylo en position d'écriture
@@ -86,12 +83,11 @@ Les variables sont essentiellement des emplacements étiquetés pour stocker des
 +       avancer de (étapes) pas
         tourner droite de (76) degrés
 +         ajouter (1) à [étapes v]
-    end
 ```
 
 --- /task ---
 
-Penses-tu qu’il importe de savoir où, dans la boucle, tu mets le bloc `changer étapes par 1`{:class="block3variables"}?
+Penses-tu qu’il importe de savoir où, dans la boucle, tu mets le bloc `ajouter 1 à étapes`{:class="block3variables"}?
 
 --- collapse ---
 ---
@@ -102,7 +98,7 @@ Lorsque tu décides dans quel ordre placer des blocs, réfléchis à ce que chaq
 
 Dans ce cas, tu veux que le stylo bouge, puis tourne, encore et encore. Chaque fois que cela se produit, tu souhaites déplacer d'une étape supplémentaire.
 
-Il est donc logique de placer le bloc `changer étapes par 1`{:class="block3variables"} **après** le `déplacer`{:class="block3motion"}. Cependant, après le déplacement, peu importe si le stylo tourne en premier et ensuite le nombre d'étapes change, ou si le nombre d'étapes change en premier et ensuite le stylo tourne à la place.
+Il est donc logique de placer le bloc `ajouter 1 à étapes`{:class="block3variables"} **après** le `avancer`{:class="block3motion"}. Cependant, après le déplacement, peu importe si le stylo tourne en premier et ensuite le nombre d'étapes change, ou si le nombre d'étapes change en premier et ensuite le stylo tourne à la place.
 
 --- /collapse ---
 

@@ -40,8 +40,6 @@ C'est parce que la boucle s’exécute seulement jusqu'à ce qu'elle atteigne le
             avancer de (étapes) pas
             tourner droite de (degrés) degrés
             ajouter (augmenter) à [étapes v]
-        end
-    end
 ```
 
 --- /task ---

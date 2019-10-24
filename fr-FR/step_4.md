@@ -11,16 +11,15 @@ Ok, ça devient plutôt cool, mais c'est un peu ennuyeux de devoir modifier ton 
         avancer de (étapes) pas
         tourner droite de (degrees :: variables) degrés
         ajouter (augmenter :: variables) à [étapes v]
-    end
 ```
 
 --- /task ---
 
-Maintenant, tu dois demander des valeurs pour ces deux variables et les stocker. Pour ce faire, utilise un bloc **Capteur** appelé `Demander et attendre`{:class="block3sensing"}, dans lequel tu peux taper une question.
+Maintenant, tu dois demander des valeurs pour ces deux variables et les stocker. Pour ce faire, utilise un bloc **Capteur** appelé `demander et attendre`{:class="block3sensing"}, dans lequel tu peux taper une question.
 
---- task --- Tire le bloc `Demander et attendre`{:class="block3sensing"} dans le panneau sprite et change la question sur `Par combien d'étapes dois-je le grossir?`{:class="block3sensing"}
+--- task --- Tire le bloc `demander et attendre`{:class="block3sensing"} dans le panneau sprite et change la question sur `Par combien d'étapes dois-je le grossir?`{:class="block3sensing"}
 
-Puis ajoute-le à ton programme, juste après avoir défini `étapes`{:class= block3variables"} sur `0`, comme ceci:
+Puis ajoute-le à ton programme, juste après avoir défini `étapes`{:class=block3variables"} sur `0`, comme ceci:
 
 ```blocks3
     quand le drapeau vert pressé
@@ -33,7 +32,7 @@ Puis ajoute-le à ton programme, juste après avoir défini `étapes`{:class= bl
 
 Maintenant que ton programme pose une question, tu en as besoin pour retenir la réponse! Il s'avère que Scratch a une variable spéciale appelée `réponse`{:class="block3sensing"}, où il stocke la réponse la plus récente reçue. Tu peux trouver cette variable parmi les blocs **Capteur**.
 
---- task --- En utilisant un bloc `définir sur`{:class="block3variables"} de **Variables**, prends la valeur de `réponse`{:class="block3sensing"} et stocke la dans la variable `augmenter`{:class="block3variables"} comme ceci:
+--- task --- En utilisant un bloc `mettre à`{:class="block3variables"} de **Variables**, prends la valeur de `réponse`{:class="block3sensing"} et stocke la dans la variable `augmenter`{:class="block3variables"} comme ceci:
 
 ```blocks3
     demander [Par combien d’étapes dois-je le grossir?] et attendre
@@ -71,7 +70,6 @@ Maintenant que ton programme pose une question, tu en as besoin pour retenir la 
         avancer de (étapes) pas
         tourner droite de (degrés) degrés
         ajouter (augmenter) à [étapes v]
-    end
 ```
 
 --- /task ---

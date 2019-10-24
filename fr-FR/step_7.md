@@ -22,11 +22,11 @@ Ta liste, qui est vide pour le moment, apparaîtra sur la scène et tu verras un
 
 ![](images/helping2.png)
 
-Assures-toi que la valeur `degrés`{:class="block3variables"} et la valeur `augmenter`{:class="block3variables"} qui ont bien fonctionné sont au même emplacement dans la `liste des degrés`{:class="block3variables"} et la `Liste d’augmentation`{:class=" block3variables "}. Ils doivent être présents pour que ton programme puisse les comparer en utilisant leur position!
+Assures-toi que la valeur `degrés`{:class="block3variables"} et la valeur `augmenter`{:class="block3variables"} qui ont bien fonctionné sont au même emplacement dans la `Liste des degrés`{:class="block3variables"} et la `Liste d’augmentation`{:class=" block3variables "}. Ils doivent être présents pour que ton programme puisse les comparer en utilisant leur position!
 
 --- /task ---
 
-Maintenant que tu as les listes, il te suffit d’obtenir ton code pour les lire et les boucler dessus! Pour ce faire, tu vas utiliser une nouvelle variable pour agir en tant que compteur, des **incrémenter**, et un bloc `si alors`{:class "block3control"} **Contrôle**.
+Maintenant que tu as les listes, il te suffit d’obtenir ton code pour les lire et les boucler dessus! Pour ce faire, tu vas utiliser une nouvelle variable pour agir en tant que compteur, des **incrémenter**, et un bloc `si alors`{:class="block3control"} **Contrôle**.
 
 --- collapse ---
 ---
@@ -47,7 +47,6 @@ Tu utiliseras une variable pour faire office de compteur et garder la trace de t
     répéter indéfiniment 
 +        si <(compteur) = (longueur de [Liste d'augmentation v])> alors 
 +           mettre [compteur v] à [0]
-        end
 +        ajouter (1) à [compteur v]
         mettre [étapes v] à [0]
 +        mettre [increase v] à (élément (compteur) de [Liste d'augmentation v])
@@ -62,8 +61,6 @@ Tu utiliseras une variable pour faire office de compteur et garder la trace de t
             avancer de (étapes) pas
             tourner droite de (degrés) degrés
             ajouter (augmenter) à [étapes v]
-        end
-    end
 ```
 
 --- /task ---
@@ -87,24 +84,24 @@ Voici ce qui se passe lorsque tu exécutes ton programme:
 3. Vérifie si `compteur`{:class="block3variables"} (`0`) est identique à la longueur de `Liste d'augmenter`{:class="block3variables"} (`2`). Ce n’est pas le cas.
 4. Change `compteur`{:class="block3variables"} par `1`. Maintenant, `compteur`{:class="block3variables"} = `1`.
 5. Définis `étapes`{:class="block3variables"} sur `0`.
-6. Récupère l'élément à la position nommée par `compteur`{:class="block3variables"} (`1`) dans la `Liste d'augmentations`{:class="block3variables"}, et mets le dans `augmenter`{:class="block3variables"}.
-7. Récupère l'élément à la position nommée par `compteur`{:class="block3variables"} (`1`) dans la `liste des degrés`{:class="block3variables"}, et mets-le à `degrés`{:class="block3variables"}.
+6. Récupère l'élément à la position nommée par `compteur`{:class="block3variables"} (`1`) dans la `Liste d'augmentation`{:class="block3variables"}, et mets le dans `augmenter`{:class="block3variables"}.
+7. Récupère l'élément à la position nommée par `compteur`{:class="block3variables"} (`1`) dans la `Liste des degrés`{:class="block3variables"}, et mets-le à `degrés`{:class="block3variables"}.
 8. Fais tous les trucs liés au dessin des motifs.
 9. Redémarre la boucle `répéter indéfiniment`{:class="block3control"}:
 10. Vérifie si `compteur`{:class="block3variables"} (`1`) est identique à la longueur de `Liste d'augmentation`{:class="block3variables"} (`2`). Ce n’est pas le cas.
 11. Change `compteur`{:class="block3variables"} par `1`. Maintenant, `compteur`{:class="block3variables"} = `2`.
 12. Définis `étapes`{:class="block3variables"} sur `0`.
-13. Récupère l'élément à la position nommée par `compteur`{:class="block3variables"} (`2`) dans la `liste de augmentations`{:class="block3variables"}, et mets le dans `augmenter`{:class="block3variables"}.
-14. Récupère l'élément à la position nommée par `compteur`{:class="block3variables"} (`2`) dans la `liste des degrés`{:class="block3variables"}, et mets-le dans `degrés`{:class="block3variables"}.
+13. Récupère l'élément à la position nommée par `compteur`{:class="block3variables"} (`2`) dans la `Liste de augmentation`{:class="block3variables"}, et mets le dans `augmenter`{:class="block3variables"}.
+14. Récupère l'élément à la position nommée par `compteur`{:class="block3variables"} (`2`) dans la `Liste des degrés`{:class="block3variables"}, et mets-le dans `degrés`{:class="block3variables"}.
 15. Fais tous les trucs liés au dessin des motifs.
 16. Redémarre la boucle `répéter indéfiniment`{:class="block3control"}:
-17. Vérifie si `compteur`{:class="block3variables"} (`2`) est identique à la longueur de la `liste de augmentations`{:class="block3variables"} (`2`). C'est ça!
+17. Vérifie si `compteur`{:class="block3variables"} (`2`) est identique à la longueur de la `Liste de augmentation`{:class="block3variables"} (`2`). C'est ça!
 18. Définis `compteur`{:class="block3variables"} sur `0`.
 19. Continue à partir de **étape 4** de cette liste, dans une boucle sans fin!
 
 --- /collapse ---
 
---- task --- Une fois que tu es satisfait du code, continue et ajoute le reste des paires de valeurs que tu as notées à la `liste des degrés`{:class="block3variables"} et à la `liste d'augmentation`{:class="block3variables"}. --- /task ---
+--- task --- Une fois que tu es satisfait du code, continue et ajoute le reste des paires de valeurs que tu as notées à la `Liste des degrés`{:class="block3variables"} et à la `Liste d'augmentation`{:class="block3variables"}. --- /task ---
 
 C'est tout! Pose toi et regarde ton programme continuer à dessiner de jolis motifs dans une boucle sans fin! Si tu souhaites ajouter plus de motifs, tu peux: simplement ajouter plus de paires de nombres aux deux listes et redémarrer le programme.
 
