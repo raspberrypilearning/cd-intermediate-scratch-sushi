@@ -62,8 +62,6 @@ Tu utiliseras une variable pour faire office de compteur et garder la trace de t
             avancer de (étapes) pas
             tourner droite de (degrés) degrés
             ajouter (augmenter) à [étapes v]
-        end
-end
 ```
 
 --- /task ---
