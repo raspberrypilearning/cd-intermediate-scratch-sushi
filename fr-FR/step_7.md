@@ -47,6 +47,7 @@ Tu utiliseras une variable pour faire office de compteur et garder la trace de t
     répéter indéfiniment 
 +        si <(compteur) = (longueur de [Liste d'augmentation v])> alors 
 +           mettre [compteur v] à [0]
+        fin
 +        ajouter (1) à [compteur v]
         mettre [étapes v] à [0]
 +        mettre [increase v] à (élément (compteur) de [Liste d'augmentation v])
@@ -61,6 +62,8 @@ Tu utiliseras une variable pour faire office de compteur et garder la trace de t
             avancer de (étapes) pas
             tourner droite de (degrés) degrés
             ajouter (augmenter) à [étapes v]
+        end
+end
 ```
 
 --- /task ---
