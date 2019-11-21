@@ -1,39 +1,39 @@
-## Cooler lines
+## اجمل خطوط
 
-Time to add colour! Right now, your line is one colour, but the **Pen** has blocks that can change its colour. And with the right **Operator** block, you can even change the colour randomly!
+الوقت لإضافة الوان! إلى الآن ، الخط الخاص بك هو لون واحد ، ولكن **القلم** لديه كتل يمكن أن تغير لونه. ومع كتلة **المشغل** الصحيحة، يمكنك حتى تغيير اللون عشوائيا!
 
-The block for changing the **Pen** colour is `change pen color by`{:class="block3extensions"}:
+كتلة تغيير لون **القلم** هي `تغيير لون القلم بمقدار`{:class="block3extensions"}:
 
 ```blocks3
-    change pen color by (10)
+    تغيير لون القلم بمقدار (10)
 ```
 
-\--- task \--- Grab one of those blocks and put it into your `repeat until`{:class="block3control"} loop, like this:
+\--- task \--- اسحب واحدة من تلك الكتل وضعها داخل حلقة `كرر حتى`{:class="block3control"}, مثل هذا:
 
 ```blocks3
-    repeat until <touching [edge v] ?> 
-+        change pen color by (10)
-        move (steps) steps
-        turn cw (degrees ::variables) degrees
-        change [steps v] by (increase ::variables)
-    end
+    كرر حتى<touching [edge v] ?> 
++        تغيير القلم اللون بمقدار (10)
+        تحرك (خطوات) خطوة
+        استدر باتجاه عقارب الساعة (درجات ::متغير) درجات
+        غير [خطوات v] بمقدار (زيادة:: متغير)
+    النهاية
+```
+
+\---/task--
+
+هذا رائع ، لكن قابل للتنبؤ قليلاً. يمكنك جعله أكثر متعة قليلاً إذا أضفت رقمًا عشوائيًا إليه، بهذا يتغير اللون بشكل عشوائي.
+
+\--- task \--- ضع كتلة **المشغل** العدد عشوائي في كتلة `غير القلم اللون بمقدار`{:class="block3extensions"} واختر بعض القيم لتكون بداخلها. أود ان أحاول `1` و `100` للبدأ.
+
+```blocks3
+    كرر حتى<touching [edge v] ?> 
++        تغيير القلم اللون بمقدار (عدد عشوائي بين(1) و (100))
+        تحرك (خطوات) خطوة
+        استدر باتجاه عقارب الساعة (درجات ::متغير) درجات
+        غير [خطوات] بمقدار (زيادة:: متغير)
+    النهاية
 ```
 
 \--- /task \---
 
-That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly.
-
-\--- task \--- Put the random number **Operator** block into the `change pen color by`{:class="block3extensions"} block and pick some values to go in it. I'd try `1` and `100` to start.
-
-```blocks3
-    repeat until <touching [edge v] ?> 
-+        change pen color by (pick random (1) to (100))
-        move (steps) steps
-        turn cw (degrees ::variables) degrees
-        change [steps v] by (increase ::variables)
-    end
-```
-
-\--- /task \---
-
-\--- task \--- Try running it again, and watch the random rainbow! \--- /task \---
+\--- task \--- حاول تشغيله مرة أخرى ، وشاهد قوس قزح عشوائي! \--- /task \---
