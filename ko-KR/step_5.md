@@ -1,39 +1,39 @@
-## Cooler lines
+## 멋진 라인
 
-Time to add colour! Right now, your line is one colour, but the **Pen** has blocks that can change its colour. And with the right **Operator** block, you can even change the colour randomly!
+이제 색상을 추가해 볼 시간입니다! 지금은 선이 하나의 색이지만 ** 펜 ** 색상을 변경할 수있는 블록이 있습니다. 그리고 ** 연산자 ** 블록을 사용하면 색상을 임의로 변경할 수도 있습니다.
 
-The block for changing the **Pen** colour is `change pen color by`{:class="block3extensions"}:
+**펜** 색상을 변경하기 위한 블록은 `펜 색상을 만큼 바꾸기`{:class="block3extensions"} 블록입니다:
 
 ```blocks3
-    change pen color by (10)
+    펜 색깔을 (10) 만큼 바꾸기
 ```
 
-\--- task \--- Grab one of those blocks and put it into your `repeat until`{:class="block3control"} loop, like this:
+\--- task \--- `까지 반복하기`{:class="block3control"} 블록에 아래와 같이 추가하세요:
 
 ```blocks3
-    repeat until <touching [edge v] ?> 
-+        change pen color by (10)
-        move (steps) steps
-        turn cw (degrees ::variables) degrees
-        change [steps v] by (increase ::variables)
-    end
-```
-
-\--- /task \---
-
-That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly.
-
-\--- task \--- Put the random number **Operator** block into the `change pen color by`{:class="block3extensions"} block and pick some values to go in it. I'd try `1` and `100` to start.
-
-```blocks3
-    repeat until <touching [edge v] ?> 
-+        change pen color by (pick random (1) to (100))
-        move (steps) steps
-        turn cw (degrees ::variables) degrees
-        change [steps v] by (increase ::variables)
-    end
+    <touching [edge v] ?> 까지 반복하기
++        펜 색깔을 (10) 만큼 바꾸기
+       (steps) 만큼 움직이기
+       cw 방향으로 (degress ::variables) 도 회전하기
+       [steps v] 를 (increase ::variables) 만큼 바꾸기
+    끝
 ```
 
 \--- /task \---
 
-\--- task \--- Try running it again, and watch the random rainbow! \--- /task \---
+색상이 멋지지만 약간 예측 가능한 색상이 나옵니다. 랜덤 숫자를 추가하면 색상이 무작위로 변경되므로 좀 더 재미있게 만들 수 있습니다.
+
+\--- task \--- **연산** 카테고리에 있는 난수 블록을 `펜 색상을 만큼 바꾸기`{:class="block3extensions"} 블록에 추가하여 랜덤수대로 색상이 바뀌도록 해 보세요. 저는 `1` 부터 `100` 까지의 난수를 선택하겠습니다.
+
+```blocks3
+    <touching [edge v] ?> 까지 반복하기
++        펜 색깔을 ((1) 부터 (100) 사이의 난수) 만큼 바꾸기
+       (steps) 만큼 움직이기
+       cw 방향으로 (degress ::variables) 도 회전하기
+       [steps v] 를 (increase ::variables) 만큼 바꾸기
+    끝
+```
+
+\--- /task \---
+
+\--- task \--- 다시 실행 해보고 랜덤한 무지개를 보세요! \--- /task \---
