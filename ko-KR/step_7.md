@@ -1,107 +1,107 @@
-## Helping the computer
+## 컴퓨터를 도와주기
 
-Do you remember a few steps back, where I told you to write down some of your favourite values for `increase`{:class="block3variables"} and `degrees`{:class="block3variables"}, the ones that gave the best-looking patterns? If you didn't do this, don’t worry: you can just watch the random program run for a while now and write down the combinations that give great results.
+이번 단계에서 우리는 `increase`{:class="block3variables"} 변수와 `degrees`{:class="block3variables"} 변수의 적절한 조합을 찾아내야 합니다. 이 작업을 수행하지 않았다면 걱정하지 마십시오. 지금 잠시동안 무작위 프로그램이 실행되는 것을 보고 좋은 결과를 도출하는 조합을 적어 두십시오.
 
-You’re going to teach Scratch those combinations of values, so it can use them to make nothing but awesome pictures!
+스크래치에게 값 조합을 알려주어 멋진 그림만 만들 수 있습니다!
 
-To do this, you’ll need a **list**. You’ll find lists with the variables in the **Variables** section. Just like you did with your variables, you’ll need to create your list first!
+이렇게 하려면 **리스트가 필요합니다.** 리스트는 **변수** 카테고리에서 찾을 수 있습니다. 변수와 마찬가지로, 먼저 리스트를 만들어야합니다!
 
-\--- task \--- Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
+\--- task \--- **리스트 만들기**를 클릭하고, `Degrees List`{:class="block3variables"} 를 이름으로 정하세요.
 
 ![](images/makeAList.png)
 
 \--- /task \---
 
-Your list, which is empty at the moment, will appear on the Stage, and you'll see a bunch of blocks for it in **Variables**.
+현재 비어있는 목록이 스테이지에 표시되며 **변수에 여러 개의 블록이 표시됩니다**.
 
 ![](images/listBlocks.png)
 
-\--- task \--- Make another list called `Increase List`{:class="block3variables"} \--- /task \---
+\--- task \--- `Increase List`{:class="block3variables"} 라는 이름을 가진 또 다른 리스트를 만드세요. \--- /task \---
 
-\--- task \--- Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
+\--- task \--- 이제, 왼쪽 하단에 있는 더하기 기호 (**+**) 를 클릭하여, `increase`{:class="block3variables"} 와 `degrees`{:class="block3variables"} 리스트에 적절한 값을 넣으세요. 두 번째 값을 추가하려면 이 작업을 다시 수행하십시오. 지금은 이것으로 충분할 것입니다. 나중에 당신이 좋아하는 나머지 값을 추가하면 됩니다!
 
 ![](images/helping2.png)
 
-Make sure that the `degrees`{:class="block3variables"} value and the `increase`{:class="block3variables"} value that worked well together are at the same position in the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. They need to be there so your program can match them up again using their position!
+`degrees`{:class="block3variables"} 의 값과 `increase`{:class="block3variables"} 의 값은 항상 `Degrees List`{:class="block3variables"} 과 `Increase List`{:class="block3variables"} 리스트 둘 다 같은 위치에 있어야 합니다. 이렇게 해야만 프로그램이 위치를 정확히 파악할 수 있습니다.
 
 \--- /task \---
 
-Now you have the lists, you just need to get your code to read them and loop over them! To do this, you’re going to use a new variable to act as a counter, some **incrementing**, and an `if then`{:class="block3control"} **Control** block.
+이제 리스트가 생기면 코드를 읽고 루프를 반복하면 됩니다. 이렇게 하려면 새 변수를 사용하여 카운터 역할을 수행하도록 합니다. **증가하는 변수를 만들고**, **제어** 블록의 `만약 이라면`{:class="block3control"} 블록으로 판별합니다.
 
 ## \--- collapse \---
 
-## title: What does incrementing mean?
+## 제목: 증가하는 것은 무엇을 의미합니까?
 
-To increment something means to add something to it.
+무언가를 증가시키는 것은 그것에 무언가를 추가하는 것을 의미합니다.
 
-You will use a variable to act as a counter to keep track of what position you're at in your lists. To move through the lists, you'll keep incrementing the counter by `1` (so, adding `1` to it) until you get to the end of the list.
+변수를 사용하여 카운터 역할을하면 목록에서 어떤 위치에 있는지 알아낼 수 있습니다. 리스트 인덱스를 이동하려면 리스트의 끝까지 도달할 때까지 카운터를 `1` 씩 증가합니다. (변수에 `1` 을 추가)
 
 \--- /collapse \---
 
-\--- task \--- Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
+\--- task \--- `counter`{:class="block3variables"}, 변수를 추가하고 아래와 같이 코드를 업데이트 하세요.
 
 ```blocks3
-    when green flag clicked
-    set [counter v] to [0]
-    forever 
-+        if <(counter) = (length of [Increase List v] :: list)> then 
-+            set [counter v] to [0]
-        end
-+        change [counter v] by (1)
-        set [steps v] to [0]
-+        set [increase v] to (item (counter) of [Increase List v] :: list)
-+        set [degrees v] to (item (counter) of [Degrees List v] :: list)
-        pen up
-        hide
-        clear
-        go to x: (0) y: (0)
-        set pen color to [#4a6cd4]
-        pen down
-        repeat until <touching [edge v] ?> 
-            move (steps) steps
-            turn cw (degrees) degrees
-            change [steps v] by (increase)
-        end
-    end
+    녹색 깃발이 클릭되었을 때
+   [counter v] 를 [0] 로 정하기
+    무한 반복
++        만약 <(counter) = (length of [Increase List v] :: list)> 이라면 
++           [counter v] 를 [0] 로 정하기
+        끝
++       [counter v] 를 (1) 로 정하기
+       [steps v] 를 [0] 로 정하기
++        [increase v] 를 (item (counter) of [Increase List v] :: list) 로 정하기
++        [degrees v] 를 (item (counter) of [Degrees List v] :: list) 로 정하기
+        펜 올리기
+        숨기기
+        모두 지우기
+        x: (0) y: (0) 로 이동
+        펜 색깔을 [#4a6cd4] 로 정하기
+        펜 내리기
+        <touching [edge v] ?> 까지 반복하기
+            (steps) 만큼 움직이기
+            cw 방향으로 (degrees) 도 회전하기
+            [steps v] 를 (increase) 만큼 바꾸기
+        끝
+    끝
 ```
 
 \--- /task \---
 
-Notice the new blocks that:
+새로운 블록은 다음과 같습니다:
 
-1. Set `counter`{:class="block3variables"} to `0`, outside all the loops.
-2. Check if the number stored in `counter`{:class="block3variables"} is the length of the list, and if so, set `counter`{:class="block3variables"} to `0`. This means that this variable will always be the number of a position in the lists, and won't get any bigger than that.
-3. Add `1` to `counter`{:class="block3variables"}.
-4. Pick the item from `Increase List`{:class="block3variables"} that is at the position described by `counter`{:class="block3variables"}, and put it in the `increase`{:class="block3variables"} variable. Do the same for the `Degrees List`{:class="block3variables"} and `degrees`{:class="block3variables"} variable.
+1. `counter`{:class="block3variables"} 를 `0`으로 설정.
+2. `counter`{:class="block3variables"} 에 저장된 수를 확인. 이 변수는 리스트의 길이이고, `counter`{:class="block3variables"} 변수를 `0`으로 정함. 즉, 이 변수는 항상 리스트의 위치 번호가 되며 그보다 더 커지지는 않습니다.
+3. `counter`{:class="block3variables"} 에 `1` 추가
+4. `Increase List`{:class="block3variables"}에서 자료 추출하기. 자료 추출 인덱스는 `counter`{:class="block3variables"} 변수에 의함. 꺼낸 자료는 `increase`{:class="block3variables"} 변수에 저장. 이 작업을 `Degrees List`{:class="block3variables"} 에서도 반복하는데, `degrees`{:class="block3variables"} 변수에 저장.
 
 ## \--- collapse \---
 
-## title: How does the code work?
+## title: 어떻게 동작하나요?
 
-This is what happens when you run your program:
+이것은 프로그램을 실행할 때 일어나는 일입니다:
 
-1. Set `counter`{:class="block3variables"} to `0`.
-2. Start the `forever`{:class="block3control"} loop.
-3. Check if `counter`{:class="block3variables"} (`0`) is the same as the length of `Increase List`{:class="block3variables"} (`2`). It isn’t.
-4. Change `counter`{:class="block3variables"} by `1`. Now `counter`{:class="block3variables"} = `1`.
-5. Set `steps`{:class="block3variables"} to `0`.
-6. Get the item at the position named by `counter`{:class="block3variables"} (`1`) in the `Increase List`{:class="block3variables"}, and put it in `increase`{:class="block3variables"}.
-7. Get the item at the position named by `counter`{:class="block3variables"} (`1`) in the `Degrees List`{:class="block3variables"}, and put it in `degrees`{:class="block3variables"}.
-8. Do all the stuff related to drawing the patterns.
-9. Restart the `forever`{:class="block3control"} loop:
-10. Check if `counter`{:class="block3variables"} (`1`) is the same as the length of `Increase List`{:class="block3variables"} (`2`). It isn’t.
-11. Change `counter`{:class="block3variables"} by `1`. Now `counter`{:class="block3variables"} = `2`.
-12. Set `steps`{:class="block3variables"} to `0`.
-13. Get the item at the position named by `counter`{:class="block3variables"} (`2`) in the `Increase List`{:class="block3variables"}, and put it in `increase`{:class="block3variables"}.
-14. Get the item at the position named by `counter`{:class="block3variables"} (`2`) in the `Degrees List`{:class="block3variables"}, and put it in `degrees`{:class="block3variables"}.
-15. Do all the stuff related to drawing the patterns.
-16. Restart the `forever`{:class="block3control"} loop:
-17. Check if `counter`{:class="block3variables"} (`2`) is the same as the length of the `Increase List`{:class="block3variables"} (`2`). It is!
-18. Set `counter`{:class="block3variables"} to `0`.
-19. Continue from **step 4** of this list, in a never-ending loop!
+1. `counter`{:class="block3variables"} 를 `0`으로 설정.
+2. 이 작업을 `무한 반복하기`{:class="block3control"}로 설정
+3. `counter`{:class="block3variables"} (`0`) 가 `Increase List`{:class="block3variables"} (`2`)와 같은 값을 가지고 있는지 확인 그렇지 않다면
+4. `counter`{:class="block3variables"} 를 `1` 로 변경. 이제 `counter`{:class="block3variables"} = `1`이 됩니다.
+5. `steps`{:class="block3variables"} 를 `0`으로 설정.
+6. `counter`{:class="block3variables"} (`1`) 위치의`Increase List`{:class="block3variables"} 값을 추출해 `increase`{:class="block3variables"}에 저장.
+7. `counter`{:class="block3variables"} (`1`) 위치의 `Degrees List`{:class="block3variables"} 값을 추출해 `degrees`{:class="block3variables"}에 저장.
+8. 패턴 그리기와 관련된 모든 작업을 수행하십시오.
+9. 다시 `무한 반복`{:class="block3control"}
+10. `counter`{:class="block3variables"} (`1`) 가 `Increase List`{:class="block3variables"} (`2`)와 같은 값을 가지고 있는지 확인 그렇지 않다면
+11. `counter`{:class="block3variables"} 를 `1` 로 변경. 이제 `counter`{:class="block3variables"} = `2`가 됩니다.
+12. `steps`{:class="block3variables"} 를 `0`으로 설정.
+13. `counter`{:class="block3variables"} (`2`) 위치의 `Increase List`{:class="block3variables"} 값을 추출해 `increase`{:class="block3variables"}에 저장.
+14. `counter`{:class="block3variables"} (`2`) 위치의 `Degrees List`{:class="block3variables"} 값을 추출해 `degrees`{:class="block3variables"}에 저장.
+15. 패턴 그리기와 관련된 모든 작업을 수행하십시오.
+16. 다시 `무한 반복`{:class="block3control"}
+17. `counter`{:class="block3variables"} (`2`) 가 `Increase List`{:class="block3variables"} (`2`)와 같은 값을 가지고 있는지 확인 그것은
+18. `counter`{:class="block3variables"} 를 `0`으로 설정.
+19. **4단계** 반복!
 
 \--- /collapse \---
 
-\--- task \--- Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. \--- /task \---
+\--- task \--- 이 코드에 만족한다면 `Degrees List`{:class="block3variables"} 과 `Increase List`{:class="block3variables"} 에 값을 추가하세요. \--- /task \---
 
-That's it! Sit back and watch your program keep drawing lovely patterns in a never-ending loop! If you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
+끝났습니다! 이제 프로그램이 끝이 없는 무한루프에서 멋진 패턴을 그리는 것을 지켜보십시오! 더 많은 패턴을 추가하려면 다음과 같이 할 수 있습니다. 두 개의 목록에 숫자를 더 추가하고 프로그램을 다시 시작하십시오.
