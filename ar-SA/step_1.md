@@ -1,18 +1,18 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2).
+هذا هو إصدار **Scratch 3** من المشروع. يوجد أيضًا إصدار [Scratch 2 من المشروع](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2).
 
 \--- /no-print \---
 
-## Introduction
+## المقدمة
 
-You’ve already learned the basics of Scratch (and if you haven’t, check out the Beginner Scratch Sushi Cards) to make your first Scratch game. Here you’re going to learn a few more cool tricks and make one of my favourite Scratch projects: it draws colourful patterns and, if you set it up right, can be really cool to watch.
+لقد تعلمت بالفعل أساسيات Scratch (وإذا لم تكن قد فعلت ذلك ، فتحقق من بطاقات Beginner Scratch Sushi) لإنشاء أول لعبة Scratch. هنا سوف تتعلم بعض الحيل الرائعة وتصنع أحد مشروعات Scratch المفضلة: ترسم أنماطًا ملونة، وإذا قمت بإعدادها بشكل صحيح ، يمكن أن تكون رائعة لمشاهدتها.
 
 ![](images/pen1.png)
 
-### What you will make
+### ما الذي ستصنعه
 
-Here's a project I've prepared:
+إليك مشروعا قمت انا بأعداده:
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/205355399/?autostart=false" frameborder="0"></iframe>
@@ -20,28 +20,28 @@ Here's a project I've prepared:
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: ما الذي ستتعلمه
 
-In the Intermediate Scratch Sushi Cards, you'll find out about:
+في بطاقات السوشي المتوسطة من سكراتش ، ستكتشف حول:
 
-+ Using the Pen tool
-+ Using and updating variables in loops
-+ Using Repeat Until loops
-+ Getting input values with ask blocks
-+ Using multiple lists with properties related by index
++ استخدام أداة القلم
++ استخدام وتحديث المتغيرات في الحلقات
++ استخدام حلقات تكرار حتى
++ الحصول على قيم الإدخال باستخدام كتل اسأل
++ استخدام قوائم متعددة مع خصائص متعلقة بمؤشر
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: ما الذي ستحتاجه
 
-### Hardware
+### الأجهزة
 
-+ A computer capable of running Scratch 3
++ جهاز كمبيوتر يدعم تشغيل برنامج Scratch 3
 
-### Software
+### البرامج
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/projects/editor/){:target="_blank"} or [offline](https://scratch.mit.edu/download/){:target="_blank"})
++ برنامج Scratch 3 (سواء أكان [عبر الإنترنت](https://scratch.mit.edu/projects/editor/){:target="_blank"} أو [دون اتصال بالإنترنت](https://scratch.mit.edu/download/){:target="_blank"})
 
 \--- /collapse \---
