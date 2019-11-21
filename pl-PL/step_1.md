@@ -1,18 +1,18 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2).
+To jest wersja projektu korzystająca z **Scratch 3**. Istnieje również [wersja tego projektu dla Scratch 2](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2).
 
 \--- /no-print \---
 
-## Introduction
+## Wprowadzenie
 
-You’ve already learned the basics of Scratch (and if you haven’t, check out the Beginner Scratch Sushi Cards) to make your first Scratch game. Here you’re going to learn a few more cool tricks and make one of my favourite Scratch projects: it draws colourful patterns and, if you set it up right, can be really cool to watch.
+Nauczyłeś się już podstaw Scratch (a jeśli nie, zapoznaj się z Kartami Sushi w Scratch dla początkujących), aby stworzyć swoją pierwszą grę w Scratch. Tutaj nauczysz się kilku fajnych sztuczek i zrobisz jeden z moich ulubionych projektów Scratch: który rysuje kolorowe wzory i, jeśli ustawisz je poprawnie, mogą dać efekt, który naprawdę fajnie się ogląda.
 
 ![](images/pen1.png)
 
-### What you will make
+### Co zrobisz
 
-Here's a project I've prepared:
+Oto projekt, który przygotowałem:
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/205355399/?autostart=false" frameborder="0"></iframe>
@@ -20,28 +20,28 @@ Here's a project I've prepared:
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: Czego się nauczysz
 
-In the Intermediate Scratch Sushi Cards, you'll find out about:
+W średnio zaawansowanych kartach Sushi w Scratch dowiesz się jak:
 
-+ Using the Pen tool
-+ Using and updating variables in loops
-+ Using Repeat Until loops
-+ Getting input values with ask blocks
-+ Using multiple lists with properties related by index
++ Korzystać z narzędzia Pióro
++ Używać i aktualizować zmienne w pętlach
++ Korzystać z pętli "Powtarzaj aż"
++ Pobierać wartości wejściowe za pomocą bloków zapytań
++ Używać wielu list z właściwościami powiązanymi według indeksu
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Czego będziesz potrzebować
 
-### Hardware
+### Sprzęt
 
-+ A computer capable of running Scratch 3
++ Komputer, na którym można uruchomić Scratch 3
 
-### Software
+### Oprogramowanie
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/projects/editor/){:target="_blank"} or [offline](https://scratch.mit.edu/download/){:target="_blank"})
++ Scratch 3 ([online](https://scratch.mit.edu/projects/editor/){:target="_blank"} lub [offline](https://scratch.mit.edu/download/){:target="_blank"})
 
 \--- /collapse \---
