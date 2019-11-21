@@ -1,39 +1,39 @@
-## Cooler lines
+## Ciekawsze linie
 
-Time to add colour! Right now, your line is one colour, but the **Pen** has blocks that can change its colour. And with the right **Operator** block, you can even change the colour randomly!
+Czas dodać kolor! W tej chwili twoja linia ma jeden kolor, ale sekcja **Pióro** posiada bloki, które mogą zmienić jej kolor. A dzięki odpowiedniemu blokowi **Wyrażenie** możesz nawet losowo zmieniać kolor!
 
-The block for changing the **Pen** colour is `change pen color by`{:class="block3extensions"}:
+Blok do zmiany koloru **Pióra** to `zmień kolor pisaka o`{:class="block3extensions"}:
 
 ```blocks3
-    change pen color by (10)
+    zmień kolor pisaka o (10)
 ```
 
-\--- task \--- Grab one of those blocks and put it into your `repeat until`{:class="block3control"} loop, like this:
+\--- task \--- Chwyć jeden z tych bloków i umieść go w pętli `powtarzaj aż`{:class="block3control"}, tak jak pokazano poniżej:
 
 ```blocks3
-    repeat until <touching [edge v] ?> 
-+        change pen color by (10)
-        move (steps) steps
-        turn cw (degrees ::variables) degrees
-        change [steps v] by (increase ::variables)
-    end
-```
-
-\--- /task \---
-
-That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly.
-
-\--- task \--- Put the random number **Operator** block into the `change pen color by`{:class="block3extensions"} block and pick some values to go in it. I'd try `1` and `100` to start.
-
-```blocks3
-    repeat until <touching [edge v] ?> 
-+        change pen color by (pick random (1) to (100))
-        move (steps) steps
-        turn cw (degrees ::variables) degrees
-        change [steps v] by (increase ::variables)
-    end
+    powtarzaj aż <touching [edge v] ?> 
++ zmień kolor pisaka o (10)
+        przesuń o (kroki) kroki
+        obróć cw o (stopnie ::zmienne) stopni
+        zmień [kroki v] o (powiększenie ::zmienne)
+    koniec
 ```
 
 \--- /task \---
 
-\--- task \--- Try running it again, and watch the random rainbow! \--- /task \---
+To jest fajne, ale trochę przewidywalne. Możesz sprawić, że będzie zabawniej, jeśli dodasz do kodu losową liczbę tak, że kolor zmieni się losowo.
+
+\--- task \--- Wstaw blok **Wyrażenie** wybierający losowy numer do bloku `zmień kolor pisaka o`{:class="block3extensions"} i wybierz jakieś wartości. Na początek możesz spróbować `1` i `100`.
+
+```blocks3
+    powtarzaj aż <touching [edge v] ?> 
++ zmień kolor pisaka o (wybierz losowy (1) do (100))
+        przesuń o (kroki) kroki
+        obróć cw o (stopnie ::zmienne) stopni
+        zmień [kroki v] o (powiększenie ::zmienne)
+    koniec
+```
+
+\--- /task \---
+
+\--- task \--- Spróbuj uruchomić ponownie i obserwuj losową tęczę! \--- /task \---
