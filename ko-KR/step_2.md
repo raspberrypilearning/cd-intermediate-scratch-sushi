@@ -1,85 +1,85 @@
-## Using the Pen tool
+## 펜 도구 사용
 
-The project you're going to make relies on the **Pen** tool, which draws a line behind the centre of a sprite as it moves. You’re going to learn to use it now!
+여러분이 제작할 이 프로젝트는 **펜** 도구를 사용합니다. 이 도구는 스프라이트가 움직일 때 그 중심에 선을 그립니다. 당신은 지금 이 도구를 사용하는 법을 배울 것입니다!
 
-\--- task \--- Open a new Scratch file, select the Scratch Cat sprite, and drag in a few blocks you may have already seen, until it looks like this:
+\--- task \--- 새 스크래치 파일을 열고 스크래치 고양이 스프라이트를 선택한 다음, 이미 배웠던 몇 가지 블록을 드래그하여 다음과 같이 완성합니다.
 
 ```blocks3
-    when green flag clicked
-    go to x: (0) y: (0)
-    move (50) steps
-    turn cw (15) degrees
+    녹색 깃발이 클릭되었을 때
+    x: (0) y: (0) 로 이동하기
+    (50) 만큼 움직이기
+    cw 방향으로 (15) 도 회전하기
 ```
 
 \--- /task \---
 
-Now, time to test out the pen!
+이제 펜을 테스트 해 볼 시간입니다!
 
-To use the Pen blocks in Scratch, you need add the **Pen extension**.
+스크래치에서 펜 블록을 사용하려면 **펜 확장**을 추가해야 합니다.
 
-\--- task \--- Click on the **Add extension** button in the bottom left-hand corner.
+\--- task \--- 왼쪽 하단에 **확장 기능 추가하기** 버튼을 클릭 하십시오.
 
-![add extension button highlighted](images/add-extension-annotated.png)
+![확장 버튼 추가 강조 표시됨](images/add-extension-annotated.png)
 
-Click on the **Pen** extension to add it.
+**펜** 확장명을 클릭하여 추가합니다.
 
-![pen extension highlighted](images/click-pen-annotated.png)
+![강조 표시된 펜 확장](images/click-pen-annotated.png)
 
-The Pen section then appears at the bottom of the blocks menu.
+그러면 펜 메뉴가 블록 메뉴 하단에 나타납니다.
 
-![pen extension blocks](images/pen-extension-blocks.png)
+![펜 확장 블록](images/pen-extension-blocks.png)
 
-From the **Pen** section, select the `pen down`{:class="block3extensions"} block and add it to the start of your program, like this:
+**펜** 카테고리에서 `펜 내리기`{:class="block3extensions"} 블록을 선택하고 다음과 같이 프로그램 시작 부분에 추가하십시오.
 
 ```blocks3
-    when green flag clicked
-+    pen down
-    go to x: (0) y: (0)
+    녹색 깃발이 클릭되었을 때
++    펜 내리기
+    x: (0) y: (0) 로 이동하기
 ```
 
 \--- /task \---
 
-\--- task \--- Now click the green flag a few times and watch what happens. \--- /task \---
+\--- task \--- 이제 녹색 깃발을 몇 번 클릭하고 어떻게 되는지보십시오. \--- /task \---
 
-If you can see the lines behind the cat sprite, then the pen is working and you can start making it draw really cool patterns.
+고양이 스프라이트 뒤에 선이 보이면 펜이 동작하고 있으며, 정말 멋진 패턴을 그릴 수 있습니다.
 
-First, you should get rid of the sprite. It’s getting in the way of the drawing!
+그 전에 스프라이트를 제거해야합니다. 스프라이트가 그림 그리는 것을 방해하고 있습니다.
 
-\--- task \--- Add a `hide`{:class="block3looks"} block from **Looks** to the start of the program and it’ll disappear.
+\--- task \--- `숨기기`{:class="block3looks"} 블록을 **형태** 카테고리에서 찾아, 프로그램을 시작하자마자 스프라이트가 제거되도록 하세요.
 
 ```blocks3
-    when green flag clicked
-+    hide
-    pen down
+    녹색 깃발이 클릭되었을 때
++ 숨기기
+    펜 내리기
 ```
 
 \--- /task \---
 
-Now, you can change the colour of the pen with another block from the **Pen** section, but the block is a little different to the others you’ve seen. It’s the `set pen color to`{:class="block3extensions"} block and looks like this:
+이제 **펜** 카테고리에서 다른 블록을 사용하여 펜의 색상을 변경하겠습니다. 이 블록은 다른 블록과 사용이 조금 다릅니다. `펜 색깔을 으로 정하기`{:class="block3extensions"} 블록이고 아래와 같이 보입니다:
 
 ```blocks3
-    set pen color to [#4a6cd4]
+    펜 색깔을 [#4a6cd4] (으) 로 정하기
 ```
 
-\--- task \--- Drag a `set pen color to`{:class="block3extensions"} block into your sprite panel, and snap it in above the `pen down`{:class="block3extensions"} block.
+\--- task \--- 위에서 작성한 코드에 `펜 색깔을 으로 정하기`{:class="block3extensions"} 블록을 드래그하여, `펜 내리기`{:class="block3extensions"} 블록에 결합합니다.
 
 ```blocks3
-    when green flag clicked
-    hide
-+    set pen color to [#4a6cd4]
-    pen down
+    녹색 깃발이 클릭되었을 때
+    숨기기
++ 펜 색깔을 [# 4a6cd4] 으로 정하기
+    펜 내리기
 ```
 
-Now, click on the box of colour (in the code above it’s the blue one), and choose a colour. \--- /task \---
+이제 색상 상자를 클릭하고 (위의 코드에서 파란색 상자) 색상을 선택하십시오. \--- /task \---
 
-If you’ve been clicking on the green flag to test your code, you’ll have noticed that the drawings the pen makes don’t go away.
+녹색 깃발을 클릭하여 코드를 테스트를 해 보세요. 그러면, 위에서 테스트한 펜으로 만든 그림이 사라지지 않는 것을 알 수 있습니다.
 
-\--- task \--- Add a `clear`{:class="block3extensions"} block from the **Pen** section to the start of your code to take care of that:
+\--- task \--- **펜** 블록으로 작성한 코드 시작 부분에 `모두 지우기`{:class="block3extensions"} 블록을 추가합니다.
 
 ```blocks3
-    when green flag clicked
-+    clear
-    hide
+    녹색 깃발이 클릭되었을 때
++ 모두 지우기
+    숨기기
 ```
 
 \--- /task \---
