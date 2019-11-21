@@ -1,53 +1,53 @@
-## Randomise the whole thing
+## جعل كل شيء عشوائي
 
-You can actually use random numbers to make the whole program run over and over, changing the pattern each time! It'll look a bit like screen savers did in the 1990s...which you probably won't remember, but ask one of your parents!
+يمكنك بالحقيقة استخدام أرقام عشوائية لجعل البرنامج بأكمله يعمل مرارًا وتكرارًا ، مع تغيير النمط في كل مرة! سيبدو قليلاً كما فعلت شاشات التوقف في التسعينيات... وهو أمر ربما لن تتذكره ، ولكن اسأل أحد والديك!
 
-You need a few changes to make this happen. The first one is that you need to set the `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} variables randomly rather than asking for them from the user. So you need to change some of your code blocks.
+تحتاج إلى بعض التغييرات لجعل هذا يحدث. أول واحد هو أنك تحتاج إلى تعيين متغيرين `زيادة`{:class="block3variables"} و `درجات`{:class="block3variables"} عشوائيًا بدلاً من طلبها من المستخدم. لذلك تحتاج إلى تغيير بعض كتل التعليمات البرمجية الخاصة بك.
 
-\--- task \--- Remove the questions from your code, and update it to use random numbers instead.
+\--- task \--- قم بإزالة الأسئلة من التعليمات البرمجية الخاصة بك، وقم بتحديثه لاستخدام أرقام عشوائية بدلاً من ذلك.
 
 ```blocks3
-    when green flag clicked
-    set [steps v] to [0]
--    ask [How many steps should I grow by?] and wait
-+    set [increase v] to (pick random (1) to (10))
--    ask [How many degrees should I turn?] and wait
-+    set [degrees v] to (pick random (1) to (180))
-    pen up
+    عندما نقر  العلم الأخضر
+    اجعل [خطوات v] مساوياً [0]
+-    اسأل [كم عدد الخطوات التي يجب عليّ أن أنمو بها؟] وانتظر
++    اجعل [زيادة v] مساوياً (عدد عشوائي بين (1) و (10))
+-    اسأل [كم درجة يجب أن استدر؟] وانتظر
++ اجعل [درجات v] إلى (عدد عشوائي بين (1) و (180))
+    ارفع القلم
+```
+
+\---/task--
+
+إذا قمت بتشغيل البرنامج الآن ، فستجد أنه يرسم نمطًا عشوائيًا ، ولكن مرة واحدة فقط. لماذا تعتقد ذلك؟
+
+ذلك لأن الحلقة تعمل فقط حتى تصل إلى حافة المنصة.
+
+\--- task \--- تحتاج إلى حلقة أخرى تعمل إلى الأبد (لذلك كتلة `كرر باستمرار`{:class="block3control"}!) خارج الحالية لابقائها تعمل مراراً وتكراراً. فقط اسحب واحدة من قسم **التحكم**، وإضاف جميع التعليمات البرمجية الأخرى فيها.
+
+```blocks3
+    عند نقر العلم الاخضر
++    كرر باستمرار 
+        اجعل [خطوات v] مساويا [0]
+         اجعل [زيادة v] مساوياً (رقم عشوائي بين(1) و(10))
+        اجعل [درجات v] مساوياً (رقم عشوائي بين(1) و(180))
+        ارفع القلم
+        اختف
+        امسح الكل
+        اذهب إلى الموضع x: (0) y: (0)
+        اجعل لون القلم مساوياً [#4a6cd4]
+        أنزل القلم
+        كرر حتى <touching [edge v] ?> 
+            تحرك (خطوات) خطوة
+            استدر باتجاه عقارب الساعة (درجات) درجة
+            غير [درجات v] بمقدار (زيادة)
+        النهاية
+    النهاية
 ```
 
 \--- /task \---
 
-If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
+الآن لديك حقا شيء رائع للنظر اليه!
 
-It’s because the loop only runs until it reaches the edge of the Stage.
+ومع ذلك ، قد تلاحظ أنه ،بين الحين والآخر ، يرسم الكمبيوتر شيئًا يبدو سيئًا. هذا لأن بعض الأرقام لبعض هذه المتغيرات هي مجرد خيارات سيئة ، وبعض **مجموعات من تلك الأرقام** هي أيضا خيارات سيئة.
 
-\--- task \--- You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
-
-```blocks3
-    when green flag clicked
-+    forever 
-        set [steps v] to [0]
-        set [increase v] to (pick random (1) to (10))
-        set [degrees v] to (pick random (1) to (180))
-        pen up
-        hide
-        clear
-        go to x: (0) y: (0)
-        set pen color to [#4a6cd4]
-        pen down
-        repeat until <touching [edge v] ?> 
-            move (steps) steps
-            turn cw (degrees) degrees
-            change [steps v] by (increase)
-        end
-    end
-```
-
-\--- /task \---
-
-Now you’ve really got something awesome to look at!
-
-However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
-
-On the next card, you'll help the computer to pick only good combinations!
+في البطاقة التالية، سوف تساعد الكمبيوتر على اختيار مجموعات جيدة فقط!
