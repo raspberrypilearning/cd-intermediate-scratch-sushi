@@ -1,77 +1,77 @@
-## Asking for input
+## Pytanie o dane wejściowe
 
-Ok, this is getting pretty cool, but it’s a bit boring to have to edit your code every time you want to draw a different pattern. Wouldn’t it be good to get the program to ask you for values to use? You can do that!
+Ok, robi się całkiem fajnie, ale nudne jest edytowanie kodu za każdym razem, gdy chcesz narysować inny wzór. Czy nie byłoby dobrze, gdyby program poprosił cię o podanie wartości? Możesz to zrobić!
 
-\--- task \--- First, go to the **Variables** section and create variables called `degrees`{:class="block3variables"} and `increase`{:class="block3variables"}. \--- /task \---
+\--- task \--- Najpierw przejdź do sekcji **Zmienne** i utwórz zmienne o nazwie `stopnie`{:class="block3variables"} i `powiększenie`{:class="block3variables"}. \--- /task \---
 
-\--- task \--- Now add the new variables to your code like this:
+\--- task \--- Teraz dodaj nowe zmienne do swojego kodu w następujący sposób:
 
 ```blocks3
-    repeat until <touching [edge v] ?> 
-        move (steps) steps
-        turn cw (degrees ::variables) degrees
-        change [steps v] by (increase ::variables)
-    end
+    powtarzaj aż <touching [edge v] ?> 
+        przesuń o (kroki) kroków
+        obróć w prawo o (stopnie ::zmienne) stopni
+        zmień [kroki v] o (powiększenie ::zmienne)
+    koniec
 ```
 
 \--- /task \---
 
-Now you need to ask for values for these two variables and store them. You do this using a **Sensing** block called `Ask and wait`{:class="block3sensing"}, which you can type a question into.
+Teraz musisz poprosić o wartości dla tych dwóch zmiennych i zapisać je. Robisz to za pomocą bloku z sekcji **Czujniki** o nazwie `Zapytaj i czekaj`{:class="block3sensing"}, do którego możesz wpisać pytanie.
 
-\--- task \--- Pull the `Ask and wait`{:class="block3sensing"} block into your sprite panel and change the question to `How many steps should I grow by?`{:class="block3sensing"}
+\--- task \--- Przeciągnij blok `Zapytaj i czekaj`{:class="block3sensing"} do panelu duszka i zmień pytanie na `O ile kroków powinienem się powiększyć?`{:class="block3sensing"}
 
-Then add it to your program, just after you set `steps`{:class="block3variables"} to `0`, like this:
+Następnie dodaj go do swojego programu, zaraz po ustawieniu `kroki`{:class="block3variables"} na `0`, tak:
 
 ```blocks3
-    when green flag clicked
-    set [steps v] to [0]
-+    ask [How many steps should I grow by?] and wait
-    pen up
+    kiedy kliknięto zieloną flagę
+    ustaw [kroki v] na [0]
++ zapytaj [o ile kroków powinienem się powiększyć?] i czekaj
+    podnieś pisak
 ```
 
 \--- /task \---
 
-Now you’ve got your program asking a question, you need it to remember the answer! It turns out that Scratch has a special variable called `answer`{:class="block3sensing"}, where it stores the most recent answer it has received. You can find this variable among the **Sensing** blocks.
+Teraz twój program potrafi zadać pytanie, potrzebujesz jeszcze, żeby zapamiętał odpowiedź! Okazuje się, że Scratch ma specjalną zmienną o nazwie `odpowiedź`{:class="block3sensing"}, w której przechowuje najnowszą odpowiedź, którą otrzymał. Możesz znaleźć tę zmienną wśród bloków w sekcji **Czujniki**.
 
-\--- task \--- Using a `set to`{:class="block3variables"} block from **Variables**, take the value of `answer`{:class="block3sensing"} and store it in the `increase`{:class="block3variables"} variable like so:
+\--- task \--- Używając bloku `ustaw na`{:class="block3variables"} z sekcji **Zmienne**, weź wartość `odpowiedź`{:class="block3sensing"} i zapisz ją w zmiennej `powiększenie`{:class="block3variables"} tak jak poniżej:
 
 ```blocks3
-    ask [How many steps should I grow by?] and wait
-+    set [increase v] to (answer)
+    zapytaj [o ile kroków powinienem się powiększyć?] i czekaj
++ ustaw [powiększenie v] na (odpowiedź)
 ```
 
 \--- /task \---
 
-\--- task \--- Now, do the same thing with `degrees`{:class="block3variables"}, asking `How many degrees should I turn?`{:class="block3sensing"} and storing the value of `answer`{:class="block3sensing"} in `degrees`{:class="block3variables"}:
+\--- task \--- Zrób teraz to samo ze zmienną `stopnie`{:class="block3variables"}, pytając `Ile stopni powinienem się obrócić?`{:class="block3sensing"} i przechowaj wartość `odpowiedź`{:class="block3sensing"} w zmiennej `stopnie`{:class="block3variables"}:
 
 ```blocks3
-    set [increase v] to (answer)
-+    ask [How many degrees should I turn?] and wait
-+    set [degrees v] to (answer)
+    ustaw [powiększenie v] na (odpowiedź)
++ zapytaj [o ile stopni powinienem się obrócić?] i czekaj
++ ustaw [stopnie v] na (odpowiedź)
 ```
 
 \--- /task \---
 
-\--- task \--- Check your program now looks like the one below, and run it a few times with different numbers. Write down the answers that make the coolest pictures. You’ll need them in a later step!
+\--- task \--- Sprawdź, czy twój program wygląda teraz tak jak ten poniżej i uruchom go kilka razy używając różnych wartości. Zapisz odpowiedzi, które robią najfajniejsze obrazki. Będziesz ich potrzebować w późniejszym kroku!
 
 ```blocks3
-    when green flag clicked
-    set [steps v] to [0]
-    ask [How many steps should I grow by?] and wait
-    set [increase v] to (answer)
-    ask [How many degrees should I turn?] and wait
-    set [degrees v] to (answer)
-    pen up
-    hide
-    clear
-    go to x: (0) y: (0)
-    set pen color to [#4a6cd4]
-    pen down
-    repeat until <touching [edge v] ?> 
-        move (steps) steps
-        turn cw (degrees) degrees
-        change [steps v] by (increase)
-    end
+    kiedy kliknięto zieloną flagę
+    ustaw [kroki v] na [0]
+    zapytaj [o ile kroków powinienem się powiększyć?] i czekaj
+    ustaw [powiększenie v] na (odpowiedź)
+    zapytaj [o ile stopni powinienem się obrócić?] i czekaj
+    ustaw [stopnie v] na (odpowiedź)
+    podnieś pisak
+    ukryj
+    wyczyść wszystko
+    idź do x: (0) y: (0)
+    ustaw kolor pisaka na [#4a6cd4]
+    przyłóż pisak
+    powtarzaj aż <touching [edge v] ?> 
+        przesuń o (kroki) kroki
+        obróć w prawo o (stopnie) stopni
+        zmień [kroki v] o (powiększenie)
+    koniec
 ```
 
 \--- /task \---
