@@ -1,107 +1,107 @@
-## Drawing patterns
+## رسم انماط
 
-Now you’ve got a program that draws a line, but it only draws one line. That’s a bit dull! You could use `forever`{:class="block3control"} loop to draw something over and over again, but then you’ll get drawings that go off the Stage!
+الآن لديك برنامج يرسم خطًا ، لكنه يرسم خطًا واحدًا فقط. هذا ممل قليلا! يمكنك استخدام حلقة `كرر باستمرار`{: class = "block3control"} لرسم شيء مرارًا وتكرارًا ، ولكن بعد ذلك ستحصل على رسومات تخرج عن المنصة!
 
-So you need use a different type of loop called `repeat until`{:class="block3control"}, which you’ll also find in the **Control** section. This type of loop will do something over and over again, **until** a True/False condition is met.
+لذلك تحتاج إلى استخدام نوع مختلف من الحلقات تسمى `كرر حتى`{: class = "block3control"} ، والتي ستجدها أيضًا في قسم **التحكم**. سيقوم هذا النوع من الحلقات بعمل شيء مرارًا وتكرارًا ،**حتى** يتم استيفاء شرط صح/ خطأ.
 
-\--- task \--- Take a `repeat until`{:class="block3control"} block from the **Control** section, and put the `move`{:class="block3motion"} and `turn`{:class="block3motion"} blocks inside it, like so:
+\--- task \--- خذ كتلة `تكرار حتى`{: class = "block3control"} من قسم **التحكم** ، ثم ضع كتلة `تحرك`{: class = "block3motion"} و كتلة `استدر`{: class = "block3motion"} بداخلها، مثل هذا:
 
 ```blocks3
-+    repeat until <> 
-        move (50) steps
-        turn cw (15) degrees
-    end
++ كرر حتى <> 
+        تحرك (50) خطوة
+        استدر باتجاه الساعة (15) درجة
+    نهاية
 ```
 
-\--- /task \---
+\---/task--
 
-\--- task \--- Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge. \--- /task \---
+\--- task \--- الآن انقر على العلم الأخضر لتشغيل البرنامج عدة مرات وراقب ما يحدث. ستلاحظ شيئين: القلم يبدأ دائمًا برسم خط باتجاه منتصف المنصة، ولا يتوقف عند الحافة. \--- /task \---
 
 ## \--- collapse \---
 
-## title: Why does the pen do this?
+## title: لماذا يفعل القلم هذا؟
 
-The pen always starts drawing in the direction of the middle, because the first **Motion** block that runs after the `pen down`{:class="block3extensions"} block is `go to x: 0 y: 0`{:class="block3motion"}. So the pen will draw a line as it moves to the centre of the Stage.
+يبدأ القلم دائمًا بالرسم في اتجاه الوسط ، لأن أول كتلة **Motion** التي يتم تشغيلها بعد `القلم لأسفل`{: class = "block3extensions"} الكتلة هي `انتقل إلى x: 0 y: 0`{: class = "block3motion"}. لذلك سوف يرسم القلم خطًا وهو ينتقل إلى مركز المنصة.
 
-The pen doesn't stop at the edge of the Stage, because you haven’t yet told the `repeat until`{:class="block3control"} loop what condition it’s checking. This means the condition can never be met, so the loop will run on and on. This means that right now, the loop is working like a `forever`{:class="block3control"} loop.
+لا يتوقف القلم عند حافة المنصة، لأنك لم تخبر المسار الحلقي `كرر حتى`{: class = "block3control"} بالشرط الذي تتحقق منه. هذا يعني أن الشرط لا يمكن تحقيقه على الإطلاق ، وبالتالي فإن الحلقة ستستمر. هذا يعني أنه في الوقت الحالي ، تعمل الحلقة مثل حلقة`كرر باستمرار`{:"class = "block3control}.
 
 \--- /collapse \---
 
-\--- task \--- Move the `go to x: 0 y: 0`{:class="block3motion"} block to before the `pen down`{:class="block3extensions"} block and add, from the **Pen** section, a `pen up`{:class="block3extensions"} block right at the start of your code. \--- /task \---
+\--- task \--- انقل كتلة `انتقل إلى الموضع x:0 y:0`{:class="block3motion"} إلى قبل كتلة `إنزل القلم`{:class="block3extensions"} واضف, من قائمة **القلم**, كتلة `ارفع القلم`{:class="block3extensions"} في بداية الكود مباشرة. \--- /task \---
 
-Time to fix your `repeat until`{:class="block3control"} loop so that it stops when you want it to. You’re looking to figure out if the (invisible) sprite is touching the edge of the Stage, so you need a **Sensing** block — in this case, the `touching ?`{:class="block3sensing"} block.
+إنه الوقت لإصلاح حلقة `كرر حتى`{:class="block3control"} بحيث تتوقف عندما تريدها ان تتوقف. أنت تتطلع إلى معرفة ما إذا كان الكائن (غير المرئي) يلمس حافة المنصة، لذلك أنت بحاجة إلى كتلة **تحسس** - في هذه الحالة، الكتلة `ملامس لـ ؟`{:class="block3sensing"}.
 
-\--- task \--- Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class="block3control"} loop, and select `edge`{:class="block3sensing"} . Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
+\--- task \--- اضف كتلة `ملامس لـ`{:class="block3sensing"} إلى حلقة `كرر حتى`{:class="block3control", وحدد `الحافة`{:class="block3sensing"}. ثم سيتم تشغيل الحلقة **حتى** يمس كائن (غير المرئي) حافة المنصة.
 
 ```blocks3
-    pen down
-+    repeat until <touching [edge v] ?> 
-        move (50) steps
-        turn cw (15) degrees
-    end
+    إنزل القلم
++ كرر حتى <touching [edge v] ?> 
+        تحرك (50) خطوة
+        استدر cw (15) درجة
+    نهاية
 ```
 
 \--- /task \---
 
-\--- task \--- Change the number of steps in the `move`{:class="block3motion"} block to `5`, and check that your program matches this one before you test it:
+\--- task \--- غير عدد الخطوات في كتلة `تحرك`{:class="block3motion"} إلى `5`, وتحقق من مطابقة برنامجك لهذا البرنامج قبل ان تختبره:
 
 ```blocks3
-    when green flag clicked
-    pen up
-    hide
-    clear
-    go to x: (0) y: (0)
-    set pen color to [#4a6cd4]
-    pen down
-    repeat until <touching [edge v] ?> 
-        move (5) steps
-        turn cw (15) degrees
-    end
+    عند نقر العلم الأخضر
+    ارفع القلم
+    إختف
+    مسح الكل
+   اذهب إلى الموضع x: (0) y: (0)
+    إجعل لون القلم مساوياً [#4a6cd4]
+   أنزل القلم
+    كرر حتى <touching [edge v] ?> 
+        تحرك (50) خطوة
+        استدر باتجاه عقارب الساعة (15) درجة
+    نهاية
 ```
 
 \--- /task \---
 
-If you run the code now, you’ll see that the drawing the pen makes stays on the Stage.
+إذا قمت بتشغيل الكود الآن ، فسترى أن الرسم يجعل القلم يبقى على المسرح.
 
-Not only that, but your program has turned into a circle-drawing program! What's happening here is that those 15-degree turns eventually add up to 360 degrees, and so your pen turns in a full circle. You're going to change the way it moves slightly to make it take slightly a longer step each time, so it spirals out. For this, you’re going to need a **variable**.
+ليس ذلك فحسب ، بل تحول البرنامج إلى برنامج رسم دائرة! ما يحدث هنا هو أن هذه المنعطفات 15 درجة تضيف في النهاية ما يصل إلى 360 درجة ، وبالتالي يستدير القلم في دائرة كاملة. ستقوم بتغيير الطريقة التي تتحرك بها قليلاً لجعلها تأخذ خطوة أطول قليلاً في كل مرة ، لذلك يتم حلها. لهذا ، ستحتاج إلى **متغير**.
 
-Variables are basically labeled places to store numbers or other information that you care about. You can create them in the **Variables** blocks section.
+المتغيرات هي ببساطة أماكن مخصصة لتخزين الأرقام أو غيرها من المعلومات التي تهمك. يمكنك إنشائها في قسم **المتغيرات**.
 
-\--- task \--- Make a variable called `steps`{:class="block3variables"}, and then add a `set steps to 0`{:class="block3variables"} block at the start of your program.
+\--- task \--- قم بإنشاء متغير يسمى `خطوات`{:class="block3variables"}، ثم قم باضافة `اجعل خطوات مساويا 0`{:class="block3variables"} الى بداية البرنامج.
 
 ```blocks3
-    when green flag clicked
-+   set [steps v] to [0]
-    pen up
+    عند نقر العلم الأخضر
++   اجعل [خطوات] مساويا [0]
+    ارفع القلم
 ```
 
 \--- /task \---
 
-\--- task \--- Then use the value of `steps`{:class="block3variables"} instead of the `5` in the `move`{:class="block3motion"} block, and add `change steps by 1`{:class="block3variables"} as part of your loop:
+\--- task \--- ثم استخدم قيمة `خطوات`{: class = "block3variables"} بدلاً من `5` في كتلة `تحرك`{: class = "block3motion"} ، وقم بإضافة`غير خطوات بمقدار 1`{: class = "block3variables"} كجزء من الحلقة:
 
 ```blocks3
-    pen down
-    repeat until <touching [edge v] ?> 
-+       move (steps) steps
-        turn cw (76) degrees
-+        change [steps v] by (1)
-    end
+    إنزل القلم
+    كرر حتى <touching [edge v] ?> 
++ تحرك (خطوات) خطوة
+        استدر  باتجاه عقارب الساعة (76) درجة
++ غير [خطوات] بمقدار (1)
+    نهاية
 ```
 
 \--- /task \---
 
-Do you think it matters where in the loop you put the `change steps by 1`{:class="block3variables"} block?
+هل تعتقد أنه يهم اين تضع كتلة `غير خطوات بمقدار 1`{:class="block3variables"} في الحلقة؟
 
 ## \--- collapse \---
 
-## title: Putting code in the right order
+## title: وضع التعليمات البرمجية في الترتيب الصحيح
 
-When you're deciding which order to put blocks in, think about what each block does and what you want your code to do.
+عندما تقرر أي ترتيب لوضع الكتل فيه ، فكر فيما تفعله كل كتلة وما تريد من الكود ان يفعل.
 
-In this case, you want the pen to move, then turn, over and over. Each time it does this, you want to move one extra step.
+في هذه الحالة ، تريد أن يتحرك القلم ، ثم قلبه مرارًا وتكرارًا. في كل مرة يفعل ذلك ، تريد التحرك خطوة إضافية واحدة.
 
-So it makes sense to put the `change steps by 1`{:class="block3variables"} block **after** the `move`{:class="block3motion"} block. However, after moving, it doesn't really matter if the pen turns first and then the number of steps changes, or if the number of steps changes first and then the pen turns instead.
+لذلك من المنطقي وضع كتلة `غير خطوات بمقدار 1`{:class="block3variables"}**بعد** كتلة `تحرك`{:class="block3motion"}. ومع ذلك ، بعد التحرك ، لا يهم إذا كان القلم يستدير أولاً ثم يتغير عدد الخطوات ، أو إذا عدد الخطوات تغير أولاً ثم يستدير القلم بدلاً من ذلك.
 
 \--- /collapse \---
 
-\--- task \--- Now run the program, and also try changing the number of degrees around (try `76` and `120`)! \--- /task \---
+\--- task \--- قم الآن بتشغيل البرنامج ، وحاول أيضًا تغيير عدد الدرجات الموجودة (جرب `76` و `120`)! \--- /task \---
