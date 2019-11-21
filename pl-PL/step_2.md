@@ -1,85 +1,85 @@
-## Using the Pen tool
+## Korzystanie z narzędzia Pióro
 
-The project you're going to make relies on the **Pen** tool, which draws a line behind the centre of a sprite as it moves. You’re going to learn to use it now!
+Projekt, który zamierzasz wykonać, opiera się na narzędziu **Pióro**, które rysuje linię za środkiem duszka, gdy się porusza. Nauczysz się go teraz używać!
 
-\--- task \--- Open a new Scratch file, select the Scratch Cat sprite, and drag in a few blocks you may have already seen, until it looks like this:
+\--- task \--- Otwórz nowy plik Scratch, wybierz duszka Kot Scratch i dodaj kilka bloków, które być może już widziałeś, aż będzie wyglądać tak:
 
 ```blocks3
-    when green flag clicked
-    go to x: (0) y: (0)
-    move (50) steps
-    turn cw (15) degrees
+    kiedy kliknięto zieloną flagę
+    idź do x: (0) y: (0)
+    przesuń o (50) kroków
+    obróć w prawo o (15) stopni
 ```
 
 \--- /task \---
 
-Now, time to test out the pen!
+Teraz czas na przetestowanie pióra!
 
-To use the Pen blocks in Scratch, you need add the **Pen extension**.
+Aby użyć bloków Pióra w Scratch, musisz dodać **rozszerzenie Pióro**.
 
-\--- task \--- Click on the **Add extension** button in the bottom left-hand corner.
+\--- task \--- Kliknij przycisk **Dodaj rozszerzenie** w lewym dolnym rogu.
 
-![add extension button highlighted](images/add-extension-annotated.png)
+![podświetlony przycisk Dodaj rozszerzenie](images/add-extension-annotated.png)
 
-Click on the **Pen** extension to add it.
+Kliknij rozszerzenie **Pióro** aby je dodać.
 
-![pen extension highlighted](images/click-pen-annotated.png)
+![podświetlone rozszerzenie Pióro](images/click-pen-annotated.png)
 
-The Pen section then appears at the bottom of the blocks menu.
+W dolnej części menu bloków pojawi się sekcja Pióro.
 
-![pen extension blocks](images/pen-extension-blocks.png)
+![bloki rozszerzenia Pióro](images/pen-extension-blocks.png)
 
-From the **Pen** section, select the `pen down`{:class="block3extensions"} block and add it to the start of your program, like this:
+Z sekcji **Pióro** wybierz blok `przyłóż pisak`{:class="block3extensions"} i dodaj go do początku swojego programu, tak jak poniżej:
 
 ```blocks3
-    when green flag clicked
-+    pen down
-    go to x: (0) y: (0)
+    kiedy kliknięto zieloną flagę
++ przyłóż pisak
+    idź do x: (0) y: (0)
 ```
 
 \--- /task \---
 
-\--- task \--- Now click the green flag a few times and watch what happens. \--- /task \---
+\--- task \--- Teraz kliknij kilka razy zieloną flagę i zobacz, co się stanie. \--- /task \---
 
-If you can see the lines behind the cat sprite, then the pen is working and you can start making it draw really cool patterns.
+Jeśli widzisz linie za duszkiem kota, to pióro działa i możesz zacząć tworzyć naprawdę fajne wzory.
 
-First, you should get rid of the sprite. It’s getting in the way of the drawing!
+Po pierwsze, powinieneś pozbyć się duszka. Przeszkadza w rysowaniu!
 
-\--- task \--- Add a `hide`{:class="block3looks"} block from **Looks** to the start of the program and it’ll disappear.
+\--- task \--- Dodaj blok `ukryj`{:class="block3looks"} z sekcji **Wygląd** na początku programu i duszek kota zniknie.
 
 ```blocks3
-    when green flag clicked
-+    hide
-    pen down
+    kiedy kliknięto zieloną flagę
++ ukryj
+    przyłóż pisak
 ```
 
 \--- /task \---
 
-Now, you can change the colour of the pen with another block from the **Pen** section, but the block is a little different to the others you’ve seen. It’s the `set pen color to`{:class="block3extensions"} block and looks like this:
+Teraz możesz zmienić kolor pióra za pomocą innego bloku z sekcji **Pióro**, ale blok jest trochę inny niż pozostałe. To jest blok `ustaw kolor pisaka na`{:class="block3extensions"} i wygląda tak:
 
 ```blocks3
-    set pen color to [#4a6cd4]
+    ustaw kolor pisaka na [#4a6cd4]
 ```
 
-\--- task \--- Drag a `set pen color to`{:class="block3extensions"} block into your sprite panel, and snap it in above the `pen down`{:class="block3extensions"} block.
+\--- task \--- Przeciągnij blok `ustaw kolor pisaka na`{:class="block3extensions”} w panelu duszków i upuść go nad blokiem `przyłóż pisak`{:class="block3extensions”}.
 
 ```blocks3
-    when green flag clicked
-    hide
-+    set pen color to [#4a6cd4]
-    pen down
+    kiedy kliknięto zieloną flagę
+    ukryj
++ ustaw kolor pisaka na [#4a6cd4]
+    przyłóż pisak
 ```
 
-Now, click on the box of colour (in the code above it’s the blue one), and choose a colour. \--- /task \---
+Teraz kliknij na pole koloru (w powyższym kodzie kolor jest niebieski) i wybierz kolor. \--- /task \---
 
-If you’ve been clicking on the green flag to test your code, you’ll have noticed that the drawings the pen makes don’t go away.
+Jeśli cały ten czas klikałeś na zieloną flagę, aby przetestować swój kod, to zauważyłeś pewnie, że rysunki, które tworzy pióro nie znikają.
 
-\--- task \--- Add a `clear`{:class="block3extensions"} block from the **Pen** section to the start of your code to take care of that:
+\--- task \--- Dodaj blok `wyczyść wszystko`{:class="block3extensions"} z sekcji **Pióro** na początku kodu, aby się tym zająć:
 
 ```blocks3
-    when green flag clicked
-+    clear
-    hide
+    kiedy kliknięto zieloną flagę
++ wyczyść wszystko
+    ukryj
 ```
 
 \--- /task \---
