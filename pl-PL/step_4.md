@@ -7,10 +7,10 @@ Ok, robi się całkiem fajnie, ale nudne jest edytowanie kodu za każdym razem, 
 --- task --- Teraz dodaj nowe zmienne do swojego kodu w następujący sposób:
 
 ```blocks3
-    powtarzaj aż <touching [edge v] ?> 
+    powtarzaj aż <dotyka [krawędź v] ?> 
         przesuń o (kroki) kroków
-        obróć w prawo o (stopnie ::zmienne) stopni
-        zmień [kroki v] o (powiększenie ::zmienne)
+        obróć w prawo o (stopnie ::variables) stopni
+        zmień [kroki v] o (powiększenie ::variables)
     koniec
 ```
 
@@ -67,8 +67,8 @@ Teraz twój program potrafi zadać pytanie, potrzebujesz jeszcze, żeby zapamię
     idź do x: (0) y: (0)
     ustaw kolor pisaka na [#4a6cd4]
     przyłóż pisak
-    powtarzaj aż <touching [edge v] ?> 
-        przesuń o (kroki) kroki
+    powtarzaj aż <dotyka [krawędź v] ?> 
+        przesuń o (kroki) kroków
         obróć w prawo o (stopnie) stopni
         zmień [kroki v] o (powiększenie)
     koniec

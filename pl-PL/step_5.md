@@ -11,11 +11,11 @@ Blok do zmiany koloru **Pióra** to `zmień kolor pisaka o`{:class="block3extens
 --- task --- Chwyć jeden z tych bloków i umieść go w pętli `powtarzaj aż`{:class="block3control"}, tak jak pokazano poniżej:
 
 ```blocks3
-    powtarzaj aż <touching [edge v] ?> 
+    powtarzaj aż <dotyka [krawędź v] ?> 
 + zmień kolor pisaka o (10)
-        przesuń o (kroki) kroki
-        obróć cw o (stopnie ::zmienne) stopni
-        zmień [kroki v] o (powiększenie ::zmienne)
+        przesuń o (kroki) kroków
+        obróć w prawo o (stopnie :: variables) stopni
+        zmień [kroki v] o (powiększenie ::variables)
     koniec
 ```
 
@@ -26,11 +26,11 @@ To jest fajne, ale trochę przewidywalne. Możesz sprawić, że będzie zabawnie
 --- task --- Wstaw blok **Wyrażenie** wybierający losowy numer do bloku `zmień kolor pisaka o`{:class="block3extensions"} i wybierz jakieś wartości. Na początek możesz spróbować `1` i `100`.
 
 ```blocks3
-    powtarzaj aż <touching [edge v] ?> 
-+ zmień kolor pisaka o (wybierz losowy (1) do (100))
-        przesuń o (kroki) kroki
-        obróć cw o (stopnie ::zmienne) stopni
-        zmień [kroki v] o (powiększenie ::zmienne)
+    powtarzaj aż <dotyka [krawędź v] ?> 
++        Zmień kolor pisaka o (losuj liczbę od (1) do (100))
+        przesuń o (kroki) kroków
+        obróć w prawo o (stopnie :: variables) stopni
+        zmień [kroki v] o (powiększenie ::variables)
     koniec
 ```
 

@@ -61,7 +61,7 @@ Teraz możesz zmienić kolor pióra za pomocą innego bloku z sekcji **Pióro**,
     ustaw kolor pisaka na [#4a6cd4]
 ```
 
---- task --- Przeciągnij blok `ustaw kolor pisaka na`{:class="block3extensions”} w panelu duszków i upuść go nad blokiem `przyłóż pisak`{:class="block3extensions”}.
+--- task --- Przeciągnij blok `ustaw kolor pisaka na`{:class="block3extensions"} w panelu duszków i upuść go nad blokiem `przyłóż pisak`{:class="block3extensions"}.
 
 ```blocks3
     kiedy kliknięto zieloną flagę

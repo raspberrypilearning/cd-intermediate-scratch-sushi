@@ -9,7 +9,7 @@ Musisz więc użyć innego typu pętli o nazwie `powtarzaj aż`{:class="block3co
 ```blocks3
 + powtarzaj aż <> 
         przesuń o (50) kroków
-        obróć cw o (15) stopni
+        obróć w prawo o (15) stopni
     koniec
 ```
 
@@ -36,9 +36,9 @@ Czas naprawić Twoją pętlę `powtarzaj aż`{:class="block3control"}, aby się 
 
 ```blocks3
     przyłóż pisak
-+ powtarzaj aż <touching [edge v] ?> 
++ powtarzaj aż <dotyka [krawędź v] ?> 
         przesuń o (50) kroków
-        obróć cw o (15) stopni
+        obróć w prawo o (15) stopni
     koniec
 ```
 
@@ -54,7 +54,7 @@ Czas naprawić Twoją pętlę `powtarzaj aż`{:class="block3control"}, aby się 
     idź do x: (0) y: (0)
     ustaw kolor pisaka na [#4a6cd4]
     przyłóż pisak
-    powtarzaj aż <touching [edge v] ?> 
+    powtarzaj aż <dotyka [krawędź v] ?> 
         przesuń o (50) kroków
         obróć w prawo o (15) stopni
     koniec
@@ -82,10 +82,10 @@ Zmienne są oznaczonymi miejscami do przechowywania numerów lub innych informac
 
 ```blocks3
     przyłóż pisak
-    powtarzaj aż <touching [edge v] ?> 
-+ przesuń o (kroki) kroki
-        obróć cw o (76) stopni
-+ zmień [kroki v] o (1)
+    powtarzaj aż <dotyka [krawędź v] ?> 
++       przesuń o (kroki) kroków
+        obróć w prawo o (76) stopni
++           zmień [kroki v] o (1)
     koniec
 ```
 

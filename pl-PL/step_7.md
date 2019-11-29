@@ -50,15 +50,15 @@ Użyjesz zmiennej, która będzie działać jako licznik, aby śledzić, na któ
         koniec
 + zmień [licznik v] o (1)
         ustaw [kroki v] na [0]
-+ ustaw [powiększenie v] na (element (licznik) [Lista powiększenia v] :: lista)
-+ ustaw [stopnie v] na (element (licznik) [Lista stopni v] :: lista)
++ ustaw [powiększenie v] na (element (licznik) z [Lista powiększenia v] ::list)
++ ustaw [stopnie v] na (element (licznik) z [Lista stopni v] ::list)
         podnieś pisak
         ukryj
         wyczyść wszystko
         idź do x: (0) y: (0)
         ustaw kolor pisaka na [#4a6cd4]
         przyłóż pisak
-        powtarzaj aż <touching [edge v] ?> 
+        powtarzaj aż <dotyka [krawędź v] ?> 
             przesuń o (kroki) kroków
             obróć w prawo o (stopnie) stopni
             zmień [kroki v] o (powiększenie)
@@ -73,7 +73,7 @@ Zwróć uwagę na nowe bloki, które:
 1. Ustawiają `licznik`{:class="block3variables"} na `0`, poza wszystkimi pętlami.
 2. Sprawdzają, czy liczba zapisana w zmiennej `licznik`{:class="block3variables"} jest długością listy, a jeśli tak, ustawiają zmienną `licznik`{:class="block3variables"} na `0`. Oznacza to, że ta zmienna zawsze będzie numerem pozycji na listach i nie będzie większa.
 3. Dodają `1` do zmiennej `licznik`{:class="block3variables"}.
-4. Wybierają element z `Listy powiększenia`{:class="zmienne block3"}, który znajduje się na pozycji opisanej przez zmienną `licznik`{:class="block3variables"}, i umieszczają go w zmiennej `powiększenie`{:class="block3variables"}. Zrób to samo dla listy `Lista stopni`{:class="block3variables"} i zmiennej `stopnie`{:class="block3variables"}.
+4. Wybierają element z `Listy powiększenia`{:class="block3variables"}, który znajduje się na pozycji opisanej przez zmienną `licznik`{:class="block3variables"}, i umieszczają go w zmiennej `powiększenie`{:class="block3variables"}. Zrób to samo dla listy `Lista stopni`{:class="block3variables"} i zmiennej `stopnie`{:class="block3variables"}.
 
 --- collapse ---
 ---

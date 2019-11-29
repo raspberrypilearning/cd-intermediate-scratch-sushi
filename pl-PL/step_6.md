@@ -36,8 +36,8 @@ To dlatego, że pętla działa tylko do momentu, kiedy dojdzie do krawędzi scen
         idź do x: (0) y: (0)
         ustaw kolor pisaka na [#4a6cd4]
         przyłóż pisak
-        powtarzaj aż <touching [edge v] ?> 
-            przesuń o (kroki) kroki
+        powtarzaj aż <dotyka [krawędź v] ?> 
+            przesuń o (kroki) kroków
             obróć w prawo o (stopnie) stopni
             zmień [kroki v] o (powiększenie)
         koniec

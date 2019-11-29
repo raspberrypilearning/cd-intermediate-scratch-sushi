@@ -11,12 +11,12 @@
 --- task --- `까지 반복하기`{:class="block3control"} 블록에 아래와 같이 추가하세요:
 
 ```blocks3
-    <touching [edge v] ?> 까지 반복하기
-+        펜 색깔을 (10) 만큼 바꾸기
-       (steps) 만큼 움직이기
-       cw 방향으로 (degress ::variables) 도 회전하기
-       [steps v] 를 (increase ::variables) 만큼 바꾸기
-    끝
+<[벽 v] 에 닿았는가?> 까지 반복하기 
++  펜 색깔을 (10) 만큼 바꾸기
+  (단계) 만큼 움직이기
+  ↻ 방향으로 (degrees :: variables) 도 회전하기
+  [단계 v] 을\(를\) (increase :: variables) 만큼 바꾸기
+end
 ```
 
 --- /task ---
@@ -26,12 +26,12 @@
 --- task --- **연산** 카테고리에 있는 난수 블록을 `펜 색상을 만큼 바꾸기`{:class="block3extensions"} 블록에 추가하여 랜덤수대로 색상이 바뀌도록 해 보세요. 저는 `1` 부터 `100` 까지의 난수를 선택하겠습니다.
 
 ```blocks3
-    <touching [edge v] ?> 까지 반복하기
-+        펜 색깔을 ((1) 부터 (100) 사이의 난수) 만큼 바꾸기
-       (steps) 만큼 움직이기
-       cw 방향으로 (degress ::variables) 도 회전하기
-       [steps v] 를 (increase ::variables) 만큼 바꾸기
-    끝
+<[벽 v] 에 닿았는가?> 까지 반복하기 
++  펜 색깔을 ((1) 부터 (100) 사이의 난수) 만큼 바꾸기
+  (단계) 만큼 움직이기
+  ↻ 방향으로 (degrees :: variables) 도 회전하기
+  [단계 v] 을\(를\) (increase :: variables) 만큼 바꾸기
+end
 ```
 
 --- /task ---

@@ -42,28 +42,28 @@ title: 증가하는 것은 무엇을 의미합니까?
 --- task --- `counter`{:class="block3variables"}, 변수를 추가하고 아래와 같이 코드를 업데이트 하세요.
 
 ```blocks3
-    녹색 깃발이 클릭되었을 때
-   [counter v] 를 [0] 로 정하기
-    무한 반복
-+        만약 <(counter) = (length of [Increase List v] :: list)> 이라면 
-+           [counter v] 를 [0] 로 정하기
-        끝
-+       [counter v] 를 (1) 로 정하기
-       [steps v] 를 [0] 로 정하기
-+        [increase v] 를 (item (counter) of [Increase List v] :: list) 로 정하기
-+        [degrees v] 를 (item (counter) of [Degrees List v] :: list) 로 정하기
+    ⚑ 클릭했을 때
+    [counter v] 을\(를\) [0] 로 정하기
+    무한 반복하기 
++        만약 <(counter) = ([Increase List v] 의 길이)> \(이\)라면 
++            [counter v] 을\(를\) [0] 로 정하기
+        end
++        [counter v] 을\(를\) (1) 만큼 바꾸기
+        [단계 v] 을\(를\) [0] 로 정하기
++        [increase v] 을\(를\) ([Increase List v] 리스트의 (counter) 번째 항목) 로 정하기
++        [degrees v] 을\(를\) ([Degrees List v] 리스트의 (counter) 번째 항목) 로 정하기
         펜 올리기
         숨기기
         모두 지우기
-        x: (0) y: (0) 로 이동
-        펜 색깔을 [#4a6cd4] 로 정하기
+        x: (0) y: (0) \(으\)로 이동하기
+        펜 색깔을 [#4a6cd4] \(으\)로 정하기
         펜 내리기
-        <touching [edge v] ?> 까지 반복하기
-            (steps) 만큼 움직이기
-            cw 방향으로 (degrees) 도 회전하기
-            [steps v] 를 (increase) 만큼 바꾸기
-        끝
-    끝
+        <[벽 v] 에 닿았는가?> 까지 반복하기 
+            (단계) 만큼 움직이기
+            ↻ 방향으로 (degrees) 도 회전하기
+            [단계 v] 을\(를\) (increase) 만큼 바꾸기
+        end
+    end
 ```
 
 --- /task ---
