@@ -34,11 +34,11 @@
 \--- task \--- اضف كتلة `ملامس لـ`{:class="block3sensing"} إلى حلقة `كرر حتى`{:class="block3control", وحدد `الحافة`{:class="block3sensing"}. ثم سيتم تشغيل الحلقة **حتى** يمس كائن (غير المرئي) حافة المنصة.
 
 ```blocks3
-    إنزل القلم
-+ كرر حتى <touching [edge v] ?> 
-        تحرك (50) خطوة
-        استدر cw (15) درجة
-    نهاية
+    pen down
++    repeat until <touching [edge v] ?> 
+        move (50) steps
+        turn cw (15) degrees
+    end
 ```
 
 \--- /task \---
@@ -80,12 +80,12 @@
 \--- task \--- ثم استخدم قيمة `خطوات`{: class = "block3variables"} بدلاً من `5` في كتلة `تحرك`{: class = "block3motion"} ، وقم بإضافة`غير خطوات بمقدار 1`{: class = "block3variables"} كجزء من الحلقة:
 
 ```blocks3
-    إنزل القلم
-    كرر حتى <touching [edge v] ?> 
-+ تحرك (خطوات) خطوة
-        استدر  باتجاه عقارب الساعة (76) درجة
-+ غير [خطوات] بمقدار (1)
-    نهاية
+    pen down
+    repeat until <touching [edge v] ?> 
++       move (steps) steps
+        turn cw (76) degrees
++        change [steps v] by (1)
+    end
 ```
 
 \--- /task \---
