@@ -4,7 +4,9 @@ Ora hai un programma che disegna una linea, ma disegna solo una riga. È un po' 
 
 Quindi è necessario utilizzare un diverso tipo di ciclo chiamato ripeti fino a quando `repeat until`{: class = "block3control"}, che troverai anche nella sezione **Controllo**. Questo tipo di ciclo farà qualcosa più e più volte, fino a quando **until** una condizione Vero / Falso è soddisfatta.
 
-\--- task \--- Prendi `repeat until`{: class = "block3control"} dalla sezione **Controllo**, e metti i blocchi `move`{: class = "block3motion"} e `turn`{: class = "block3motion"} al suo interno, in questo modo:
+\--- task \---
+
+Take a `repeat until`{:class="block3control"} block from the **Control** section, and put the `move`{:class="block3motion"} and `turn`{:class="block3motion"} blocks inside it, like so:
 
 ```blocks3
 +    repeat until <> 
@@ -15,23 +17,33 @@ Quindi è necessario utilizzare un diverso tipo di ciclo chiamato ripeti fino a 
 
 \--- /task \---
 
-\--- task \--- Fai clic sulla bandiera verde per eseguire il programma alcune volte e vedi cosa succede. Noterai due cose: la penna inizia sempre disegnando una linea verso il centro dello stage e non si ferma sul bordo. \--- /task \---
+\--- task \---
+
+Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge.
+
+\--- /task \---
 
 ## \--- collapse \---
 
 ## titolo: Perché la penna fa questo?
 
-La penna inizia sempre a disegnare nella direzione del centro, perché il primo blocco **Movimento** che viene eseguito dopo il blocco `pen down`{: class = "block3extensions"} è `go to x: 0 y: 0`{: class = "block3motion"}. Quindi la penna disegnerà una linea mentre si sposta al centro dello schermo.
+The pen always starts drawing in the direction of the middle, because the first **Motion** block that runs after the `pen down`{:class="block3extensions"} block is `go to x: 0 y: 0`{:class="block3motion"}. So the pen will draw a line as it moves to the centre of the Stage.
 
-La penna non si ferma sul bordo dello schermo, perché non hai ancora detto alla ripetizione `repeat until`{: class = "block3control"} quale condizione sta controllando. Ciò significa che la condizione non può mai essere soddisfatta, quindi il ciclo verrà eseguito senza interruzioni. Ciò significa che in questo momento, il ciclo sta lavorando come un ciclo `forever`{: class = "block3control"}.
+The pen doesn't stop at the edge of the Stage, because you haven’t yet told the `repeat until`{:class="block3control"} loop what condition it’s checking. This means the condition can never be met, so the loop will run on and on. This means that right now, the loop is working like a `forever`{:class="block3control"} loop.
 
 \--- /collapse \---
 
-\--- task \--- Sposta il blocco `go to x: 0 y: 0`{: class = "block3motion"} prima del blocco `pen down`{: class = "block3extensions"} e aggiungi, dalla sezione **Penna**, un blocco `pen up`{: class = "block3extensions"} all'inizio del tuo codice. \--- /task \---
+\--- task \---
 
-È ora di correggere la ripetizione `repeat until`{: class = "block3control"} in modo che si fermi quando lo si desidera. Stai cercando di capire se lo sprite (invisibile) sta toccando il bordo dello stage, quindi hai bisogno di un blocco **Sensori** - in questo caso, il blocco `touching ?`{: class = "block3sensing"}.
+Move the `go to x: 0 y: 0`{:class="block3motion"} block to before the `pen down`{:class="block3extensions"} block and add, from the **Pen** section, a `pen up`{:class="block3extensions"} block right at the start of your code.
 
-\--- task \--- aggiungi un `touching ?` {: class = "block3sensing"} nella tua ripetizione `repeat until` {: class = "block3control"}, e seleziona `edge` {: class = "block3sensing"}. Quindi il ciclo verrà eseguito **until** lo sprite (invisibile) tocca il bordo dello schermo.
+\--- /task \---
+
+Time to fix your `repeat until`{:class="block3control"} loop so that it stops when you want it to. You’re looking to figure out if the (invisible) sprite is touching the edge of the Stage, so you need a **Sensing** block — in this case, the `touching ?`{:class="block3sensing"} block.
+
+\--- task \---
+
+Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class="block3control"} loop, and select `edge`{:class="block3sensing"} . Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
 
 ```blocks3
     pen down
@@ -43,7 +55,9 @@ La penna non si ferma sul bordo dello schermo, perché non hai ancora detto alla
 
 \--- /task \---
 
-\--- task \--- Modifica il numero di passaggi nel blocco `move`{: class = "block3motion"} su `5`e verifica che il tuo programma corrisponda a questo prima di testarlo:
+\--- task \---
+
+Change the number of steps in the `move`{:class="block3motion"} block to `5`, and check that your program matches this one before you test it:
 
 ```blocks3
     when green flag clicked
@@ -61,13 +75,15 @@ La penna non si ferma sul bordo dello schermo, perché non hai ancora detto alla
 
 \--- /task \---
 
-Se esegui il codice ora, vedrai che il disegno della penna rimane sullo schermo.
+If you run the code now, you’ll see that the drawing the pen makes stays on the Stage.
 
-Non solo, ma il tuo programma è diventato un programma di disegno cerchi! Quello che sta succedendo qui è che le curve di 15 gradi alla fine diventano 360 gradi, e così la tua penna gira in un cerchio completo. Cambierà il modo in cui si muove per fare un passo leggermente più lungo ogni volta, quindi alla fine si spegne in una spirale. Per questo, avrai bisogno di una **variabile**.
+Not only that, but your program has turned into a circle-drawing program! What's happening here is that those 15-degree turns eventually add up to 360 degrees, and so your pen turns in a full circle. You're going to change the way it moves slightly to make it take slightly a longer step each time, so it spirals out. For this, you’re going to need a **variable**.
 
-Le variabili sono fondamentalmente luoghi etichettati per memorizzare numeri o altre informazioni che ti interessano. Puoi crearli nella sezione **Variabili**.
+Variables are basically labeled places to store numbers or other information that you care about. You can create them in the **Variables** blocks section.
 
-\--- task \--- Crea una variabile chiamata `steps`{: class = "block3variables"}, quindi aggiungi `set steps to 0`{: class = "block3variables"} all'inizio del tuo programma.
+\--- task \---
+
+Make a variable called `steps`{:class="block3variables"}, and then add a `set steps to 0`{:class="block3variables"} block at the start of your program.
 
 ```blocks3
     when green flag clicked
@@ -77,7 +93,9 @@ Le variabili sono fondamentalmente luoghi etichettati per memorizzare numeri o a
 
 \--- /task \---
 
-\--- task \--- Quindi usa il valore di `steps`{: class = "block3variables"} invece del `5` nel blocco `move`{: class = "block3motion"} e aggiungi `change steps by 1`{: class = "block3variables"} come parte del tuo loop:
+\--- task \---
+
+Then use the value of `steps`{:class="block3variables"} instead of the `5` in the `move`{:class="block3motion"} block, and add `change steps by 1`{:class="block3variables"} as part of your loop:
 
 ```blocks3
     pen down
@@ -90,18 +108,22 @@ Le variabili sono fondamentalmente luoghi etichettati per memorizzare numeri o a
 
 \--- /task \---
 
-Pensi che sia importante dove mettere ciclo i passaggi di modifica `change steps by 1`{: class = "block3variables"}?
+Do you think it matters where in the loop you put the `change steps by 1`{:class="block3variables"} block?
 
 ## \--- collapse \---
 
 ## titolo: inserire il codice nell'ordine corretto
 
-Quando decidi in quale ordine inserire i blocchi, pensa a cosa fa ogni blocco e cosa vuoi che faccia il tuo codice.
+When you're deciding which order to put blocks in, think about what each block does and what you want your code to do.
 
-In questo caso, vuoi spostare la penna, quindi girare, ancora e ancora. Ogni volta che lo fa, vuoi spostarti di un passettino.
+In this case, you want the pen to move, then turn, over and over. Each time it does this, you want to move one extra step.
 
-Quindi ha senso inserire i passaggi di modifica `change steps by 1`{: class = "block3variables"} **dopo** il blocco `move`{: class = "block3motion"}. Tuttavia, dopo lo spostamento, non importa se la penna gira per prima e poi il numero di passi cambia, o se il numero di passi cambia prima e poi la penna gira.
+So it makes sense to put the `change steps by 1`{:class="block3variables"} block **after** the `move`{:class="block3motion"} block. However, after moving, it doesn't really matter if the pen turns first and then the number of steps changes, or if the number of steps changes first and then the pen turns instead.
 
 \--- /collapse \---
 
-\--- task \--- Ora esegui il programma, e prova anche a cambiare il numero di gradi (prova `76` e `120`)! \--- /task \---
+\--- task \---
+
+Now run the program, and also try changing the number of degrees around (try `76` and `120`)!
+
+\--- /task \---
