@@ -26,7 +26,7 @@ Dans les cartes de Sushi de Scratch Intermédiaire, tu trouveras les information
 
 + Utiliser l'outil Stylo
 + Utiliser et mettre à jour des variables dans des boucles
-+ Utiliser les boucles Répéter jusqu'à
++ Utiliser les boucles : "Répéter jusqu'à ce que"
 + Obtenir des valeurs d'entrée avec des blocs demandés
 + Utilisation de plusieurs listes avec des propriétés liées par index
 
