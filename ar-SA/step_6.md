@@ -4,7 +4,9 @@
 
 تحتاج إلى بعض التغييرات لجعل هذا يحدث. أول واحد هو أنك تحتاج إلى تعيين متغيرين `زيادة`{:class="block3variables"} و `درجات`{:class="block3variables"} عشوائيًا بدلاً من طلبها من المستخدم. لذلك تحتاج إلى تغيير بعض كتل التعليمات البرمجية الخاصة بك.
 
-\--- task \--- قم بإزالة الأسئلة من التعليمات البرمجية الخاصة بك، وقم بتحديثه لاستخدام أرقام عشوائية بدلاً من ذلك.
+\--- task \---
+
+Remove the questions from your code, and update it to use random numbers instead.
 
 ```blocks3
     عندما نقر  العلم الأخضر
@@ -16,13 +18,15 @@
     ارفع القلم
 ```
 
-\---/task--
+\--- /task \---
 
-إذا قمت بتشغيل البرنامج الآن ، فستجد أنه يرسم نمطًا عشوائيًا ، ولكن مرة واحدة فقط. لماذا تعتقد ذلك؟
+If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
 
-ذلك لأن الحلقة تعمل فقط حتى تصل إلى حافة المنصة.
+It’s because the loop only runs until it reaches the edge of the Stage.
 
-\--- task \--- تحتاج إلى حلقة أخرى تعمل إلى الأبد (لذلك كتلة `كرر باستمرار`{:class="block3control"}!) خارج الحالية لابقائها تعمل مراراً وتكراراً. فقط اسحب واحدة من قسم **التحكم**، وإضاف جميع التعليمات البرمجية الأخرى فيها.
+\--- task \---
+
+You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
 
 ```blocks3
     عند نقر العلم الاخضر
@@ -46,8 +50,8 @@
 
 \--- /task \---
 
-الآن لديك حقا شيء رائع للنظر اليه!
+Now you’ve really got something awesome to look at!
 
-ومع ذلك ، قد تلاحظ أنه ،بين الحين والآخر ، يرسم الكمبيوتر شيئًا يبدو سيئًا. هذا لأن بعض الأرقام لبعض هذه المتغيرات هي مجرد خيارات سيئة ، وبعض **مجموعات من تلك الأرقام** هي أيضا خيارات سيئة.
+However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
 
-في البطاقة التالية، سوف تساعد الكمبيوتر على اختيار مجموعات جيدة فقط!
+On the next card, you'll help the computer to pick only good combinations!
