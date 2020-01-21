@@ -8,7 +8,9 @@ Blocul de schimbare a culorii **Stilou** este `schimbă culoarea stiloului cu`{:
     schimbă culoarea stiloului cu (10)
 ```
 
-\--- task \--- Ia unul din acele blocuri și pune-l în bucla `repetă până când`{:class="block3control"}, astfel:
+\--- task \---
+
+Grab one of those blocks and put it into your `repeat until`{:class="block3control"} loop, like this:
 
 ```blocks3
     repetă până când <atinge [marginea v] ?>
@@ -21,9 +23,11 @@ Blocul de schimbare a culorii **Stilou** este `schimbă culoarea stiloului cu`{:
 
 \--- /task \---
 
-E minunat, dar cam previzibil. Poți face un pic mai distractiv dacă adaugi un număr aleatoriu în ea, astfel încât culoarea să se schimbe aleatoriu.
+That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly.
 
-\--- task \--- Introdu blocul **Operator** pentru număr aleator în blocul `schimbă culoarea stiloului cu`{:class="block3extensions"} și alege câteva valori pentru vedea ce se întâmplă. Aș încerca `1` și `100` pentru început.
+\--- task \---
+
+Put the random number **Operator** block into the `change pen color by`{:class="block3extensions"} block and pick some values to go in it. I'd try `1` and `100` to start.
 
 ```blocks3
     repetă până când <atinge [marginea v] ?>
@@ -36,4 +40,8 @@ E minunat, dar cam previzibil. Poți face un pic mai distractiv dacă adaugi un 
 
 \--- /task \---
 
-\--- task \--- Încearcă să-l rulezi din nou, și urmărește curcubeul aleator! \--- /task \---
+\--- task \---
+
+Try running it again, and watch the random rainbow!
+
+\--- /task \---
