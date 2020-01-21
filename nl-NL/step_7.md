@@ -6,39 +6,49 @@ Je gaat Scratch een aantal van deze getallen combinaties aanleren, zodat het die
 
 Hiervoor heb je een **lijst** nodig. Je vindt lijsten bij de variabelen in het **Variabelen** gedeelte. Net zoals je deed bij de variabelen, moet je eerst je eigen lijst maken!
 
-\--- task \--- Klik **Maak een lijst**, en typ `Gradenlijst`{:class="block3variables"} als de naam.
+\--- task \---
+
+Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
 
 ![](images/makeAList.png)
 
 \--- /task \---
 
-Jouw lijst, die nu leeg is, komt tevoorschijn op het Speelveld, en je ziet een aantal blokken ervoor in **Variabelen**.
+Your list, which is empty at the moment, will appear on the Stage, and you'll see a bunch of blocks for it in **Variables**.
 
 ![](images/listBlocks.png)
 
-\--- task \--- Maak nog een lijst genaamd `Toenamelijst`{:class="block3variables"}
+\--- task \---
 
-\--- task \--- Door op het kleine plustekentje (**+**) onderaan de lijst te klikken voeg je de eerste getallencombinatie toe voor `toename`{:class="block3variables"} en `graden`{:class="block3variables"}, elk getal in de juiste lijst. Doe dit ook met de tweede getallen combinatie. Dat is eerst wel even genoeg - je andere favoriete getallen combinaties voeg je later toe!
-
-![](images/helping2.png)
-
-Zorg dat het `graden`{:class="block3variables"} getal en het `toename`{:class="block3variables"} getal dat goed werkte op dezelfde positie staan in de `Gradenlijst`{:class="block3variables"} en de `Toenamelijst`{:class="block3variables"}. Ze moeten daar staan zodat je programma ze weer kan laten overeenkomen met behulp van hun positie!
+Make another list called `Increase List`{:class="block3variables"}
 
 \--- /task \---
 
-Nu je de lijsten hebt moet je zorgen dat de code ze leest en ze blijft herhalen! Hiervoor ga je een nieuwe variabele gebruiken die als teller werkt, wat **ophogingen** en een `als dan`{:class="block3control"} **Besturen** blok.
+\--- task \---
+
+Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
+
+![](images/helping2.png)
+
+Make sure that the `degrees`{:class="block3variables"} value and the `increase`{:class="block3variables"} value that worked well together are at the same position in the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. They need to be there so your program can match them up again using their position!
+
+\--- /task \---
+
+Now you have the lists, you just need to get your code to read them and loop over them! To do this, you’re going to use a new variable to act as a counter, some **incrementing**, and an `if then`{:class="block3control"} **Control** block.
 
 ## \--- collapse \---
 
 ## title: Wat betekent ophogen?
 
-Iets ophogen betekent iets toevoegen.
+To increment something means to add something to it.
 
-Je gaat een variabele gebruiken die als teller werkt en die bijhoudt op welke positie in de lijst je staat. Om door de lijst heen te gaan, hoog je de teller steeds met `1` op (dus je telt er `1` bij op) tot je aan het eind van de lijst bent.
+You will use a variable to act as a counter to keep track of what position you're at in your lists. To move through the lists, you'll keep incrementing the counter by `1` (so, adding `1` to it) until you get to the end of the list.
 
 \--- /collapse \---
 
-\--- task \--- Maak een nieuwe variabele genaamd `teller`{:class="block3variables"} en pas je code als volgt aan:
+\--- task \---
+
+Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
 
 ```blocks3
     wanneer groene vlag wordt aangeklikt
@@ -67,7 +77,7 @@ end
 
 \--- /task \---
 
-Merk op dat de nieuwe blokken:
+Notice the new blocks that:
 
 1. De `teller`{:class="block3variables"} op `0` zetten, buiten alle lussen om.
 2. Controleer of het getal dat opgeslagen is in `teller`{:class="block3variables"} de lengte van de lijst is, en zo ja, zet de `teller`{:class="block3variables"} op `0`. Dit betekent dat deze variabele altijd het getal van een positie in de lijsten is, en ook niet groter zal worden.
@@ -78,7 +88,7 @@ Merk op dat de nieuwe blokken:
 
 ## title: Hoe werkt de code?
 
-Dit is wat er gebeurt als je je programma uitvoert:
+This is what happens when you run your program:
 
 1. Maak `teller`{:class="block3variables"} `0`.
 2. Begin de `herhaal`{:class="block3control"} lus.
@@ -102,6 +112,10 @@ Dit is wat er gebeurt als je je programma uitvoert:
 
 \--- /collapse \---
 
-\--- task \--- Als je tevreden met met de code, ga dan verder door de andere getallen combinaties toe te voegen die je had opgeschreven voor de `Gradenlijst`{:class="block3variables"} en de `Toenamelijst`{:class="block3variables"}. \--- /task \---
+\--- task \---
 
-Dat was het! Leun achterover en kijk hoe je programma prachtige tekeningen maakt in een oneindige lus! Als je meer patronen wilt toevoegen dan kan dat: voeg meer getallen toe aan de twee lijsten en herstart het programma.
+Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}.
+
+\--- /task \---
+
+That's it! Sit back and watch your program keep drawing lovely patterns in a never-ending loop! If you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
