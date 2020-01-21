@@ -8,7 +8,9 @@ Blok do zmiany koloru **Pióra** to `zmień kolor pisaka o`{:class="block3extens
     zmień kolor pisaka o (10)
 ```
 
-\--- task \--- Chwyć jeden z tych bloków i umieść go w pętli `powtarzaj aż`{:class="block3control"}, tak jak pokazano poniżej:
+\--- task \---
+
+Grab one of those blocks and put it into your `repeat until`{:class="block3control"} loop, like this:
 
 ```blocks3
     powtarzaj aż <touching [edge v] ?> 
@@ -21,9 +23,11 @@ Blok do zmiany koloru **Pióra** to `zmień kolor pisaka o`{:class="block3extens
 
 \--- /task \---
 
-To jest fajne, ale trochę przewidywalne. Możesz sprawić, że będzie zabawniej, jeśli dodasz do kodu losową liczbę tak, że kolor zmieni się losowo.
+That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly.
 
-\--- task \--- Wstaw blok **Wyrażenie** wybierający losowy numer do bloku `zmień kolor pisaka o`{:class="block3extensions"} i wybierz jakieś wartości. Na początek możesz spróbować `1` i `100`.
+\--- task \---
+
+Put the random number **Operator** block into the `change pen color by`{:class="block3extensions"} block and pick some values to go in it. I'd try `1` and `100` to start.
 
 ```blocks3
     powtarzaj aż <touching [edge v] ?> 
@@ -36,4 +40,8 @@ To jest fajne, ale trochę przewidywalne. Możesz sprawić, że będzie zabawnie
 
 \--- /task \---
 
-\--- task \--- Spróbuj uruchomić ponownie i obserwuj losową tęczę! \--- /task \---
+\--- task \---
+
+Try running it again, and watch the random rainbow!
+
+\--- /task \---
