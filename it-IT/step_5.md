@@ -8,7 +8,9 @@ Il blocco per cambiare il colore **Penna** è `cambia colore penna di`{: class =
     cambia colore penna di (10)
 ```
 
-\--- task \--- Prendi uno di quei blocchi e mettilo nella tua `repeat until`{: class = "block3control"}, come questo:
+\--- task \---
+
+Grab one of those blocks and put it into your `repeat until`{:class="block3control"} loop, like this:
 
 ```blocks3
     repeat until <touching [edge v] ?> 
@@ -21,9 +23,11 @@ Il blocco per cambiare il colore **Penna** è `cambia colore penna di`{: class =
 
 \--- /task \---
 
-È bello, ma un po' prevedibile. Puoi renderlo un po' più divertente se aggiungi un numero casuale, quindi il colore cambia casualmente.
+That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly.
 
-\--- task \--- Metti il blocco generatore di numeri casuali **Operatori** nel colore della penna a `cambia colore penna di`{: class = "block3extensions"} e seleziona alcuni valori da inserire in esso. Proverei `1` e `100` per iniziare.
+\--- task \---
+
+Put the random number **Operator** block into the `change pen color by`{:class="block3extensions"} block and pick some values to go in it. I'd try `1` and `100` to start.
 
 ```blocks3
     repeat until <touching [edge v] ?> 
@@ -36,4 +40,8 @@ Il blocco per cambiare il colore **Penna** è `cambia colore penna di`{: class =
 
 \--- /task \---
 
-\--- task \--- Prova a eseguirlo di nuovo, e guarda l'arcobaleno casuale! \--- /task \---
+\--- task \---
+
+Try running it again, and watch the random rainbow!
+
+\--- /task \---
