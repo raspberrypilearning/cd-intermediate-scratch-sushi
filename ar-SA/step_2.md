@@ -2,7 +2,9 @@
 
 يعتمد المشروع الذي ستقوم بصنعه على أداة **Pen** التي ترسم خطًا خلف مركز العفريت أثناء تحركها. سوف تتعلم كيفية استخدامها الآن!
 
-\--- task \--- افتح ملف Scratch جديدًا ، وحدد كائن قطة سكراتش ، واسحب للداخل بضع كتل قد تكون قد شاهدتها بالفعل ، حتى يبدو كهذا:
+\--- task \---
+
+Open a new Scratch file, select the Scratch Cat sprite, and drag in a few blocks you may have already seen, until it looks like this:
 
 ```blocks3
     عندما ينقر العلم الأخضر
@@ -11,25 +13,27 @@
     استدر باتجاه عقارب الساعة (15) درجة
 ```
 
-\---/task--
+\--- /task \---
 
-الآن ، حان الوقت لاختبار القلم!
+Now, time to test out the pen!
 
-لاستخدام كتل القلم في سكراتش ، تحتاج إلى إضافة ملحق **قلم**.
+To use the Pen blocks in Scratch, you need add the **Pen extension**.
 
-\--- task \--- انقر على زر **إدراج إضافة** في الركن الأيسر السفلي.
+\--- task \---
 
-![إضافة زر تمديد الضوء](images/add-extension-annotated.png)
+Click on the **Add extension** button in the bottom left-hand corner.
 
-انقر على إضافة **القلم** لإضافتها.
+![add extension button highlighted](images/add-extension-annotated.png)
 
-![ملحق القلم المحدد](images/click-pen-annotated.png)
+Click on the **Pen** extension to add it.
 
-بعدها يظهر قسم القلم في أسفل قائمة المقاطع.
+![pen extension highlighted](images/click-pen-annotated.png)
 
-![كتل ملحق القلم](images/pen-extension-blocks.png)
+The Pen section then appears at the bottom of the blocks menu.
 
-من قسم **القلم** ، حدد المربع `أنزل القلم`{: class = "block3extensions"} وأضفه إلى بداية البرنامج ، مثل هذا:
+![pen extension blocks](images/pen-extension-blocks.png)
+
+From the **Pen** section, select the `pen down`{:class="block3extensions"} block and add it to the start of your program, like this:
 
 ```blocks3
     عند نقر العلم الأخضر
@@ -39,13 +43,19 @@
 
 \--- /task \---
 
-\--- task \--- الآن انقر على العلم الأخضر عدة مرات وشاهد ما يحدث. \--- /task \---
+\--- task \---
 
-إذا كنت تستطيع رؤية الخطوط الموجودة خلف كائن القط ، فإن القلم يعمل ويمكنك البدء في رسم أنماط رائعة حقًا.
+Now click the green flag a few times and watch what happens.
 
-أولا ، يجب عليك التخلص من الكائن. إنه يعيق الرسم!
+\--- /task \---
 
-\--- task \--- أضف مقطع `إختفِ`{: class = "block3looks"} من **المظاهر** إلى بداية البرنامج وسوف تختفي.
+If you can see the lines behind the cat sprite, then the pen is working and you can start making it draw really cool patterns.
+
+First, you should get rid of the sprite. It’s getting in the way of the drawing!
+
+\--- task \---
+
+Add a `hide`{:class="block3looks"} block from **Looks** to the start of the program and it’ll disappear.
 
 ```blocks3
     عند نقر العلم الأخضر
@@ -55,13 +65,15 @@
 
 \--- /task \---
 
-الآن ، يمكنك تغيير لون القلم مع كتلة أخرى من قسم **القلم** ، لكن الكتلة تختلف قليلاً عن الأخريات التي رأيتها. إنها كتلة `اجعل لون القلم مساويا `{:class="block3extensions"} و تبدو كهذا:
+Now, you can change the colour of the pen with another block from the **Pen** section, but the block is a little different to the others you’ve seen. It’s the `set pen color to`{:class="block3extensions"} block and looks like this:
 
 ```blocks3
     اجعل لون القلم مساويا [#4a6cd4]
 ```
 
-\--- task \--- اسحب كتلة `اجعل لون القلم مساوياً`{:class="block3extensions"} لداخل لوحة الكائن الخاص بك, واجلبها فوق كتلة`انزل القلم`{:class="block3extensions"}.
+\--- task \---
+
+Drag a `set pen color to`{:class="block3extensions"} block into your sprite panel, and snap it in above the `pen down`{:class="block3extensions"} block.
 
 ```blocks3
     عندما ينقر العلم الأخضر
@@ -70,11 +82,15 @@
     القلم إلى أسفل
 ```
 
-الآن ، انقر فوق مربع اللون (في الكود أعلاه هو اللون الأزرق) ، واختر اللون. \--- /task \---
+Now, click on the box of colour (in the code above it’s the blue one), and choose a colour.
 
-إذا كنت تنقر على العلم الأخضر لاختبار التعليمات البرمجية ، فستلاحظ أن الرسومات التي يقوم بها القلم لا تختفي.
+\--- /task \---
 
-\--- task \--- أضف كتلة `مسح الكل`{: class = "block3extensions"} من قسم **القلم** إلى بداية الكود الخاص بك لتتولى أمر ذلك:
+If you’ve been clicking on the green flag to test your code, you’ll have noticed that the drawings the pen makes don’t go away.
+
+\--- task \---
+
+Add a `clear`{:class="block3extensions"} block from the **Pen** section to the start of your code to take care of that:
 
 ```blocks3
     عند نقر العلم الأخضر
