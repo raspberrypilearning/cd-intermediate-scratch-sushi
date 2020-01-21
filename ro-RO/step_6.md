@@ -4,7 +4,9 @@ De fapt, poți utiliza numere aleatorii pentru a face întreg programul să rule
 
 Ai nevoie de câteva modificări pentru a face acest lucru să se întâmple. Prima dintre ele este că trebuie să setezi variabilele `creștere`{:class="block3variables“} și `grade`{:class="block3variables"} cu valori adăugate în mod aleatoriu, în locul introducerii manuale de la tastatură de către utilizator. Deci, trebuie să schimbi unele dintre blocurile de cod.
 
-\--- task \--- Elimină întrebările din codul tău și actualizează-l pentru a utiliza numere aleatorii în schimb.
+\--- task \---
+
+Remove the questions from your code, and update it to use random numbers instead.
 
 ```blocks3
     când se dă click pe stegulețul verde
@@ -18,11 +20,13 @@ Ai nevoie de câteva modificări pentru a face acest lucru să se întâmple. Pr
 
 \--- /task \---
 
-Dacă rulezi programul tău acum, vei observa că desenează un șablon aleatoriu, dar o singură dată. De ce crezi că se întâmplă asta?
+If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
 
-Asta se datorează faptului că bucla rulează numai până când ajunge la marginea Scenei.
+It’s because the loop only runs until it reaches the edge of the Stage.
 
-\--- task \--- Ai nevoie de o altă buclă care rulează încontinuu (deci, un bloc `la infinit`{:class="block3control"}) în afara buclei curente pentru a o menține în mișcare mereu. Doar trage una din secțiunea **Control** și adaugă tot codul tău în ea.
+\--- task \---
+
+You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
 
 ```blocks3
     când se dă click pe stegulețul verde
@@ -46,8 +50,8 @@ Asta se datorează faptului că bucla rulează numai până când ajunge la marg
 
 \--- /task \---
 
-Acum ai într-adevăr ceva minunat la care să te uiți!
+Now you’ve really got something awesome to look at!
 
-Cu toate acestea, poți observa că, din când în când, computerul desenează ceva care arată destul de... rău. Acest lucru se datorează faptului că unele numere pentru unele dintre aceste variabile sunt doar alegeri nepotrivite, iar unele **combinații ale acestor numere** sunt de asemenea alegeri nepotrivite.
+However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
 
-Pe următorul card, vei ajuta computer-ul să aleagă numai combinații potrivite!
+On the next card, you'll help the computer to pick only good combinations!
