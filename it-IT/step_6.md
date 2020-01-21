@@ -4,7 +4,9 @@ Puoi effettivamente usare numeri casuali per far girare l'intero programma più 
 
 Hai bisogno di alcune modifiche per fare ciò. Il primo è che è necessario impostare le variabili `incrementa`{: class = "block3variables"} e `gradi`{: class = "block3variables"} a caso piuttosto che chiederle all'utente. Quindi è necessario modificare alcuni dei blocchi di codice.
 
-\--- task \--- Rimuovi le domande dal tuo codice e aggiornalo per usare numeri casuali.
+\--- task \---
+
+Remove the questions from your code, and update it to use random numbers instead.
 
 ```blocks3
     when green flag clicked
@@ -18,11 +20,13 @@ Hai bisogno di alcune modifiche per fare ciò. Il primo è che è necessario imp
 
 \--- /task \---
 
-Se esegui il tuo programma ora, scoprirai che disegna uno schema casuale, ma solo una volta. Quale pensi che sia la ragione?
+If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
 
-È perché il ciclo viene eseguito solo finché raggiunge il bordo dello stage.
+It’s because the loop only runs until it reaches the edge of the Stage.
 
-\--- task \--- Per mantenerlo vivo, hai bisogno di un altro ciclo che funzioni per sempre (quindi un blocco `forever`{: class = "block3control"}) al di fuori di quello corrente. Basta trascinarne uno fuori dalla sezione **Controllo** e aggiungergli tutto il tuo codice.
+\--- task \---
+
+You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
 
 ```blocks3
     when green flag clicked
@@ -46,8 +50,8 @@ Se esegui il tuo programma ora, scoprirai che disegna uno schema casuale, ma sol
 
 \--- /task \---
 
-Ora hai davvero qualcosa di fantastico da guardare!
+Now you’ve really got something awesome to look at!
 
-Tuttavia, potresti notare che, di tanto in tanto, il computer disegna qualcosa che sembra abbastanza... brutto. Questo perché alcuni numeri per queste variabili sono inadatti, e alcune **combinazioni di quei numeri** sono altrettanto inadatti.
+However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
 
-Sulla prossima scheda, aiuterai il computer a scegliere solo buone combinazioni!
+On the next card, you'll help the computer to pick only good combinations!
