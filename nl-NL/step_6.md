@@ -4,7 +4,9 @@ Je kunt trouwens willekeurige getallen gebruiken om het hele programma steeds op
 
 Je zult wat moeten aanpassen om dit mogelijk te maken. Als eerste moet je de `toename`{:class="block3variables"} en `graden`{:class="block3variables"} variabelen op willekeurig zetten in plaats van de speler erom te vragen. Dus je moet wat codeblokken aanpassen.
 
-\--- task \--- Verwijder de vragen uit je code, en voeg willekeurige getallen toe.
+\--- task \---
+
+Remove the questions from your code, and update it to use random numbers instead.
 
 ```blocks3
     wanneer groene vlag wordt aangeklikt
@@ -18,11 +20,13 @@ pen op
 
 \--- /task \---
 
-Als je nu je programma uitvoert zul je zien dat het een willekeurig patroon tekent, maar slechts één keer. Waardoor komt dat?
+If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
 
-Dat komt omdat de lus tekent totdat het de rand van het Speelveld raakt.
+It’s because the loop only runs until it reaches the edge of the Stage.
 
-\--- task \--- Je hebt nog een lus nodig die eeuwig blijft herhalen (dus een `herhaal`{:class="block3control"} blok!) náást de huidige lus om continu het programma uit te voeren. Pak er een uit het **Besturen** gedeelte en zet al je code daarin.
+\--- task \---
+
+You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
 
 ```blocks3
     wanneer groene vlag wordt aangeklikt
@@ -44,10 +48,10 @@ end
 end
 ```
 
-\---/task \---
+\--- /task \---
 
-Nu heb je echt iets gaafs om naar te kijken!
+Now you’ve really got something awesome to look at!
 
-Maar je zult zien dat de computer soms iets heel lelijks tekent. Dit is omdat sommige getallen voor een aantal variabelen slechte keuzes zijn, en sommige **combinaties van die getallen** ook.
+However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
 
-Op de volgende kaart kun je de computer helpen om alleen goede combinaties te maken!
+On the next card, you'll help the computer to pick only good combinations!
