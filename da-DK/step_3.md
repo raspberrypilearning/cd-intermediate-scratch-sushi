@@ -4,7 +4,9 @@ Now you’ve got a program that draws a line, but it only draws one line. That�
 
 So you need use a different type of loop called `repeat until`{:class="block3control"}, which you’ll also find in the **Control** section. This type of loop will do something over and over again, **until** a True/False condition is met.
 
-\--- task \--- Take a `repeat until`{:class="block3control"} block from the **Control** section, and put the `move`{:class="block3motion"} and `turn`{:class="block3motion"} blocks inside it, like so:
+\--- task \---
+
+Take a `repeat until`{:class="block3control"} block from the **Control** section, and put the `move`{:class="block3motion"} and `turn`{:class="block3motion"} blocks inside it, like so:
 
 ```blocks3
 +    repeat until <> 
@@ -15,7 +17,11 @@ So you need use a different type of loop called `repeat until`{:class="block3con
 
 \--- /task \---
 
-\--- task \--- Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge. \--- /task \---
+\--- task \---
+
+Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge.
+
+\--- /task \---
 
 ## \--- collapse \---
 
@@ -27,11 +33,17 @@ The pen doesn't stop at the edge of the Stage, because you haven’t yet told th
 
 \--- /collapse \---
 
-\--- task \--- Move the `go to x: 0 y: 0`{:class="block3motion"} block to before the `pen down`{:class="block3extensions"} block and add, from the **Pen** section, a `pen up`{:class="block3extensions"} block right at the start of your code. \--- /task \---
+\--- task \---
+
+Move the `go to x: 0 y: 0`{:class="block3motion"} block to before the `pen down`{:class="block3extensions"} block and add, from the **Pen** section, a `pen up`{:class="block3extensions"} block right at the start of your code.
+
+\--- /task \---
 
 Time to fix your `repeat until`{:class="block3control"} loop so that it stops when you want it to. You’re looking to figure out if the (invisible) sprite is touching the edge of the Stage, so you need a **Sensing** block — in this case, the `touching ?`{:class="block3sensing"} block.
 
-\--- task \--- Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class="block3control"} loop, and select `edge`{:class="block3sensing"} . Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
+\--- task \---
+
+Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class="block3control"} loop, and select `edge`{:class="block3sensing"} . Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
 
 ```blocks3
     pen down
@@ -43,7 +55,9 @@ Time to fix your `repeat until`{:class="block3control"} loop so that it stops wh
 
 \--- /task \---
 
-\--- task \--- Change the number of steps in the `move`{:class="block3motion"} block to `5`, and check that your program matches this one before you test it:
+\--- task \---
+
+Change the number of steps in the `move`{:class="block3motion"} block to `5`, and check that your program matches this one before you test it:
 
 ```blocks3
     when green flag clicked
@@ -67,7 +81,9 @@ Not only that, but your program has turned into a circle-drawing program! What's
 
 Variables are basically labeled places to store numbers or other information that you care about. You can create them in the **Variables** blocks section.
 
-\--- task \--- Make a variable called `steps`{:class="block3variables"}, and then add a `set steps to 0`{:class="block3variables"} block at the start of your program.
+\--- task \---
+
+Make a variable called `steps`{:class="block3variables"}, and then add a `set steps to 0`{:class="block3variables"} block at the start of your program.
 
 ```blocks3
     when green flag clicked
@@ -77,7 +93,9 @@ Variables are basically labeled places to store numbers or other information tha
 
 \--- /task \---
 
-\--- task \--- Then use the value of `steps`{:class="block3variables"} instead of the `5` in the `move`{:class="block3motion"} block, and add `change steps by 1`{:class="block3variables"} as part of your loop:
+\--- task \---
+
+Then use the value of `steps`{:class="block3variables"} instead of the `5` in the `move`{:class="block3motion"} block, and add `change steps by 1`{:class="block3variables"} as part of your loop:
 
 ```blocks3
     pen down
@@ -104,4 +122,8 @@ So it makes sense to put the `change steps by 1`{:class="block3variables"} block
 
 \--- /collapse \---
 
-\--- task \--- Now run the program, and also try changing the number of degrees around (try `76` and `120`)! \--- /task \---
+\--- task \---
+
+Now run the program, and also try changing the number of degrees around (try `76` and `120`)!
+
+\--- /task \---
