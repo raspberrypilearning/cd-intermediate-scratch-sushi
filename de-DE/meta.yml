@@ -1,7 +1,7 @@
 ---
-title: Pattern pen
+title: Musterstift
 hero_image: images/banner.png
-description: Make a cool pattern generator
+description: Erstelle einen coolen Muster-Generator
 theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
@@ -17,16 +17,16 @@ version: 4.0.0
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: Einleitung
   - 
-    title: Using the Pen tool
+    title: Das Stiftwerkzeug verwenden
   - 
-    title: Drawing patterns
+    title: Muster zeichnen
   - 
-    title: Asking for input
+    title: Bitte um Eingabe
   - 
-    title: Cooler lines
+    title: Coolere Linien
   - 
-    title: Randomise the whole thing
+    title: Mache das Ganze zufällig
   - 
-    title: Helping the computer
+    title: Hilf dem Computer
