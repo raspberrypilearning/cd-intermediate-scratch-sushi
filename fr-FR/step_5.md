@@ -1,6 +1,6 @@
 ## Lignes plus cool
 
-Il est temps d'ajouter de la couleur! À l’heure actuelle, ta ligne a une couleur, mais le **Stylo** contient des blocs qui peuvent changer de couleur. Et avec le bloc droit **Opérateur**, tu peux même changer la couleur au hasard!
+Il est temps d'ajouter de la couleur! Pour l'instant, ta ligne a une couleur, mais le **Stylo** contient des blocs qui peuvent changer de couleur. Et avec le bloc droit **Opérateur**, tu peux même changer la couleur au hasard!
 
 Le bloc pour changer la couleur **Stylo** est`changer la couleur du stylo par`{:class="block3extensions"}:
 
@@ -8,7 +8,9 @@ Le bloc pour changer la couleur **Stylo** est`changer la couleur du stylo par`{:
     changer la couleur du stylo par (10)
 ```
 
-\--- task \--- Prends un de ces blocs et mets-le dans ta boucle `répéter jusqu'à`{:class="block3control"}, comme ceci:
+\--- task \---
+
+Grab one of those blocks and put it into your `repeat until`{:class="block3control"} loop, like this:
 
 ```blocks3
     répéter jusqu'à <touching [edge v] ?> 
@@ -21,9 +23,11 @@ Le bloc pour changer la couleur **Stylo** est`changer la couleur du stylo par`{:
 
 \--- /task \---
 
-C'est cool, mais un peu prévisible. Tu peux le rendre un peu plus amusant si tu ajoutes un nombre aléatoire, de sorte que la couleur change de manière aléatoire.
+That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly.
 
-\--- task \--- Mets le bloc numéro aléatoire **Opérateur** dans le bloc `changer la couleur du stylo par`{:class="block3extensions"} et sélectionne quelques valeurs à utiliser. Je voudrais essayer `1` et `100` pour commencer.
+\--- task \---
+
+Put the random number **Operator** block into the `change pen color by`{:class="block3extensions"} block and pick some values to go in it. I'd try `1` and `100` to start.
 
 ```blocks3
     répéter jusqu'à <touching [edge v] ?> 
@@ -36,4 +40,8 @@ C'est cool, mais un peu prévisible. Tu peux le rendre un peu plus amusant si tu
 
 \--- /task \---
 
-\--- task \--- Essaie de l'exécuter à nouveau et observe l'arc-en-ciel aléatoire! \--- /task \---
+\--- task \---
+
+Try running it again, and watch the random rainbow!
+
+\--- /task \---
