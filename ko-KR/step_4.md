@@ -2,9 +2,15 @@
 
 지금 제작한 프로그램은 아주 멋지지만, 다른 패턴을 그리고 싶을 때마다 코드를 편집해야 하는 것은 매우 지루한 작업입니다. 프로그램을 실행할 때마다 사용할 값을 물어보게 하는 게 좋지 않을까요? 당신은 할 수 있습니다!
 
-\--- task \--- 먼저, **변수** 카테고리로 이동하여 `degrees`{:class="block3variables"} 라는 이름을 가진 변수와 `increase`{:class="block3variables"} 라는 이름을 가진 변수를 생성하세요. \--- /task \---
+\--- task \---
 
-\--- task \--- 다음과 같이 새로운 변수를 코드에 추가합니다:
+First, go to the **Variables** section and create variables called `degrees`{:class="block3variables"} and `increase`{:class="block3variables"}.
+
+\--- /task \---
+
+\--- task \---
+
+Now add the new variables to your code like this:
 
 ```blocks3
     <touching [edge v] ?> 까지 반복하기
@@ -16,11 +22,13 @@
 
 \--- /task \---
 
-이제 이 두 변수의 값을 물어보고 저장해야합니다. **감지** 카테고리의 `묻고 기다리기`{:class="block3sensing"} 블록을 활용할 수 있습니다.
+Now you need to ask for values for these two variables and store them. You do this using a **Sensing** block called `Ask and wait`{:class="block3sensing"}, which you can type a question into.
 
-\--- task \--- `묻고 기다리기`{:class="block3sensing"} 블록을 기존 코드에 추가하고, 질문의 내용을 `얼마나 많은 단계를 거쳐야 하나요?`{:class="block3sensing"} 로 변경하세요.
+\--- task \---
 
-묻고 기다리기 블록 이전에 `steps`{:class="block3variables"} 변수를 `0` 으로 초기화해 줘야 합니다. 다음과 같이 프로그램에 추가하세요:
+Pull the `Ask and wait`{:class="block3sensing"} block into your sprite panel and change the question to `How many steps should I grow by?`{:class="block3sensing"}
+
+Then add it to your program, just after you set `steps`{:class="block3variables"} to `0`, like this:
 
 ```blocks3
     녹색 깃발이 클릭되었을 때
@@ -31,9 +39,11 @@
 
 \--- /task \---
 
-이제 질문을 묻는 프로그램이 생겼습니다. 질문에 대한 대답을 기억해야 합니다! 스크래치에는 `대답`{:class="block3sensing"}이라고 하는 특별한 변수가 있습니다. 이 변수는 묻고 기다리기 블록의 질문에 대한 답을 저장합니다. 이 변수는 **감지** 카테고리에서 찾을 수 있습니다.
+Now you’ve got your program asking a question, you need it to remember the answer! It turns out that Scratch has a special variable called `answer`{:class="block3sensing"}, where it stores the most recent answer it has received. You can find this variable among the **Sensing** blocks.
 
-\--- task \--- **변수** 카테고리에 있는 `로 정하기`{:class="block3variables"} 블록을 사용하여, `대답`{:class="block3sensing"} 변수안에 있는 값을 `increase`{:class="block3variables"} 변수에 저장하세요:
+\--- task \---
+
+Using a `set to`{:class="block3variables"} block from **Variables**, take the value of `answer`{:class="block3sensing"} and store it in the `increase`{:class="block3variables"} variable like so:
 
 ```blocks3
     [얼마나 많은 단계를 거쳐야 하나요?] 라고 묻고 기다리기
@@ -42,7 +52,9 @@
 
 \--- /task \---
 
-\--- task \--- 이제 다음과 같은 질문에 대한 답을 받아서 `degrees`{:class="block3variables"} 변수에 저장해야 합니다. `몇 도 돌려야 할까요?`{:class="block3sensing"} 라고 질문한 뒤 `대답`{:class="block3sensing"} 변수에 있는 이 값을 `degrees`{:class="block3variables"}변수에 저장합니다:
+\--- task \---
+
+Now, do the same thing with `degrees`{:class="block3variables"}, asking `How many degrees should I turn?`{:class="block3sensing"} and storing the value of `answer`{:class="block3sensing"} in `degrees`{:class="block3variables"}:
 
 ```blocks3
     [increase v] 를 (answer) 로 정하기
@@ -52,7 +64,9 @@
 
 \--- /task \---
 
-\--- task \--- 프로그램이 아래처럼 보이는지 확인하고 다른 값을 넣어 몇 번 실행하십시오. 가장 멋진 그림을 만들어주는 값을 기록해 두세요. 다음 단계에서 이러한 값들을 필요로 합니다!
+\--- task \---
+
+Check your program now looks like the one below, and run it a few times with different numbers. Write down the answers that make the coolest pictures. You’ll need them in a later step!
 
 ```blocks3
     녹색 깃발이 클릭되었을 때
