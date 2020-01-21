@@ -6,7 +6,9 @@ You’re going to teach Scratch those combinations of values, so it can use them
 
 To do this, you’ll need a **list**. You’ll find lists with the variables in the **Variables** section. Just like you did with your variables, you’ll need to create your list first!
 
-\--- task \--- Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
+\--- task \---
+
+Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
 
 ![](images/makeAList.png)
 
@@ -16,9 +18,15 @@ Your list, which is empty at the moment, will appear on the Stage, and you'll se
 
 ![](images/listBlocks.png)
 
-\--- task \--- Make another list called `Increase List`{:class="block3variables"} \--- /task \---
+\--- task \---
 
-\--- task \--- Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
+Make another list called `Increase List`{:class="block3variables"}
+
+\--- /task \---
+
+\--- task \---
+
+Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
 
 ![](images/helping2.png)
 
@@ -38,7 +46,9 @@ You will use a variable to act as a counter to keep track of what position you'r
 
 \--- /collapse \---
 
-\--- task \--- Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
+\--- task \---
+
+Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
 
 ```blocks3
     when green flag clicked
@@ -102,6 +112,10 @@ This is what happens when you run your program:
 
 \--- /collapse \---
 
-\--- task \--- Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. \--- /task \---
+\--- task \---
+
+Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}.
+
+\--- /task \---
 
 That's it! Sit back and watch your program keep drawing lovely patterns in a never-ending loop! If you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
