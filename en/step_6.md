@@ -5,6 +5,7 @@ You can actually use random numbers to make the whole program run over and over,
 You need a few changes to make this happen. The first one is that you need to set the `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} variables randomly rather than asking for them from the user. So you need to change some of your code blocks. 
 
 --- task ---
+
 Remove the questions from your code, and update it to use random numbers instead.
 
 ```blocks3
@@ -16,6 +17,7 @@ Remove the questions from your code, and update it to use random numbers instead
 +    set [degrees v] to (pick random (1) to (180))
     pen up
 ```
+
 --- /task ---
 
 If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
@@ -23,6 +25,7 @@ If you run your program now, you’ll find that it does draw a random pattern, b
 It’s because the loop only runs until it reaches the edge of the Stage. 
 
 --- task ---
+
 You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it. 
 
 ```blocks3
@@ -44,6 +47,7 @@ You need another loop that runs forever (so a `forever`{:class="block3control"} 
         end
     end
 ```
+
 --- /task ---
 
 Now you’ve really got something awesome to look at!
