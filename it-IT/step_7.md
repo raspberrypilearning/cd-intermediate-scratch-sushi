@@ -6,39 +6,49 @@ Insegnerai a Scratch quelle combinazioni di valori, in modo che possa usarli per
 
 Per fare ciò, avrai bisogno di una **lista**. Troverai le liste con le variabili nella sezione **Variabili**. Proprio come hai fatto con le tue variabili, devi prima creare la tua lista!
 
-\--- task \--- Fare clic su **Crea una lista** e immetti come nome `Lista Gradi`{: class = "block3variables"}.
+\--- task \---
 
-![](images/magazine.png)
+Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
 
-\--- /task \---
-
-La tua lista, che al momento è vuota, apparirà sullo Stage, e vedrai un mucchio di blocchi **Variabili**.
-
-![](images / listBlocks.png)
-
-\--- task \--- Crea un'altra lista chiamata `Lista Incrementi`{: class = "block3variables"} \--- / task \---
-
-\--- task \--- Ora, facendo clic sul piccolo segno più (**+**) nella parte inferiore degli elenchi, aggiungi la prima coppia di valori di `Incrementa`{: class = "block3variables"} e `Gradi`{: class = "block3variables"} che ti è piaciuta, ogni valore nella giusta lista. Ripeti questa operazione per aggiungere la seconda coppia di valori. Questo per ora sarà sufficiente - aggiungerai il resto delle coppie di valori che ti piacciono più tardi!
-
-![](images / helping2.png)
-
-Assicurati che il valore `Gradi`{: class = "block3variables"} e il valore `incrementa`{: class = "block3variables"} che ha funzionato bene insieme siano nella stessa posizione nella lista `Lista Gradi`{: class = " block3variables "} e nella `Lista Incrementi`{: class =" block3variables "}. Devono essere lì in modo che il tuo programma possa abbinarli di nuovo usando la loro posizione!
+![](images/makeAList.png)
 
 \--- /task \---
 
-Ora hai le liste, devi solo ottenere il tuo codice per leggerle e ripetere il ciclo! Per fare questo, utilizzerai una nuova variabile per agire come un contatore, alcuni **incrementando**e un `if then`{: class = "block3control"} da **Controllo**.
+Your list, which is empty at the moment, will appear on the Stage, and you'll see a bunch of blocks for it in **Variables**.
+
+![](images/listBlocks.png)
+
+\--- task \---
+
+Make another list called `Increase List`{:class="block3variables"}
+
+\--- /task \---
+
+\--- task \---
+
+Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
+
+![](images/helping2.png)
+
+Make sure that the `degrees`{:class="block3variables"} value and the `increase`{:class="block3variables"} value that worked well together are at the same position in the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. They need to be there so your program can match them up again using their position!
+
+\--- /task \---
+
+Now you have the lists, you just need to get your code to read them and loop over them! To do this, you’re going to use a new variable to act as a counter, some **incrementing**, and an `if then`{:class="block3control"} **Control** block.
 
 ## \--- collapse \---
 
 ## titolo: Cosa significa incremento?
 
-Aumentare qualcosa significa aggiungervi qualcosa.
+To increment something means to add something to it.
 
-Utilizzerai una variabile per fungere da contatore e tenere traccia della posizione in cui ti trovi nei tuoi elenchi. Per spostarti tra gli elenchi, continuerai ad incrementare il contatore di `1` (quindi aggiungendo `1` ad esso) fino a raggiungere la fine dell'elenco.
+You will use a variable to act as a counter to keep track of what position you're at in your lists. To move through the lists, you'll keep incrementing the counter by `1` (so, adding `1` to it) until you get to the end of the list.
 
 \--- /collapse \---
 
-\--- task \--- Crea una nuova variabile chiamata ` contatore ` {: class = "block3variables"} e aggiorna il codice in questo modo:
+\--- task \---
+
+Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
 
 ```blocks3
     when green flag clicked
@@ -67,7 +77,7 @@ Utilizzerai una variabile per fungere da contatore e tenere traccia della posizi
 
 \--- /task \---
 
-Notare i nuovi blocchi che:
+Notice the new blocks that:
 
 1. Imposta `counter`{: class = "block3variables"} a `0`, fuori da tutti i loop.
 2. Verifica se il numero memorizzato in `counter`{: class = "block3variables"} è pari alla lunghezza dell'elenco e, in tal caso, imposta `counter`{: class = "block3variables"} a `0`. Ciò significa che questa variabile sarà sempre al massimo pari al numero di posizioni negli elenchi e non più grande.
@@ -78,7 +88,7 @@ Notare i nuovi blocchi che:
 
 ## titolo: Come funziona il codice?
 
-Questo è quello che succede quando esegui il tuo programma:
+This is what happens when you run your program:
 
 1. Imposta `counter`{: class = "block3variables"} a `0`.
 2. Avvia il ciclo `forever`{: class = "block3control"}.
@@ -102,6 +112,10 @@ Questo è quello che succede quando esegui il tuo programma:
 
 \--- /collapse \---
 
-\--- task \--- Una volta che sei soddisfatto del codice, vai avanti e aggiungi il resto delle coppie di valori che hai annotato in `Lista Gradi`{: class = "block3variables"} e il `Lista Incrementi`{: class = "block3variables"}. \--- /task \---
+\--- task \---
 
-Questo è tutto! Siediti e guarda il tuo programma che continua a disegnare deliziosi disegni in un ciclo senza fine! Se vuoi aggiungere altre forme, puoi: basta aggiungere più coppie di numeri ai due elenchi e riavviare il programma.
+Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}.
+
+\--- /task \---
+
+That's it! Sit back and watch your program keep drawing lovely patterns in a never-ending loop! If you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
