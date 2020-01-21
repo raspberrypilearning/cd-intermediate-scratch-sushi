@@ -4,7 +4,9 @@
 
 이 문제를 해결하려면 몇 가지 변경 사항이 필요합니다. 먼저, `increase`{:class="block3variables"} 와 `degrees`{:class="block3variables"} 변수를 사용자가 요청하지 않고 무작위로 선택하도록 해야 합니다. 아래와 같이 블록을 변경해야 합니다.
 
-\--- task \--- 코드에서 질문을 제거하고 대신 임의의 숫자를 사용하도록 업데이트하십시오.
+\--- task \---
+
+Remove the questions from your code, and update it to use random numbers instead.
 
 ```blocks3
     녹색 깃발을 클릭했을 때
@@ -18,11 +20,13 @@
 
 \--- /task \---
 
-이제 프로그램을 실행하면 임의 패턴을 그리지만 한번만 그려지는 것을 알 수 있습니다. 왜 그렇게 된다고 생각하나요?
+If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
 
-왜냐하면 코드는 무대의 벽에 닿을 때까지 한번만 실행되기 때문입니다.
+It’s because the loop only runs until it reaches the edge of the Stage.
 
-\--- task \--- 무한으로 실행되는 블록이 필요합니다. `무한 반복`{:class="block3control"} 블록이 코드에 가장 바깥쪽에 있어야 합니다. **제어** 카테고리에서 블록을 드래그하여, 아래와 같이 추가하세요.
+\--- task \---
+
+You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
 
 ```blocks3
     녹색 깃발이 클릭되었을 때
@@ -48,8 +52,8 @@
 
 \--- /task \---
 
-이제 정말 멋진 것을 볼 수 있습니다!
+Now you’ve really got something awesome to look at!
 
-그러나, 때때로 컴퓨터가 꽤 이상한 그림을 그리는 것을 볼 수 있습니다. 왜냐하면 랜덤 수 중 일부는 **우연히 이상한 조합이 되어 버리는 경우도 있기 때문입니다.**
+However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
 
-다음 장에서는 컴퓨터가 좋은 조합 만 골라 내도록 도와줍니다!
+On the next card, you'll help the computer to pick only good combinations!
