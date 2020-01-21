@@ -2,9 +2,15 @@
 
 Ok, acest lucru este destul de interesant, dar este un pic plictisitor faptul că trebuie să-ți editezi codul de fiecare dată când vrei să desenezi un șablon diferit. Nu ar fi mai bine ca programul să-ți ceară ce valori să folosești? Poți să faci asta!
 
-\--- task \--- Mai întâi, mergi la secțiunea **Variabile** și creează variabilele numite `grade`{:class="block3variables"} și `creștere`{:class="block3variables"}. \--- /task \---
+\--- task \---
 
-\--- task \--- Acum, adaugă variabilele noi în codul tău astfel:
+First, go to the **Variables** section and create variables called `degrees`{:class="block3variables"} and `increase`{:class="block3variables"}.
+
+\--- /task \---
+
+\--- task \---
+
+Now add the new variables to your code like this:
 
 ```blocks3
     repetă până când <atinge [marginea v] ?> 
@@ -16,11 +22,13 @@ Ok, acest lucru este destul de interesant, dar este un pic plictisitor faptul c�
 
 \--- /task \---
 
-Acum, trebuie să soliciți valorile pentru aceste două variabile și să le păstrezi. Fă acest lucru utilizând un bloc **Detectare** numit `Întreabă și așteaptă`{:class="block3sensing"}, la care poți introduce o întrebare.
+Now you need to ask for values for these two variables and store them. You do this using a **Sensing** block called `Ask and wait`{:class="block3sensing"}, which you can type a question into.
 
-\--- task \--- Trage blocul `Întreabă și așteaptă`{:class="block3sensing"} în panoul personajului tău și schimbă întrebarea cu `Cu câți pași trebuie să crească?`{:class="block3sensing"}
+\--- task \---
 
-Apoi adaug-o în programul tău, imediat după ce ai setat `pași`{:class="block3variables"} la `0`, astfel:
+Pull the `Ask and wait`{:class="block3sensing"} block into your sprite panel and change the question to `How many steps should I grow by?`{:class="block3sensing"}
+
+Then add it to your program, just after you set `steps`{:class="block3variables"} to `0`, like this:
 
 ```blocks3
     când se dă click pe stegulețul verde
@@ -31,9 +39,11 @@ Apoi adaug-o în programul tău, imediat după ce ai setat `pași`{:class="block
 
 \--- /task \---
 
-Acum că ai programul tău de întrebat, trebuie să-ți amintești răspunsul! Se pare că Scratch are o variabilă specială numită `răspuns`{:class="block3sensing"}, unde stochează cel mai recent răspuns pe care l-a primit. Poți găsi această variabilă în blocurile **Detectare**.
+Now you’ve got your program asking a question, you need it to remember the answer! It turns out that Scratch has a special variable called `answer`{:class="block3sensing"}, where it stores the most recent answer it has received. You can find this variable among the **Sensing** blocks.
 
-\--- task \--- Folosind un bloc `setează la`{:class="block3variables"} din **Variabile**, ia valoarea lui `răspuns`{:class="block3sensing"} și păstreaz-o în variabila `creștere`{:class="block3variables"}, astfel:
+\--- task \---
+
+Using a `set to`{:class="block3variables"} block from **Variables**, take the value of `answer`{:class="block3sensing"} and store it in the `increase`{:class="block3variables"} variable like so:
 
 ```blocks3
     întreabă [Cu câți pași ar trebui să crească?] și așteaptă
@@ -42,7 +52,9 @@ Acum că ai programul tău de întrebat, trebuie să-ți amintești răspunsul! 
 
 \--- /task \---
 
-\--- task \--- Fă același lucru cu `grade`{:class="block3variables"}, întrebând `Câte grade trebuie să mă întorc?`{:class="block3sensing"} și stochează valorile din `răspuns`{:class="block3sensing"} în `grade`{:class="block3variables"}:
+\--- task \---
+
+Now, do the same thing with `degrees`{:class="block3variables"}, asking `How many degrees should I turn?`{:class="block3sensing"} and storing the value of `answer`{:class="block3sensing"} in `degrees`{:class="block3variables"}:
 
 ```blocks3
     setează [creștere v] la (răspuns)
@@ -52,7 +64,9 @@ Acum că ai programul tău de întrebat, trebuie să-ți amintești răspunsul! 
 
 \--- /task \---
 
-\--- task \--- Verifică programul tău dacă arată precum cel de mai jos și execută-l de câteva ori cu numere diferite. Scrie răspunsurile care fac cele mai tari poze. Vei avea nevoie de ele într-un pas ulterior!
+\--- task \---
+
+Check your program now looks like the one below, and run it a few times with different numbers. Write down the answers that make the coolest pictures. You’ll need them in a later step!
 
 ```blocks3
     când se dă click pe stegulețul verde
