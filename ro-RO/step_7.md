@@ -108,9 +108,12 @@ Asta se întâmplă atunci când rulezi programul:
 
 Asta e totul! Relaxează-te și urmărește programul tău cum desenează șabloane frumoase într-o buclă care rulează la infinit! Dacă dorești să adaugi mai multe modele, o poți face: adaugă mai multe perechi de numere în cele două liste și repornește programul.
 
+***
 
-**Traducere realizată de comunitate**
+Acest proiect a fost tradus de voluntarii:
 
-Proiectul a fost tradus de **Ines Teaca** și verificat de **Gelu Ungur**.
+Ines Teaca
 
-Traducătorii noștri voluntari ne ajută să oferim copiilor din întreaga lume șansa de a învăța să programeze. Ne poți ajuta să ajungem la mai mulți copii, ajutând la traducerea proiectelor noastre – află mai multe pe rpf.io/translators.
+Gelu Ungur
+
+Datorită voluntarilor, putem oferi oamenilor din întreaga lume șansa de a învăța în propria lor limbă. Ne poți ajuta să ajungem la mai multe persoane, ajutând la traducere ca și voluntar - mai multe informații la [rpf.io/translate](https://rpf.io/translate).
