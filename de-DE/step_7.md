@@ -34,7 +34,7 @@ Stelle sicher, dass der `Grad`{:class="block3variables"}-Wert und der `erhöhen`
 
 --- /task ---
 
-Jetzt, da du die Listen hast, musst du nur deinen Code dazu bringen, sie zu lesen und sie zu durchlaufen! Um das zu tun, wirst du eine neue Variable, die als Zähler fungiert, einige **inkrementiert **- und einen `falls dann`{:class="block3control"}-**Steuerungs**-Block, verwenden.
+Jetzt, da du die Listen hast, musst du nur deinen Code dazu bringen, sie zu lesen und sie zu durchlaufen! Um das zu tun, wirst du eine neue Variable, die als Zähler fungiert, einige **inkrementiert**- und einen `falls dann`{:class="block3control"}-**Steuerungs**-Block, verwenden.
 
 --- collapse ---
 ---
@@ -83,7 +83,7 @@ Beachte die neuen Blöcke, die:
 1. Den `Zähler`{:class="block3variables"}, außerhalb aller Schleifen, auf `0` setzen.
 2. Prüfen, ob die in `Zähler`{:class="block3variables"} gespeicherte Zahl, der Länge der Liste entspricht und, falls es so ist, `Zähler`{:class="block3variables"} auf `0` setzen. Das bedeutet, dass diese Variable immer die Nummer einer Position in den Listen ist und nicht größer wird, als die Listen lang sind.
 3. `1` zu `Zähler`{:class="block3variables"} hinzufügen.
-4. Das Element aus der `erhöhen Liste`{:class="block3variables"} auswählen, das sich an der Position befindet, die vom `Zähler`{:class="block3variables"} beschrieben wird, und geben es in die `erhöhen`{:class="block3variables"} Variable packen. Mache dasselbe für die `Gradliste`{:class"block3variables"} und die `Grad`{:class="block3variables"} Variable.
+4. Das Element aus der `erhöhen Liste`{:class="block3variables"} auswählen, das sich an der Position befindet, die vom `Zähler`{:class="block3variables"} beschrieben wird, und geben es in die `erhöhen`{:class="block3variables"} Variable packen. Mache dasselbe für die `Gradliste`{:class="block3variables"} und die `Grad`{:class="block3variables"} Variable.
 
 --- collapse ---
 ---

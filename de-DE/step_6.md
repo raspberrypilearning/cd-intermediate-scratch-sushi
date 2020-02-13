@@ -2,7 +2,7 @@
 
 Du kannst tatsächlich Zufallszahlen verwenden, um das gesamte Programm immer wieder laufen zu lassen und das Muster jedes Mal zu ändern! Es wird ein bisschen wie Bildschirmschoner in den 1990ern aussehen... an die du dich wahrscheinlich nicht erinnern wirst, aber frag einen deiner Eltern!
 
-Du brauchst einige Änderungen, um dies zu ermöglichen. Die erste ist, dass Du die `erhöhen`{:class=„block3variables“} und `Grad`{:class=„block3variables“} Variablen zufällig festlegen musst anstatt den Benutzer danach zu fragen. Du musst also ein paar deiner Codeblöcke ändern.
+Du brauchst einige Änderungen, um dies zu ermöglichen. Die erste ist, dass Du die `erhöhen`{:class="block3variables"} und `Grad`{:class="block3variables"} Variablen zufällig festlegen musst anstatt den Benutzer danach zu fragen. Du musst also ein paar deiner Codeblöcke ändern.
 
 --- task ---
 

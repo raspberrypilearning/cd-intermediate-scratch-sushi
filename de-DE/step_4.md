@@ -39,7 +39,7 @@ Füge ihn dann zu deinem Programm hinzu, direkt nachdem du die `Schritte`{:class
 
 --- /task ---
 
-Jetzt da du dein Programm eine Frage stellen lässt, musst dafür sorgen, dass es sich die Antwort merkt! Es stellt sich heraus, dass Scratch eine spezielle Variable namens `Antwort`{:class="block3sensing"} hat, in der die letzte Antwort gespeichert wird, die es erhalten hat. Du kannst diese Variable unter den **Fühlen**Blöcken finden.
+Jetzt da du dein Programm eine Frage stellen lässt, musst dafür sorgen, dass es sich die Antwort merkt! Es stellt sich heraus, dass Scratch eine spezielle Variable namens `Antwort`{:class="block3sensing"} hat, in der die letzte Antwort gespeichert wird, die es erhalten hat. Du kannst diese Variable unter den **Fühlen** Blöcken finden.
 
 --- task ---
 

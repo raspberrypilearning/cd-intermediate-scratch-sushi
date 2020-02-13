@@ -30,7 +30,7 @@ title: Warum macht der Stift das?
 
 Der Stift beginnt immer in Richtung der Mitte zu zeichnen, da der erste **Bewegungs**-Block, der nach dem `schalte Stift ein`{:class="block3extensions"}-Block ausgeführt wird, `gehe zu x: 0 y: 0`{:class="block3motion"} ist. Der Stift zeichnet also eine Linie, während er sich in die Mitte der Bühne bewegt.
 
-Der Stift endet nicht am Rand der Bühne, weil du der `wiederhole, bis`{:class=„block3control“}-Schleife noch nicht gesagt hast, welche Bedingung sie überprüft. Das bedeutet, dass die Bedingung niemals erfüllt werden kann, sodass die Schleife immer weiter läuft. Das bedeutet, dass die Schleife im Moment wie eine `fortlaufend`{:class="block3control"}-Schleife arbeitet.
+Der Stift endet nicht am Rand der Bühne, weil du der `wiederhole, bis`{:class="block3control"}-Schleife noch nicht gesagt hast, welche Bedingung sie überprüft. Das bedeutet, dass die Bedingung niemals erfüllt werden kann, sodass die Schleife immer weiter läuft. Das bedeutet, dass die Schleife im Moment wie eine `fortlaufend`{:class="block3control"}-Schleife arbeitet.
 
 --- /collapse ---
 

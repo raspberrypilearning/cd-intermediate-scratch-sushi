@@ -10,7 +10,7 @@ Der Block zum Ändern der **Malstift**-Farbe ist `ändere Stift Farbe um`{:class
 
 --- task ---
 
-Nimm einen dieser Blöcke und setze ihn in deine `wiederhole bis`{:class=„block3control“}-Schleife, wie folgt:
+Nimm einen dieser Blöcke und setze ihn in deine `wiederhole bis`{:class="block3control"}-Schleife, wie folgt:
 
 ```blocks3
     wiederhole bis <wird [Rand v] berührt?> 
