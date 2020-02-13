@@ -6,7 +6,7 @@ Du musst also eine andere Schleife verwenden die `wiederhole, bis`{:class="block
 
 \--- task \---
 
-Take a `repeat until`{:class="block3control"} block from the **Control** section, and put the `move`{:class="block3motion"} and `turn`{:class="block3motion"} blocks inside it, like so:
+Nimm einen `wiederhole bis`{:class="block3control"} - Block aus dem **Steuerungs** - Bereich und packe die `gehen`{:class="block3motion"} und `drehen`{:class="block3motion"} -Blöcke dort hinein, wie folgt:
 
 ```blocks3
 + wiederhole bis <>  
@@ -19,7 +19,7 @@ end
 
 \--- task \---
 
-Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge.
+Klicke jetzt einige Male auf die grüne Flagge, um dein Programm zu starten, und beobachte, was passiert. Du wirst zwei Dinge bemerken: Der Stift beginnt immer damit eine Linie zur Bühnenmitte zu zeichnen und er hört am Rand nicht auf.
 
 \--- /task \---
 
@@ -27,23 +27,23 @@ Now click the green flag to run the program a few times and see what happens. Yo
 
 ## title: Warum macht der Stift das?
 
-The pen always starts drawing in the direction of the middle, because the first **Motion** block that runs after the `pen down`{:class="block3extensions"} block is `go to x: 0 y: 0`{:class="block3motion"}. So the pen will draw a line as it moves to the centre of the Stage.
+Der Stift beginnt immer in Richtung der Mitte zu zeichnen, da der erste **Bewegungs**-Block, der nach dem `schalte Stift ein`{:class="block3extensions"}-Block ausgeführt wird, `gehe zu x: 0 y: 0`{:class="block3motion"} ist. Der Stift zeichnet also eine Linie, während er sich in die Mitte der Bühne bewegt.
 
-The pen doesn't stop at the edge of the Stage, because you haven’t yet told the `repeat until`{:class="block3control"} loop what condition it’s checking. This means the condition can never be met, so the loop will run on and on. This means that right now, the loop is working like a `forever`{:class="block3control"} loop.
+Der Stift endet nicht am Rand der Bühne, weil du der `wiederhole, bis`{:class=„block3control“}-Schleife noch nicht gesagt hast, welche Bedingung sie überprüft. Das bedeutet, dass die Bedingung niemals erfüllt werden kann, sodass die Schleife immer weiter läuft. Das bedeutet, dass die Schleife im Moment wie eine `fortlaufend`{:class="block3control"}-Schleife arbeitet.
 
 \--- /collapse \---
 
 \--- task \---
 
-Move the `go to x: 0 y: 0`{:class="block3motion"} block to before the `pen down`{:class="block3extensions"} block and add, from the **Pen** section, a `pen up`{:class="block3extensions"} block right at the start of your code.
+Verschiebe den `gehe zu x: 0 y: 0`{:class="block3motion"} -Block vor den `schalte Stift ein`{:class="block3extensions"} -Block und füge einen `schalte Stift aus`{:class="block3extensions"} -Block, aus dem **Malstift**-Bereich, direkt an den Anfang deines Skripts hinzu.
 
 \--- /task \---
 
-Time to fix your `repeat until`{:class="block3control"} loop so that it stops when you want it to. You’re looking to figure out if the (invisible) sprite is touching the edge of the Stage, so you need a **Sensing** block — in this case, the `touching ?`{:class="block3sensing"} block.
+Zeit, um deine `wiederhole bis`{:class="block3control"}-Schleife zu reparieren, damit sie stoppt, wenn du es wünscht. Du möchtest herausfinden, ob die (unsichtbare) Figur den Rand der Bühne berührt, also benötigst du einen **fühlen** Block — in diesem Fall den `wird ( ) berührt?`{:class="block3sensing"}-Block.
 
 \--- task \---
 
-Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class="block3control"} loop, and select `edge`{:class="block3sensing"} . Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
+Füge einen `wird ( ) berührt?`{:class="block3sensing"}-Block in deine `wiederhole bis`{:class="block3control"}-Schleife ein und wähle `Rand`{:class="block3sensing"} aus. Dann läuft die Schleife **bis** die (unsichtbare) Figur den Bühnenrand berührt.
 
 ```blocks3
     schalte Stift ein
@@ -57,7 +57,7 @@ end
 
 \--- task \---
 
-Change the number of steps in the `move`{:class="block3motion"} block to `5`, and check that your program matches this one before you test it:
+Ändere die Anzahl der Schritte im Block `gehe`{:class="block3motion"}-Block auf `5` und überprüfe, ob dein Programm mit diesem übereinstimmt, bevor du es testest:
 
 ```blocks3
     Wenn die grüne Flagge angeklickt
@@ -75,15 +75,15 @@ end
 
 \--- /task \---
 
-If you run the code now, you’ll see that the drawing the pen makes stays on the Stage.
+Wenn du den Code jetzt ausführst, wirst du feststellen, dass die Zeichnung des Stiftes auf der Bühne bleibt.
 
-Not only that, but your program has turned into a circle-drawing program! What's happening here is that those 15-degree turns eventually add up to 360 degrees, and so your pen turns in a full circle. You're going to change the way it moves slightly to make it take slightly a longer step each time, so it spirals out. For this, you’re going to need a **variable**.
+Nicht nur das, dein Programm hat sich zu einem Programm zum Zeichnen von Kreisen entwickelt! Was hier passiert, ist, dass sich diese 15-Grad-Drehungen letztendlich auf 360 Grad summieren, sodass sich der Stift in einem vollen Kreis bewegt. Du wirst die Art und Weise, in der er sich bewegt, leicht ändern, damit er jedes Mal einen etwas größeren Schritt macht, sodass er sich in einer Spirale nach außen dreht. Dafür benötigst du eine **Variable**.
 
-Variables are basically labeled places to store numbers or other information that you care about. You can create them in the **Variables** blocks section.
+Variablen sind im Grunde benannte Orte zum Speichern von Zahlen oder anderen Informationen, die dich interessieren. Du kannst sie im Bereich der **Variablen**-Blöcke erstellen.
 
 \--- task \---
 
-Make a variable called `steps`{:class="block3variables"}, and then add a `set steps to 0`{:class="block3variables"} block at the start of your program.
+Erstelle eine Variable mit dem Namen `Schritte`{:class="block3variables"} und füge am Anfang deines Programms einen `setze Schritte auf 0`{:class="block3variables"}-Block hinzu.
 
 ```blocks3
     Wenn die grüne Flagge angeklickt
@@ -95,7 +95,7 @@ Make a variable called `steps`{:class="block3variables"}, and then add a `set st
 
 \--- task \---
 
-Then use the value of `steps`{:class="block3variables"} instead of the `5` in the `move`{:class="block3motion"} block, and add `change steps by 1`{:class="block3variables"} as part of your loop:
+Verwende dann den Wert von `Schritte`{:class="block3variables"} anstelle von `5` im `gehe`{:class="block3motion"}-Block und füge `ändere Schritte um 1`{:class="block3variables"} als Teil deiner Schleife hinzu:
 
 ```blocks3
     schalte Stift ein
@@ -108,22 +108,22 @@ end
 
 \--- /task \---
 
-Do you think it matters where in the loop you put the `change steps by 1`{:class="block3variables"} block?
+Glaubst du, es ist wichtig, an welcher Stelle in der Schleife du den `ändere Schritte um 1`{:class="block3variables"}-Block setzt?
 
 ## \--- collapse \---
 
 ## title: Den Code in die richtige Reihenfolge bringen
 
-When you're deciding which order to put blocks in, think about what each block does and what you want your code to do.
+Wenn du entscheidest, in welcher Reihenfolge die Blöcke eingefügt werden sollen, musst du darüber nachdenken, was jeder Block tut und was dein Code tun soll.
 
-In this case, you want the pen to move, then turn, over and over. Each time it does this, you want to move one extra step.
+In diesem Fall willst du, dass der Stift sich bewegt und sich dann dreht, immer wieder und wieder. Jedes Mal, wenn er das tut, möchtest du einen zusätzlichen Schritt gehen.
 
-So it makes sense to put the `change steps by 1`{:class="block3variables"} block **after** the `move`{:class="block3motion"} block. However, after moving, it doesn't really matter if the pen turns first and then the number of steps changes, or if the number of steps changes first and then the pen turns instead.
+Es ist also sinnvoll, den `ändere Schritte um 1`{:class="block3variables"}-Block **hinter** den `gehe`{:class="block3motion"}-Block zu setzen. Nach dem Gehen spielt es jedoch keine Rolle, ob der Stift zuerst gedreht wird und sich dann die Anzahl der Schritte ändert oder ob sich stattdessen zuerst die Anzahl der Schritte ändert und sich dann der Stift dreht.
 
 \--- /collapse \---
 
 \--- task \---
 
-Now run the program, and also try changing the number of degrees around (try `76` and `120`)!
+Führe das Programm nun aus und versuche auch die Gradzahl zu ändern (versuche es mit `76` und `120`)!
 
 \--- /task \---
