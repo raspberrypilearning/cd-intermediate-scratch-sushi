@@ -4,7 +4,7 @@ Das Projekt, das Du erstellen wirst, basiert auf dem **Malstift**-Werkzeug, das 
 
 \--- task \---
 
-Open a new Scratch file, select the Scratch Cat sprite, and drag in a few blocks you may have already seen, until it looks like this:
+Öffne eine neue Scratch-Datei, wähle die Scratch Katzen Figur aus und ziehe einige Blöcke hinein, die du vielleicht bereits gesehen hast, bis es so aussieht:
 
 ```blocks3
     Wenn die grüne Flagge angeklickt
@@ -15,25 +15,25 @@ drehe dich nach rechts um (15) Grad
 
 \--- /task \---
 
-Now, time to test out the pen!
+Zeit, den Stift auszuprobieren!
 
-To use the Pen blocks in Scratch, you need add the **Pen extension**.
+Um die Malstiftblöcke in Scratch zu verwenden, musst du die **Malstift-Erweiterung** hinzufügen.
 
 \--- task \---
 
-Click on the **Add extension** button in the bottom left-hand corner.
+Klicke auf die **Erweiterung hinzufügen** Schaltfläche in der unteren linken Ecke.
 
-![add extension button highlighted](images/add-extension-annotated.png)
+![Erweiterungstaste hervorgehoben](images/add-extension-annotated.png)
 
-Click on the **Pen** extension to add it.
+Klicke auf die Erweiterung **Malstift**, um sie hinzuzufügen.
 
-![pen extension highlighted](images/click-pen-annotated.png)
+![Malstift Erweiterung hervorgehoben](images/click-pen-annotated.png)
 
-The Pen section then appears at the bottom of the blocks menu.
+Der Malstiftbereich wird dann unten im Blockmenü angezeigt.
 
-![pen extension blocks](images/pen-extension-blocks.png)
+![Malstift-Erweiterungs-Blöcke](images/pen-extension-blocks.png)
 
-From the **Pen** section, select the `pen down`{:class="block3extensions"} block and add it to the start of your program, like this:
+Wähle, aus dem **Malstift** Bereich, den Block `schalte Stift ein`{:class="block3extensions"} und füge ihn, wie folgt, zum Anfang deines Programms hinzu:
 
 ```blocks3
     Wenn die grüne Flagge angeklickt
@@ -45,17 +45,17 @@ gehe zu x: (0) y: (0)
 
 \--- task \---
 
-Now click the green flag a few times and watch what happens.
+Klicke jetzt einige Male auf die grüne Flagge und beobachte, was passiert.
 
 \--- /task \---
 
-If you can see the lines behind the cat sprite, then the pen is working and you can start making it draw really cool patterns.
+Wenn Du die Linien hinter der Figur der Katze sehen kannst, funktioniert der Stift und du kannst damit beginnen, wirklich coole Muster zu zeichnen.
 
-First, you should get rid of the sprite. It’s getting in the way of the drawing!
+Zuerst solltest du die Figur loswerden. Sie steht der Zeichnung im Weg!
 
 \--- task \---
 
-Add a `hide`{:class="block3looks"} block from **Looks** to the start of the program and it’ll disappear.
+Füge einen `verstecke dich`{:class="block3looks"} -Block aus **Aussehen** zum Start des Programms hinzu und sie wird verschwinden.
 
 ```blocks3
     Wenn die grüne Flagge angeklickt
@@ -65,7 +65,7 @@ schalte Stift ein
 
 \--- /task \---
 
-Now, you can change the colour of the pen with another block from the **Pen** section, but the block is a little different to the others you’ve seen. It’s the `set pen color to`{:class="block3extensions"} block and looks like this:
+Jetzt kannst Du die Farbe des Stiftes, mit einem anderen Block aus dem **Malstift**-Bereich ändern, der Block unterscheidet sich jedoch ein wenig von den anderen, die du gesehen hast. Es ist der `setze Stiftfarbe auf`{:class="block3extensions"}-Block und sieht so aus:
 
 ```blocks3
     setze Stiftfarbe auf [#4a6cd4]
@@ -73,7 +73,7 @@ Now, you can change the colour of the pen with another block from the **Pen** se
 
 \--- task \---
 
-Drag a `set pen color to`{:class="block3extensions"} block into your sprite panel, and snap it in above the `pen down`{:class="block3extensions"} block.
+Ziehe einen `setze Stiftfarbe auf`{:class="block3extensions"}-Block in dein Figuren-Panel und lasse ihn über dem `schalte Stift ein`{:class="block3extensions"}-Block einrasten.
 
 ```blocks3
     Wenn die grüne Flagge angeklickt
@@ -82,15 +82,15 @@ verstecke dich
 schalte Stift ein
 ```
 
-Now, click on the box of colour (in the code above it’s the blue one), and choose a colour.
+Klicke nun auf die Farbbox (im Code oben ist es die blaue) und wähle eine Farbe aus.
 
 \--- /task \---
 
-If you’ve been clicking on the green flag to test your code, you’ll have noticed that the drawings the pen makes don’t go away.
+Wenn Du auf die grüne Flagge geklickt hast, um deinen Code zu testen, wirst du festgestellt haben, dass die vom Stift angefertigten Zeichnungen nicht verschwinden.
 
 \--- task \---
 
-Add a `clear`{:class="block3extensions"} block from the **Pen** section to the start of your code to take care of that:
+Füge einen `lösche alles`{:class="block3extensions"}-Block aus dem **Malstift**-Bereich, zum Anfang deines Codes hinzu, um sich darum zu kümmern:
 
 ```blocks3
     Wenn die grüne Flagge angeklickt
