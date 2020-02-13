@@ -4,13 +4,13 @@ Ok, das wird ziemlich cool, aber es ist etwas langweilig, wenn du deinen Code je
 
 \--- task \---
 
-First, go to the **Variables** section and create variables called `degrees`{:class="block3variables"} and `increase`{:class="block3variables"}.
+Gehe zuerst zum Abschnitt **Variablen** und erstelle Variablen mit den Namen `Grad`{:class="block3variables"} und `erhöhen`{:class="block3variables"}.
 
 \--- /task \---
 
 \--- task \---
 
-Now add the new variables to your code like this:
+Füge die neuen Variablen nun wie folgt in deinen Code ein:
 
 ```blocks3
     wiederhole bis <wird [Rand v] berührt?>  
@@ -22,13 +22,13 @@ end
 
 \--- /task \---
 
-Now you need to ask for values for these two variables and store them. You do this using a **Sensing** block called `Ask and wait`{:class="block3sensing"}, which you can type a question into.
+Jetzt musst du nach Werten für diese beiden Variablen fragen und diese speichern. Dazu verwendest du einen **Fühlen**-Block mit dem Namen `frage und warte`{:class="block3sensing"}, in den du eine Frage eingeben kannst.
 
 \--- task \---
 
-Pull the `Ask and wait`{:class="block3sensing"} block into your sprite panel and change the question to `How many steps should I grow by?`{:class="block3sensing"}
+Ziehe den `frage und warte`{:class="block3sensing"}-Block in dein Figur-Panel und ändere die Frage zu `Um wie viele Schritte soll ich wachsen?`{:class="block3sensing"}
 
-Then add it to your program, just after you set `steps`{:class="block3variables"} to `0`, like this:
+Füge ihn dann zu deinem Programm hinzu, direkt nachdem du die `Schritte`{:class="block3variables"} auf `0` setzt, wie folgt:
 
 ```blocks3
     Wenn die grüne Flagge angeklickt
@@ -39,11 +39,11 @@ Then add it to your program, just after you set `steps`{:class="block3variables"
 
 \--- /task \---
 
-Now you’ve got your program asking a question, you need it to remember the answer! It turns out that Scratch has a special variable called `answer`{:class="block3sensing"}, where it stores the most recent answer it has received. You can find this variable among the **Sensing** blocks.
+Jetzt da du dein Programm eine Frage stellen lässt, musst dafür sorgen, dass es sich die Antwort merkt! Es stellt sich heraus, dass Scratch eine spezielle Variable namens `Antwort`{:class="block3sensing"} hat, in der die letzte Antwort gespeichert wird, die es erhalten hat. Du kannst diese Variable unter den **Fühlen**Blöcken finden.
 
 \--- task \---
 
-Using a `set to`{:class="block3variables"} block from **Variables**, take the value of `answer`{:class="block3sensing"} and store it in the `increase`{:class="block3variables"} variable like so:
+Nimm den Wert von `Antwort`{:class="block3sensing"} und speichere ihn in der `erhöhen`{:class="block3variables"} Variable, indem du einen `setze auf`{:class="block3variables"}-Block aus dem **Variablen**-Bereich verwendest, wie folgt:
 
 ```blocks3
     frage [Um wie viele Schritte soll ich wachsen?] und warte
@@ -54,7 +54,7 @@ Using a `set to`{:class="block3variables"} block from **Variables**, take the va
 
 \--- task \---
 
-Now, do the same thing with `degrees`{:class="block3variables"}, asking `How many degrees should I turn?`{:class="block3sensing"} and storing the value of `answer`{:class="block3sensing"} in `degrees`{:class="block3variables"}:
+Mache jetzt dasselbe mit `Grad`{:class="block3variables"}, frage `Um wie viel Grad soll ich mich drehen?`{:class="block3sensing"} und speichere den Wert von `Antwort`{:class="block3sensing"} in `Grad`{:class="block3variables"}:
 
 ```blocks3
     setze [erhöhen v] auf (Antwort)
@@ -66,7 +66,7 @@ Now, do the same thing with `degrees`{:class="block3variables"}, asking `How man
 
 \--- task \---
 
-Check your program now looks like the one below, and run it a few times with different numbers. Write down the answers that make the coolest pictures. You’ll need them in a later step!
+Überprüfe, ob dein Programm jetzt aussieht wie das unten dargestellte, und führe es einige Male mit unterschiedlichen Zahlen aus. Schreibe die Antworten auf, die die coolsten Bilder ergeben. Du wirst sie in einem späteren Schritt brauchen!
 
 ```blocks3
     Wenn die grüne Flagge angeklickt
