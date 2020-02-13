@@ -6,7 +6,7 @@ Du brauchst einige Änderungen, um dies zu ermöglichen. Die erste ist, dass Du 
 
 \--- task \---
 
-Remove the questions from your code, and update it to use random numbers instead.
+Entferne die Fragen aus deinem Code und aktualisiere ihn, um stattdessen Zufallszahlen zu verwenden.
 
 ```blocks3
     Wenn die grüne Flagge angeklickt
@@ -20,13 +20,13 @@ Remove the questions from your code, and update it to use random numbers instead
 
 \--- /task \---
 
-If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
+Wenn du dein Programm jetzt ausführst, wirst du feststellen, dass es ein zufälliges Muster zeichnet, aber nur einmal. Warum denkst Du, ist das so?
 
-It’s because the loop only runs until it reaches the edge of the Stage.
+Das liegt daran, dass die Schleife nur so lange läuft, bis sie den Bühnenrand erreicht.
 
 \--- task \---
 
-You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
+Du benötigst eine weitere Schleife, die fortlaufend läuft (also dann einen `fortlaufend`{:class="block3control"}-Block!) und zwar außerhalb der aktuellen, damit sie immer weiter läuft. Ziehe einfach einen aus dem **Steuerung** Bereich und füge den gesamten anderen Code hinzu.
 
 ```blocks3
     Wenn die grüne Flagge angeklickt
@@ -50,8 +50,8 @@ You need another loop that runs forever (so a `forever`{:class="block3control"} 
 
 \--- /task \---
 
-Now you’ve really got something awesome to look at!
+Jetzt hast du wirklich etwas Großartiges zum Ansehen!
 
-However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
+Möglicherweise stellst du jedoch fest, dass der Computer ab und zu etwas zeichnet, das ziemlich... schlecht aussieht. Das liegt daran, dass einige Zahlen für einige dieser Variablen einfach eine schlechte Wahl sind und dass einige **Kombinationen dieser Zahlen** auch eine schlechte Wahl sind.
 
-On the next card, you'll help the computer to pick only good combinations!
+Auf der nächsten Karte hilfst du dem Computer, nur gute Kombinationen auszuwählen!
