@@ -6,7 +6,7 @@ Hai bisogno di alcune modifiche per fare ciò. Il primo è che è necessario imp
 
 \--- task \---
 
-Remove the questions from your code, and update it to use random numbers instead.
+Rimuovi le domande dal tuo codice e aggiornalo per usare numeri casuali.
 
 ```blocks3
     when green flag clicked
@@ -20,13 +20,13 @@ Remove the questions from your code, and update it to use random numbers instead
 
 \--- /task \---
 
-If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
+Se esegui il tuo programma ora, scoprirai che disegna uno schema casuale, ma solo una volta. Quale pensi che sia la ragione?
 
-It’s because the loop only runs until it reaches the edge of the Stage.
+È perché il ciclo viene eseguito solo finché raggiunge il bordo dello stage.
 
 \--- task \---
 
-You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
+Per mantenerlo vivo, hai bisogno di un altro ciclo che funzioni per sempre (quindi un blocco `per sempre`{: class = "block3control"}) al di fuori di quello corrente. Basta trascinarne uno fuori dalla sezione **Controllo** e aggiungigli tutto il tuo codice.
 
 ```blocks3
     when green flag clicked
@@ -50,8 +50,8 @@ You need another loop that runs forever (so a `forever`{:class="block3control"} 
 
 \--- /task \---
 
-Now you’ve really got something awesome to look at!
+Ora hai davvero qualcosa di fantastico da guardare!
 
-However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
+Tuttavia, potresti notare che, di tanto in tanto, il computer disegna qualcosa che sembra abbastanza... brutto. Questo perché alcuni numeri per queste variabili sono inadatti, e alcune **combinazioni di quei numeri** sono altrettanto inadatti.
 
-On the next card, you'll help the computer to pick only good combinations!
+Sulla prossima scheda, aiuterai il computer a scegliere solo buone combinazioni!
