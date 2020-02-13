@@ -8,47 +8,47 @@ Dazu benötigst du eine **Liste**. Du findest Listen zusammen mit den Variablen 
 
 \--- task \---
 
-Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
+Klicke auf **neue Liste** und gib als Name `Gradliste`{:class="block3variables"} ein.
 
 ![](images/makeAList.png)
 
 \--- /task \---
 
-Your list, which is empty at the moment, will appear on the Stage, and you'll see a bunch of blocks for it in **Variables**.
+Deine Liste, die im Moment leer ist, wird auf der Bühne angezeigt. Und du wirst eine ganze Menge Blöcke für sie im **Variablen**-Bereich sehen.
 
 ![](images/listBlocks.png)
 
 \--- task \---
 
-Make another list called `Increase List`{:class="block3variables"}
+Erstelle eine weitere Liste, die du `erhöhen Liste`{:class="block3variables"} nennst
 
 \--- /task \---
 
 \--- task \---
 
-Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
+Füge jetzt das erste Wertepaar von `erhöhen`{:class="block3variables"} und `Grad`{:class="block3variables"} Werten, die dir gefallen haben in die jeweils richtige Liste ein, indem du auf das kleine Pluszeichen (**+**) am Ende der Liste klickst. Wiederhole dies, um das zweite Wertepaar hinzuzufügen. Das reicht fürs Erste - du wirst die restlichen Wertepaare, die dir gefallen haben, später hinzufügen!
 
 ![](images/helping2.png)
 
-Make sure that the `degrees`{:class="block3variables"} value and the `increase`{:class="block3variables"} value that worked well together are at the same position in the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. They need to be there so your program can match them up again using their position!
+Stelle sicher, dass der `Grad`{:class="block3variables"}-Wert und der `erhöhen`{:class="block3variables"}-Wert, die gut zusammenarbeiten, in der `Gradliste`{:class="block3variables"} und in der `erhöhen Liste`{:class="block3variables"} jeweils an der gleichen Position stehen. Sie müssen dort sein, damit dein Programm sie anhand ihrer Position wieder zuordnen kann!
 
 \--- /task \---
 
-Now you have the lists, you just need to get your code to read them and loop over them! To do this, you’re going to use a new variable to act as a counter, some **incrementing**, and an `if then`{:class="block3control"} **Control** block.
+Jetzt, da du die Listen hast, musst du nur deinen Code dazu bringen, sie zu lesen und sie zu durchlaufen! Um das zu tun, wirst du eine neue Variable, die als Zähler fungiert, einige **inkrementiert **- und einen `falls dann`{:class="block3control"}-**Steuerungs**-Block, verwenden.
 
 ## \--- collapse \---
 
 ## title: Was bedeutet Inkrementieren?
 
-To increment something means to add something to it.
+Etwas inkrementieren bedeutet, etwas hinzuzufügen.
 
-You will use a variable to act as a counter to keep track of what position you're at in your lists. To move through the lists, you'll keep incrementing the counter by `1` (so, adding `1` to it) until you get to the end of the list.
+Du wirst eine Variable als Zähler verwenden, um zu verfolgen, an welcher Position du dich in deinen Listen befindest. Um dich durch die Listen zu bewegen, erhöhst du den Zähler ständig um `1` (fügst also `1` hinzu), bis du an das Ende der Liste gelangst.
 
 \--- /collapse \---
 
 \--- task \---
 
-Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
+Erstelle eine neue Variable mit dem Namen `Zähler`{:class="block3variables"}, und aktualisiere deinen Code so, dass er wie folgt aussieht:
 
 ```blocks3
     Wenn die grüne Flagge angeklickt
@@ -77,7 +77,7 @@ Create a new variable called `counter`{:class="block3variables"}, and update you
 
 \--- /task \---
 
-Notice the new blocks that:
+Beachte die neuen Blöcke, die:
 
 1. Den `Zähler`{:class="block3variables"}, außerhalb aller Schleifen, auf `0` setzen.
 2. Prüfen, ob die in `Zähler`{:class="block3variables"} gespeicherte Zahl, der Länge der Liste entspricht und, falls es so ist, `Zähler`{:class="block3variables"} auf `0` setzen. Das bedeutet, dass diese Variable immer die Nummer einer Position in den Listen ist und nicht größer wird, als die Listen lang sind.
@@ -88,7 +88,7 @@ Notice the new blocks that:
 
 ## title: Wie funktioniert der Code?
 
-This is what happens when you run your program:
+Folgendes passiert, wenn du dein Programm ausführst:
 
 1. Setze `Zähler`{:class="block3variables"} auf `0`.
 2. Starte die `fortlaufend`{:class="block3control"}-Schleife.
@@ -114,8 +114,8 @@ This is what happens when you run your program:
 
 \--- task \---
 
-Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}.
+Sobald du mit dem Code zufrieden bist, füge die restlichen notierten Wertepaare der `Gradliste`{:class="block3variables"} und der `erhöhen Liste`{:class="block3variables"} hinzu.
 
 \--- /task \---
 
-That's it! Sit back and watch your program keep drawing lovely patterns in a never-ending loop! If you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
+Das war's! Lehne dich zurück und beobachte, wie dein Programm in einer endlosen Schleife schöne Muster zeichnet! Wenn du weitere Muster hinzufügen möchtest, kannst du: den beiden Listen einfach weitere Zahlenpaare hinzufügen und das Programm neu starten.
