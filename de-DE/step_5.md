@@ -10,7 +10,7 @@ Der Block zum Ändern der **Malstift**-Farbe ist `ändere Stift Farbe um`{:class
 
 \--- task \---
 
-Grab one of those blocks and put it into your `repeat until`{:class="block3control"} loop, like this:
+Nimm einen dieser Blöcke und setze ihn in deine `wiederhole bis`{:class=„block3control“}-Schleife, wie folgt:
 
 ```blocks3
     wiederhole bis <wird [Rand v] berührt?> 
@@ -23,11 +23,11 @@ Grab one of those blocks and put it into your `repeat until`{:class="block3contr
 
 \--- /task \---
 
-That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly.
+Das ist cool, aber ein bisschen vorhersehbar. Du kannst es ein bisschen spaßiger machen, indem du eine Zufallszahl hinzufügst, sodass sich die Farbe zufällig ändert.
 
 \--- task \---
 
-Put the random number **Operator** block into the `change pen color by`{:class="block3extensions"} block and pick some values to go in it. I'd try `1` and `100` to start.
+Setze den Zufallszahl **Operatoren**-Block in den `ändere Stift Farbe um`{:class="block3extensions"}-Block ein und wähle ein paar Werte die in den Block kommen. Ich würde es zu Beginn mit `1` und `100` versuchen.
 
 ```blocks3
     wiederhole bis <wird [Rand v] berührt?> 
@@ -42,6 +42,6 @@ Put the random number **Operator** block into the `change pen color by`{:class="
 
 \--- task \---
 
-Try running it again, and watch the random rainbow!
+Versuche es noch einmal laufen zu lassen und beobachte den zufälligen Regenbogen!
 
 \--- /task \---
