@@ -1,1 +1,15 @@
+steps
 
+degrees
+
+increase
+
+How many steps should I grow by?
+
+How many degrees should I turn?
+
+Increase list
+
+Degrees list
+
+counter
