@@ -1,15 +1,15 @@
-steps
+步骤
 
-degrees
+度数
 
-increase
+增加
 
-How many steps should I grow by?
+我应该多加多少步？
 
-How many degrees should I turn?
+我应该转多少度？
 
-Increase list
+递增列表
 
-Degrees list
+度数表
 
-counter
+计数器
