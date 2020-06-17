@@ -1,8 +1,8 @@
-## Cooler lines
+## मजे की लाइनें
 
-Time to add colour! Right now, your line is one colour, but the **Pen** has blocks that can change its colour. And with the right **Operator** block, you can even change the colour randomly!
+रंग जोड़ने का समय! अभी, आपकी लाइन एक रंग है, लेकिन ** पेन ** ऐसे ब्लॉक हैं जो अपना रंग बदल सकते हैं। और दाईं ओर ** ऑपरेटर के साथ ** ब्लॉक, आप भी रंग अनियमित रूप से बदल सकते हैं!
 
-The block for changing the **Pen** colour is `change pen color by`{:class="block3extensions"}:
+** पेन बदलने के लिए ब्लॉक ** रंग ` द्वारा पेन रंग बदलें ` {:class= "block3extensions"}:
 
 ```blocks3
     change pen color by (10)
@@ -10,7 +10,7 @@ The block for changing the **Pen** colour is `change pen color by`{:class="block
 
 \--- task \---
 
-Grab one of those blocks and put it into your `repeat until`{:class="block3control"} loop, like this:
+उन ब्लॉकों में से एक को पकड़ो और इसे अपने ` में डालें जब तक दोहराएं ` {:class="block3control"} लूप, इस तरह:
 
 ```blocks3
     repeat until <touching [edge v] ?> 
@@ -23,11 +23,11 @@ Grab one of those blocks and put it into your `repeat until`{:class="block3contr
 
 \--- /task \---
 
-That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly.
+यह अच्छा है, लेकिन थोड़ा सा पूर्वानुमान है। यदि आप इसमें एक यादृच्छिक संख्या जोड़ते हैं, तो आप इसे थोड़ा और मज़ेदार बना सकते हैं, इसलिए रंग अनियमित रूप से बदलता है।
 
 \--- task \---
 
-Put the random number **Operator** block into the `change pen color by`{:class="block3extensions"} block and pick some values to go in it. I'd try `1` and `100` to start.
+यादृच्छिक संख्या डालें ** ऑपरेटर ** ` द्वारा पेन कलर बदलें ` {:class ="block3extensions"} इसमें जाने के लिए कुछ मानों को ब्लॉक करें और चुनें। मैं कोशिश करूँगा ` 1 ` और ` 100 ` शुरू करना।
 
 ```blocks3
     repeat until <touching [edge v] ?> 
@@ -42,6 +42,6 @@ Put the random number **Operator** block into the `change pen color by`{:class="
 
 \--- task \---
 
-Try running it again, and watch the random rainbow!
+इसे फिर से चलाने की कोशिश करें, और यादृच्छिक इंद्रधनुष देखें!
 
 \--- /task \---
