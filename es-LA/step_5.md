@@ -1,8 +1,8 @@
-## Cooler lines
+## Líneas más atractivas
 
-Time to add colour! Right now, your line is one colour, but the **Pen** has blocks that can change its colour. And with the right **Operator** block, you can even change the colour randomly!
+¡Hora de agregar color! En este momento, tu línea es de un color, pero el **Lápiz** tiene bloques que pueden cambiar su color. ¡Y con el bloque **Operador** correcto, incluso puedes cambiar el color al azar!
 
-The block for changing the **Pen** colour is `change pen color by`{:class="block3extensions"}:
+El bloque para cambiar el color del **Lápiz** es `cambiar color de lápiz por`{:class="block3extensions"}:
 
 ```blocks3
     change pen color by (10)
@@ -10,7 +10,7 @@ The block for changing the **Pen** colour is `change pen color by`{:class="block
 
 \--- task \---
 
-Grab one of those blocks and put it into your `repeat until`{:class="block3control"} loop, like this:
+Toma uno de esos bloques y ponlo en tu bucle ` repetir hasta que ` {:class ="block3control"}, así:
 
 ```blocks3
     repeat until <touching [edge v] ?> 
@@ -23,11 +23,11 @@ Grab one of those blocks and put it into your `repeat until`{:class="block3contr
 
 \--- /task \---
 
-That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly.
+Eso es genial, pero un poco predecible. Puedes hacerlo un poco más divertido si le agregas un número aleatorio, para que el color cambie al azar.
 
 \--- task \---
 
-Put the random number **Operator** block into the `change pen color by`{:class="block3extensions"} block and pick some values to go in it. I'd try `1` and `100` to start.
+Pon el bloque número aleatorio **Operador** en el bloque `cambiar color de lápiz por`{:class="block3extensions"} y escoge algunos valores para ponerle. Intentaría ` 1 ` y ` 100 ` para comenzar.
 
 ```blocks3
     repeat until <touching [edge v] ?> 
@@ -42,6 +42,6 @@ Put the random number **Operator** block into the `change pen color by`{:class="
 
 \--- task \---
 
-Try running it again, and watch the random rainbow!
+¡Intenta ejecutarlo de nuevo, y mira el arco iris aleatorio!
 
 \--- /task \---
