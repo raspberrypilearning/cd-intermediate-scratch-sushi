@@ -1,12 +1,12 @@
-## Drawing patterns
+## 绘制图案
 
-Now you’ve got a program that draws a line, but it only draws one line. That’s a bit dull! You could use `forever`{:class="block3control"} loop to draw something over and over again, but then you’ll get drawings that go off the Stage!
+现在，你有一个可以画一条线的程序，但它也只能画一条线。 这样有点呆板！ 你可以使用 `重复执行`{:class="block3control"} 循环来一遍又一遍地绘制一些东西，但是你的画很快会超出舞台边界。
 
-So you need use a different type of loop called `repeat until`{:class="block3control"}, which you’ll also find in the **Control** section. This type of loop will do something over and over again, **until** a True/False condition is met.
+所以你需要用到一个不同类型的循环，叫做`重复执行直到`{:class="block3control"}，你可以从**控制**部分找到它。 这种类型的循环会反复执行某些操作，**直到**满足对/错条件。
 
 \--- task \---
 
-Take a `repeat until`{:class="block3control"} block from the **Control** section, and put the `move`{:class="block3motion"} and `turn`{:class="block3motion"} blocks inside it, like so:
+从**控制**中拖一个`重复执行直到`{:class="block3control"}块出来 ，然后放置`移动`{:class="block3motion"} 和 `左转`{:class="block3motion"} 块，就像这样：
 
 ```blocks3
 +    repeat until <> 
@@ -19,31 +19,31 @@ Take a `repeat until`{:class="block3control"} block from the **Control** section
 
 \--- task \---
 
-Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge.
+现在，单击绿色旗子几次来运行该程序，然后看看会发生什么。 你会注意到两件事：笔总是从在舞台中间画一条线开始，而它并没有在边缘处停止。
 
 \--- /task \---
 
 ## \--- collapse \---
 
-## title: Why does the pen do this?
+## 标题：为什么笔会这样做？
 
-The pen always starts drawing in the direction of the middle, because the first **Motion** block that runs after the `pen down`{:class="block3extensions"} block is `go to x: 0 y: 0`{:class="block3motion"}. So the pen will draw a line as it moves to the centre of the Stage.
+笔总是从中间的方向开始绘制，因为在 `落笔` {：class =“ block3extensions”}后第一个运行的**运动**是`移到 x：0 y：0 ` {：class =“ block3motion”}。 因此，笔在移到舞台中央的过程中会画一条线。
 
-The pen doesn't stop at the edge of the Stage, because you haven’t yet told the `repeat until`{:class="block3control"} loop what condition it’s checking. This means the condition can never be met, so the loop will run on and on. This means that right now, the loop is working like a `forever`{:class="block3control"} loop.
+笔不会停在舞台的边缘，因为你还没有告诉`重复执行直到` {：class =“ block3control”}循环检查的条件。 这意味着永远无法满足循环停止的条件，因此它将不断运行。 这意味着，这个循环就像`重复执行` {：class =“ block3control”}循环一样工作。
 
 \--- /collapse \---
 
 \--- task \---
 
-Move the `go to x: 0 y: 0`{:class="block3motion"} block to before the `pen down`{:class="block3extensions"} block and add, from the **Pen** section, a `pen up`{:class="block3extensions"} block right at the start of your code.
+把`移到 x: 0 y`{:class="block3motion"} 块挪到 `画笔 `{:class="block3extensions"} 块之前，并从**画笔**部分拿一个`抬笔`{:class="block3extensions"} 块到右端代码的开头。
 
 \--- /task \---
 
-Time to fix your `repeat until`{:class="block3control"} loop so that it stops when you want it to. You’re looking to figure out if the (invisible) sprite is touching the edge of the Stage, so you need a **Sensing** block — in this case, the `touching ?`{:class="block3sensing"} block.
+是时候修复你的`重复执行直到` {：class =“ block3control”}循环了，以使其在你需要时停止。 你得知道（隐藏起来的）精灵是否接触到了舞台边缘，为此你需要** 侦测 ** 工具中的 `碰到?` {：class =“ block3sensing”}块。
 
 \--- task \---
 
-Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class="block3control"} loop, and select `edge`{:class="block3sensing"} . Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
+添加`碰到?` {：class =“ block3sensing”}块到你的`重复执行直到` {：class =“ block3control”}循环，然后选择` 舞台边缘 ` {：class =“ block3sensing”}。 然后循环运行**重复执行直到** （隐藏起来的）精灵触及舞台的边缘。
 
 ```blocks3
     pen down
@@ -57,7 +57,7 @@ Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class
 
 \--- task \---
 
-Change the number of steps in the `move`{:class="block3motion"} block to `5`, and check that your program matches this one before you test it:
+更改`移动` {：class =“ block3motion”}块中的步骤数为` 5 ` ，并在测试之前检查程序是否与此程序匹配：
 
 ```blocks3
     when green flag clicked
@@ -75,15 +75,15 @@ Change the number of steps in the `move`{:class="block3motion"} block to `5`, an
 
 \--- /task \---
 
-If you run the code now, you’ll see that the drawing the pen makes stays on the Stage.
+如果现在运行代码，你将看到钢笔绘制的图形停留在舞台上。
 
-Not only that, but your program has turned into a circle-drawing program! What's happening here is that those 15-degree turns eventually add up to 360 degrees, and so your pen turns in a full circle. You're going to change the way it moves slightly to make it take slightly a longer step each time, so it spirals out. For this, you’re going to need a **variable**.
+不仅如此，你的程序还变成了画圆的程序！ 此处发生的情况是，这些15度的转弯最终加起来为360度，因此你的笔旋转了一个完整的圆圈。 你将稍微更改它的移动的方式，使它每次都稍微多走一步，这样它就会螺旋式向外移动。 为此，你将需要一个**变量** 。
 
-Variables are basically labeled places to store numbers or other information that you care about. You can create them in the **Variables** blocks section.
+变量基本上就是一种带有标签的位置，在位置中存储数字或其它你关心的信息。 你可以在 **变量** 部分中创建它们。
 
 \--- task \---
 
-Make a variable called `steps`{:class="block3variables"}, and then add a `set steps to 0`{:class="block3variables"} block at the start of your program.
+创建一个名为 `steps`{:class="block3variables"}的变量，然后添加一个 `将 steps 设为 0`{:class="block3variables"} 块到程序的开头。
 
 ```blocks3
     when green flag clicked
@@ -95,7 +95,7 @@ Make a variable called `steps`{:class="block3variables"}, and then add a `set st
 
 \--- task \---
 
-Then use the value of `steps`{:class="block3variables"} instead of the `5` in the `move`{:class="block3motion"} block, and add `change steps by 1`{:class="block3variables"} as part of your loop:
+然后用` steps` {：class =“ block3variables”}块替换`移动` {：class =“ block3motion”}块中的` 5 `，之后加入`将 steps 增加 1 ` {：class =“ block3variables”}块作为循环的一部分：
 
 ```blocks3
     pen down
@@ -108,22 +108,22 @@ Then use the value of `steps`{:class="block3variables"} instead of the `5` in th
 
 \--- /task \---
 
-Do you think it matters where in the loop you put the `change steps by 1`{:class="block3variables"} block?
+你觉得在循环中的不同位置放置`将 steps 增加 1`{:class="block3variables"} 块会不一样吗？
 
 ## \--- collapse \---
 
-## title: Putting code in the right order
+## 标题：以正确的顺序放置代码
 
-When you're deciding which order to put blocks in, think about what each block does and what you want your code to do.
+当你决定哪个命令放置方块时，想想每个方块做什么以及你想要你的代码做什么。
 
-In this case, you want the pen to move, then turn, over and over. Each time it does this, you want to move one extra step.
+在这种情况下，你想要笔移动，然后一遍又一遍地转动。 每次执行此操作时，你都希望再移动一个额外的步骤。
 
-So it makes sense to put the `change steps by 1`{:class="block3variables"} block **after** the `move`{:class="block3motion"} block. However, after moving, it doesn't really matter if the pen turns first and then the number of steps changes, or if the number of steps changes first and then the pen turns instead.
+因此，将`将 steps 增加` {：class =“ block3variables”} 块放置在 `移动` {：class =“ block3motion”}块 **之后** 是有意义的。 然而在移动后，笔先转动再改变步骤数， 还是先改变步骤数再转笔都不重要。
 
 \--- /collapse \---
 
 \--- task \---
 
-Now run the program, and also try changing the number of degrees around (try `76` and `120`)!
+现在运行程序，并尝试更改周围的度数（尝试` 76 `和` 120 ` ）！
 
 \--- /task \---
