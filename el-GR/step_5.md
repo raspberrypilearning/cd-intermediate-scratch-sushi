@@ -1,8 +1,8 @@
-## Cooler lines
+## Ακόμη πιο εντυπωσιακές γραμμές
 
-Time to add colour! Right now, your line is one colour, but the **Pen** has blocks that can change its colour. And with the right **Operator** block, you can even change the colour randomly!
+Ώρα να προσθέσεις χρώμα! Αυτή τη στιγμή, η γραμμή σου είναι μονόχρωμη, αλλά η **Πένα** έχει μπλοκ που μπορούν να αλλάζουν το χρώμα της. Και με το κατάλληλο μπλοκ από τους **Τελεστές**, μπορείς ακόμη και να αλλάζεις το χρώμα τυχαία!
 
-The block for changing the **Pen** colour is `change pen color by`{:class="block3extensions"}:
+Το μπλοκ για την αλλαγή του χρώματος της **Πένας** είναι το `άλλαξε χρώμα πένας κατά`{:class="block3extensions"}:
 
 ```blocks3
     change pen color by (10)
@@ -10,7 +10,7 @@ The block for changing the **Pen** colour is `change pen color by`{:class="block
 
 \--- task \---
 
-Grab one of those blocks and put it into your `repeat until`{:class="block3control"} loop, like this:
+Πάρε ένα από αυτά τα μπλοκ και τοποθέτησέ το στο βρόχο `επανάλαβε μέχρι`{:class="block3control"}, ως εξής:
 
 ```blocks3
     repeat until <touching [edge v] ?> 
@@ -23,11 +23,11 @@ Grab one of those blocks and put it into your `repeat until`{:class="block3contr
 
 \--- /task \---
 
-That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly.
+Αυτό είναι εντυπωσιακό, αλλά και λίγο προβλέψιμο. Μπορείς να το κάνεις πιο διασκεδαστικό εάν προσθέσεις έναν τυχαίο αριθμό σε αυτό, έτσι το χρώμα θα αλλάζει τυχαία.
 
 \--- task \---
 
-Put the random number **Operator** block into the `change pen color by`{:class="block3extensions"} block and pick some values to go in it. I'd try `1` and `100` to start.
+Βάλε την εντολή για τους τυχαίους αριθμούς από τους **Τελεστές** στο μπλοκ `άλλαξε χρώμα πένας κατά`{:class="block3extensions"} και βάλε τις τιμές που θες. Εγώ θα δοκίμαζα `1` και `100` για αρχή.
 
 ```blocks3
     repeat until <touching [edge v] ?> 
@@ -42,6 +42,6 @@ Put the random number **Operator** block into the `change pen color by`{:class="
 
 \--- task \---
 
-Try running it again, and watch the random rainbow!
+Δοκίμασε να το εκτελέσεις ξανά και παρακολούθησε το τυχαίο ουράνιο τόξο!
 
 \--- /task \---
