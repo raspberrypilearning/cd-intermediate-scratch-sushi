@@ -1,16 +1,16 @@
-## Asking for input
+## 要求输入
 
-Ok, this is getting pretty cool, but it’s a bit boring to have to edit your code every time you want to draw a different pattern. Wouldn’t it be good to get the program to ask you for values to use? You can do that!
+好的，这已经很酷了，但是每次你想要绘制不同的图案时都必须编辑代码有点无聊。 让程序询问你要使用的值不是很好吗？ 你可以这样做：
 
 \--- task \---
 
-First, go to the **Variables** section and create variables called `degrees`{:class="block3variables"} and `increase`{:class="block3variables"}.
+首先，前往**变量**部分，并创建 `degrees`{:class="block3variables"} 和 `increase`{:class="block3variables"} 的变量。
 
 \--- /task \---
 
 \--- task \---
 
-Now add the new variables to your code like this:
+现在将新的变量添加到你的代码中，例如：
 
 ```blocks3
     repeat until <touching [edge v] ?> 
@@ -22,13 +22,13 @@ Now add the new variables to your code like this:
 
 \--- /task \---
 
-Now you need to ask for values for these two variables and store them. You do this using a **Sensing** block called `Ask and wait`{:class="block3sensing"}, which you can type a question into.
+现在，你需要询问这两个变量的值并存储它们。 你可以使用一个叫做 `询问并等待` {:class=“block3sensing”} 的 **侦测** 块，你可以在其中输入问题。
 
 \--- task \---
 
-Pull the `Ask and wait`{:class="block3sensing"} block into your sprite panel and change the question to `How many steps should I grow by?`{:class="block3sensing"}
+拉取`询问并等待`{:class="block3sensing"} 块进入你的精灵图面板，然后将问题更改为`我应该采取多少步骤？`{:class="block3sensing"}
 
-Then add it to your program, just after you set `steps`{:class="block3variables"} to `0`, like this:
+然后将其添加到你的程序，就在你设置`steps`{:class="block3variables"} 为`0`之后，像这样：
 
 ```blocks3
     when green flag clicked
@@ -39,11 +39,11 @@ Then add it to your program, just after you set `steps`{:class="block3variables"
 
 \--- /task \---
 
-Now you’ve got your program asking a question, you need it to remember the answer! It turns out that Scratch has a special variable called `answer`{:class="block3sensing"}, where it stores the most recent answer it has received. You can find this variable among the **Sensing** blocks.
+现在，你的程序能询问问题了，你还需要它记住问题的答案！ Scratch 有一个名为` 回答 ` {:class=“block3sensing”} 的特殊变量，它存储收到的最新答案。 您可以在**侦测**模块中找到此变量。
 
 \--- task \---
 
-Using a `set to`{:class="block3variables"} block from **Variables**, take the value of `answer`{:class="block3sensing"} and store it in the `increase`{:class="block3variables"} variable like so:
+使用 ** 变量** 中的 `将变量设为`{:class=“block3variables”} 块，并取值为 ` 回答 ` {:class=“block3sensing”} 并将其存储在变量 `increase` {:class=“block3variables”}中，如下所示：
 
 ```blocks3
     ask [How many steps should I grow by?] and wait
@@ -54,7 +54,7 @@ Using a `set to`{:class="block3variables"} block from **Variables**, take the va
 
 \--- task \---
 
-Now, do the same thing with `degrees`{:class="block3variables"}, asking `How many degrees should I turn?`{:class="block3sensing"} and storing the value of `answer`{:class="block3sensing"} in `degrees`{:class="block3variables"}:
+现在，对`degrees` {:class=“block3variables”}进行相同的操作，询问`我应该转动多少度？ ` {:class=“block3sensing”}并在`度` {:class=“block3variables”}：中存储` 回答` {:class=“block3sensing”}的值。
 
 ```blocks3
     set [increase v] to (answer)
@@ -66,7 +66,7 @@ Now, do the same thing with `degrees`{:class="block3variables"}, asking `How man
 
 \--- task \---
 
-Check your program now looks like the one below, and run it a few times with different numbers. Write down the answers that make the coolest pictures. You’ll need them in a later step!
+现在检查你的程序，如下所示，并使用不同的输入数字运行几次。 写下答案来制作出最酷的图片。 你会在稍后的步骤中需要他们！
 
 ```blocks3
     when green flag clicked
