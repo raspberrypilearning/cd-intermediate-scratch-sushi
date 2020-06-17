@@ -10,7 +10,7 @@
 
 \--- task \---
 
-Grab one of those blocks and put it into your `repeat until`{:class="block3control"} loop, like this:
+اسحب واحدة من تلك الكتل وضعها داخل الحلقة الخاصة بك`كرر حتى`{:class="block3control"}, مثل هذا:
 
 ```blocks3
     كرر حتى<touching [edge v] ?> 
@@ -23,11 +23,11 @@ Grab one of those blocks and put it into your `repeat until`{:class="block3contr
 
 \--- /task \---
 
-That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly.
+هذا رائع ، لكن قابل للتنبؤ قليلاً. يمكنك جعله أكثر متعة قليلاً إذا أضفت رقمًا عشوائيًا إليه، بهذا يتغير اللون بشكل عشوائي.
 
 \--- task \---
 
-Put the random number **Operator** block into the `change pen color by`{:class="block3extensions"} block and pick some values to go in it. I'd try `1` and `100` to start.
+ضع كتلة العدد عشوائي **المشغل**في كتلة `غير القلم اللون بمقدار`{:class="block3extensions"} واختر بعض القيم لتكون بداخلها. أود ان أحاول `1` و `100` للبدأ.
 
 ```blocks3
     كرر حتى<touching [edge v] ?> 
@@ -42,6 +42,6 @@ Put the random number **Operator** block into the `change pen color by`{:class="
 
 \--- task \---
 
-Try running it again, and watch the random rainbow!
+حاول تشغيله مرة أخرى ، وشاهد قوس قزح عشوائي!
 
 \--- /task \---
