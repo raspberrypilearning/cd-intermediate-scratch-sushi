@@ -20,7 +20,6 @@
 
 --- task ---
 
---- task ---
 `Increase List`{:class="block3variables"} नामक एक और सूची बनाएँ।
 
 --- /task ---
