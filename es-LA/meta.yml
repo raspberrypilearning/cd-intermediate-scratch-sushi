@@ -1,14 +1,14 @@
 ---
-title: Pattern pen
+title: Patrón de Lápiz
 hero_image: images/banner.png
-description: Make a cool pattern generator
+description: Crea un generador de patrones genial
 theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
 ingredient: false
 copyedit: true
 curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
-interests: art
+interests: arte
 technologies: scratch
 site_areas: coderdojo
 hardware:
@@ -17,16 +17,16 @@ version: 4.0.0
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: Introducción
   - 
-    title: Using the Pen tool
+    title: Utilizando la herramienta Lápiz
   - 
-    title: Drawing patterns
+    title: Patrones de dibujo
   - 
-    title: Asking for input
+    title: Pedir variables
   - 
-    title: Cooler lines
+    title: Líneas más atractivas
   - 
-    title: Randomise the whole thing
+    title: Todo en aleatorio
   - 
-    title: Helping the computer
+    title: Ayudando a la computadora
