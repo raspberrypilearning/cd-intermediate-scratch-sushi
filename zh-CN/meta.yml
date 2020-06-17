@@ -1,7 +1,7 @@
 ---
-title: Pattern pen
+title: 图案笔
 hero_image: images/banner.png
-description: Make a cool pattern generator
+description: 制作一个很酷的图案生成器
 theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
@@ -17,16 +17,16 @@ version: 4.0.0
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: 介绍
   - 
-    title: Using the Pen tool
+    title: 使用画笔工具
   - 
-    title: Drawing patterns
+    title: 绘制图案
   - 
-    title: Asking for input
+    title: 要求输入
   - 
-    title: Cooler lines
+    title: 更酷的线条
   - 
-    title: Randomise the whole thing
+    title: 随机呈现整个内容
   - 
-    title: Helping the computer
+    title: 帮助计算机
