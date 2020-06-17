@@ -6,7 +6,7 @@
 
 \--- task \---
 
-Remove the questions from your code, and update it to use random numbers instead.
+قم بإزالة الأسئلة من الكود الخاص بك، وقم بتحديثه لاستخدام أرقام عشوائية بدلاً من ذلك.
 
 ```blocks3
     عندما نقر  العلم الأخضر
@@ -20,13 +20,13 @@ Remove the questions from your code, and update it to use random numbers instead
 
 \--- /task \---
 
-If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
+إذا قمت بتشغيل البرنامج الآن ، فستجد أنه يرسم نمطًا عشوائيًا ، ولكن مرة واحدة فقط. لماذا تعتقد ذلك؟
 
-It’s because the loop only runs until it reaches the edge of the Stage.
+ذلك لأن الحلقة تعمل فقط حتى تصل إلى حافة المنصة.
 
 \--- task \---
 
-You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
+تحتاج إلى حلقة أخرى تعمل إلى الأبد (لذلك كتلة `كرر باستمرار`{:class="block3control"}!) خارج الحالية لابقائها تعمل مراراً وتكراراً. فقط اسحب واحدة من قسم **التحكم**، وإضاف جميع التعليمات البرمجية الأخرى فيها.
 
 ```blocks3
     عند نقر العلم الاخضر
@@ -50,8 +50,8 @@ You need another loop that runs forever (so a `forever`{:class="block3control"} 
 
 \--- /task \---
 
-Now you’ve really got something awesome to look at!
+الآن لديك حقا شيء رائع للنظر اليه!
 
-However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
+ومع ذلك ، قد تلاحظ أنه ،بين الحين والآخر ، يرسم الكمبيوتر شيئًا يبدو سيئًا. هذا لأن بعض الأرقام لبعض هذه المتغيرات هي مجرد خيارات سيئة ، وبعض **مجموعات من تلك الأرقام** هي أيضا خيارات سيئة.
 
-On the next card, you'll help the computer to pick only good combinations!
+في البطاقة التالية، سوف تساعد الكمبيوتر على اختيار مجموعات جيدة فقط!
