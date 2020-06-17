@@ -1,6 +1,6 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2).
+這個專案是 **Scratch 3** 版本。 這個項目還有一個 [Scratch 2 版本](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2)
 
 \--- /no-print \---
 
