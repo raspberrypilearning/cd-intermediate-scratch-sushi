@@ -1,54 +1,54 @@
-## Helping the computer
+## 帮助计算机
 
-Do you remember a few steps back, where I told you to write down some of your favourite values for `increase`{:class="block3variables"} and `degrees`{:class="block3variables"}, the ones that gave the best-looking patterns? If you didn't do this, don’t worry: you can just watch the random program run for a while now and write down the combinations that give great results.
+还记得前几步我告诉过你可以在`increase`{:class="block3variables"}和`degrees`{:class="block3variables"}中写下一些你喜欢的值， 那些提供了好看绘图的数字？ 如果你不记得了，那也不要紧：您可以看着随机程序运行一段时间，然后写下可以产生出色结果的组合。
 
-You’re going to teach Scratch those combinations of values, so it can use them to make nothing but awesome pictures!
+你将要教Scratch这些组合的值，以便它可以使用它们来制作精美的图片！
 
-To do this, you’ll need a **list**. You’ll find lists with the variables in the **Variables** section. Just like you did with your variables, you’ll need to create your list first!
+为此，你需要一个**列表** 。 你将在**变量**部分找到相关模块。 就像变量一样，你需要先创建一个列表！
 
 \--- task \---
 
-Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
+点击**建立一个列表** ，然后输入` Degrees List ` {:class=“block3variables”}作为名称。
 
 ![](images/makeAList.png)
 
 \--- /task \---
 
-Your list, which is empty at the moment, will appear on the Stage, and you'll see a bunch of blocks for it in **Variables**.
+你的列表（目前为空）将出现在舞台上，并且你会在** 变量** 中看到一堆框。
 
 ![](images/listBlocks.png)
 
 \--- task \---
 
-Make another list called `Increase List`{:class="block3variables"}
+制作另一个叫做`Increase List`{:class="block3variables"}的列表
 
 \--- /task \---
 
 \--- task \---
 
-Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
+现在，通过单击在列表的底部的小加号（** + ** ），添加你喜欢的第一对值` increase` {:class=“block3variables”}和`degrees`{:class=“block3variables”}，每个值都要放入正确的列表中。 再次执行此操作以添加第二对值。 现在就足够了 — — 稍后你会添加你喜欢的其他值对!
 
 ![](images/helping2.png)
 
-Make sure that the `degrees`{:class="block3variables"} value and the `increase`{:class="block3variables"} value that worked well together are at the same position in the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. They need to be there so your program can match them up again using their position!
+确保在 `Degrees List`{:class=“block3variables”} 和 `Increase List`{:class=“block3variables”} 中， `degrees`{:class=“block3variables”} 和 `increase`{:class=“ block3variables”} 处于同一位置并能一起工作。 它们需要在那里，以便你的程序能够使用他们的位置再次匹配它们！
 
 \--- /task \---
 
-Now you have the lists, you just need to get your code to read them and loop over them! To do this, you’re going to use a new variable to act as a counter, some **incrementing**, and an `if then`{:class="block3control"} **Control** block.
+现在你已经有了列表，你只需要获取代码即可阅读并循环它们！ 为此，你将使用一个新变量 **incrementing** 作为计数器，此外还需要一个 `如果 那么`{:class=“ block3control”} **控制** 块。
 
 ## \--- collapse \---
 
-## title: What does incrementing mean?
+## 标题：递增是什么意思？
 
-To increment something means to add something to it.
+要增加某些东西就意味着为它添加一些东西。
 
-You will use a variable to act as a counter to keep track of what position you're at in your lists. To move through the lists, you'll keep incrementing the counter by `1` (so, adding `1` to it) until you get to the end of the list.
+你将使用变量作为计数器，以跟踪你在列表中所处的位置。 要在列表中移动，你将持续给计数器递增 `1` (添加`1`），直到你到列表末尾。
 
 \--- /collapse \---
 
 \--- task \---
 
-Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
+创建一个名为` counter` {:class=“block3variables”}的新变量，然后将代码更新为以下形式：
 
 ```blocks3
     when green flag clicked
@@ -77,45 +77,45 @@ Create a new variable called `counter`{:class="block3variables"}, and update you
 
 \--- /task \---
 
-Notice the new blocks that:
+注意新的块：
 
-1. Set `counter`{:class="block3variables"} to `0`, outside all the loops.
-2. Check if the number stored in `counter`{:class="block3variables"} is the length of the list, and if so, set `counter`{:class="block3variables"} to `0`. This means that this variable will always be the number of a position in the lists, and won't get any bigger than that.
-3. Add `1` to `counter`{:class="block3variables"}.
-4. Pick the item from `Increase List`{:class="block3variables"} that is at the position described by `counter`{:class="block3variables"}, and put it in the `increase`{:class="block3variables"} variable. Do the same for the `Degrees List`{:class="block3variables"} and `degrees`{:class="block3variables"} variable.
+1. 在所有循环之外设置`counter`{:class=“block3variables”}为` 0 ` 。
+2. 检查存储在`counter`{:class="block3variables"} 中的数字是否为列表长度，如果是，请设置`counter`{:class="block3variables"}为`0`。 这意味着此变量将永远是列表中一个位置的数字，且不会比这更大。
+3. 添加`1` 到 `counter`{:class="block3variables"}.
+4. 从`Increase List`{:class=“block3variables”} 中选择位于`counter`{:class=“block3variables”}所描述的位置的项目，然后将其放在变量`increase`{:class=“block3variables”}中。 对于`Degrees List`{:class="block3variables"} 和 `degrees`{:class="block3variables"} 变量做同样的操作。
 
 ## \--- collapse \---
 
-## title: How does the code work?
+## 标题：代码如何工作？
 
-This is what happens when you run your program:
+这是当你在运行程序时发生的情况：
 
-1. Set `counter`{:class="block3variables"} to `0`.
-2. Start the `forever`{:class="block3control"} loop.
-3. Check if `counter`{:class="block3variables"} (`0`) is the same as the length of `Increase List`{:class="block3variables"} (`2`). It isn’t.
-4. Change `counter`{:class="block3variables"} by `1`. Now `counter`{:class="block3variables"} = `1`.
-5. Set `steps`{:class="block3variables"} to `0`.
-6. Get the item at the position named by `counter`{:class="block3variables"} (`1`) in the `Increase List`{:class="block3variables"}, and put it in `increase`{:class="block3variables"}.
-7. Get the item at the position named by `counter`{:class="block3variables"} (`1`) in the `Degrees List`{:class="block3variables"}, and put it in `degrees`{:class="block3variables"}.
-8. Do all the stuff related to drawing the patterns.
-9. Restart the `forever`{:class="block3control"} loop:
-10. Check if `counter`{:class="block3variables"} (`1`) is the same as the length of `Increase List`{:class="block3variables"} (`2`). It isn’t.
-11. Change `counter`{:class="block3variables"} by `1`. Now `counter`{:class="block3variables"} = `2`.
-12. Set `steps`{:class="block3variables"} to `0`.
-13. Get the item at the position named by `counter`{:class="block3variables"} (`2`) in the `Increase List`{:class="block3variables"}, and put it in `increase`{:class="block3variables"}.
-14. Get the item at the position named by `counter`{:class="block3variables"} (`2`) in the `Degrees List`{:class="block3variables"}, and put it in `degrees`{:class="block3variables"}.
-15. Do all the stuff related to drawing the patterns.
-16. Restart the `forever`{:class="block3control"} loop:
-17. Check if `counter`{:class="block3variables"} (`2`) is the same as the length of the `Increase List`{:class="block3variables"} (`2`). It is!
-18. Set `counter`{:class="block3variables"} to `0`.
-19. Continue from **step 4** of this list, in a never-ending loop!
+1. 设置`counter`{:class=“block3variables”}为` 0 ` 。
+2. 开始 `重复执行`{:class="block3control"} 循环快。
+3. 检查`counter`{:class=“block3variables”}（` 0 ` ）的长度是否与`Increase List`{:class=“block3variables”}（` 2 ` ）相同。 不是。
+4. 把 `1` 加到 `counter`{:class="block3variables"} 上。 现在`counter`{:class="block3variables"} = `1`.
+5. 设置`steps`{:class="block3variables"} 为`0`。
+6. 找到位于`Increase List`{:class="block3variables"}，名为`counter`{:class="block3variables"} (`1`)的条目，并将其放入`increase`{:class="block3variables"}。
+7. 找到位于`Degrees List`{:class="block3variables"}，名为`counter`{:class="block3variables"} (`1`)的条目，并将其放入`degrees`{:class="block3variables"}。
+8. 执行所有与绘制图案相关的内容。
+9. 从头开始执行 `重复执行`{:class="block3control"} 循环块。
+10. 检查`counter`{:class=“block3variables”}（` 1 ` ）的长度是否与`Increase List`{:class=“block3variables”}（` 2 ` ）相同。 不是。
+11. 把`1`加到 `counter`{:class="block3variables"} 上。 现在`counter`{:class="block3variables"} = `2`.
+12. 设置`steps`{:class="block3variables"} 为`0`
+13. 找到位于`Increase List`{:class="block3variables"}的，名为`counter`{:class="block3variables"} (`2`)的条目，并将其放入`increase`{:class="block3variables"}。
+14. 找到位于`Degrees List`{:class="block3variables"}，名为`counter`{:class="block3variables"} (`2`)的条目，并将其放入`degrees`{:class="block3variables"}。
+15. 执行所有与绘制图案相关的内容。
+16. 从头开始执行 `重复执行`{:class="block3control"} 循环块。
+17. 检查`counter`{:class=“block3variables”}（` 2 ` ）的长度是否与`Increase List`{:class=“block3variables”}（` 2 ` ）相同。 它是！
+18. 设置`counter`{:class=“block3variables”}为` 0 ` 。
+19. 从列表中的**step 4** 继续执行，它永远不会停止！
 
 \--- /collapse \---
 
 \--- task \---
 
-Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}.
+对代码满意后，继续并将记下的其余几对值添加到` Degrees List`{:class=“block3variables”}和`Increase List`{:class=“block3variables”}中。
 
 \--- /task \---
 
-That's it! Sit back and watch your program keep drawing lovely patterns in a never-ending loop! If you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
+这样就完成了！ 坐下来，看着你的程序不断循环绘制可爱的图案！ 如果你想要添加更多的模式，你可以：在两个列表中添加更多的数字对并重新启动程序。
