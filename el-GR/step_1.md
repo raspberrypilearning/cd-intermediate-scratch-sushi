@@ -1,18 +1,18 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2).
+Αυτή είναι η έκδοση **Scratch 3** του έργου. Υπάρχει επίσης η [έκδοση Scratch 2 του έργου](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2).
 
 \--- /no-print \---
 
-## Introduction
+## Εισαγωγή
 
-You’ve already learned the basics of Scratch (and if you haven’t, check out the Beginner Scratch Sushi Cards) to make your first Scratch game. Here you’re going to learn a few more cool tricks and make one of my favourite Scratch projects: it draws colourful patterns and, if you set it up right, can be really cool to watch.
+Έχεις ήδη μάθει τα βασικά του Scratch (και αν δεν το έχεις κάνει, δες το έργο Κάρτες Σούσι για αρχάριους) για να δημιουργείς το πρώτο σου παιχνίδι στο Scratch. Εδώ θα μάθεις μερικά πιο ωραία κόλπα και θα φτιάξεις ένα από τα αγαπημένα μου έργα στο Scratch: ένα πρόγραμμα που σχεδιάζει πολύχρωμα μοτίβα και, αν το ρυθμίσεις σωστά, μπορεί να γίνει πολύ εντυπωσιακό για να το παρακολουθεί κάποιος.
 
 ![](images/pen1.png)
 
-### What you will make
+### Τι θα φτιάξεις
 
-Here's a project I've prepared:
+Εδώ είναι ένα έργο που έχω προετοιμάσει:
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/205355399/?autostart=false" frameborder="0"></iframe>
@@ -20,28 +20,28 @@ Here's a project I've prepared:
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: Τι θα μάθεις
 
-In the Intermediate Scratch Sushi Cards, you'll find out about:
+Στις Ενδιάμεσες κάρτες σούσι, θα μάθεις για:
 
-+ Using the Pen tool
-+ Using and updating variables in loops
-+ Using Repeat Until loops
-+ Getting input values with ask blocks
-+ Using multiple lists with properties related by index
++ Χρήση του εργαλείου πένας
++ Χρήση και ενημέρωση μεταβλητών σε βρόχους
++ Χρήση βρόχων επανέλαβε μέχρι
++ Λήψη τιμών εισόδου με μπλοκ ρώτησε
++ Χρήση πολλαπλών λιστών με ιδιότητες που σχετίζονται με το ευρετήριο
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Τι θα χρειαστείς
 
-### Hardware
+### Υλικό
 
-+ A computer capable of running Scratch 3
++ Ένας υπολογιστής ικανός να τρέχει το Scratch 3
 
-### Software
+### Λογισμικό
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/projects/editor/){:target="_blank"} or [offline](https://scratch.mit.edu/download/){:target="_blank"})
++ Scratch 3 (είτε [σε σύνδεση](https://scratch.mit.edu/projects/editor/){:target="_blank"} είτε [εκτός σύνδεσης](https://scratch.mit.edu/download/){:target="_blank"})
 
 \--- /collapse \---
