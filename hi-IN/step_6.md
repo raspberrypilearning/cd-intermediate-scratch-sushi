@@ -1,12 +1,12 @@
-## Randomise the whole thing
+## पूरी बात बेतरतीब ढंग से
 
-You can actually use random numbers to make the whole program run over and over, changing the pattern each time! It'll look a bit like screen savers did in the 1990s...which you probably won't remember, but ask one of your parents!
+आप वास्तव में हर बार पैटर्न बदलते हुए पूरे कार्यक्रम को चलाने के लिए यादृच्छिक संख्याओं का उपयोग कर सकते हैं! यह 1990 के दशक में स्क्रीन सेवर्स की तरह थोड़ा सा लगेगा ... जो शायद आपको याद नहीं होगा, लेकिन अपने माता-पिता से पूछें!
 
-You need a few changes to make this happen. The first one is that you need to set the `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} variables randomly rather than asking for them from the user. So you need to change some of your code blocks.
+ऐसा करने के लिए आपको कुछ बदलाव करने होंगे। पहला यह है कि आपको ` वृद्धि सेट करने की आवश्यकता है ` {:class= "block3variables"} और ` डिग्री ` {:class="block3variables"} उपयोगकर्ता से उनके लिए पूछने के बजाय यादृच्छिक रूप से चर। इसलिए आपको अपने कुछ कोड ब्लॉक को बदलने की जरूरत है।
 
 \--- task \---
 
-Remove the questions from your code, and update it to use random numbers instead.
+अपने कोड से प्रश्नों को निकालें, और इसके बजाय यादृच्छिक संख्याओं का उपयोग करने के लिए इसे अपडेट करें।
 
 ```blocks3
     when green flag clicked
@@ -20,13 +20,13 @@ Remove the questions from your code, and update it to use random numbers instead
 
 \--- /task \---
 
-If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
+यदि आप अपना कार्यक्रम अभी चलाते हैं, तो आप पाएंगे कि यह एक यादृच्छिक पैटर्न खींचता है, लेकिन केवल एक बार। तुम्हें ऐसा क्यों लगता है?
 
-It’s because the loop only runs until it reaches the edge of the Stage.
+ऐसा इसलिए है क्योंकि लूप केवल तब तक चलता है जब तक वह स्टेज के किनारे तक नहीं पहुंच जाता।
 
 \--- task \---
 
-You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
+आपको एक और लूप चाहिए जो हमेशा के लिए चलता हो (इसलिए ` हमेशा के लिए ` {:class="block3control"} फिर ब्लॉक करें!) इसे चालू रखने के लिए वर्तमान के बाहर। बस ** नियंत्रण से एक को खींचें ** अनुभाग, और इसमें अपने सभी अन्य कोड जोड़ें।
 
 ```blocks3
     when green flag clicked
@@ -50,8 +50,8 @@ You need another loop that runs forever (so a `forever`{:class="block3control"} 
 
 \--- /task \---
 
-Now you’ve really got something awesome to look at!
+अब आप वास्तव में देखने के लिए कुछ भयानक हो गया है!
 
-However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
+हालाँकि, आप देख सकते हैं कि, हर अब और फिर, कंप्यूटर कुछ ऐसा खींचता है जो बहुत सुंदर दिखता है ... बुरा। ऐसा इसलिए है क्योंकि उन कुछ चरों के लिए कुछ संख्याएं केवल खराब विकल्प हैं, और कुछ ** उन संख्याओं के संयोजन ** बुरे विकल्प भी हैं।
 
-On the next card, you'll help the computer to pick only good combinations!
+अगले कार्ड पर, आप कंप्यूटर को केवल अच्छे संयोजन चुनने में मदद करेंगे!
