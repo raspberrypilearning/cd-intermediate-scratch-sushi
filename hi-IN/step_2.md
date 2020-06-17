@@ -1,101 +1,101 @@
-## Using the Pen tool
+## पेन टूल का उपयोग करना
 
-The project you're going to make relies on the **Pen** tool, which draws a line behind the centre of a sprite as it moves. You’re going to learn to use it now!
+आप जिस प्रोजेक्ट को बनाने जा रहे हैं, वह **पेन** टूल पर निर्भर करता है, जो चलते हुए स्प्राइट के केंद्र के पीछे एक रेखा खींचता है। अब आप इसका उपयोग करना सीखेंगे!
 
 \--- task \---
 
-Open a new Scratch file, select the Scratch Cat sprite, and drag in a few blocks you may have already seen, until it looks like this:
+एक नई स्क्रैच फ़ाइल खोलें, स्क्रैच कैट स्प्राइट का चयन करें, और कुछ ब्लॉकों में खींचें जिन्हें आपने पहले ही देखा होगा, जब तक कि यह पसंद न हो:
 
 ```blocks3
-    when green flag clicked
-    go to x: (0) y: (0)
-    move (50) steps
-    turn cw (15) degrees
+    जब हरी झंडी पर क्लिक किया गया तो
+    : (0) y: (0)
+    चाल (50) चरण
+    बारी cw (15) डिग्री
 ```
 
 \--- /task \---
 
-Now, time to test out the pen!
+अब, कलम का परीक्षण करने का समय!
 
-To use the Pen blocks in Scratch, you need add the **Pen extension**.
+Scratch में पेन ब्लॉक्स का उपयोग करने के लिए, आपको **Pen extension** जोड़ना होगा।
 
 \--- task \---
 
-Click on the **Add extension** button in the bottom left-hand corner.
+नीचे बाएँ हाथ के कोने में **Add extension** (एड एक्सटेंशन) बटन पर क्लिक करें।
 
-![add extension button highlighted](images/add-extension-annotated.png)
+![हाइलाइट किया हुआ एक्सटेंशन बटन जोड़ें](images/add-extension-annotated.png)
 
-Click on the **Pen** extension to add it.
+इसे जोड़ने के लिए **Pen** (पेन) एक्सटेंशन पर क्लिक करें।
 
-![pen extension highlighted](images/click-pen-annotated.png)
+![हाइलाइट किया हुआ पेन एक्सटेंशन](images/click-pen-annotated.png)
 
-The Pen section then appears at the bottom of the blocks menu.
+Pen (पेन) खंड तब ब्लॉक्स मेनू के नीचे दिखाई देता है ।
 
-![pen extension blocks](images/pen-extension-blocks.png)
+![पेन एक्सटेंशन ब्लॉक](images/pen-extension-blocks.png)
 
-From the **Pen** section, select the `pen down`{:class="block3extensions"} block and add it to the start of your program, like this:
+** कलम से ** अनुभाग, नीचे ` पेन का चयन करें ` {:class = "block3extensions"} ब्लॉक करें और इसे अपने प्रोग्राम की शुरुआत में जोड़ें, जैसे:
 
 ```blocks3
-    when green flag clicked
-+    pen down
-    go to x: (0) y: (0)
+    जब हरी झंडी पर क्लिक किया गया तो
++ कलम नीचे
+    x पर जाएँ: (0) y: (0)
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Now click the green flag a few times and watch what happens.
+अब हरे झंडे को कुछ बार क्लिक करें और देखें कि क्या होता है।
 
 \--- /task \---
 
-If you can see the lines behind the cat sprite, then the pen is working and you can start making it draw really cool patterns.
+यदि आप बिल्ली के पीछे की पंक्तियों को देख सकते हैं, तो कलम काम कर रही है और आप इसे वास्तव में अच्छा पैटर्न बनाना शुरू कर सकते हैं।
 
-First, you should get rid of the sprite. It’s getting in the way of the drawing!
+सबसे पहले, आपको स्प्राइट से छुटकारा पाना चाहिए। यह ड्राइंग के रास्ते में हो रही है!
 
 \--- task \---
 
-Add a `hide`{:class="block3looks"} block from **Looks** to the start of the program and it’ll disappear.
+`छिपाएँ ` जोड़ें {:class="block3looks"} ब्लॉक से ** लगता है ** कार्यक्रम की शुरुआत और यह गायब हो जाएगा।
 
 ```blocks3
-    when green flag clicked
-+    hide
-    pen down
+    जब हरे झंडे पर क्लिक किया गया
++ नीचे
+    पेन छिपाएँ
 ```
 
 \--- /task \---
 
-Now, you can change the colour of the pen with another block from the **Pen** section, but the block is a little different to the others you’ve seen. It’s the `set pen color to`{:class="block3extensions"} block and looks like this:
+अब, आप ** पेन से दूसरे ब्लॉक के साथ पेन का रंग बदल सकते हैं ** अनुभाग, लेकिन ब्लॉक आपके द्वारा देखे गए अन्य लोगों से थोड़ा अलग है। यह ` सेट पेन कलर है ` {= class = "block3extensions"} ब्लॉक और इस तरह दिखता है:
 
 ```blocks3
-    set pen color to [#4a6cd4]
+    पेन कलर को [# 4a6cd4] पर सेट करें
 ```
 
 \--- task \---
 
-Drag a `set pen color to`{:class="block3extensions"} block into your sprite panel, and snap it in above the `pen down`{:class="block3extensions"} block.
+पेन कलर को ` सेट करें ` {} वर्ग = "block3extensions"} अपने स्प्राइट पैनल में ब्लॉक करें, और ` पेन डाउन के ऊपर इसे स्नैप करें ` {"class =" block3extensions "} ब्लॉक।
 
 ```blocks3
-    when green flag clicked
-    hide
-+    set pen color to [#4a6cd4]
-    pen down
+    जब हरी झंडी क्लिक किया
+    छिपाने
+[# 4a6cd4] करने के लिए + सेट कलम रंग
+    कलम नीचे
 ```
 
-Now, click on the box of colour (in the code above it’s the blue one), and choose a colour.
+अब, रंग के बॉक्स पर क्लिक करें (ऊपर कोड में यह नीला एक है), और एक रंग चुनें।
 
 \--- /task \---
 
-If you’ve been clicking on the green flag to test your code, you’ll have noticed that the drawings the pen makes don’t go away.
+यदि आप अपने कोड का परीक्षण करने के लिए हरे झंडे पर क्लिक कर रहे हैं, तो आपने देखा होगा कि पेन जो चित्र बनाता है वह दूर नहीं जाता है।
 
 \--- task \---
 
-Add a `clear`{:class="block3extensions"} block from the **Pen** section to the start of your code to take care of that:
+इसका ध्यान रखने के लिये ` स्पष्ट(clear)` {:class="block3extensions"} ब्लॉक **पेन ** सेक्शन् से कोड (code) ​ के प्रारंभ तक जोडइए
 
 ```blocks3
-    when green flag clicked
-+    clear
-    hide
+    जब हरे झंडे ने
++ स्पष्ट
+    क्लिक किया हो
 ```
 
 \--- /task \---
