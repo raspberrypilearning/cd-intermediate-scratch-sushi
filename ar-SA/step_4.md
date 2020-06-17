@@ -4,13 +4,13 @@
 
 \--- task \---
 
-First, go to the **Variables** section and create variables called `degrees`{:class="block3variables"} and `increase`{:class="block3variables"}.
+أولاً, انتقل إلى قسم **المتغيرات** وانشئ متغيرات جديدة سمها `درجات`{:class="block3variables"} و `زيادة`{:class="block3variables"}.
 
 \--- /task \---
 
 \--- task \---
 
-Now add the new variables to your code like this:
+الان اضف المتغيرات الجديدة لتعليماتك البرمجية مثل هذا:
 
 ```blocks3
     كرر حتى <touching [edge v] ?> 
@@ -22,13 +22,13 @@ Now add the new variables to your code like this:
 
 \--- /task \---
 
-Now you need to ask for values for these two variables and store them. You do this using a **Sensing** block called `Ask and wait`{:class="block3sensing"}, which you can type a question into.
+أنت الآن بحاجة إلى طلب قيم لهذين المتغيرين وتخزينهم. يمكنك القيام بذلك باستخدام كتلة **تحسس** تسمى `اسأل وانتظر`{:class="block3sensing"}, و التي يمكنك كتابة سؤال فيها.
 
 \--- task \---
 
-Pull the `Ask and wait`{:class="block3sensing"} block into your sprite panel and change the question to `How many steps should I grow by?`{:class="block3sensing"}
+اسحب كتلة `اسأل وانتظر`{:class="block3sensing"} إلى لوحة العفريت وقم بتغيير السؤال إلى `كم عدد الخطوات التي يجب أن أتقدم بها؟ `{:class="block3sensing"}
 
-Then add it to your program, just after you set `steps`{:class="block3variables"} to `0`, like this:
+ثم قم بإضافته إلى البرنامج ، مباشرة بعد جعل `خطوات`{: class = "block3variables"} مساوياً لـ `0` ، مثل:
 
 ```blocks3
     عند نقر العلم الاخضر
@@ -39,11 +39,11 @@ Then add it to your program, just after you set `steps`{:class="block3variables"
 
 \--- /task \---
 
-Now you’ve got your program asking a question, you need it to remember the answer! It turns out that Scratch has a special variable called `answer`{:class="block3sensing"}, where it stores the most recent answer it has received. You can find this variable among the **Sensing** blocks.
+الآن لديك برنامج يطرح سؤالاً ، فأنت تريده ان يتذكر الإجابة! اتضح أن سكراتش له متغير خاص يسمى `الإجابة` {: class = "block3sensing"}، حيث يخزن آخر إجابة تلقاها. يمكنك العثور على هذا المتغير بين كتل **التحسس**.
 
 \--- task \---
 
-Using a `set to`{:class="block3variables"} block from **Variables**, take the value of `answer`{:class="block3sensing"} and store it in the `increase`{:class="block3variables"} variable like so:
+باستخدام كتل `اجعل مساوياً`{:class="block3variables"} من قسم **المتغيرات**, خذ قيمة `الاجابة`{:class="block3sensing"} وخزنها في متغير `زيادة` {:class="block3variables"} مثل هذا:
 
 ```blocks3
     اسأل [كم عدد الخطوات التي يجب عليَّ ان انمو بها؟] وانتظر
@@ -54,7 +54,7 @@ Using a `set to`{:class="block3variables"} block from **Variables**, take the va
 
 \--- task \---
 
-Now, do the same thing with `degrees`{:class="block3variables"}, asking `How many degrees should I turn?`{:class="block3sensing"} and storing the value of `answer`{:class="block3sensing"} in `degrees`{:class="block3variables"}:
+الان, افعل نفس الشيئ مع `درجات`{:class="block3variables"}, اسال `كم درجة يجب ان تكون الاستدارة الخاصة بي؟`{:class="block3sensing"} وخزن قيمة `الإجابة`{:class="block3sensing"} في متغير `درجات`{:class="block3variables"}:
 
 ```blocks3
     اجعل [زيادة] مساوياً (الإجابة)
@@ -66,7 +66,7 @@ Now, do the same thing with `degrees`{:class="block3variables"}, asking `How man
 
 \--- task \---
 
-Check your program now looks like the one below, and run it a few times with different numbers. Write down the answers that make the coolest pictures. You’ll need them in a later step!
+تحقق من أن برنامجك يشبه الآن البرنامج أدناه ، وقم بتشغيله عدة مرات بأرقام مختلفة. اكتب الإجابات التي تصنع أروع الصور. ستحتاج إليهم في خطوة لاحقة!
 
 ```blocks3
     عند نقر العلم الاخضر
