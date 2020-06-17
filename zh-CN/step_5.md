@@ -1,8 +1,8 @@
-## Cooler lines
+## 更酷的线条
 
-Time to add colour! Right now, your line is one colour, but the **Pen** has blocks that can change its colour. And with the right **Operator** block, you can even change the colour randomly!
+是时候添加颜色了！ 现在，你的线是一种颜色，但是**画笔**中有积木可以改变它的颜色。 同时加上正确的**运算**块，你甚至可以随机更改颜色！
 
-The block for changing the **Pen** colour is `change pen color by`{:class="block3extensions"}:
+更改**画笔**颜色的方块是 通过`将笔的颜色设为 `{:class="block3extensions"}：
 
 ```blocks3
     change pen color by (10)
@@ -10,7 +10,7 @@ The block for changing the **Pen** colour is `change pen color by`{:class="block
 
 \--- task \---
 
-Grab one of those blocks and put it into your `repeat until`{:class="block3control"} loop, like this:
+抓住其中一个块并将其放入你的`重复执行直到` {:class=“block3control”}循环，如下所示：
 
 ```blocks3
     repeat until <touching [edge v] ?> 
@@ -23,11 +23,11 @@ Grab one of those blocks and put it into your `repeat until`{:class="block3contr
 
 \--- /task \---
 
-That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly.
+虽然这很酷，但它是可预测的，没有太多变化。 如果在其中添加一个随机数，可以使其更有趣，颜色也会随机变化。
 
 \--- task \---
 
-Put the random number **Operator** block into the `change pen color by`{:class="block3extensions"} block and pick some values to go in it. I'd try `1` and `100` to start.
+将随机数 **运算** 块放入 `将笔的颜色设为 ` {:class=“block3extensions”} 块中，并选择一些值。 试着用`1`和`100`开始。
 
 ```blocks3
     repeat until <touching [edge v] ?> 
@@ -42,6 +42,6 @@ Put the random number **Operator** block into the `change pen color by`{:class="
 
 \--- task \---
 
-Try running it again, and watch the random rainbow!
+尝试再次运行它，就能观看随机的彩虹！
 
 \--- /task \---
