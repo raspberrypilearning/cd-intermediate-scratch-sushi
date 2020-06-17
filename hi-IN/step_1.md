@@ -1,18 +1,18 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2).
+यह इस प्रोजेक्ट का **Scratch 3** संस्करण है। [इस प्रोजेक्ट का Scratch 2 संस्करण](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2) भी है।
 
 \--- /no-print \---
 
-## Introduction
+## परिचय
 
-You’ve already learned the basics of Scratch (and if you haven’t, check out the Beginner Scratch Sushi Cards) to make your first Scratch game. Here you’re going to learn a few more cool tricks and make one of my favourite Scratch projects: it draws colourful patterns and, if you set it up right, can be really cool to watch.
+आपने पहले ही स्क्रैच की मूल बातें सीख ली हैं (और यदि आपने नहीं किया है, तो शुरुआती स्क्रैच सुशी कार्ड देखें) अपना पहला स्क्रैच गेम बनाने के लिए। यहाँ आप कुछ और शानदार ट्रिक्स सीखने जा रहे हैं और मेरी पसंदीदा स्क्रैच परियोजनाओं में से एक बना रहे हैं: यह रंगीन पैटर्न खींचती है और यदि आप इसे सही तरीके से सेट करते हैं, तो यह देखने के लिए वास्तव में अच्छा हो सकता है।
 
 ![](images/pen1.png)
 
-### What you will make
+### आप क्या बनाएँगे
 
-Here's a project I've prepared:
+यहाँ एक परियोजना मैंने तैयार की है:
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/205355399/?autostart=false" frameborder="0"></iframe>
@@ -20,28 +20,28 @@ Here's a project I've prepared:
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: आप क्या सीखेंगे
 
-In the Intermediate Scratch Sushi Cards, you'll find out about:
+इंटरमीडिएट स्क्रैच सुशी कार्ड में, आपको इसके बारे में पता चलेगा:
 
-+ Using the Pen tool
-+ Using and updating variables in loops
-+ Using Repeat Until loops
-+ Getting input values with ask blocks
-+ Using multiple lists with properties related by index
++ पेन टूल का उपयोग करना
++ लूप में वेरिएबल्स का उपयोग करना और अपडेट करना
++ लूप्स तक दोहराएँ का उपयोग करना
++ पूछ ब्लॉकों के साथ इनपुट मान प्राप्त करना
++ सूचकांक द्वारा संबंधित गुणों के साथ कई सूचियों का उपयोग करना
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: आपको किन चीज़ों की आवश्यकता होगी
 
-### Hardware
+### हार्डवेयर
 
-+ A computer capable of running Scratch 3
++ Scratch 3 चलाने में सक्षम कंप्यूटर
 
-### Software
+### सॉफ्टवेयर
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/projects/editor/){:target="_blank"} or [offline](https://scratch.mit.edu/download/){:target="_blank"})
++ Scratch 3 (या तो [ऑनलाइन](https://scratch.mit.edu/projects/editor/){:target="_blank"} या [ऑफलाइन](https://scratch.mit.edu/download/){:target="_blank"})
 
 \--- /collapse \---
