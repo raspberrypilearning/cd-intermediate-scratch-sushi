@@ -8,47 +8,47 @@
 
 \--- task \---
 
-Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
+انقر فوق **إنشاء لائحة**، وأدخل `قائمة درجات`{:class= "block3variables"} كاسم.
 
 ![](images/makeAList.png)
 
 \--- /task \---
 
-Your list, which is empty at the moment, will appear on the Stage, and you'll see a bunch of blocks for it in **Variables**.
+ستظهر قائمتك، الفارغة في الوقت الحالي، على المسرح، وسترى مجموعة من الكتل الخاصة بها في **المتغيرات**.
 
 ![](images/listBlocks.png)
 
 \--- task \---
 
-Make another list called `Increase List`{:class="block3variables"}
+قم بعمل قائمة أخرى تسمى ` قائمة الزيادة ` {:class="block3variables"}
 
 \--- /task \---
 
 \--- task \---
 
-Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
+الآن, من خلال النقر على علامة الزائد الصغيرة (**+**) في أسفل اللوائح، أضف الزوج الأول من قيم `زيادة`{:class= "block3variables"} و `درجات` {:class="block3variables"} التي أعجبتك ، كل قيمة في القائمة الصحيحة. قم بذلك مرة أخرى لإضافة الزوج الثاني من القيم. سيكون هذا كافيًا في الوقت الحالي - ستضيف بقية أزواج القيمة التي تريدها لاحقًا!
 
 ![](images/helping2.png)
 
-Make sure that the `degrees`{:class="block3variables"} value and the `increase`{:class="block3variables"} value that worked well together are at the same position in the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. They need to be there so your program can match them up again using their position!
+تأكد من أن قيمة `درجات`{: class = "block3variables"} و قيمة `زيادة`{: class = "block3variables"} التي عملت جيدًا معًا تكون في نفس الموضع في`لائحة درجات` {: class = "block3variables"} و `لائحة زيادة` {:class="block3variables". يجب أن يكونوا هناك حتى يتمكن البرنامج من مطابقتهم مرة أخرى باستخدام مواقعهم!
 
 \--- /task \---
 
-Now you have the lists, you just need to get your code to read them and loop over them! To do this, you’re going to use a new variable to act as a counter, some **incrementing**, and an `if then`{:class="block3control"} **Control** block.
+الآن لديك اللوائح، تحتاج فقط إلى جعل التعليمات البرمجية الخاصة بك لقراءتها والتكرار عليها! للقيام بذلك ، ستستخدم متغيرًا جديدًا ليكون بمثابة عداد، بعض **تزايد**, و كتلة **تحكم** `إذا`{:class="block3control"}.
 
 ## \--- collapse \---
 
 ## title: ما معنى التزايد؟
 
-To increment something means to add something to it.
+زيادة شيء يعني إضافة شيء إليه.
 
-You will use a variable to act as a counter to keep track of what position you're at in your lists. To move through the lists, you'll keep incrementing the counter by `1` (so, adding `1` to it) until you get to the end of the list.
+ستستخدم متغيرًا لتعمل كعداد لتتبع الموضع الذي تتواجد فيه في قوائمك. للتنقل خلال القوائم ، ستستمر في زيادة العداد بمقدار `1` (لذلك ، اضافة`1` اليه) حتى تصل إلى نهاية القائمة.
 
 \--- /collapse \---
 
 \--- task \---
 
-Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
+قم بإنشاء متغير جديد يسمى `عداد`{:class="block3variables"}، وقم بتحديث الكود الخاصة بك ليبدو كما يلي:
 
 ```blocks3
     عند نقر العلم الاخضر
@@ -76,7 +76,7 @@ Create a new variable called `counter`{:class="block3variables"}, and update you
 
 \--- /task \---
 
-Notice the new blocks that:
+لاحظ الكتل الجديدة التي:
 
 1. تجعل `عداد`{:class="block3variables"} مساوياً `0`, خارج جميع الحلقات.
 2. تتحقق مما إذا كان الرقم المخزن في `عداد`{: class = "block3variables"} هو طول القائمة ، وإذا كان الأمر كذلك، فقم بتعيين ` عداد ` {: class = "block3variables"} إلى `0`. هذا يعني أن هذا المتغير سيكون دائمًا رقم الموضع في اللوائح، ولن يزيد عن ذلك.
@@ -87,7 +87,7 @@ Notice the new blocks that:
 
 ## title: كيف هذه التعليمات البرمجية تعمل؟
 
-This is what happens when you run your program:
+هذا ما يحدث عند تشغيل البرنامج:
 
 1. ضبط ` العداد ` {: class = "block3variables"} إلى ` 0 `.
 2. ابدا حلقة `كرر باستمرار`{:class="block3control"}.
@@ -113,8 +113,8 @@ This is what happens when you run your program:
 
 \--- task \---
 
-Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}.
+بمجرد أن تكون راضيًا عن الكود ، تابع إضافة بقية أزواج القيم التي سجلتها إلى `قائمة درجات`{:class="block3variables"} و `قائمة الزيادة`{:class="block3variables"}.
 
 \--- /task \---
 
-That's it! Sit back and watch your program keep drawing lovely patterns in a never-ending loop! If you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
+هذا كل شيء! استرخ وشاهد برنامجك استمر في رسم أنماط جميلة في حلقة لا تنتهي أبدًا! إذا كنت ترغب في إضافة المزيد من الأنماط ، يمكنك: فقط إضافة المزيد من أزواج الأرقام إلى القائمتين وإعادة تشغيل البرنامج.
