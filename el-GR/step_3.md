@@ -1,12 +1,12 @@
-## Drawing patterns
+## Ζωγραφίζοντας μοτίβα
 
-Now you’ve got a program that draws a line, but it only draws one line. That’s a bit dull! You could use `forever`{:class="block3control"} loop to draw something over and over again, but then you’ll get drawings that go off the Stage!
+Τώρα έχεις ένα πρόγραμμα που σχεδιάζει γραμμές, αλλά σχεδιάζει μόνο μια γραμμή. Αυτό είναι λίγο βαρετό! Θα μπορούσες να χρησιμοποιήσεις το βρόχο `για πάντα`{:class="block3control"} για να σχεδιάσεις κάτι ξανά και ξανά, αλλά τότε θα δημιουργηθούν σχέδια που ξεφεύγουν από τη σκηνή!
 
-So you need use a different type of loop called `repeat until`{:class="block3control"}, which you’ll also find in the **Control** section. This type of loop will do something over and over again, **until** a True/False condition is met.
+Επομένως, πρέπει να χρησιμοποιήσεις έναν διαφορετικό τύπο βρόχου που ονομάζεται `επανάλαβε μέχρι`{:class="block3control"}, τον οποίο θα βρεις επίσης στο μενού **Έλεγχος**. Αυτός ο τύπος βρόχου θα κάνει κάτι ξανά και ξανά, **μέχρι** να πληρείται μια συνθήκη True (αληθές) / False (ψευδές).
 
 \--- task \---
 
-Take a `repeat until`{:class="block3control"} block from the **Control** section, and put the `move`{:class="block3motion"} and `turn`{:class="block3motion"} blocks inside it, like so:
+Πάρε ένα μπλοκ `επανάλαβε μέχρι`{:class="block3control"} από το μενού **Έλεγχος** και βάλε τα μπλοκ `κινήσου`{:class="block3motion"} και `στρίψε`{:class="block3motion"} μέσα του, όπως:
 
 ```blocks3
 +    repeat until <> 
@@ -19,31 +19,31 @@ Take a `repeat until`{:class="block3control"} block from the **Control** section
 
 \--- task \---
 
-Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge.
+Τώρα κάνε κλικ στην πράσινη σημαία για να εκτελέσεις το πρόγραμμα μερικές φορές και δεις τι συμβαίνει. Θα παρατηρήσεις δύο πράγματα: η πένα ξεκινά πάντα τραβώντας μια γραμμή προς τη μέση της σκηνής και δεν σταματά στην άκρη.
 
 \--- /task \---
 
 ## \--- collapse \---
 
-## title: Why does the pen do this?
+## title: Γιατί το κάνει αυτό η πένα;
 
-The pen always starts drawing in the direction of the middle, because the first **Motion** block that runs after the `pen down`{:class="block3extensions"} block is `go to x: 0 y: 0`{:class="block3motion"}. So the pen will draw a line as it moves to the centre of the Stage.
+Η πένα ξεκινά πάντα να σχεδιάζει προς την κατεύθυνση της μέσης, γιατί η πρώτη εντολή **Κίνηση** που εκτελείται μετά το μπλοκ `κατέβασε πένα`{:class="block3extensions"} είναι η `πήγαινε σε θέση x: 0 y: 0`{:class="block3motion"}. Έτσι, η πένα θα τραβήξει μια γραμμή καθώς κινείται προς το κέντρο της σκηνής.
 
-The pen doesn't stop at the edge of the Stage, because you haven’t yet told the `repeat until`{:class="block3control"} loop what condition it’s checking. This means the condition can never be met, so the loop will run on and on. This means that right now, the loop is working like a `forever`{:class="block3control"} loop.
+Η πένα δεν σταματάει στην άκρη της σκηνής, επειδή δεν έχεις βάλει ακόμα στο βρόχο `επανάλαβε μέχρι`{:class="block3control"} ποια συνθήκη θα ελέγχει. Αυτό σημαίνει ότι η συνθήκη δεν μπορεί ποτέ να ικανοποιηθεί, οπότε ο βρόχος θα συνεχίσει εκτελείται συνεχώς. Αυτό σημαίνει ότι τώρα, ο βρόχος λειτουργεί σαν ένας βρόχος `για πάντα`{:class="block3control"}.
 
 \--- /collapse \---
 
 \--- task \---
 
-Move the `go to x: 0 y: 0`{:class="block3motion"} block to before the `pen down`{:class="block3extensions"} block and add, from the **Pen** section, a `pen up`{:class="block3extensions"} block right at the start of your code.
+Μετακίνησε το μπλοκ `πήγαινε σε θέση x: 0 y: 0`{:class="block3motion"} πριν από την εντολή `κατέβασε πένα`{:class="block3extensions"} και πρόσθεσε από το μενού **Πένα**, το μπλοκ `σήκωσε πένα`{:class="block3extensions"} ακριβώς στην αρχή του κώδικα.
 
 \--- /task \---
 
-Time to fix your `repeat until`{:class="block3control"} loop so that it stops when you want it to. You’re looking to figure out if the (invisible) sprite is touching the edge of the Stage, so you need a **Sensing** block — in this case, the `touching ?`{:class="block3sensing"} block.
+Ώρα να διορθώσεις το βρόχο `επανάλαβε μέχρι`{:class="block3control"} έτσι ώστε να σταματά όταν το θέλεις. Προσπαθείς να εντοπίσεις πότε το (αόρατο) αντικείμενό σου αγγίζει την άκρη της σκηνής, οπότε χρειάζεσαι μια εντολή από τους **Αισθητήρες** - σε αυτήν την περίπτωση, το μπλοκ `αγγίζει;`{:class="block3sensing"}.
 
 \--- task \---
 
-Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class="block3control"} loop, and select `edge`{:class="block3sensing"} . Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
+Πρόσθεσε ένα μπλοκ `αγγίζει;`{:class="block3sensing"} στο βρόχο `επανάλαβε μέχρι`{:class="block3control"} και επέλεξε `όριο`{:class="block3sensing"}. Μετά ο βρόχος θα τρέξει **μέχρι** το (αόρατο) αντικείμενο αγγίξει την άκρη της σκηνής.
 
 ```blocks3
     pen down
@@ -57,7 +57,7 @@ Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class
 
 \--- task \---
 
-Change the number of steps in the `move`{:class="block3motion"} block to `5`, and check that your program matches this one before you test it:
+Άλλαξε τον αριθμό των βημάτων στην εντολή `κινήσου`{:class="block3motion"} σε `5` και βεβαιώσου ότι το πρόγραμμά σου ταιριάζει με αυτό πριν το δοκιμάσεις:
 
 ```blocks3
     when green flag clicked
@@ -75,15 +75,15 @@ Change the number of steps in the `move`{:class="block3motion"} block to `5`, an
 
 \--- /task \---
 
-If you run the code now, you’ll see that the drawing the pen makes stays on the Stage.
+Εάν εκτελέσεις τον κώδικα τώρα, θα δεις ότι το σχέδιο που κάνει η πένα παραμένει στη σκηνή.
 
-Not only that, but your program has turned into a circle-drawing program! What's happening here is that those 15-degree turns eventually add up to 360 degrees, and so your pen turns in a full circle. You're going to change the way it moves slightly to make it take slightly a longer step each time, so it spirals out. For this, you’re going to need a **variable**.
+Όχι μόνο αυτό, αλλά το πρόγραμμά σου έχει μετατραπεί σε ένα πρόγραμμα σχεδιασμού κύκλων! Αυτό που συμβαίνει εδώ είναι ότι αυτές οι στροφές των 15 μοιρών τελικά στο σύνολο φτάνουν τις 360 μοίρες και έτσι η πένα σου γυρίζει σε έναν πλήρη κύκλο. Θα αλλάξεις ελαφρώς τον τρόπο με τον οποίο κινείται για να κάνεις το βήμα λίγο πιο μακρύ κάθε φορά, οπότε θα κινείται σπειροειδώς προς τα έξω. Για αυτό, θα χρειαστείς μια **μεταβλητή**.
 
-Variables are basically labeled places to store numbers or other information that you care about. You can create them in the **Variables** blocks section.
+Οι μεταβλητές είναι κάποιες συγκεκριμένες θέσεις για την αποθήκευση αριθμών ή άλλων πληροφοριών που σε ενδιαφέρουν. Μπορείς να τις δημιουργήσεις στο μενού **Μεταβλητές**.
 
 \--- task \---
 
-Make a variable called `steps`{:class="block3variables"}, and then add a `set steps to 0`{:class="block3variables"} block at the start of your program.
+Δημιούργησε μια μεταβλητή που ονομάζεται `βήματα`{:class="block3variables"} και στη συνέχεια πρόσθεσε το μπλοκ `όρισε βήματα σε 0 `{:class="block3variables"} στην αρχή του προγράμματος.
 
 ```blocks3
     when green flag clicked
@@ -95,7 +95,7 @@ Make a variable called `steps`{:class="block3variables"}, and then add a `set st
 
 \--- task \---
 
-Then use the value of `steps`{:class="block3variables"} instead of the `5` in the `move`{:class="block3motion"} block, and add `change steps by 1`{:class="block3variables"} as part of your loop:
+Μετά χρησιμοποίησε την τιμή `βήματα`{:class="block3variables"} αντί για το `5` στην εντολή `κινήσου`{:class="block3motion"} και πρόσθεσε το μπλοκ `άλλαξε βήματα κατά 1`{:class="block3variables"} μέσα στο βρόχο:
 
 ```blocks3
     pen down
@@ -108,22 +108,22 @@ Then use the value of `steps`{:class="block3variables"} instead of the `5` in th
 
 \--- /task \---
 
-Do you think it matters where in the loop you put the `change steps by 1`{:class="block3variables"} block?
+Πιστεύεις ότι έχει σημασία πού βάζεις το μπλοκ `άλλαξε βήματα κατά 1`{:class="block3variables"};
 
 ## \--- collapse \---
 
-## title: Putting code in the right order
+## title: Βάζοντας τον κώδικα στη σωστή σειρά
 
-When you're deciding which order to put blocks in, think about what each block does and what you want your code to do.
+Όταν αποφασίζεις σε ποια σειρά θα τοποθετήσεις τα μπλοκ, να σκέφτεσαι τι κάνει κάθε μπλοκ και τι θέλεις εσύ να κάνει ο κώδικάς σου.
 
-In this case, you want the pen to move, then turn, over and over. Each time it does this, you want to move one extra step.
+Σε αυτήν την περίπτωση, θέλεις η πένα να κινείται και, στη συνέχεια, να περιστρέφεται ξανά και ξανά. Κάθε φορά που το κάνει αυτό, θέλεις να μετακινείται ένα επιπλέον βήμα.
 
-So it makes sense to put the `change steps by 1`{:class="block3variables"} block **after** the `move`{:class="block3motion"} block. However, after moving, it doesn't really matter if the pen turns first and then the number of steps changes, or if the number of steps changes first and then the pen turns instead.
+Επομένως, είναι λογικό να βάλεις το μπλοκ `άλλαξε βήματα κατά 1`{:class="block3variables"} **μετά** το μπλοκ `κινήσου`{:class="block3motion"}. Ωστόσο, μετά τη μετακίνηση, δεν έχει σημασία αν η πένα στρίβει πρώτα και μετά αλλάζει ο αριθμός των βημάτων ή αν ο αριθμός των βημάτων αλλάζει πρώτα και μετά η πένα στρίβει.
 
 \--- /collapse \---
 
 \--- task \---
 
-Now run the program, and also try changing the number of degrees around (try `76` and `120`)!
+Τώρα εκτέλεσε το πρόγραμμα και δοκίμασε επίσης να αλλάξεις τον αριθμό των μοιρών (δοκίμασε `76` και `120`)!
 
 \--- /task \---
