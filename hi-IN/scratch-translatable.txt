@@ -1,15 +1,15 @@
-steps
+चरण (Step)
 
-degrees
+डिग्री
 
-increase
+बढ़ाएँ
 
-How many steps should I grow by?
+मुझे कितने कदम बढ़ने चाहिए?
 
-How many degrees should I turn?
+मुझे कितने डिग्री मुड़ना चाहिए?
 
-Increase list
+सूची बढ़ाएँ
 
-Degrees list
+डिग्री सूची
 
-counter
+काउंटर
