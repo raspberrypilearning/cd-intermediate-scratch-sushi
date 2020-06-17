@@ -1,12 +1,12 @@
-## Randomise the whole thing
+## 随机呈现整个内容
 
-You can actually use random numbers to make the whole program run over and over, changing the pattern each time! It'll look a bit like screen savers did in the 1990s...which you probably won't remember, but ask one of your parents!
+你实际上可以使用随机数来使整个程序反复运行，每次都更改模式！ 它会看起来有点像1990年代的屏幕保护程序……你可能不会记得，但请问你的父母！
 
-You need a few changes to make this happen. The first one is that you need to set the `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} variables randomly rather than asking for them from the user. So you need to change some of your code blocks.
+你需要进行一些更改才能实现此目的。 首先你需要随机设置 `increase`{:class="block3variables"} 和 `degrees`{:class="block3variables"} 变量，而不是向用户询问。 所以你需要更改你的一些代码块。
 
 \--- task \---
 
-Remove the questions from your code, and update it to use random numbers instead.
+从你的代码中删除询问逻辑并使用随机的数字块替代它。
 
 ```blocks3
     when green flag clicked
@@ -20,13 +20,13 @@ Remove the questions from your code, and update it to use random numbers instead
 
 \--- /task \---
 
-If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
+如果现在运行程序，你会发现它确实绘制了一个随机模式，但是只有一次。 你认为为什么会这样?
 
-It’s because the loop only runs until it reaches the edge of the Stage.
+这是因为循环会在运行到到达舞台边缘时停止。
 
 \--- task \---
 
-You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
+你需要在当前代码块之外再添加一个循环（`重复执行` {:class=“block3control”}）块，以使其不断重复。 只需从**控制**部分拖动一个，然后将其他所有的代码都添加进去。
 
 ```blocks3
     when green flag clicked
@@ -50,8 +50,8 @@ You need another loop that runs forever (so a `forever`{:class="block3control"} 
 
 \--- /task \---
 
-Now you’ve really got something awesome to look at!
+现在，您真的有一些很棒的东西可以看！
 
-However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
+但是，您可能会注意到，计算机会时不时地绘制出一些看起来很糟糕的东西。 这是因为其中一些变量的某些数字只是不好的选择，其中某些**数字组合**也是不好的选择。
 
-On the next card, you'll help the computer to pick only good combinations!
+在下一张卡片上，您会帮助计算机只挑选好的组合！
