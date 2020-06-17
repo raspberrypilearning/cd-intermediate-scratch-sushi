@@ -1,15 +1,15 @@
-steps
+βήματα
 
-degrees
+μοίρες
 
-increase
+αύξηση
 
-How many steps should I grow by?
+Πόσα βήματα πρέπει να μεγαλώσω;
 
-How many degrees should I turn?
+Πόσες μοίρες πρέπει να στρίψω;
 
-Increase list
+Λίστα αυξήσεων
 
-Degrees list
+Λίστα γωνιών
 
-counter
+μετρητής
