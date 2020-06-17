@@ -21,7 +21,7 @@
 --- task ---
 
 --- task ---
-`chosen flags`{:class="block3variables"} (चुने गए झंडे) नामक एक और सूची बनाएँ।
+`Increase List`{:class="block3variables"} नामक एक और सूची बनाएँ।
 
 --- /task ---
 
