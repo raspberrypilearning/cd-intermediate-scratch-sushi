@@ -1,16 +1,16 @@
-## Asking for input
+## Pedir variables
 
-Ok, this is getting pretty cool, but it’s a bit boring to have to edit your code every time you want to draw a different pattern. Wouldn’t it be good to get the program to ask you for values to use? You can do that!
+Ok, esto se está poniendo muy bueno, pero es un poco aburrido tener que editar tu código cada vez que quieres dibujar un patrón diferente. ¿No sería bueno hacer que el programa te pida los valores que tiene que usar? ¡Puedes hacerlo!
 
 \--- task \---
 
-First, go to the **Variables** section and create variables called `degrees`{:class="block3variables"} and `increase`{:class="block3variables"}.
+Primero, ve a la sección **Variables** y crea variables llamadas `grados`{:class="block3variables"} y `aumento`{:class="block3variables"}.
 
 \--- /task \---
 
 \--- task \---
 
-Now add the new variables to your code like this:
+Ahora añade las nuevas variables a tu código así:
 
 ```blocks3
     repeat until <touching [edge v] ?> 
@@ -22,13 +22,13 @@ Now add the new variables to your code like this:
 
 \--- /task \---
 
-Now you need to ask for values for these two variables and store them. You do this using a **Sensing** block called `Ask and wait`{:class="block3sensing"}, which you can type a question into.
+Ahora necesitas pedir los valores para estas dos variables y almacenarlas. Haces esto usando un bloque **Sensores** llamado `Preguntar y esperar`{:class="block3sensing"}, en el que puedes escribir una pregunta.
 
 \--- task \---
 
-Pull the `Ask and wait`{:class="block3sensing"} block into your sprite panel and change the question to `How many steps should I grow by?`{:class="block3sensing"}
+Agrega el bloque `Preguntar y esperar`{:class="block3sensing"} al panel de objeto y cambia la pregunta a `¿Cuántos pasos debo aumentar?`{:class="block3sensing"}
 
-Then add it to your program, just after you set `steps`{:class="block3variables"} to `0`, like this:
+Luego añádelo a tu programa, justo después configurar la variable `pasos`{:class="block3variables"} a `0`, de esta manera:
 
 ```blocks3
     when green flag clicked
@@ -39,11 +39,11 @@ Then add it to your program, just after you set `steps`{:class="block3variables"
 
 \--- /task \---
 
-Now you’ve got your program asking a question, you need it to remember the answer! It turns out that Scratch has a special variable called `answer`{:class="block3sensing"}, where it stores the most recent answer it has received. You can find this variable among the **Sensing** blocks.
+Ahora que conseguiste que tu programa haga una pregunta, ¡necesitas que recuerde la respuesta! Resulta que Scratch tiene una variable especial llamada `respuesta`{:class="block3sensing"}, donde almacena la respuesta más reciente que ha recibido. Puedes encontrar esta variable entre los bloques **Sensores**.
 
 \--- task \---
 
-Using a `set to`{:class="block3variables"} block from **Variables**, take the value of `answer`{:class="block3sensing"} and store it in the `increase`{:class="block3variables"} variable like so:
+Usa el bloque `dar a el valor`{:class="block3variables"} de **Variables**, dale el valor de `respuesta`{:class="block3sensing"} y guárdalo en la variable`aumento`{:class="block3variables"} así:
 
 ```blocks3
     ask [How many steps should I grow by?] and wait
@@ -54,7 +54,7 @@ Using a `set to`{:class="block3variables"} block from **Variables**, take the va
 
 \--- task \---
 
-Now, do the same thing with `degrees`{:class="block3variables"}, asking `How many degrees should I turn?`{:class="block3sensing"} and storing the value of `answer`{:class="block3sensing"} in `degrees`{:class="block3variables"}:
+Ahora, haz lo mismo con `grados`{:class="block3variables"}, pregunta `¿Cuántos grados debo girar? `{:class="block3sensing"} y almacena el valor de `respuesta`{:class="block3sensing"} en `grados`{:class="block3variables"}:
 
 ```blocks3
     set [increase v] to (answer)
@@ -66,7 +66,7 @@ Now, do the same thing with `degrees`{:class="block3variables"}, asking `How man
 
 \--- task \---
 
-Check your program now looks like the one below, and run it a few times with different numbers. Write down the answers that make the coolest pictures. You’ll need them in a later step!
+Comprueba que tu programa se vea como el que aparece abajo, y ejecútalo unas cuantas veces con diferentes números. Escribe las respuestas que creen las mejores imágenes. ¡Las necesitarás en los siguientes pasos!
 
 ```blocks3
     when green flag clicked
