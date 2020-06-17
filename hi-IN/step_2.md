@@ -73,7 +73,7 @@ when green flag clicked
 
 --- task ---
 
-पेन कलर को `सेट करें`{class= "block3extensions"} अपने स्प्राइट पैनल में ब्लॉक करें, और `पेन डाउन के ऊपर इसे स्नैप करें`{:class="block3extensions"} ब्लॉक।
+पेन कलर को `सेट करें`{:class="block3extensions"} अपने स्प्राइट पैनल में ब्लॉक करें, और `पेन डाउन के ऊपर इसे स्नैप करें`{:class="block3extensions"} ब्लॉक।
 
 ```blocks3
 when green flag clicked
