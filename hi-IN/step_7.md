@@ -1,54 +1,54 @@
-## Helping the computer
+## कंप्यूटर की मदद करना
 
-Do you remember a few steps back, where I told you to write down some of your favourite values for `increase`{:class="block3variables"} and `degrees`{:class="block3variables"}, the ones that gave the best-looking patterns? If you didn't do this, don’t worry: you can just watch the random program run for a while now and write down the combinations that give great results.
+क्या आपको कुछ कदम पीछे की बात याद है, जहां मैंने आपसे ` वृद्धि के लिए अपने कुछ पसंदीदा मूल्यों को लिखने के लिए कहा था ` {:class= "block3variables"} और ` डिग्री ` {:class="block3variables"}, जो सबसे अच्छे दिखने वाले पैटर्न देते हैं? यदि आपने ऐसा नहीं किया है, तो चिंता न करें: आप अभी कुछ समय के लिए रैंडम प्रोग्राम चला सकते हैं और शानदार परिणाम देने वाले संयोजनों को लिख सकते हैं।
 
-You’re going to teach Scratch those combinations of values, so it can use them to make nothing but awesome pictures!
+आप मानों के उन संयोजनों को स्क्रैच करना सिखाने जा रहे हैं, इसलिए यह उनका उपयोग भयानक चित्रों के अलावा कुछ नहीं कर सकता है!
 
-To do this, you’ll need a **list**. You’ll find lists with the variables in the **Variables** section. Just like you did with your variables, you’ll need to create your list first!
+ऐसा करने के लिए, आपको ** सूची की आवश्यकता होगी ** । आपको वेरिअबलस् की सूचीयाँ </strong>वेरिअबलस्** अनुभाग मे मिलेंगी जैसे आपने अपने चरों के साथ किया, आपको पहले अपनी सूची बनानी होगी!</p> 
 
 \--- task \---
 
-Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
+** सूची बनाएं पर क्लिक करें **, और दर्ज करें ` डिग्री सूची ` नाम के रूप में {:class="block3variables"}।
 
 ![](images/makeAList.png)
 
 \--- /task \---
 
-Your list, which is empty at the moment, will appear on the Stage, and you'll see a bunch of blocks for it in **Variables**.
+आपकी सूची, जो इस समय खाली है, स्टेज पर दिखाई देगी, और आपको इसके लिए ब्लॉक का एक गुच्छा दिखाई देगा ** चर ** ।
 
 ![](images/listBlocks.png)
 
 \--- task \---
 
-Make another list called `Increase List`{:class="block3variables"}
+\--- task \---`chosen flags`{:class="block3variables"} (चुने गए झंडे) नामक एक और सूची बनाएँ।
 
 \--- /task \---
 
 \--- task \---
 
-Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
+अब, थोड़ा प्लस चिह्न (** +) पर क्लिक करके ** ) सूचियों के निचले भाग में, ` वृद्धि के मूल्यों की पहली जोड़ी में जोड़ें ` {:class="block3variables"} और ` डिग्री ` {:class = "block3variables"} आपको पसंद आया, प्रत्येक मान सही सूची में। मूल्यों की दूसरी जोड़ी को जोड़ने के लिए इसे फिर से करें। यह अब के लिए पर्याप्त होगा - आप बाद में अपने पसंद के बाकी जोड़े जोड़ देंगे!
 
 ![](images/helping2.png)
 
-Make sure that the `degrees`{:class="block3variables"} value and the `increase`{:class="block3variables"} value that worked well together are at the same position in the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. They need to be there so your program can match them up again using their position!
+सुनिश्चित करें कि ` डिग्री ` {= class = "block3variables"} मान और ` वृद्धि ` {= class = "block3variables"} मान जो एक साथ अच्छी तरह से काम करता है, उसी स्थिति में ` डिग्री सूची में है ` {[class = "block3variables"} और ` सूची बढ़ाएँ ` {: वर्ग = "block3variables"}। उन्हें वहां रहने की आवश्यकता है ताकि आपका कार्यक्रम उनकी स्थिति का उपयोग करके उन्हें फिर से मेल कर सके!
 
 \--- /task \---
 
-Now you have the lists, you just need to get your code to read them and loop over them! To do this, you’re going to use a new variable to act as a counter, some **incrementing**, and an `if then`{:class="block3control"} **Control** block.
+अब आपके पास सूचियां हैं, आपको बस उन्हें पढ़ने के लिए अपना कोड प्राप्त करने और उन पर लूप करने की आवश्यकता है! ऐसा करने के लिए, आप काउंटर के रूप में कार्य करने के लिए एक नए चर का उपयोग करने जा रहे हैं, कुछ ** वेतन वृद्धि ** , और फिर ` यदि ` {:class = "block3control"} ** नियंत्रण ** खंड मैथा।
 
 ## \--- collapse \---
 
-## title: What does incrementing mean?
+## शीर्षक: वेतन वृद्धि का क्या मतलब है?
 
-To increment something means to add something to it.
+कुछ बढ़ाने के लिए कुछ जोड़ने का मतलब है।
 
-You will use a variable to act as a counter to keep track of what position you're at in your lists. To move through the lists, you'll keep incrementing the counter by `1` (so, adding `1` to it) until you get to the end of the list.
+आप अपनी सूची में किस स्थान पर हैं, इसका ट्रैक रखने के लिए एक काउंटर के रूप में कार्य करने के लिए एक चर का उपयोग करेंगे। सूचियों के माध्यम से आगे बढ़ने के लिए, आप ` 1 द्वारा काउंटर बढ़ाते रहेंगे ` (इसलिए, ` 1 जोड़ना ` तब तक) जब तक आप सूची के अंत तक नहीं पहुंच जाते।
 
 \--- /collapse \---
 
 \--- task \---
 
-Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
+एक नया चर बनाएं ` काउंटर ` {:class = "block3variables"}, और इस तरह दिखने के लिए अपना कोड अपडेट करें:
 
 ```blocks3
     when green flag clicked
@@ -77,45 +77,45 @@ Create a new variable called `counter`{:class="block3variables"}, and update you
 
 \--- /task \---
 
-Notice the new blocks that:
+ध्यान दें कि नए ब्लॉक:
 
-1. Set `counter`{:class="block3variables"} to `0`, outside all the loops.
-2. Check if the number stored in `counter`{:class="block3variables"} is the length of the list, and if so, set `counter`{:class="block3variables"} to `0`. This means that this variable will always be the number of a position in the lists, and won't get any bigger than that.
-3. Add `1` to `counter`{:class="block3variables"}.
-4. Pick the item from `Increase List`{:class="block3variables"} that is at the position described by `counter`{:class="block3variables"}, and put it in the `increase`{:class="block3variables"} variable. Do the same for the `Degrees List`{:class="block3variables"} and `degrees`{:class="block3variables"} variable.
+1. सेट करें ` काउंटर ` {:class="block3variables"} से ` 0 तक `, सभी छोरों के बाहर।
+2. जांचें कि क्या संख्या ` काउंटर में संग्रहीत है ` {:class="block3variables"} सूची की लंबाई है, और यदि ऐसा है, तो ` काउंटर सेट करें ` {:class="block3variables"} से ` 0 तक ` । इसका मतलब यह है कि यह चर हमेशा सूचियों में एक स्थान की संख्या होगी, और इससे बड़ा कोई नहीं मिलेगा।
+3. जोड़ें ` 1 ` को ` काउंटर ` {:class="block3variables"}।
+4. आइटम को ` सूची से बढ़ाएं ` {:class = "block3variables"} जो ` काउंटर द्वारा वर्णित स्थिति में है ` {:class =" block3variables "}, और इसे ` वृद्धि में डालें ` {:class = "block3variables"} चर। ` डिग्री सूची के लिए भी यही करें ` {} वर्ग = "ब्लॉक 3वरीबल"} और ` डिग्री ` {= class = "block3variables"} चर।
 
 ## \--- collapse \---
 
-## title: How does the code work?
+## शीर्षक: यह कैसे काम करता है?
 
-This is what happens when you run your program:
+जब आप अपना प्रोग्राम चलाते हैं तो यही होता है:
 
-1. Set `counter`{:class="block3variables"} to `0`.
-2. Start the `forever`{:class="block3control"} loop.
-3. Check if `counter`{:class="block3variables"} (`0`) is the same as the length of `Increase List`{:class="block3variables"} (`2`). It isn’t.
-4. Change `counter`{:class="block3variables"} by `1`. Now `counter`{:class="block3variables"} = `1`.
-5. Set `steps`{:class="block3variables"} to `0`.
-6. Get the item at the position named by `counter`{:class="block3variables"} (`1`) in the `Increase List`{:class="block3variables"}, and put it in `increase`{:class="block3variables"}.
-7. Get the item at the position named by `counter`{:class="block3variables"} (`1`) in the `Degrees List`{:class="block3variables"}, and put it in `degrees`{:class="block3variables"}.
-8. Do all the stuff related to drawing the patterns.
-9. Restart the `forever`{:class="block3control"} loop:
-10. Check if `counter`{:class="block3variables"} (`1`) is the same as the length of `Increase List`{:class="block3variables"} (`2`). It isn’t.
-11. Change `counter`{:class="block3variables"} by `1`. Now `counter`{:class="block3variables"} = `2`.
-12. Set `steps`{:class="block3variables"} to `0`.
-13. Get the item at the position named by `counter`{:class="block3variables"} (`2`) in the `Increase List`{:class="block3variables"}, and put it in `increase`{:class="block3variables"}.
-14. Get the item at the position named by `counter`{:class="block3variables"} (`2`) in the `Degrees List`{:class="block3variables"}, and put it in `degrees`{:class="block3variables"}.
-15. Do all the stuff related to drawing the patterns.
-16. Restart the `forever`{:class="block3control"} loop:
-17. Check if `counter`{:class="block3variables"} (`2`) is the same as the length of the `Increase List`{:class="block3variables"} (`2`). It is!
-18. Set `counter`{:class="block3variables"} to `0`.
-19. Continue from **step 4** of this list, in a never-ending loop!
+1. सेट करें ` काउंटर ` {:class = "block3variables"} से ` 0 तक ` , सभी छोरों के बाहर।
+2. `हमेशा के लिए`{:class = "block3control"} लूप का उपयोग करना
+3. जांचें कि ` काउंटर ` {:class="block3variables"} (` 0) ` ) की लंबाई ` की सूची के समान है ` {:class="block3variables"} (` 2) ` )। यह नहीं है।
+4. सेट करें ` काउंटर ` {:class="block3variables"} से ` 1 तक ` , सभी छोरों के बाहर। सेट करें ` काउंटर ` {:class="block3variables"} से ` 1 तक ` , सभी छोरों के बाहर।
+5. सेट करें ` काउंटर ` {:class="block3variables"} से ` 0 तक ` , सभी छोरों के बाहर।
+6. आइटम को ` काउंटर द्वारा नामित स्थिति में प्राप्त करें ` {:class="block3variables"} (` 1) ` ) में ` सूची बढ़ाएँ ` {":class =" block3variables"}, और इसे ` वृद्धि में डालें ` {:class= "block3variables"}।
+7. आइटम को ` काउंटर द्वारा नामित स्थिति में प्राप्त करें ` {:class="block3variables"} (` 1) ` ) में ` सूची बढ़ाएँ ` {:class="block3variables"}, और इसे ` वृद्धि में डालें ` {:class="block3variables"}।
+8. पैटर्न खींचने से संबंधित सभी चीजें करें।
+9. `हमेशा के लिए`{:class="block3control"} लूप का उपयोग करना
+10. जांचें कि ` काउंटर ` {:class="block3variables"} (` 1) ` ) की लंबाई ` की सूची के समान है ` {:class="block3variables"} (` 2) ` )। यह नहीं है।
+11. सेट करें ` काउंटर ` {:class="block3variables"} से ` 1 तक `, सभी छोरों के बाहर। सेट करें ` काउंटर ` {:class="block3variables"} से ` 2 तक ` , सभी छोरों के बाहर।
+12. सेट करें ` काउंटर ` {:class="block3variables"} से ` 0 तक ` , सभी छोरों के बाहर।
+13. आइटम को ` काउंटर द्वारा नामित स्थिति में प्राप्त करें ` {= वर्ग = "ब्लॉक 3वरीबल"} (` 2) ` ) में ` सूची बढ़ाएँ ` {":class="block3variables"}, और इसे ` वृद्धि में डालें ` {:class="block3variables"}।
+14. आइटम को ` काउंटर द्वारा नामित स्थिति में प्राप्त करें ` {= वर्ग = "ब्लॉक 3वरीबल"} (` 2) ` ) में ` सूची बढ़ाएँ ` {:class="block3variables"}, और इसे ` वृद्धि में डालें ` {:class="block3variables"}।
+15. पैटर्न खींचने से संबंधित सभी चीजें करें।
+16. `हमेशा के लिए`{:class = "block3control"} लूप का उपयोग करना
+17. जांचें कि ` काउंटर ` {:class="block3variables"} (` 2) ` ) की लंबाई ` की सूची के समान है ` {:class="block3variables"} (` 2) ` )। यह है
+18. सेट करें ` काउंटर ` {:class="block3variables"} से ` 0 तक ` , सभी छोरों के बाहर।
+19. ** चरण 4 से जारी रखें ** इस सूची में, कभी न खत्म होने वाले पाश में!
 
 \--- /collapse \---
 
 \--- task \---
 
-Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}.
+एक बार जब आप कोड से खुश हो जाते हैं, तो आगे बढ़ें और बाकी मूल्यों को जोड़ दें जिन्हें आपने नीचे उल्लिखित किया है ` डिग्री सूची ` {:class="block3variables"} और ` सूची बढ़ाएँ ` {:class="block3variables"}।
 
 \--- /task \---
 
-That's it! Sit back and watch your program keep drawing lovely patterns in a never-ending loop! If you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
+बस! वापस बैठो और अपने कार्यक्रम देखो एक कभी न खत्म होने वाले पाश में सुंदर पैटर्न ड्राइंग! यदि आप अधिक पैटर्न जोड़ना चाहते हैं, तो आप कर सकते हैं: बस दो सूचियों में संख्याओं के अधिक जोड़े जोड़ें और कार्यक्रम को पुनरारंभ करें।
