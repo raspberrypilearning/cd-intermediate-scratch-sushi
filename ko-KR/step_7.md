@@ -8,47 +8,47 @@
 
 \--- task \---
 
-Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
+**리스트 만들기**를 클릭하고, `각도 리스트`{:class="block3variables"} 를 이름으로 정하세요.
 
 ![](images/makeAList.png)
 
 \--- /task \---
 
-Your list, which is empty at the moment, will appear on the Stage, and you'll see a bunch of blocks for it in **Variables**.
+현재 비어있는 목록이 스테이지에 표시되며 **변수에 여러 개의 블록이 표시됩니다**.
 
 ![](images/listBlocks.png)
 
 \--- task \---
 
-Make another list called `Increase List`{:class="block3variables"}
+`증가 리스트`{:class="block3variables"} 라는 이름을 가진 또 다른 리스트를 만드세요.
 
 \--- /task \---
 
 \--- task \---
 
-Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
+이제, 왼쪽 하단에 있는 더하기 기호 (**+**) 를 클릭하여, `증가`{:class="block3variables"} 와 `도`{:class="block3variables"} 리스트에 적절한 값을 넣으세요. 두 번째 값을 추가하려면 이 작업을 다시 수행하십시오. 지금은 이것으로 충분할 것입니다. 나중에 당신이 좋아하는 나머지 값을 추가하면 됩니다!
 
 ![](images/helping2.png)
 
-Make sure that the `degrees`{:class="block3variables"} value and the `increase`{:class="block3variables"} value that worked well together are at the same position in the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. They need to be there so your program can match them up again using their position!
+`각도`{:class="block3variables"} 의 값과 `증가`{:class="block3variables"} 의 값은 항상 `각도 리스트`{:class="block3variables"} 과 `증가 리스트`{:class="block3variables"} 리스트 둘 다 같은 위치에 있어야 합니다. 이렇게 해야만 프로그램이 위치를 정확히 파악할 수 있습니다.
 
 \--- /task \---
 
-Now you have the lists, you just need to get your code to read them and loop over them! To do this, you’re going to use a new variable to act as a counter, some **incrementing**, and an `if then`{:class="block3control"} **Control** block.
+이제 리스트가 생기면 코드를 읽고 루프를 반복하면 됩니다. 이렇게 하려면 새 변수를 사용하여 카운터 역할을 수행하도록 합니다. **증가하는 변수를 만들고**, **제어** 블록의 `만약 이라면`{:class="block3control"} 블록으로 판별합니다.
 
 ## \--- collapse \---
 
 ## 제목: 증가하는 것은 무엇을 의미합니까?
 
-To increment something means to add something to it.
+무언가를 증가시키는 것은 그것에 무언가를 추가하는 것을 의미합니다.
 
-You will use a variable to act as a counter to keep track of what position you're at in your lists. To move through the lists, you'll keep incrementing the counter by `1` (so, adding `1` to it) until you get to the end of the list.
+변수를 사용하여 카운터 역할을 하면 목록에서 어떤 위치에 있는지 알아낼 수 있습니다. 리스트 인덱스를 이동하려면 리스트의 끝까지 도달할 때까지 카운터를 `1` 씩 증가합니다. (변수에 `1` 을 추가)
 
 \--- /collapse \---
 
 \--- task \---
 
-Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
+`카운터`{:class="block3variables"}, 변수를 추가하고 아래와 같이 코드를 업데이트 하세요.
 
 ```blocks3
     녹색 깃발이 클릭되었을 때
@@ -77,7 +77,7 @@ Create a new variable called `counter`{:class="block3variables"}, and update you
 
 \--- /task \---
 
-Notice the new blocks that:
+새로운 블록은 다음과 같습니다:
 
 1. `counter`{:class="block3variables"} 를 `0`으로 설정.
 2. `counter`{:class="block3variables"} 에 저장된 수를 확인. 이 변수는 리스트의 길이이고, `counter`{:class="block3variables"} 변수를 `0`으로 정함. 즉, 이 변수는 항상 리스트의 위치 번호가 되며 그보다 더 커지지는 않습니다.
@@ -88,7 +88,7 @@ Notice the new blocks that:
 
 ## title: 어떻게 동작하나요?
 
-This is what happens when you run your program:
+이것은 프로그램을 실행할 때 일어나는 일입니다:
 
 1. `counter`{:class="block3variables"} 를 `0`으로 설정.
 2. 이 작업을 `무한 반복하기`{:class="block3control"}로 설정
@@ -114,8 +114,8 @@ This is what happens when you run your program:
 
 \--- task \---
 
-Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}.
+이 코드에 만족한다면 `각도 리스트`{:class="block3variables"} 과 `증가 리스트`{:class="block3variables"} 에 값을 추가하세요.
 
 \--- /task \---
 
-That's it! Sit back and watch your program keep drawing lovely patterns in a never-ending loop! If you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
+끝났습니다! 이제 프로그램이 끝이 없는 무한 루프에서 멋진 패턴을 그리는 것을 지켜보십시오! 더 많은 패턴을 추가하려면 다음과 같이 할 수 있습니다. 두 개의 목록에 숫자를 더 추가하고 프로그램을 다시 시작하십시오.
