@@ -1,0 +1,15 @@
+pasos
+
+grados
+
+aumento
+
+¿Cuántos pasos debo aumentar?
+
+¿Cuántos grados debo girar?
+
+Lista de aumentos
+
+Lista de grados
+
+contador

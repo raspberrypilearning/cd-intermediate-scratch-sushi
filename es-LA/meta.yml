@@ -1,7 +1,7 @@
 ---
-title: قلم النمط
+title: Patrón de Lápiz
 hero_image: images/banner.png
-description: جعل مولد نمط بارد
+description: Crea un generador de patrones genial
 theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
@@ -16,10 +16,10 @@ software: scratch
 version: 4.0.0
 last_tested: 2017-01-01
 steps:
-  - title: المقدمة
-  - title: باستخدام أداة القلم
-  - title: أنماط الرسم
-  - title: طلب المدخلات
-  - title: اجمل خطوط
-  - title: العشوائية كل شيء
-  - title: مساعدة الكمبيوتر
+  - title: Introducción
+  - title: Utilizando la herramienta Lápiz
+  - title: Patrones de dibujo
+  - title: Pedir variables
+  - title: Líneas más atractivas
+  - title: Todo en aleatorio
+  - title: Ayudando a la computadora
