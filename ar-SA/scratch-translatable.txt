@@ -1,12 +1,12 @@
-steps
+خطوات
 
-degrees
+درجات
 
-increase
+زيادة
 
-How many steps should I grow by?
+كم عدد الخطوات التي يجب أن أتقدم بها؟
 
-How many degrees should I turn?
+كم درجة يجب ان تكون الاستدارة الخاصة بي؟
 
 Increase list
 
