@@ -25,7 +25,7 @@
 
 --- collapse ---
 ---
-title：为什么笔会这样做？
+title: 为什么笔会这样做？
 ---
 
 笔总是从中间的方向开始绘制，因为在 `落笔`{:class="block3extensions"}后第一个运行的**运动**是`移到 x：0 y：0`{:class="block3motion"}。 因此，笔在移到舞台中央的过程中会画一条线。
@@ -58,7 +58,7 @@ title：为什么笔会这样做？
 
 --- task ---
 
-更改`移动`{class="block3motion"}块中的步骤数为`5` ，并在测试之前检查程序是否与此程序匹配：
+更改`移动`{:class="block3motion"}块中的步骤数为`5` ，并在测试之前检查程序是否与此程序匹配：
 
 ```blocks3
     when green flag clicked

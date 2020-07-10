@@ -97,7 +97,7 @@ Esto es lo que ocurre cuando ejecutas tu programa:
 3. Comprueba si el `contador`{:class="block3variables"} (`0`) es igual a la longitud de la `Lista de aumento`{:class="block3variables"} (`2`). No lo es.
 4. Sumar a `contador`{:class="block3variables"} `1`. Ahora `contador`{:class="block3variables"} = `1`.
 5. Dar a `pasos`{:class="block3variables"} el valor `0`.
-6. Obtén el elemento en la posición nombrada por el `contador`{:class="block3variables"} (`1`) en la `Lista de aumento`{:class="block3variables"}, y lo pone en `aumento` {:class="block3variables"}.
+6. Obtén el elemento en la posición nombrada por el `contador`{:class="block3variables"} (`1`) en la `Lista de aumento`{:class="block3variables"}, y lo pone en `aumento`{:class="block3variables"}.
 7. Obtén el elemento en la posición nombrada por el `contador`{:class="block3variables"} (`1`) en la `Lista de grados`{:class="block3variables"}, y lo pone en `grados`{:class="block3variables"}.
 8. Haz todas las cosas relacionadas con el dibujo de patrones.
 9. Reinicia el ciclo `para siempre`{:class="block3control"}:

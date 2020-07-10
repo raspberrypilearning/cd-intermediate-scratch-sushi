@@ -82,7 +82,7 @@ Observa los nuevos bloques que:
 
 1. Da a `contador`{:class="block3variables"} el valor `0`, está fuera de todos los bucles.
 2. Comprueba si el número almacenado en `contador`{:class="block3variables"} es la longitud de la lista, y si es así, da a `contador`{:class="block3variables"} el valor `0`. Esto significa que esta variable siempre será el número de una posición en las listas, y no será mayor que eso.
-3. Sumar a `contador` `1`{:class="block3variables"}.
+3. Sumar a `contador`{:class="block3variables"} `1`.
 4. Elije el elemento de `Lista de aumentos`{:class="block3variables"} que está en la posición descrita por el `contador`{:class="block3variables"}, y lo pone en la variable `aumento`{:class="block3variables"}. Haz lo mismo para la `Lista de Grados`{:class="block3variables"} y la variable `grados`{:class="block3variables"}.
 
 --- collapse ---

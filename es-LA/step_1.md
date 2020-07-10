@@ -1,8 +1,8 @@
---- no imprimir ---
+--- no-print ---
 
 Esta es la versión **Scratch 3** del proyecto. También hay una [versión del proyecto en Scratch 2](https://projects.raspberrypi.org/es-LA/projects/cd-intermediate-scratch-sushi-scratch2).
 
---- /no imprimir ---
+--- /no-print ---
 
 ## Introducción
 

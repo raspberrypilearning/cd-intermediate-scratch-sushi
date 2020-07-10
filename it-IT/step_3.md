@@ -113,7 +113,7 @@ Pensi che sia importante dove mettere nel ciclo `cambia passi di 1`{:class="bloc
 
 --- collapse ---
 ---
-title: inserire il codice nell'ordine corretto
+title: Inserire il codice nell'ordine corretto
 ---
 
 Quando decidi in quale ordine inserire i blocchi, pensa a cosa fa ogni blocco e cosa vuoi che faccia il tuo codice.

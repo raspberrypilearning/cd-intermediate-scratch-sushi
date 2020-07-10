@@ -28,7 +28,7 @@ Ahora haz clic en la bandera verde unas cuantas veces y observa lo que sucede. T
 title: ¿Por qué el lápiz hace esto?
 ---
 
-El lápiz siempre comienza a dibujar dirigiéndose hacia el medio, porque el primer bloque **Movimiento** que se ejecuta después del `bajar lápiz`{:class="bloque3extensiones"} es `ir a x: 0 y: 0`{:class="block3motion"}. Entonces, el lápiz dibujará una línea a medida que se mueve hacia el centro del escenario.
+El lápiz siempre comienza a dibujar dirigiéndose hacia el medio, porque el primer bloque **Movimiento** que se ejecuta después del `bajar lápiz`{:class="block3extensions"} es `ir a x: 0 y: 0`{:class="block3motion"}. Entonces, el lápiz dibujará una línea a medida que se mueve hacia el centro del escenario.
 
 El lápiz no se detiene en el borde del escenario, porque aún no le has dicho al bloque del bucle `repetir hasta que`{:class="block3control"} qué condición tiene que comprobar. Esto significa que la condición nunca se puede cumplir, por lo que el bucle se ejecutará una y otra vez. Esto implica que en este momento, el bucle está funcionando como un bucle `por siempre`{:class="block3control"}.
 

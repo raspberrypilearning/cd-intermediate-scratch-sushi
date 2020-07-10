@@ -68,7 +68,7 @@ Aggiungi un blocco `nascondi`{:class="block3looks"} dal gruppo **Aspetto** all'i
 Ora puoi cambiare il colore della penna con un altro blocco dalla sezione **Penna**, ma il blocco è leggermente diverso dagli altri che hai visto. È il blocco `porta colore penna a`{:class="block3extensions"} e assomiglia a questo:
 
 ```blocks3
-    imposta il colore della penna su [# 4a6cd4]
+    set pen color to [#4a6cd4]
 ```
 
 --- task ---

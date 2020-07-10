@@ -55,7 +55,7 @@
 
 --- task ---
 
-从** 外观**中选择并添加`隐藏`{:class="block3looks"}块到程序的开头，精灵就会消失。
+从**外观**中选择并添加`隐藏`{:class="block3looks"}块到程序的开头，精灵就会消失。
 
 ```blocks3
     when green flag clicked

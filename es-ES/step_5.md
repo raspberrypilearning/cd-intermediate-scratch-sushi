@@ -5,7 +5,7 @@
 El bloque para cambiar el color del **Lápiz** es `cambiar color de lápiz por`{:class="block3extensions"}:
 
 ```blocks3
-    cambiar el color del lápiz por (10)
+    change pen color by (10)
 ```
 
 --- task ---
