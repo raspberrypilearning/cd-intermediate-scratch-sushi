@@ -4,77 +4,77 @@
 
 \--- task \---
 
-First, go to the **Variables** section and create variables called `degrees`{:class="block3variables"} and `increase`{:class="block3variables"}.
+먼저, **변수** 카테고리로 이동하여 `도`{:class="block3variables"} 라는 이름을 가진 변수와 `증가`{:class="block3variables"} 라는 이름을 가진 변수를 생성하세요.
 
 \--- /task \---
 
 \--- task \---
 
-Now add the new variables to your code like this:
+다음과 같이 새로운 변수를 코드에 추가합니다:
 
 ```blocks3
     <touching [edge v] ?> 까지 반복하기
-       (steps) 만큼 움직이기
-       cw 방향으로 (degress ::variables) 도 회전하기
-       [steps v] 를 (increase ::variables) 만큼 바꾸기
+       (단계) 만큼 움직이기
+       cw 방향으로 (도 ::variables) 도 회전하기
+       [단계 v] 를 (증가 ::variables) 만큼 바꾸기
     끝
 ```
 
 \--- /task \---
 
-Now you need to ask for values for these two variables and store them. You do this using a **Sensing** block called `Ask and wait`{:class="block3sensing"}, which you can type a question into.
+이제 이 두 변수의 값을 물어보고 저장해야 합니다. **감지** 카테고리의 `묻고 기다리기`{:class="block3sensing"} 블록을 활용할 수 있습니다.
 
 \--- task \---
 
-Pull the `Ask and wait`{:class="block3sensing"} block into your sprite panel and change the question to `How many steps should I grow by?`{:class="block3sensing"}
+`묻고 기다리기`{:class="block3sensing"} 블록을 기존 코드에 추가하고, 질문의 내용을 `얼마나 많은 단계를 거쳐야 하나요?`{:class="block3sensing"} 로 변경하세요.
 
-Then add it to your program, just after you set `steps`{:class="block3variables"} to `0`, like this:
+묻고 기다리기 블록 이전에 `단계`{:class="block3variables"} 변수를 `0` 으로 초기화해 줘야 합니다. 다음과 같이 프로그램에 추가하세요:
 
 ```blocks3
     녹색 깃발이 클릭되었을 때
-   [steps v] 을 [0] 로 정하기
+   [단계 v] 을 [0] 로 정하기
 +   [얼마나 많은 단계를 거쳐야 하나요?] 라고 묻고 기다리기
     펜 올리기
 ```
 
 \--- /task \---
 
-Now you’ve got your program asking a question, you need it to remember the answer! It turns out that Scratch has a special variable called `answer`{:class="block3sensing"}, where it stores the most recent answer it has received. You can find this variable among the **Sensing** blocks.
+이제 질문을 묻는 프로그램이 생겼습니다. 질문에 대한 대답을 기억해야 합니다! 스크래치에는 `대답`{:class="block3sensing"}이라고 하는 특별한 변수가 있습니다. 이 변수는 묻고 기다리기 블록의 질문에 대한 답을 저장합니다. 이 변수는 **감지** 카테고리에서 찾을 수 있습니다.
 
 \--- task \---
 
-Using a `set to`{:class="block3variables"} block from **Variables**, take the value of `answer`{:class="block3sensing"} and store it in the `increase`{:class="block3variables"} variable like so:
+**변수** 카테고리에 있는 `로 정하기`{:class="block3variables"} 블록을 사용하여, `대답`{:class="block3sensing"} 변수 안에 있는 값을 `증가`{:class="block3variables"} 변수에 저장하세요:
 
 ```blocks3
     [얼마나 많은 단계를 거쳐야 하나요?] 라고 묻고 기다리기
-+    [increase v] 을 (answer) 로 정하기
++    [증가 v] 을 (대답) 로 정하기
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Now, do the same thing with `degrees`{:class="block3variables"}, asking `How many degrees should I turn?`{:class="block3sensing"} and storing the value of `answer`{:class="block3sensing"} in `degrees`{:class="block3variables"}:
+이제 아까처럼 답을 받아서 `도`{:class="block3variables"} 변수에 저장해야 합니다. `몇 도 돌려야 할까요?`{:class="block3sensing"} 라고 질문한 뒤, `대답`{:class="block3sensing"} 변수에 있는 이 값을 `도`{:class="block3variables"}변수에 저장합니다:
 
 ```blocks3
-    [increase v] 를 (answer) 로 정하기
+    [증가 v] 를 (대답) 로 정하기
 +   [몇 도 돌려야 할까요?] 라고 묻고 기다리기
-+    [degrees v] 를 (answer) 로 정하기
++    [도 v] 를 (대답) 로 정하기
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Check your program now looks like the one below, and run it a few times with different numbers. Write down the answers that make the coolest pictures. You’ll need them in a later step!
+프로그램이 아래처럼 보이는지 확인하고, 각기 다른 값을 넣어 몇 번 실행해보세요. 가장 멋진 그림을 만들어주는 값을 기록해 두세요. 다음 단계에서 이러한 값들을 필요로 합니다!
 
 ```blocks3
     녹색 깃발이 클릭되었을 때
-    [steps v] 을 [0] 로 정하기
+    [단계 v] 을 [0] 로 정하기
     [얼마나 많은 단계를 거쳐야 하나요?] 라고 묻고 기다리기
-    [increase v] 을 (answer) 로 정하기
+    [증가 v] 을 (대답) 로 정하기
     [몇 도 돌려야 할까요?] 라고 묻고 기다리기
-    [degrees v] 을 (answer) 로 정하기
+    [도 v] 을 (대답) 로 정하기
     펜 올리기
     숨기기
     모두 지우기
@@ -82,9 +82,9 @@ Check your program now looks like the one below, and run it a few times with dif
     펜 색깔을 [#4a6cd4] 로 정하기
     펜 내리기
     <touching [edge v] ?> 까지 반복하기 
-        (steps) 만큼 움직이기
-        cw 방향으로 (degrees) 도 회전하기
-        [steps v] 을 (increase) 만큼 바꾸기
+        (단계) 만큼 움직이기
+        cw 방향으로 (도) 도 회전하기
+        [단계 v] 을 (증가) 만큼 바꾸기
     끝
 ```
 
