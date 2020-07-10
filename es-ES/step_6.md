@@ -1,12 +1,12 @@
-## Randomise the whole thing
+## Aleatorizar todo
 
-You can actually use random numbers to make the whole program run over and over, changing the pattern each time! It'll look a bit like screen savers did in the 1990s...which you probably won't remember, but ask one of your parents!
+En realidad, puedes usar números aleatorios para hacer que todo el programa se ejecute una y otra vez, ¡cambiando el patrón cada vez! Se verá un poco como los protectores de pantalla que había en la década de 1990... que probablemente no recordarás, ¡pero pregúntale a uno de tus padres!
 
-You need a few changes to make this happen. The first one is that you need to set the `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} variables randomly rather than asking for them from the user. So you need to change some of your code blocks.
+Necesitas algunos cambios para que esto suceda. El primero es que establezcas las variables `aumento`{:class="block3variables"} y `grados`{:class="block3variables"} aleatoriamente en lugar de pedírselas al usuario. Así que necesitas cambiar algunos de tus bloques de código.
 
 \--- task \---
 
-Remove the questions from your code, and update it to use random numbers instead.
+Elimina las preguntas de tu código y actualízalo para usar números aleatorios en su lugar.
 
 ```blocks3
     when green flag clicked
@@ -20,13 +20,13 @@ Remove the questions from your code, and update it to use random numbers instead
 
 \--- /task \---
 
-If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
+Si ejecutas tu programa ahora, te darás cuenta de que dibuja un patrón aleatorio, pero sólo una vez. ¿Por qué crees que es?
 
-It’s because the loop only runs until it reaches the edge of the Stage.
+Es porque el bucle solo se ejecuta hasta que llega al borde del escenario.
 
 \--- task \---
 
-You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
+Necesitas otro bucle que se ejecute sin parar (¡Un bloque `por siempre`{:class="block3control"} entonces!) fuera del bucle actual para que continúe una y otra vez. Simplemente arrastra uno de la sección **Control** y añade todo el código dentro de él.
 
 ```blocks3
     when green flag clicked
@@ -50,8 +50,8 @@ You need another loop that runs forever (so a `forever`{:class="block3control"} 
 
 \--- /task \---
 
-Now you’ve really got something awesome to look at!
+¡Ahora realmente tienes algo increíble para mirar!
 
-However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
+Sin embargo, puede notar que, de vez en cuando, el ordenador dibuja algo que se ve bastante... mal. Esto es debido a que algunos números para algunas de esas variables son sólo malas opciones, y algunas **combinaciones de esos números** también son malas opciones.
 
-On the next card, you'll help the computer to pick only good combinations!
+En la siguiente tarjeta, ¡ayudarás al ordenador a elegir sólo buenas combinaciones!
