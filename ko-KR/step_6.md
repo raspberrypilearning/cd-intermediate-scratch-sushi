@@ -10,11 +10,11 @@ Remove the questions from your code, and update it to use random numbers instead
 
 ```blocks3
     녹색 깃발을 클릭했을 때
-   [steps v] 을 [0] 로 정하기
+   [단계 v] 을 [0] 로 정하기
 -    [얼마나 많은 단계를 거쳐야 하나요?] 라고 묻고 기다리기
-+   [increase v] 을 (pick random (1) to (10)) 로 정하기
++   [증가 v] 을 (pick random (1) to (10)) 로 정하기
 -    [몇 도 돌려야 할까요?] 라고 묻고 기다리기
-+   [degrees v] 을 (pick random (1) to (180)) 로 정하기
++   [도 v] 을 (pick random (1) to (180)) 로 정하기
     펜 올리기
 ```
 
@@ -31,11 +31,11 @@ You need another loop that runs forever (so a `forever`{:class="block3control"} 
 ```blocks3
     녹색 깃발이 클릭되었을 때
 + 무한 반복
-        [steps v] 을 [0] 로 정하기
+        [단계 v] 을 [0] 로 정하기
         [얼마나 많은 단계를 거쳐야 하나요?] 라고 묻고 기다리기
-        [increase v] 을 (answer) 로 정하기
+        [증가 v] 을 (대답) 로 정하기
         [몇 도 돌려야 할까요?] 라고 묻고 기다리기
-        [degrees v] 을 (answer) 로 정하기
+        [도 v] 을 (대답) 로 정하기
         펜 올리기
         숨기기
         모두 지우기
@@ -43,9 +43,9 @@ You need another loop that runs forever (so a `forever`{:class="block3control"} 
         펜 색깔을 [#4a6cd4] 로 정하기
         펜 내리기
         <touching [edge v] ?> 까지 반복하기 
-            (steps) 만큼 움직이기
-            cw 방향으로 (degrees) 도 회전하기
-            [steps v] 을 (increase) 만큼 바꾸기
+            (단계) 만큼 움직이기
+            cw 방향으로 (도) 도 회전하기
+            [단계 v] 을 (증가) 만큼 바꾸기
         끝
     끝
 ```
