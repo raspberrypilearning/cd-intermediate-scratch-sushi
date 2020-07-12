@@ -39,17 +39,17 @@
 
 \--- /task \---
 
-Time to fix your `repeat until`{:class="block3control"} loop so that it stops when you want it to. You’re looking to figure out if the (invisible) sprite is touching the edge of the Stage, so you need a **Sensing** block — in this case, the `touching ?`{:class="block3sensing"} block.
+では、`まで繰り返す`{:class="block3control"}ループを直して、止めたいときに止まるようにしましょう。 （目に見えない）スプライトがステージの端に触れて (ふれて) いるかどうかを知りたいので、**調べる**ブロックの、この場合、`に触れた`{:class="block3sensing"}ブロックが必要です。
 
 \--- task \---
 
-Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class="block3control"} loop, and select `edge`{:class="block3sensing"} . Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
+`に触れた`{:class="block3sensing"}ブロックを`まで繰り返す`{:class="block3control"}ループに追加し、`端`{:class="block3sensing"}をえらびます。 これで、(見えない) スプライトがステージの端に触れる**まで**ループが繰り返されます。
 
 ```blocks3
-    pen down
-+    repeat until <touching [edge v] ?> 
-        move (50) steps
-        turn cw (15) degrees
+    ペンを下ろす
++ <touching [edge v] ?> まで繰り返す
+        (50) 歩動かす
+        cw (15) 度回す
     end
 ```
 
@@ -57,73 +57,73 @@ Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class
 
 \--- task \---
 
-Change the number of steps in the `move`{:class="block3motion"} block to `5`, and check that your program matches this one before you test it:
+`(50)歩動かす`{:class="block3motion"}ブロックの数値 (すうち) を`5`にかえて、テストする前にプログラムが次のようになっていることをたしかめましょう。
 
 ```blocks3
-    when green flag clicked
-    pen up
-    hide
-    clear
-    go to x: (0) y: (0)
-    set pen color to [#4a6cd4]
-    pen down
-    repeat until <touching [edge v] ?> 
-        move (5) steps
-        turn cw (15) degrees
+    緑色の旗が押されたとき
+    ペンを上げる
+    隠す
+    全部消す
+    x座標を (0) 、y座標を (0) にする
+    ペンの色を [#4a6cd4] にする
+    ペンを下ろす
+    <touching [edge v] ?> まで繰り返す
+        (5) 歩動かす
+        cw (15) 度回す
     end
 ```
 
 \--- /task \---
 
-If you run the code now, you’ll see that the drawing the pen makes stays on the Stage.
+このコードを実行すると、ペンがかいた線がステージ上にとどまっていることがわかります。
 
-Not only that, but your program has turned into a circle-drawing program! What's happening here is that those 15-degree turns eventually add up to 360 degrees, and so your pen turns in a full circle. You're going to change the way it moves slightly to make it take slightly a longer step each time, so it spirals out. For this, you’re going to need a **variable**.
+それだけでなく、あなたのプログラムは円をかくプログラムになりました！ ここで何が起こっているかというと、15度ずつ回転していくと最終的に360度になるため、ペンは完全 (かんぜん) な円をかくようになっているのです。 動く方法を少しかえて、毎回少し長く動くようにします。そうすると、らせんじょうに広がっていきます。 これには**変数** (へんすう) が必要になります。
 
-Variables are basically labeled places to store numbers or other information that you care about. You can create them in the **Variables** blocks section.
+変数は基本的には、数値やその他の大切な情報 (じょうほう) をしまうための名前の付いた場所のことです。 **変数**ブロックセクションで作成 (さくせい) できます。
 
 \--- task \---
 
-Make a variable called `steps`{:class="block3variables"}, and then add a `set steps to 0`{:class="block3variables"} block at the start of your program.
+`ステップ数`{:class="block3variables"}という名前の変数を作り、`(ステップ数)を0にする`{:class="block3variables"}ブロックをプログラムの先頭に追加します。
 
 ```blocks3
-    when green flag clicked
-+   set [steps v] to [0]
-    pen up
+    緑色の旗が押されたとき
++ [ステップ数 v] を [0] にする
+    ペンを上げる
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Then use the value of `steps`{:class="block3variables"} instead of the `5` in the `move`{:class="block3motion"} block, and add `change steps by 1`{:class="block3variables"} as part of your loop:
+次に、`(5)歩動かす`{:class="block3motion"}ブロックの`5`の代わりに`ステップ数`{:class="block3variables"}の値を使用し、ループの中に`ステップ数を1ずつ変える`{:class="block3variables"}ブロックを追加します。
 
 ```blocks3
-    pen down
-    repeat until <touching [edge v] ?> 
-+       move (steps) steps
-        turn cw (76) degrees
-+        change [steps v] by (1)
+    ペンを下ろす
+ <touching [edge v] ?> まで繰り返す 
++ (ステップ数) 歩動かす
+        cw (76) 度回す
++ [ステップ数 v] を (1) ずつ変える
     end
 ```
 
 \--- /task \---
 
-Do you think it matters where in the loop you put the `change steps by 1`{:class="block3variables"} block?
+ループのどこに`ステップ数を1ずつ変える`{:class="block3variables"}ブロックを入れるかは重要だと思いますか？
 
 ## \--- collapse \---
 
-## title: Putting code in the right order
+## title: 正しい順序 (じゅんじょ) でコードをならべる
 
-When you're deciding which order to put blocks in, think about what each block does and what you want your code to do.
+ブロックをおく順番を決めるときは、それぞれのブロックが何をするか、コードに何をさせたいかを考えてみましょう。
 
-In this case, you want the pen to move, then turn, over and over. Each time it does this, you want to move one extra step.
+このプロジェクトでは、ペンを動かしてから回転させるということを何度も繰り返します。 これを行うたびに、1ステップずつ長く移動させます。
 
-So it makes sense to put the `change steps by 1`{:class="block3variables"} block **after** the `move`{:class="block3motion"} block. However, after moving, it doesn't really matter if the pen turns first and then the number of steps changes, or if the number of steps changes first and then the pen turns instead.
+そのため、`ステップ数を1ずつ変える`{:class="block3variables"}ブロックを` (ステップ数) 歩動かす`{:class="block3motion"}ブロックの**後**に置くのは理にかなっています。 ただし、移動した後で、ペンが最初に回転してからステップ数が変わるのか、またはステップ数が最初に変わってからペンが回転するのかはどちらでも問題ありません。
 
 \--- /collapse \---
 
 \--- task \---
 
-Now run the program, and also try changing the number of degrees around (try `76` and `120`)!
+ここでプログラムを実行し、回転角度を変えてみましょう (`76`度および`120`度をためしてみてください)！
 
 \--- /task \---
