@@ -1,10 +1,10 @@
 ## Usare lo strumento Penna
 
-Il progetto che farai si basa sullo strumento **Penna**, che disegna una linea dietro il centro di uno sprite mentre si muove. Imparerai ad usarlo ora!
+Il progetto che farai si basa sullo strumento **Penna**, che disegna una linea dal centro di uno sprite mentre si muove. Sei pronto, si parte!
 
 \--- task \---
 
-Apri un nuovo file di Scratch, seleziona lo sprite del gatto e trascina alcuni blocchi che potresti aver già visto, fino a quando non appare così:
+Apri un nuovo file di Scratch, seleziona lo sprite del gatto e trascina alcuni blocchi che potresti aver già visto, finchè non ottieni questo:
 
 ```blocks3
     when green flag clicked
@@ -25,7 +25,7 @@ Fai clic sul pulsante **Aggiungi estensione** nell'angolo in basso a sinistra.
 
 ![aggiungi il pulsante di estensione evidenziato](images/add-extension-annotated.png)
 
-Fare clic sull'estensione **Penna** per aggiungerla.
+Fai clic sull'estensione **Penna** per aggiungerla.
 
 ![estensione penna evidenziata](images/click-pen-annotated.png)
 
@@ -51,7 +51,7 @@ Ora fai clic sulla bandiera verde alcune volte e guarda cosa succede.
 
 Se riesci a vedere le linee dietro al gatto, allora la penna sta funzionando e puoi iniziare a creare disegni davvero fantastici.
 
-Innanzitutto, dovresti sbarazzarti dello sprite. Sta ostacolando il disegno!
+Innanzitutto, dovresti sbarazzarti dello sprite. Impedisce di vedere il disegno!
 
 \--- task \---
 
