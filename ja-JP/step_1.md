@@ -6,13 +6,13 @@
 
 ## はじめに
 
-You’ve already learned the basics of Scratch (and if you haven’t, check out the Beginner Scratch Sushi Cards) to make your first Scratch game. Here you’re going to learn a few more cool tricks and make one of my favourite Scratch projects: it draws colourful patterns and, if you set it up right, can be really cool to watch.
+みなさんはすでに、Scratch でゲームを一つ作って Sctratch の基本 (きほん) を学びました (もしまだであれば、初心者 (しょしんしゃ) 向けの Scratch ゲーム Scratch Sushi Cardsをチェックしてください) 。 Here you’re going to learn a few more cool tricks and make one of my favourite Scratch projects: it draws colourful patterns and, if you set it up right, can be really cool to watch.
 
 ![](images/pen1.png)
 
 ### 作るもの
 
-Here's a project I've prepared:
+私の作ったプロジェクトがこちらです。
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/205355399/?autostart=false" frameborder="0"></iframe>
@@ -24,7 +24,7 @@ Here's a project I've prepared:
 
 このプロジェクトでは、次のことができるようになります。
 
-+ Using the Pen tool
++ ペンツールの使い方
 + Using and updating variables in loops
 + Using Repeat Until loops
 + Getting input values with ask blocks
