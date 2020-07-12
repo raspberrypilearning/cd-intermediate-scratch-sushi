@@ -1,16 +1,16 @@
-## Asking for input
+## 入力をもとめる
 
-Ok, this is getting pretty cool, but it’s a bit boring to have to edit your code every time you want to draw a different pattern. Wouldn’t it be good to get the program to ask you for values to use? You can do that!
+さて、すでにかなりクールになっていますが、べつのもようをかきたい時に毎回コードを編集 (へんしゅう) する必要があるのは少しうんざりします。 プログラムが使用する値を聞いてくれるようになればいいのではないでしょうか？ こうすればできます。
 
 \--- task \---
 
-First, go to the **Variables** section and create variables called `degrees`{:class="block3variables"} and `increase`{:class="block3variables"}.
+まず、**変数**セクションに移動します。そして`回転角度`{:class="block3variables"}および`ふやす量`{:class="block3variables"}という名前の変数を作成します。
 
 \--- /task \---
 
 \--- task \---
 
-Now add the new variables to your code like this:
+そして、次のように新しい変数をコードに追加します。
 
 ```blocks3
     repeat until <touching [edge v] ?> 
@@ -22,13 +22,13 @@ Now add the new variables to your code like this:
 
 \--- /task \---
 
-Now you need to ask for values for these two variables and store them. You do this using a **Sensing** block called `Ask and wait`{:class="block3sensing"}, which you can type a question into.
+次に、これらの2つの変数の値をたずね、保存 (ほぞん) する必要があります。 `と聞いて待つ`{:class="block3sensing"}という**調べる**ブロックを使えばできます。このブロックは質問 (しつもん) を表示できます。
 
 \--- task \---
 
-Pull the `Ask and wait`{:class="block3sensing"} block into your sprite panel and change the question to `How many steps should I grow by?`{:class="block3sensing"}
+`と聞いて待つ`{:class="block3sensing"}ブロックをスプライトパネルに引き出して、質問文を`何ステップずつふやしますか？`{:class="block3sensing"}に変えます。
 
-Then add it to your program, just after you set `steps`{:class="block3variables"} to `0`, like this:
+そして、プログラムの`ステップ数`{:class="block3variables"}を`0`にした直後にこのブロックを追加します。次のようになります。
 
 ```blocks3
     when green flag clicked
