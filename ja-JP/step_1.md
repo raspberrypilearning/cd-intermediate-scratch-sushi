@@ -1,16 +1,16 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2).
+これはプロジェクトの **Scratch 3** バージョンです。 [Scratch 2バージョンのプロジェクト](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2)もあります。
 
 \--- /no-print \---
 
-## Introduction
+## はじめに
 
 You’ve already learned the basics of Scratch (and if you haven’t, check out the Beginner Scratch Sushi Cards) to make your first Scratch game. Here you’re going to learn a few more cool tricks and make one of my favourite Scratch projects: it draws colourful patterns and, if you set it up right, can be really cool to watch.
 
 ![](images/pen1.png)
 
-### What you will make
+### 作るもの
 
 Here's a project I've prepared:
 
@@ -20,9 +20,9 @@ Here's a project I've prepared:
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: 学ぶこと
 
-In the Intermediate Scratch Sushi Cards, you'll find out about:
+このプロジェクトでは、次のことができるようになります。
 
 + Using the Pen tool
 + Using and updating variables in loops
@@ -34,14 +34,14 @@ In the Intermediate Scratch Sushi Cards, you'll find out about:
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: 必要 (ひつよう) なもの
 
-### Hardware
+### ハードウェア
 
-+ A computer capable of running Scratch 3
++ Scratch 3を実行できるコンピュータ
 
-### Software
+### ソフトウェア
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/projects/editor/){:target="_blank"} or [offline](https://scratch.mit.edu/download/){:target="_blank"})
++ Scratch 3 ([オンライン](https://scratch.mit.edu/projects/editor/){:target="_blank"}または[オフライン](https://scratch.mit.edu/download/)"{:target="_blank"})
 
 \--- /collapse \---
