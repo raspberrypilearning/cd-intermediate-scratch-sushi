@@ -19,7 +19,7 @@
 
 \--- task \---
 
-緑の旗をクリックしてプログラムを数回実行し、何が起こるかを見ましょう。 2つのことに気づくと思います。ペンはいつもステージの中央に向かって線を引き始めること、そしてペンがステージのはしで止まらないことです。
+緑の旗をクリックしてプログラムを数回実行し、何が起こるかを見ましょう。 2つのことに気づくと思います。ペンはいつもステージの中央に向かって線を引き始めること、そしてペンがステージの端 (はし) で止まらないことです。
 
 \--- /task \---
 
@@ -29,13 +29,13 @@
 
 ペンはいつも中央に向かってかき始めます。 なぜなら、`ペンを下ろす`{:class="block3extensions"}ブロックの後に最初 (さいしょ) に実行される **動き**ブロックは`x座標 (ざひょう) を0、 y座標を0にする`{:class="block3motion"}ブロックだからです。 したがって、ペンはステージの中央に移動しながら線を引くようになります。
 
-The pen doesn't stop at the edge of the Stage, because you haven’t yet told the `repeat until`{:class="block3control"} loop what condition it’s checking. This means the condition can never be met, so the loop will run on and on. This means that right now, the loop is working like a `forever`{:class="block3control"} loop.
+`まで繰り返す`{:class="block3control"}ループがチェックする条件を指定していないため、ステージの端でペンが止まりません。 条件が決してみたされないので、ループが繰り返し実行されつづけるのです。 つまりこのままでは、ループは`ずっと`{:class="block3control"}ループのように動作します。
 
 \--- /collapse \---
 
 \--- task \---
 
-Move the `go to x: 0 y: 0`{:class="block3motion"} block to before the `pen down`{:class="block3extensions"} block and add, from the **Pen** section, a `pen up`{:class="block3extensions"} block right at the start of your code.
+`x座標を0、y座標を0にする`{:class="block3motion"}ブロックを`ペンを下ろす`{:class="block3extensions"}ブロックの前に移動し、 **ペン**セクションから、`ペンを上げる`{:class="block3extensions"}ブロックをコードの先頭に追加します。
 
 \--- /task \---
 
