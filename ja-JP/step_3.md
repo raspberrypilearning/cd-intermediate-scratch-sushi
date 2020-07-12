@@ -1,17 +1,17 @@
 ## もようをかく
 
-Now you’ve got a program that draws a line, but it only draws one line. That’s a bit dull! You could use `forever`{:class="block3control"} loop to draw something over and over again, but then you’ll get drawings that go off the Stage!
+これで線を引くプログラムができましたが、1本の線しか引けません。 これではちょっとつまらないですね。 `ずっと`{:class="block3control"}ループを使えば何度もかきつづけることができますが、そのうちステージからはみ出してしまうでしょう。
 
-So you need use a different type of loop called `repeat until`{:class="block3control"}, which you’ll also find in the **Control** section. This type of loop will do something over and over again, **until** a True/False condition is met.
+そこで、`まで繰り返す`{:class="block3control"} (くりかえす) というべつのループを使う必要があります。これは **制御** (せいぎょ) セクションにあります。 このタイプのループは、 真／偽 (ぎ) の条件 (じょうけん) がみたされる**まで**、何度も繰り返し実行します。
 
 \--- task \---
 
-Take a `repeat until`{:class="block3control"} block from the **Control** section, and put the `move`{:class="block3motion"} and `turn`{:class="block3motion"} blocks inside it, like so:
+`まで繰り返す`{:class="block3control"}ブロックを**制御**セクションから取り出し、`(10)歩動かす`{:class="block3motion"}ブロックと`(15)度回す`{:class="block3motion"}ブロックをその中に入れ、次のようにします。
 
 ```blocks3
-+    repeat until <> 
-        move (50) steps
-        turn cw (15) degrees
++ <> まで繰り返す
+        (50) 歩動かす
+        cw (15) 度回す
     end
 ```
 
@@ -19,15 +19,15 @@ Take a `repeat until`{:class="block3control"} block from the **Control** section
 
 \--- task \---
 
-Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge.
+緑の旗をクリックしてプログラムを数回実行し、何が起こるかを見ましょう。 2つのことに気づくと思います。ペンはいつもステージの中央に向かって線を引き始めること、そしてペンがステージのはしで止まらないことです。
 
 \--- /task \---
 
 ## \--- collapse \---
 
-## title: Why does the pen do this?
+## title: どうしてペンはこのような動きをするのですか？
 
-The pen always starts drawing in the direction of the middle, because the first **Motion** block that runs after the `pen down`{:class="block3extensions"} block is `go to x: 0 y: 0`{:class="block3motion"}. So the pen will draw a line as it moves to the centre of the Stage.
+ペンはいつも中央に向かってかき始めます。 なぜなら、`ペンを下ろす`{:class="block3extensions"}ブロックの後に最初 (さいしょ) に実行される **動き**ブロックは`x座標 (ざひょう) を0、 y座標を0にする`{:class="block3motion"}ブロックだからです。 したがって、ペンはステージの中央に移動しながら線を引くようになります。
 
 The pen doesn't stop at the edge of the Stage, because you haven’t yet told the `repeat until`{:class="block3control"} loop what condition it’s checking. This means the condition can never be met, so the loop will run on and on. This means that right now, the loop is working like a `forever`{:class="block3control"} loop.
 
