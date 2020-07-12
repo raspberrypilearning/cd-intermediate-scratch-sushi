@@ -27,7 +27,7 @@ Nell'Intermediate Scratch Sushi Cards, imparerai come:
 + Usare lo strumento Penna
 + Usare e aggiornare le variabili nei cicli
 + Usare i cicli "Repeat Until"
-+ Ottenere valori di input con i blocchi ask
++ Ottenere valori di input con i blocchi chiedi
 + Utilizzo di più elenchi con proprietà correlate per indice
 
 \--- /collapse \---
