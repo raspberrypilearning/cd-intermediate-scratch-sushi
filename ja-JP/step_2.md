@@ -36,66 +36,66 @@ Scratch でペンブロックを使うには、 **ペン拡張機能** (かく�
 **ペン**セクションから、`ペンを下ろす`{:class="block3extensions"}ブロックをえらび、次のようにプログラムの先頭に追加します。
 
 ```blocks3
-    when green flag clicked
-+    pen down
-    go to x: (0) y: (0)
+    緑色の旗が押されたとき
++ ペンを下ろす
+    x座標を (0) 、y座標を (0) にする
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Now click the green flag a few times and watch what happens.
+緑の旗 (はた) を数回クリックして、何が起きるかを見てみましょう。
 
 \--- /task \---
 
-If you can see the lines behind the cat sprite, then the pen is working and you can start making it draw really cool patterns.
+ネコのスプライトの後ろに線が出ていたら、ペンがちゃんと動いています。そしてペンを使ってとてもカッコいいもようをかくことができます。
 
-First, you should get rid of the sprite. It’s getting in the way of the drawing!
+まず、スプライトをけしましょう。 ペンでかくのにジャマだからです。
 
 \--- task \---
 
-Add a `hide`{:class="block3looks"} block from **Looks** to the start of the program and it’ll disappear.
+**見た目**セクションの`隠す`{:class="block3looks"} (かくす) ブロックをプログラムの最初 (さいしょ) に追加するとスプライトがきえます。
 
 ```blocks3
-    when green flag clicked
-+    hide
-    pen down
+    緑色の旗が押されたとき
++ 隠す
+    ペンを下ろす
 ```
 
 \--- /task \---
 
-Now, you can change the colour of the pen with another block from the **Pen** section, but the block is a little different to the others you’ve seen. It’s the `set pen color to`{:class="block3extensions"} block and looks like this:
+さて、**ペン**セクションのべつのブロックでペンの色をかえることができます。 でも、そのブロックは他の見たことのあるブロックとは少しちがいます。 それは`ペンの色を(色)にする`{:class="block3extensions"}ブロックで、次のようなブロックです。
 
 ```blocks3
-    set pen color to [#4a6cd4]
+    ペンの色を [#4a6cd4] にする
 ```
 
 \--- task \---
 
-Drag a `set pen color to`{:class="block3extensions"} block into your sprite panel, and snap it in above the `pen down`{:class="block3extensions"} block.
+`ペンの色を(色)にする`{:class="block3extensions"}ブロックをスプライトパネルにドラッグし、`ペンを下ろす`{:class="block3extensions"}ブロックの上に入れます。
 
 ```blocks3
-    when green flag clicked
-    hide
-+    set pen color to [#4a6cd4]
-    pen down
+    緑色の旗が押されたとき
+    隠す
++ペンの色を [#4a6cd4] にする
+    ペンを下ろす
 ```
 
-Now, click on the box of colour (in the code above it’s the blue one), and choose a colour.
+次に、色のついたボックス (上のコードの青い部分) をクリックして、色をえらびます。
 
 \--- /task \---
 
-If you’ve been clicking on the green flag to test your code, you’ll have noticed that the drawings the pen makes don’t go away.
+緑の旗をクリックしてコードをテストしていると、ペンでかいた絵がきえないことに気付いたと思います。
 
 \--- task \---
 
-Add a `clear`{:class="block3extensions"} block from the **Pen** section to the start of your code to take care of that:
+**ペン**セクションから`全部消す`{:class="block3extensions"} (けす) ブロックをコードの始めに追加して、かいた線がきえるようにします。
 
 ```blocks3
-    when green flag clicked
-+    clear
-    hide
+    緑色の旗が押されたとき
++ 全部消す
+    隠す
 ```
 
 \--- /task \---
