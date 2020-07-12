@@ -2,7 +2,7 @@
 
 Puoi effettivamente usare numeri casuali per far girare l'intero programma più e più volte, cambiando il modello ogni volta! Assomiglierà agli screen saver degli anni '90 ... che probabilmente non ricorderai, ma chiedi a uno dei tuoi genitori!
 
-Hai bisogno di alcune modifiche per fare ciò. Il primo è che è necessario impostare le variabili `incrementa`{: class = "block3variables"} e `gradi`{: class = "block3variables"} a caso piuttosto che chiederle all'utente. Quindi è necessario modificare alcuni dei blocchi di codice.
+Hai bisogno di alcune modifiche per fare ciò. La prima è che è necessario impostare le variabili `incrementa`{: class = "block3variables"} e `gradi`{: class = "block3variables"} a caso piuttosto che chiederle all'utente. Quindi è necessario modificare alcuni dei blocchi di codice.
 
 \--- task \---
 
@@ -26,7 +26,7 @@ Se esegui il tuo programma ora, scoprirai che disegna uno schema casuale, ma sol
 
 \--- task \---
 
-Per mantenerlo vivo, hai bisogno di un altro ciclo che funzioni per sempre (quindi un blocco `per sempre`{: class = "block3control"}) al di fuori di quello corrente. Basta trascinarne uno fuori dalla sezione **Controllo** e aggiungigli tutto il tuo codice.
+Per mantenerlo vivo, hai bisogno di un altro ciclo che funzioni per sempre (quindi un blocco `per sempre`{: class = "block3control"}) al di fuori di quello corrente. Basta trascinarne uno fuori dalla sezione **Controllo** e aggiungerlo al tuo codice.
 
 ```blocks3
     when green flag clicked
@@ -52,6 +52,6 @@ Per mantenerlo vivo, hai bisogno di un altro ciclo che funzioni per sempre (quin
 
 Ora hai davvero qualcosa di fantastico da guardare!
 
-Tuttavia, potresti notare che, di tanto in tanto, il computer disegna qualcosa che sembra abbastanza... brutto. Questo perché alcuni numeri per queste variabili sono inadatti, e alcune **combinazioni di quei numeri** sono altrettanto inadatti.
+Tuttavia, potresti notare che, di tanto in tanto, il computer disegna qualcosa che sembra abbastanza... brutto. Questo perché alcuni numeri per queste variabili sono inadatti, e alcune **combinazioni di quei numeri** sono altrettanto inadatte.
 
-Sulla prossima scheda, aiuterai il computer a scegliere solo buone combinazioni!
+Nel prossimo passaggio, aiuterai il computer a scegliere solo buone combinazioni!
