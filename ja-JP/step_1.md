@@ -6,7 +6,7 @@
 
 ## はじめに
 
-みなさんはすでに、Scratch でゲームを一つ作って Sctratch の基本 (きほん) を学びました (もしまだであれば、初心者 (しょしんしゃ) 向けの Scratch ゲーム Scratch Sushi Cardsをチェックしてください) 。 Here you’re going to learn a few more cool tricks and make one of my favourite Scratch projects: it draws colourful patterns and, if you set it up right, can be really cool to watch.
+みなさんはすでに、Scratch でゲームを一つ作って Sctratch の基本 (きほん) を学びました (もしまだであれば、初心者 (しょしんしゃ) 向けの Scratch ゲーム Scratch Sushi Cardsをチェックしてください) 。 ここでは、面白いテクニックをいくつか学び、私のお気に入りの Scratch プロジェクトを作ってみましょう。このプロジェクトはカラフルなもようをかきます。 ちゃんと動くようにすれば、とてもカッコいいものになりますよ。
 
 ![](images/pen1.png)
 
