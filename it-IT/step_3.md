@@ -1,8 +1,8 @@
 ## Disegnare forme
 
-Ora hai un programma che disegna una linea, ma disegna solo una linea. È un po' noioso! Puoi usare il ciclo `forever`{: class = "block3control"} per disegnare qualcosa più e più volte, ma poi otterrai disegni che escono dallo stage!
+Ora hai un programma che disegna una linea, ma disegna solo quella. È un po' noioso! Puoi usare il ciclo `forever`{: class = "block3control"} per disegnare qualcosa più e più volte, ma poi otterrai disegni che escono dallo stage!
 
-Quindi è necessario utilizzare un diverso tipo di ciclo chiamato ripeti fino a quando `repeat until`{: class = "block3control"}, che troverai anche nella sezione **Controllo**. Questo tipo di ciclo farà qualcosa più e più volte, fino a quando **until** una condizione Vero / Falso è soddisfatta.
+Quindi è necessario utilizzare un diverso tipo di ciclo chiamato ripeti fino a quando `repeat until`{: class = "block3control"}, che troverai nella sezione **Controllo**. Questo tipo di ciclo farà qualcosa più e più volte, fino a quando **until** una condizione Vero/Falso è soddisfatta.
 
 \--- task \---
 
@@ -77,7 +77,7 @@ Modifica il numero di passaggi nel blocco `muovi`{: class = "block3motion"} su `
 
 Se esegui il codice ora, vedrai che il disegno della penna rimane sullo schermo.
 
-Non solo, ma il tuo programma è diventato un programma di disegno cerchi! Quello che sta succedendo qui è che le curve di 15 gradi alla fine diventano 360 gradi, e così la tua penna gira in un cerchio completo. Cambierà il modo in cui si muove per fare un passo leggermente più lungo ogni volta, quindi alla fine si spegne in una spirale. Per questo, avrai bisogno di una **variabile**.
+Non solo, ma il tuo programma è diventato un programma di disegno cerchi! Quello che sta succedendo qui è che, a forza di curvare di 15 gradi, alla fine avrà curvato di 360 gradi, e così la tua penna compie un giro completo. Ora stai per cambiare il modo in cui si muove, facendo sì che ogni volta faccia un passo leggermente più lungo e quindi alla fine disegnerà una spirale. Per questo, avrai bisogno di una **variabile**.
 
 Le variabili sono fondamentalmente luoghi etichettati per memorizzare numeri o altre informazioni che ti interessano. Puoi crearli nella sezione **Variabili**.
 
@@ -124,6 +124,6 @@ Quindi ha senso inserire i passaggi di modifica `cambia passi di 1`{: class = "b
 
 \--- task \---
 
-Ora esegui il programma, e prova anche a cambiare il numero di gradi (prova `76` e `120`)!
+Ora esegui il programma e prova anche a cambiare il numero di gradi (prova `76` e `120`)!
 
 \--- /task \---
