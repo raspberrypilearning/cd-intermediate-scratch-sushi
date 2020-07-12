@@ -1,7 +1,7 @@
 ---
-title: Pattern pen
+title: もようを作るペン
 hero_image: images/banner.png
-description: Make a cool pattern generator
+description: カッコいいもようを作るジェネレーターを作ろう
 theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
@@ -17,9 +17,9 @@ version: 4.0.0
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: はじめに
   - 
-    title: Using the Pen tool
+    title: ペンツールを使用する
   - 
     title: Drawing patterns
   - 
