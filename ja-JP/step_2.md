@@ -1,39 +1,39 @@
-## Using the Pen tool
+## ペンツールを使用する
 
-The project you're going to make relies on the **Pen** tool, which draws a line behind the centre of a sprite as it moves. You’re going to learn to use it now!
+これから作るプロジェクトは、 **ペン** ツールを使います。このツールは、スプライトの中心点が移動 (いどう) した跡 (あと) を線として表示 (ひょうじ) するものです。 このプロジェクトで、その使いかたをおぼえましょう！
 
 \--- task \---
 
-Open a new Scratch file, select the Scratch Cat sprite, and drag in a few blocks you may have already seen, until it looks like this:
+新しい Scratch ファイルを開き、ネコのスプライトをえらびます。 そして次の通りになるよう、ブロックメニューからスプライトパネルにブロックをドラッグします。
 
 ```blocks3
-    when green flag clicked
-    go to x: (0) y: (0)
-    move (50) steps
-    turn cw (15) degrees
+    緑色の旗が押されたとき
+    x座標を (0) 、y座標を (0) にする
+    (50) 歩動かす
+    cw (15) 度回す
 ```
 
 \--- /task \---
 
-Now, time to test out the pen!
+さあ、ペンをテストしてみましょう！
 
-To use the Pen blocks in Scratch, you need add the **Pen extension**.
+Scratch でペンブロックを使うには、 **ペン拡張機能** (かくちょうきのう) を追加 (ついか) する必要があります。
 
 \--- task \---
 
-Click on the **Add extension** button in the bottom left-hand corner.
+左下すみにある[ **拡張機能を追加**] ボタンをクリックします。
 
-![add extension button highlighted](images/add-extension-annotated.png)
+![強調表示された「拡張機能を追加」ボタン](images/add-extension-annotated.png)
 
-Click on the **Pen** extension to add it.
+**ペン** 拡張機能をクリックして追加します。
 
-![pen extension highlighted](images/click-pen-annotated.png)
+![強調表示されたペン拡張機能](images/click-pen-annotated.png)
 
-The Pen section then appears at the bottom of the blocks menu.
+ペンセクションがブロックメニューの下の方に追加されます。
 
-![pen extension blocks](images/pen-extension-blocks.png)
+![ペン拡張機能ブロック](images/pen-extension-blocks.png)
 
-From the **Pen** section, select the `pen down`{:class="block3extensions"} block and add it to the start of your program, like this:
+**ペン**セクションから、`ペンを下ろす`{:class="block3extensions"}ブロックをえらび、次のようにプログラムの先頭に追加します。
 
 ```blocks3
     when green flag clicked
