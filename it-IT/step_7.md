@@ -1,6 +1,6 @@
 ## Aiutare il computer
 
-Ti ricordi alcuni passi indietro, in cui ti ho detto di scrivere alcuni dei tuoi valori preferiti per `incrementa`{: class = "block3variables"} e `Gradi`{: class = "block3variables"}, quelli che hanno dato i modelli più belli? Se non l'hai fatto, non ti preoccupare: puoi solo guardare il programma random per un po' di tempo e annotare le combinazioni che danno ottimi risultati.
+Ricordi, alcuni passaggi fa, quando ti dissi di scegliere alcuni dei tuoi valori preferiti per `incrementa`{: class = "block3variables"} e `Gradi`{: class = "block3variables"}, tra quelli che avevano dato i modelli più belli? Se non l'hai fatto, non ti preoccupare: puoi solo guardare il programma random per un po' di tempo e annotare le combinazioni che danno i risultati migliori.
 
 Insegnerai a Scratch quelle combinazioni di valori, in modo che possa usarli per creare solo immagini fantastiche!
 
@@ -34,7 +34,7 @@ Assicurati che il valore `Gradi`{: class = "block3variables"} e il valore `incre
 
 \--- /task \---
 
-Ora hai le liste, devi solo ottenere il tuo codice per leggerle e ripetere il ciclo! Per fare questo, utilizzerai una nuova variabile per agire come un contatore, alcuni **incrementando**e un `se allora`{: class = "block3control"} da **Controllo**.
+Ora hai le liste, devi solo ottenere il tuo codice per leggerle e ripetere il ciclo! Per fare questo, utilizzerai una nuova variabile che funzionerà da contatore, alcuni **incrementi**e un `se allora`{: class = "block3control"} da **Controllo**.
 
 ## \--- collapse \---
 
@@ -77,7 +77,7 @@ Crea una nuova variabile chiamata ` contatore ` {: class = "block3variables"} e 
 
 \--- /task \---
 
-Notare i nuovi blocchi che:
+Nota i nuovi blocchi che:
 
 1. Imposta `counter`{: class = "block3variables"} a `0`, fuori da tutti i loop.
 2. Verifica se il numero memorizzato in `counter`{: class = "block3variables"} è pari alla lunghezza dell'elenco e, in tal caso, imposta `counter`{: class = "block3variables"} a `0`. Ciò significa che questa variabile sarà sempre al massimo pari al numero di posizioni negli elenchi e non più grande.
@@ -114,7 +114,7 @@ Questo è quello che succede quando esegui il tuo programma:
 
 \--- task \---
 
-Una volta che sei soddisfatto del codice, vai avanti e aggiungi il resto delle coppie di valori che hai annotato in `Lista Gradi`{: class = "block3variables"} e la `Lista Incrementi`{: class = "block3variables"}.
+Una volta che sei soddisfatto del codice, vai avanti e aggiungi il resto delle coppie di valori che hai annotato in `Lista Gradi`{:class="block3variables"} e `Lista Incrementi`{:class="block3variables"}.
 
 \--- /task \---
 
