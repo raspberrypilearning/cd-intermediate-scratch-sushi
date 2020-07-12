@@ -28,7 +28,7 @@ Ora devi chiedere i valori per queste due variabili e memorizzarle. Lo fai usand
 
 Trascina il blocco `Chiedi e aspetta`{: class = "block3sensing"} nel tuo pannello sprite e cambia la domanda in `Quanti passi devo fare?`{: class = "block3sensing"}
 
-Quindi aggiungilo al tuo programma, subito dopo aver impostato `passi`{: class = "block3variables"} a `0`, come questo:
+Quindi aggiungilo al tuo programma, subito dopo aver impostato `passi`{: class = "block3variables"} a `0`, come qui:
 
 ```blocks3
     when green flag clicked
@@ -39,7 +39,7 @@ Quindi aggiungilo al tuo programma, subito dopo aver impostato `passi`{: class =
 
 \--- /task \---
 
-Ora hai il tuo programma che fa una domanda, ne hai bisogno per ricordare la risposta! Salta fuori che Scratch ha una variabile speciale chiamata `answer`{: class = "block3sensing"}, dove memorizza la risposta più recente che ha ricevuto. È possibile trovare questa variabile tra i blocchi **Sensori**.
+Ora hai il tuo programma che fa una domanda, hai bisogno di qualcosa per ricordare la risposta! Salta fuori che Scratch ha una variabile speciale chiamata `answer`{: class = "block3sensing"}, dove memorizza la risposta più recente che ha ricevuto. È possibile trovare questa variabile tra i blocchi **Sensori**.
 
 \--- task \---
 
