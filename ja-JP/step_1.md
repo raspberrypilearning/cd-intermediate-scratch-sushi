@@ -22,11 +22,11 @@
 
 ## title: 学ぶこと
 
-このプロジェクトでは、次のことができるようになります。
+このプロジェクトでは、次のことを学びます。
 
 + ペンツールの使い方
 + Using and updating variables in loops
-+ Using Repeat Until loops
++ 「まで繰り返す (くりかえす) 」ループの使い方
 + Getting input values with ask blocks
 + Using multiple lists with properties related by index
 
