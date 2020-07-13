@@ -1,121 +1,121 @@
-## Helping the computer
+## コンピューターを手助けする
 
-Do you remember a few steps back, where I told you to write down some of your favourite values for `increase`{:class="block3variables"} and `degrees`{:class="block3variables"}, the ones that gave the best-looking patterns? If you didn't do this, don’t worry: you can just watch the random program run for a while now and write down the combinations that give great results.
+何ステップか前に、カッコいいもようができる`ふやす量`{:class="block3variables"}と`回転角度`{:class="block3variables"}の値を書きとめるように言ったことをおぼえていますか? もし書きとめていなくてもだいじょうぶです。 プログラムがランダムにえがくのをしばらく見て、すてきな結果をもたらす組み合わせを書きとめればよいのです。
 
-You’re going to teach Scratch those combinations of values, so it can use them to make nothing but awesome pictures!
+Scratch にその値の組み合わせを教えてあげれば、それを使ってすてきな図形だけをえがきます！
 
-To do this, you’ll need a **list**. You’ll find lists with the variables in the **Variables** section. Just like you did with your variables, you’ll need to create your list first!
+これを行うには、**リスト**が必要です。 **変数**セクションに変数のリストがあります。 変数と同じように、最初にリストを作成する必要があります！
 
 \--- task \---
 
-Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
+**リストを作る**をクリックし、名前として`回転角度リスト`{:class="block3variables"}と入力します。
 
 ![](images/makeAList.png)
 
 \--- /task \---
 
-Your list, which is empty at the moment, will appear on the Stage, and you'll see a bunch of blocks for it in **Variables**.
+あなたのリストは、現在空になっていますが、ステージ上に表示されます。リストが使えるブロックが**変数**セクションにたくさんあります。
 
 ![](images/listBlocks.png)
 
 \--- task \---
 
-Make another list called `Increase List`{:class="block3variables"}
+`ふやす量リスト`{:class="block3variables"}というべつのリストを作ります。
 
 \--- /task \---
 
 \--- task \---
 
-Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
+リストの下部にある小さなプラス記号 (**+**) をクリックして、`ふやす量`{:class="block3variables"}と`回転角度`{:class="block3variables"}に好きな値の最初の組み合わせを追加します。それぞれの値を適切 (てきせつ) なリストに追加します。 同じように、2番目の値の組み合わせも追加します。 今のところこれで十分です。後でのこりの好きな値の組み合わせを追加します。
 
 ![](images/helping2.png)
 
-Make sure that the `degrees`{:class="block3variables"} value and the `increase`{:class="block3variables"} value that worked well together are at the same position in the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. They need to be there so your program can match them up again using their position!
+うまくかけた`回転角度`{:class="block3variables"}の値と`ふやす量`{:class="block3variables"}の値は、`回転角度リスト` {:class="block3variables"}および`増やす量リスト`{:class="block3variables"}の中で同じ位置 (いち) にあることをたしかめましょう。 プログラムがリスト内の位置を使ってまた組み合わせられるように、同じ位置にある必要があるのです！
 
 \--- /task \---
 
-Now you have the lists, you just need to get your code to read them and loop over them! To do this, you’re going to use a new variable to act as a counter, some **incrementing**, and an `if then`{:class="block3control"} **Control** block.
+これでリストができました。あとはコードでリスト内の値を繰り返して読みこむだけです！ これを行うには、カウンターとして使う新しい変数、**インクリメント**処理 (しょり) 、および`もし(・・・)なら`{:class="block3control"} **制御** (せいぎょ) ブロックを使います。
 
 ## \--- collapse \---
 
-## title: What does incrementing mean?
+## title: インクリメントとは何を意味するのですか？
 
-To increment something means to add something to it.
+何かをインクリメントするとは、それに何かを追加することです。
 
-You will use a variable to act as a counter to keep track of what position you're at in your lists. To move through the lists, you'll keep incrementing the counter by `1` (so, adding `1` to it) until you get to the end of the list.
+リスト内のどの位置にあるかを知るために、変数をカウンターとして使用します。 リスト内を移動するには、リストの最後までカウンターを`1`ずつインクリメントします (つまり、`1`を追加します)。
 
 \--- /collapse \---
 
 \--- task \---
 
-Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
+`カウンター`{:class="block3variables"}という新しい変数を作成し、次のようにコードを変えます。
 
 ```blocks3
-    when green flag clicked
-    set [counter v] to [0]
-    forever 
-+        if <(counter) = (length of [Increase List v] :: list)> then 
-+            set [counter v] to [0]
+    緑色の旗が押されたとき
+    [カウンター v] を [0] にする
+    ずっと 
++        もし <(カウンター) = ([ふやす量リスト v] の長さ :: list)> なら 
++            [カウンター v] を [0] にする
         end
-+        change [counter v] by (1)
-        set [steps v] to [0]
-+        set [increase v] to (item (counter) of [Increase List v] :: list)
-+        set [degrees v] to (item (counter) of [Degrees List v] :: list)
-        pen up
-        hide
-        clear
-        go to x: (0) y: (0)
-        set pen color to [#4a6cd4]
-        pen down
-        repeat until <touching [edge v] ?> 
-            move (steps) steps
-            turn cw (degrees) degrees
-            change [steps v] by (increase)
-        end
++        [カウンター v] を (1) ずつ変える
+    [ステップ数 v] を [0] にする
+    [ふやす量 v] を ([ふやす量リスト v] の (カウンター) 番目 :: list) にする
+    [回転角度 v] を ([回転角度リスト v] の (カウンター) 番目 :: list) にする
+    ペンを上げる
+    隠す
+    全部消す
+    x座標を (0) 、y座標を (0) にする
+    ペンの色を [#4a6cd4] にする
+    ペンを下ろす
+    <touching [edge v] ?> まで繰り返す
+        (ステップ数) 歩動かす
+        cw (回転角度) 度回す
+        [ステップ数 v] を (ふやす量) ずつ変える
     end
+  end
 ```
 
 \--- /task \---
 
-Notice the new blocks that:
+新しいブロックは次のことを行っていることに注意してください。
 
-1. Set `counter`{:class="block3variables"} to `0`, outside all the loops.
-2. Check if the number stored in `counter`{:class="block3variables"} is the length of the list, and if so, set `counter`{:class="block3variables"} to `0`. This means that this variable will always be the number of a position in the lists, and won't get any bigger than that.
-3. Add `1` to `counter`{:class="block3variables"}.
-4. Pick the item from `Increase List`{:class="block3variables"} that is at the position described by `counter`{:class="block3variables"}, and put it in the `increase`{:class="block3variables"} variable. Do the same for the `Degrees List`{:class="block3variables"} and `degrees`{:class="block3variables"} variable.
+1. すべてのループの外で`カウンター`{:class="block3variables"}を`0`に設定します。
+2. `カウンター`{:class="block3variables"}に保存されている値がリストの長さと同じであるかどうかを確認し、もしそうなら、`カウンター`{:class="block3variables"}を`0`に設定します。 つまり、この変数はいつもリスト内の位置の番号であり、それより大きくなることはありません。
+3. `カウンター`{:class="block3variables"}に`1`を追加します。
+4. `ふやす量リスト`{:class="block3variables"}の`カウンター`{:class="block3variables"}の値の位置にある数値を取り出し、`ふやす量`{:class="block3variables"}変数に入れます。 `回転角度リスト`{:class="block3variables"}と`回転角度`{:class="block3variables"}変数についても同じことをします。
 
 ## \--- collapse \---
 
-## title: How does the code work?
+## title: コードはどのように動作しますか?
 
-This is what happens when you run your program:
+プログラムを実行すると次のようなことが起こります。
 
-1. Set `counter`{:class="block3variables"} to `0`.
-2. Start the `forever`{:class="block3control"} loop.
-3. Check if `counter`{:class="block3variables"} (`0`) is the same as the length of `Increase List`{:class="block3variables"} (`2`). It isn’t.
-4. Change `counter`{:class="block3variables"} by `1`. Now `counter`{:class="block3variables"} = `1`.
-5. Set `steps`{:class="block3variables"} to `0`.
-6. Get the item at the position named by `counter`{:class="block3variables"} (`1`) in the `Increase List`{:class="block3variables"}, and put it in `increase`{:class="block3variables"}.
-7. Get the item at the position named by `counter`{:class="block3variables"} (`1`) in the `Degrees List`{:class="block3variables"}, and put it in `degrees`{:class="block3variables"}.
-8. Do all the stuff related to drawing the patterns.
-9. Restart the `forever`{:class="block3control"} loop:
-10. Check if `counter`{:class="block3variables"} (`1`) is the same as the length of `Increase List`{:class="block3variables"} (`2`). It isn’t.
-11. Change `counter`{:class="block3variables"} by `1`. Now `counter`{:class="block3variables"} = `2`.
-12. Set `steps`{:class="block3variables"} to `0`.
-13. Get the item at the position named by `counter`{:class="block3variables"} (`2`) in the `Increase List`{:class="block3variables"}, and put it in `increase`{:class="block3variables"}.
-14. Get the item at the position named by `counter`{:class="block3variables"} (`2`) in the `Degrees List`{:class="block3variables"}, and put it in `degrees`{:class="block3variables"}.
-15. Do all the stuff related to drawing the patterns.
-16. Restart the `forever`{:class="block3control"} loop:
-17. Check if `counter`{:class="block3variables"} (`2`) is the same as the length of the `Increase List`{:class="block3variables"} (`2`). It is!
-18. Set `counter`{:class="block3variables"} to `0`.
-19. Continue from **step 4** of this list, in a never-ending loop!
+1. `カウンター`{:class="block3variables"}を`0`に設定します。
+2. `ずっと`{:class="block3control"}ループを開始します。
+3. `カウンター`{:class="block3variables"}の値(`0<0`)が`ふやす量リスト`{:class="block3variables"}の長さ(`2`)と同じかどうかをたしかめます。 同じではありません。
+4. `カウンター`{:class="block3variables"}を`1`だけ変えます。 これで `カウンター`{:class="block3variables"} = `1`になりました。
+5. `ステップ数`{:class="block3variables"} を `0`に設定します。
+6. `ふやす量リスト`{:class="block3variables"}の`カウンター`{:class="block3variables"}の値(`1`)の位置にある数値を取得 (しゅとく) し、`ふやす量`{:class="block3variables"}に入れます。
+7. `回転角度リスト`{:class="block3variables"}の`カウンター`{:class="block3variables"}の値(`1`)の位置にある数値を取得し、`回転角度`{:class="block3variables"}に入れます。
+8. もようをかくことに関連するすべてのことを行います。
+9. `ずっと`{:class="block3control"}ループの最初にもどります。
+10. `カウンター`{:class="block3variables"}の値(`1`)が`ふやす量リスト`{:class="block3variables"}の長さ(`2`)と同じかどうかをたしかめます。 同じではありません。
+11. `カウンター`{:class="block3variables"}を`1`だけ変えます。 これで `カウンター`{:class="block3variables"} = `2`になりました。
+12. `ステップ数`{:class="block3variables"} を `0`に設定します。
+13. `ふやす量リスト`{:class="block3variables"}の`カウンター`{:class="block3variables"}の値(`2`)の位置にある数値を取得し、`ふやす量`{:class="block3variables"}に入れます。
+14. `回転角度リスト`{:class="block3variables"}の`カウンター`{:class="block3variables"}の値(`2`)の位置にある数値を取得し、`回転角度`{:class="block3variables"}に入れます。
+15. もようをかくことに関連するすべてのことを行います。
+16. `ずっと`{:class="block3control"}ループの最初にもどります。
+17. `カウンター`{:class="block3variables"}の値(`2`)が`ふやす量リスト`{:class="block3variables"}の長さ(`2`)と同じかどうかをたしかめます。 同じです！
+18. `カウンター`{:class="block3variables"}を`0`に設定します。
+19. このリストの**ステップ4**から、終わりのないループでつづきます！
 
 \--- /collapse \---
 
 \--- task \---
 
-Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}.
+コードに満足 (まんぞく) したら 先に進んで、メモしたのこりの値の組み合わせを`回転角度リスト`{:class="block3variables"}と`ふやす量リスト`{:class="block3variables"}に追加してください。
 
 \--- /task \---
 
-That's it! Sit back and watch your program keep drawing lovely patterns in a never-ending loop! If you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
+以上で終わりです！ くつろいで、プログラムが終わりのないループですてきなもようをかきつづけるのを見ましょう！ さらにもようを追加したい場合は、2つのリストに数値の組み合わせを追加して、プログラムを再起動するだけでOKです。
