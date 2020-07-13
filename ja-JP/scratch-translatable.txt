@@ -8,8 +8,8 @@
 
 何度回転しますか？
 
-Increase list
+ふやす量リスト
 
-Degrees list
+回転角度リスト
 
-counter
+カウンター
