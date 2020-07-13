@@ -1,40 +1,40 @@
-## Cooler lines
+## もっとカッコいい線
 
-Time to add colour! Right now, your line is one colour, but the **Pen** has blocks that can change its colour. And with the right **Operator** block, you can even change the colour randomly!
+色を追加しましょう！ 今のところ、線は1色ですが、**ペン**には色を変えることができるブロックがあります。 そして、**演算** (えんざん) ブロックを使えば、ランダムに色を変えることもできます！
 
-The block for changing the **Pen** colour is `change pen color by`{:class="block3extensions"}:
+**ペン**の色を変えるブロックは、`ペンの色を(10)ずつ変える`{:class="block3extensions"}ブロックです。
 
 ```blocks3
-    change pen color by (10)
+    ペンの色を (10) ずつ変える
 ```
 
 \--- task \---
 
-Grab one of those blocks and put it into your `repeat until`{:class="block3control"} loop, like this:
+このブロックを`まで繰り返す`{:class="block3control"}ループに入れます。このようになります。
 
 ```blocks3
-    repeat until <touching [edge v] ?> 
-+        change pen color by (10)
-        move (steps) steps
-        turn cw (degrees ::variables) degrees
-        change [steps v] by (increase ::variables)
+    <touching [edge v] ?> まで繰り返す
++ ペンの色を (10) ずつ変える
+        (ステップ数) 歩動かす
+        cw (回転角度 ::variables) 度回す
+        [ステップ数 v] を (ふやす量 ::variables) ずつ変える
     end
 ```
 
 \--- /task \---
 
-That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly.
+カッコいいですが、ちょっと予想がつきますね。 ランダムな数字を使うと色がランダムに変化するので、もっと楽しくすることができます。
 
 \--- task \---
 
-Put the random number **Operator** block into the `change pen color by`{:class="block3extensions"} block and pick some values to go in it. I'd try `1` and `100` to start.
+乱数 (らんすう) の**演算**ブロックを`ペンの色を(10)ずつ変える`{:class="block3extensions"}ブロックに入れて、乱数の範囲 (はんい) を指定します。 ここでは`1`と`100`を入れてみます。
 
 ```blocks3
-    repeat until <touching [edge v] ?> 
-+        change pen color by (pick random (1) to (100))
-        move (steps) steps
-        turn cw (degrees ::variables) degrees
-        change [steps v] by (increase ::variables)
+    <touching [edge v] ?> まで繰り返す
++ ペンの色を ((1) から (100) までの乱数) ずつ変える
+        (ステップ数) 歩動かす
+        cw (回転角度 ::variables) 度回す
+        [ステップ数 v] を (ふやす量 ::variables) ずつ変える
     end
 ```
 
@@ -42,6 +42,6 @@ Put the random number **Operator** block into the `change pen color by`{:class="
 
 \--- task \---
 
-Try running it again, and watch the random rainbow!
+もう一度実行してみて、ランダムな色のにじを見ましょう！
 
 \--- /task \---
