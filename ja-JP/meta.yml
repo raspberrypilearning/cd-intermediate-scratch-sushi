@@ -1,0 +1,25 @@
+---
+title: もようを作るペン
+hero_image: images/banner.png
+description: カッコいいもようを作るジェネレーターを作ろう
+theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
+interests: art
+technologies: scratch
+site_areas: coderdojo
+hardware:
+software: scratch
+version: 4.0.0
+last_tested: 2017-01-01
+steps:
+  - title: はじめに
+  - title: ペンツールを使用する
+  - title: もようをかく
+  - title: 入力をもとめる
+  - title: もっとカッコいい線
+  - title: すべてをランダムにする
+  - title: コンピューターを手助けする
