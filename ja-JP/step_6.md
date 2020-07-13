@@ -26,32 +26,32 @@
 
 \--- task \---
 
-You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
+何度も繰り返して実行するために、今あるループの外がわにずっと実行するべつのループ(`ずっと`{:class="block3control"}ブロックです！)が必要です。 **制御**セクションから「ずっと」ブロックをドラッグして、他のすべてのコードを中に入れます。
 
 ```blocks3
-    when green flag clicked
-+    forever 
-        set [steps v] to [0]
-        set [increase v] to (pick random (1) to (10))
-        set [degrees v] to (pick random (1) to (180))
-        pen up
-        hide
-        clear
-        go to x: (0) y: (0)
-        set pen color to [#4a6cd4]
-        pen down
-        repeat until <touching [edge v] ?> 
-            move (steps) steps
-            turn cw (degrees) degrees
-            change [steps v] by (increase)
-        end
+    緑色の旗が押されたとき
++ ずっと
+    [ステップ数 v] を [0] にする
+    [ふやす量 v] を ((1) から (10) までの乱数) にする
+    [回転角度 v] を ((1) から (180) までの乱数) にする
+    ペンを上げる
+    隠す
+    全部消す
+    x座標を (0) 、y座標を (0) にする
+    ペンの色を [#4a6cd4] にする
+    ペンを下ろす
+    <touching [edge v] ?> まで繰り返す
+        (ステップ数) 歩動かす
+        cw (回転角度) 度回す
+        [ステップ数 v] を (ふやす量) ずつ変える
     end
+  end
 ```
 
 \--- /task \---
 
-Now you’ve really got something awesome to look at!
+これで、とてもすてきなものが出来上がりました！
 
-However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
+しかし、コンピュータがかくものがときどきとても...ひどいことがあるのに気づくかもしれません。 これは、変数の中のいくつかの数字がわるい選択 (せんたく) であり、数字の**組み合わせ**もわるい選択であるためです。
 
-On the next card, you'll help the computer to pick only good combinations!
+次のステップでは、コンピューターがちゃんとした組み合わせのみを選べるようにします。
