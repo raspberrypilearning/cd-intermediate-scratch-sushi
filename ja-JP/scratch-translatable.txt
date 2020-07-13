@@ -1,12 +1,12 @@
-steps
+ステップ数
 
-degrees
+回転角度
 
-increase
+ふやす量
 
-How many steps should I grow by?
+何ステップずつふやしますか？
 
-How many degrees should I turn?
+何度回転しますか？
 
 Increase list
 
