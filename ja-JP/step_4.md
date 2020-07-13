@@ -1,6 +1,6 @@
 ## 入力をもとめる
 
-さて、すでにかなりクールになっていますが、べつのもようをかきたい時に毎回コードを編集 (へんしゅう) する必要があるのは少しうんざりします。 プログラムが使用する値を聞いてくれるようになればいいのではないでしょうか？ こうすればできます。
+さて、すでにかなりクールになっていますが、べつのもようをかきたい時に毎回コードを編集 (へんしゅう) する必要があるのは少しめんどうです。 プログラムが使用する値を聞いてくれるようになればいいのではないでしょうか？ こうすればできます。
 
 \--- task \---
 
@@ -13,10 +13,10 @@
 そして、次のように新しい変数をコードに追加します。
 
 ```blocks3
-    repeat until <touching [edge v] ?> 
-        move (steps) steps
-        turn cw (degrees ::variables) degrees
-        change [steps v] by (increase ::variables)
+    <touching [edge v] ?> まで繰り返す
+        (ステップ数) 歩動かす
+        cw (回転角度 ::variables) 度回す
+        [ステップ数 v] を (ふやす量 ::variables) ずつ変える
     end
 ```
 
@@ -31,60 +31,60 @@
 そして、プログラムの`ステップ数`{:class="block3variables"}を`0`にした直後にこのブロックを追加します。次のようになります。
 
 ```blocks3
-    when green flag clicked
-    set [steps v] to [0]
-+    ask [How many steps should I grow by?] and wait
-    pen up
+    緑色の旗が押されたとき
+    [ステップ数 v] を [0] にする
++    [何ステップずつふやしますか？] と聞いて待つ
+    ペンを上げる
 ```
 
 \--- /task \---
 
-Now you’ve got your program asking a question, you need it to remember the answer! It turns out that Scratch has a special variable called `answer`{:class="block3sensing"}, where it stores the most recent answer it has received. You can find this variable among the **Sensing** blocks.
+プログラムがたずねるようになったので、入力する答えをおぼえさせる必要があります。 Scratch には`答え`{:class="block3sensing"}というとくべつな変数があり、そこには受け取った一番新しい答えがしまわれています。 この変数は、**調べる**ブロックにあります。
 
 \--- task \---
 
-Using a `set to`{:class="block3variables"} block from **Variables**, take the value of `answer`{:class="block3sensing"} and store it in the `increase`{:class="block3variables"} variable like so:
+**変数**セクションの`(変数)を(0)にする`{:class="block3variables"}ブロックを使って、`答え`{:class="block3sensing"}の値を、`ふやす量`{:class="block3variables"}変数に保存します。
 
 ```blocks3
-    ask [How many steps should I grow by?] and wait
-+    set [increase v] to (answer)
-```
-
-\--- /task \---
-
-\--- task \---
-
-Now, do the same thing with `degrees`{:class="block3variables"}, asking `How many degrees should I turn?`{:class="block3sensing"} and storing the value of `answer`{:class="block3sensing"} in `degrees`{:class="block3variables"}:
-
-```blocks3
-    set [increase v] to (answer)
-+    ask [How many degrees should I turn?] and wait
-+    set [degrees v] to (answer)
+    [何ステップずつふやしますか？] と聞いて待つ
++    [ふやす量 v] を (答え) にする
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Check your program now looks like the one below, and run it a few times with different numbers. Write down the answers that make the coolest pictures. You’ll need them in a later step!
+次に、`回転角度`{:class="block3variables"}で同じことをします。`何度回転しますか？`{:class="block3sensing"}とたずね、`答え`{:class="block3sensing"}の値を`回転角度`{:class="block3variables"}に保存します。
 
 ```blocks3
-    when green flag clicked
-    set [steps v] to [0]
-    ask [How many steps should I grow by?] and wait
-    set [increase v] to (answer)
-    ask [How many degrees should I turn?] and wait
-    set [degrees v] to (answer)
-    pen up
-    hide
-    clear
-    go to x: (0) y: (0)
-    set pen color to [#4a6cd4]
-    pen down
-    repeat until <touching [edge v] ?> 
-        move (steps) steps
-        turn cw (degrees) degrees
-        change [steps v] by (increase)
+    [ふやす量 v] を (答え) にする
++    [何度回転しますか？] と聞いて待つ
++    [回転角度 v] を (答え) にする
+```
+
+\--- /task \---
+
+\--- task \---
+
+プログラムが次のようになっていることをたしかめてから、ちがう数値で数回実行します。 一番カッコいいもようになる答えを書いておきましょう。 後のステップでその数値が必要になります！
+
+```blocks3
+    緑色の旗が押されたとき
+    [ステップ数 v] を [0] にする
+    [何ステップずつふやしますか？] と聞いて待つ
+    [ふやす量 v] を (答え) にする
+    [何度回転しますか？] と聞いて待つ
+    [回転角度 v] を (答え) にする
+    ペンを上げる
+    隠す
+    全部消す
+    x座標を (0) 、y座標を (0) にする
+    ペンの色を [#4a6cd4] にする
+    ペンを下ろす
+    <touching [edge v] ?> まで繰り返す
+        (ステップ数) 歩動かす
+        cw (回転角度) 度回す
+        [ステップ数 v] を (ふやす量) ずつ変える
     end
 ```
 
