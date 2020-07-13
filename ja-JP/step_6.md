@@ -1,28 +1,28 @@
-## Randomise the whole thing
+## すべてをランダムにする
 
-You can actually use random numbers to make the whole program run over and over, changing the pattern each time! It'll look a bit like screen savers did in the 1990s...which you probably won't remember, but ask one of your parents!
+じっさいに乱数を使って、プログラム全体を何度も実行し、そのたびにもようを変えることができます。 1990年代のスクリーンセーバーのようになりますが・・・おぼえていないかもしれませんね。お父さんかお母さんに聞いてみてください。
 
-You need a few changes to make this happen. The first one is that you need to set the `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} variables randomly rather than asking for them from the user. So you need to change some of your code blocks.
+そうするには、いくつか変える必要があります。 まず最初に、ユーザーにたずねるのではなく、`ふやす量`{:class="block3variables"}と`回転角度`{:class="block3variables"}変数をランダムに設定 (せってい) する必要があります。 したがって、コードブロックの一部を変える必要があります。
 
 \--- task \---
 
-Remove the questions from your code, and update it to use random numbers instead.
+コードから質問ブロックを削除 (さくじょ) し、代わりに乱数を使いましょう。
 
 ```blocks3
-    when green flag clicked
-    set [steps v] to [0]
--    ask [How many steps should I grow by?] and wait
-+    set [increase v] to (pick random (1) to (10))
--    ask [How many degrees should I turn?] and wait
-+    set [degrees v] to (pick random (1) to (180))
-    pen up
+    緑色の旗が押されたとき
+    [ステップ数 v] を [0] にする
+- [何ステップずつふやしますか？] と聞いて待つ
++ [ふやす量 v] を ((1) から (10) までの乱数) にする
+- [何度回転しますか？] と聞いて待つ
++ [回転角度 v] を ((1) から (180) までの乱数) にする
+    ペンを上げる
 ```
 
 \--- /task \---
 
-If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
+今プログラムを実行すると、ランダムなもようがえがかれますが、1回だけで終わってしまいます。 なぜだと思いますか？
 
-It’s because the loop only runs until it reaches the edge of the Stage.
+これは、ループがステージの端に到達 (とうたつ) するまでしか実行されないためです。
 
 \--- task \---
 
