@@ -25,9 +25,9 @@
 このプロジェクトでは、次のことを学びます。
 
 + ペンツールの使い方
-+ Using and updating variables in loops
++ ループ内での変数 (へんすう) の使い方とその更新 (こうしん) のやり方
 + 「まで繰り返す (くりかえす) 」ループの使い方
-+ Getting input values with ask blocks
++ 「と聞いて待つ」ブロックを使って入力した値 (あたい) を取得 (しゅとく) する方法
 + Using multiple lists with properties related by index
 
 \--- /collapse \---
