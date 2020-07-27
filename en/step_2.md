@@ -4,7 +4,19 @@ The project you're going to make relies on the **Pen** tool, which draws a line 
 
 --- task ---
 
-Open a new Scratch file, select the Scratch Cat sprite, and drag in a few blocks you may have already seen, until it looks like this: 
+Open a new Scratch project.
+
+**Online:** open a new online Scratch project at [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
+
+**Offline:** open a new project in the offline editor.
+
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
+
+--- /task ---
+
+--- task ---
+
+Select the Scratch Cat sprite, and drag in a few blocks you may have already seen, until it looks like this: 
 
 ```blocks3
     when green flag clicked
