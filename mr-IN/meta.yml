@@ -1,0 +1,32 @@
+---
+title: पॅटर्न पेन
+hero_image: images/banner.png
+description: छान पॅटर्न जनरेटर बनवा
+theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
+interests: art
+technologies: scratch
+site_areas: coderdojo
+hardware:
+software: scratch
+version: 4.0.0
+last_tested: 2017-01-01
+steps:
+  - 
+    title: परिचय
+  - 
+    title: पेन टूल वापरणे
+  - 
+    title: रेखांकन नमुने
+  - 
+    title: इनपुट मागत आहे
+  - 
+    title: छान ओळी
+  - 
+    title: संपूर्ण गोष्ट अनियमित रित्या
+  - 
+    title: संगणकास मदत करणे
