@@ -4,7 +4,19 @@
 
 \--- task \---
 
-Άνοιξε ένα νέο αρχείο Scratch, επίλεξε το αντικείμενο της γάτας Scratch και σύρε μερικά μπλοκ που ίσως έχεις ήδη δει, μέχρι να μοιάζει με αυτό:
+Open a new Scratch project.
+
+**Online:** open a new online Scratch project at [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
+
+**Offline:** open a new project in the offline editor.
+
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
+
+\--- /task \---
+
+\--- task \---
+
+Select the Scratch Cat sprite, and drag in a few blocks you may have already seen, until it looks like this:
 
 ```blocks3
     when green flag clicked
@@ -15,25 +27,25 @@
 
 \--- /task \---
 
-Είναι ώρα να δοκιμάσεις την πένα!
+Now, time to test out the pen!
 
-Για να χρησιμοποιήσεις τα μπλοκ Πένας στο Scratch, πρέπει να προσθέσεις την επέκταση **"Πένα"**.
+To use the Pen blocks in Scratch, you need add the **Pen extension**.
 
 \--- task \---
 
-Κάνε κλικ στην **Προσθήκη επέκτασης** στην κάτω αριστερή γωνία.
+Click on the **Add extension** button in the bottom left-hand corner.
 
-![το κουμπί Πρόσθεσε επέκταση είναι τονισμένο](images/add-extension-annotated.png)
+![add extension button highlighted](images/add-extension-annotated.png)
 
-Κάνε κλικ στην επέκταση **"Πένα"** για να την προσθέσεις.
+Click on the **Pen** extension to add it.
 
-![η επέκταση 'Πένα' είναι τονισμένη](images/click-pen-annotated.png)
+![pen extension highlighted](images/click-pen-annotated.png)
 
-Στη συνέχεια, η ενότητα "Πένα" εμφανίζεται στο κάτω μέρος του μενού των μπλοκ.
+The Pen section then appears at the bottom of the blocks menu.
 
-![μπλοκ επέκτασης "Πένα"](images/pen-extension-blocks.png)
+![pen extension blocks](images/pen-extension-blocks.png)
 
-Από το μενού **Πένα**, επίλεξε το μπλοκ `κατέβασε πένα`{:class="block3extensions"} και πρόσθεσε το στην αρχή του προγράμματος σου, όπως αυτό:
+From the **Pen** section, select the `pen down`{:class="block3extensions"} block and add it to the start of your program, like this:
 
 ```blocks3
     when green flag clicked
@@ -45,17 +57,17 @@
 
 \--- task \---
 
-Τώρα κάνε κλικ στην πράσινη σημαία μερικές φορές και δες τι συμβαίνει.
+Now click the green flag a few times and watch what happens.
 
 \--- /task \---
 
-Εάν μπορείς να δεις τις γραμμές πίσω από το αντικείμενο γάτα, τότε η πένα λειτουργεί και μπορείς να αρχίσεις να σχεδιάζεις πραγματικά εντυπωσιακά σχέδια ή μοτίβα.
+If you can see the lines behind the cat sprite, then the pen is working and you can start making it draw really cool patterns.
 
-Πρώτον, πρέπει να απαλλαγείς από το αντικείμενο. Παρεμποδίζει τη σχεδίαση!
+First, you should get rid of the sprite. It’s getting in the way of the drawing!
 
 \--- task \---
 
-Πρόσθεσε ένα μπλοκ `εξαφανίσου`{:class="block3looks"} από τις **Όψεις** στην αρχή του προγράμματος και θα εξαφανιστεί.
+Add a `hide`{:class="block3looks"} block from **Looks** to the start of the program and it’ll disappear.
 
 ```blocks3
     when green flag clicked
@@ -65,7 +77,7 @@
 
 \--- /task \---
 
-Τώρα, μπορείς να αλλάξεις το χρώμα της πένας με ένα άλλο μπλοκ από το μενού **Πένα**, αλλά το μπλοκ είναι λίγο διαφορετικό από τα άλλα που έχεις δει. Είναι το μπλοκ `όρισε χρώμα πένας σε`{:class="block3extensions"} και μοιάζει με αυτό:
+Now, you can change the colour of the pen with another block from the **Pen** section, but the block is a little different to the others you’ve seen. It’s the `set pen color to`{:class="block3extensions"} block and looks like this:
 
 ```blocks3
     set pen color to [#4a6cd4]
@@ -73,7 +85,7 @@
 
 \--- task \---
 
-Σύρε ένα μπλοκ `όρισε χρώμα πένας σε`{:class="block3extensions"} στον πίνακα αντικειμένων σου και βάλε το πάνω από το μπλοκ `κατέβασε πένα`{:class="block3extensions"}.
+Drag a `set pen color to`{:class="block3extensions"} block into your sprite panel, and snap it in above the `pen down`{:class="block3extensions"} block.
 
 ```blocks3
     when green flag clicked
@@ -82,15 +94,15 @@
     pen down
 ```
 
-Τώρα, κάνε κλικ στο κουτί χρώματος (στον παραπάνω κώδικα είναι το μπλε) και επίλεξε ένα χρώμα.
+Now, click on the box of colour (in the code above it’s the blue one), and choose a colour.
 
 \--- /task \---
 
-Εάν κάνεις κλικ στην πράσινη σημαία για να δοκιμάσεις το πρόγραμμά σου, θα παρατηρήσεις ότι τα σχέδια που δημιουργεί η πένα δεν εξαφανίζονται.
+If you’ve been clicking on the green flag to test your code, you’ll have noticed that the drawings the pen makes don’t go away.
 
 \--- task \---
 
-Πρόσθεσε ένα μπλοκ `καθάρισε`{:class="block3extensions"} από το μενού **Πένα** στην αρχή του κώδικά σου για να το φροντίσεις:
+Add a `clear`{:class="block3extensions"} block from the **Pen** section to the start of your code to take care of that:
 
 ```blocks3
     when green flag clicked
