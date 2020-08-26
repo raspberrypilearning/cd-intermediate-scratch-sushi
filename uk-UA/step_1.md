@@ -1,18 +1,18 @@
 \--- no-print \---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2).
+Це — версія проєкту для **Скретч 3**. Також існує [версія проєкту для Скретч 2](https://projects.raspberrypi.org/en/projects/cd-intermediate-scratch-sushi-scratch2).
 
 \--- /no-print \---
 
-## Introduction
+## Вступ
 
-You’ve already learned the basics of Scratch (and if you haven’t, check out the Beginner Scratch Sushi Cards) to make your first Scratch game. Here you’re going to learn a few more cool tricks and make one of my favourite Scratch projects: it draws colourful patterns and, if you set it up right, can be really cool to watch.
+Ти вже вивчив (-ла) основи Скретч (якщо ж ні, то ознайомся з проєктами для початківців), щоб створити свою першу гру. Тут ти навчишся ще кільком крутим прийомам і створиш один з моїх улюблених проектів Скретч: він малює різнокольорові візерунки і, якщо ти його правильно налаштуєш, це буде виглядати дійсно круто.
 
 ![](images/pen1.png)
 
-### What you will make
+### Що ти будеш робити
 
-Here's a project I've prepared:
+Ось готовий проєкт:
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/205355399/?autostart=false" frameborder="0"></iframe>
@@ -20,28 +20,28 @@ Here's a project I've prepared:
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: Чого ти навчишся
 
-In the Intermediate Scratch Sushi Cards, you'll find out about:
+У цьому проєкті для середнього рівня у Скретч ти дізнаєшся про:
 
-+ Using the Pen tool
-+ Using and updating variables in loops
-+ Using Repeat Until loops
-+ Getting input values with ask blocks
-+ Using multiple lists with properties related by index
++ Використання інструменту "Олівець"
++ Використання та оновлення змінних у циклах
++ Використання циклів "Повторити до"
++ Отримання вхідних значень за допомогою блоків запитань
++ Використання кількох списків із даними, що зв'язані індексом
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Що тобі знадобиться
 
-### Hardware
+### Обладнання
 
-+ A computer capable of running Scratch 3
++ Комп'ютер, що підтримує Скретч 3
 
-### Software
+### Програмне забезпечення
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/projects/editor/){:target="_blank"} or [offline](https://scratch.mit.edu/download/){:target="_blank"})
++ Скретч 3 (або [онлайн](https://scratch.mit.edu/projects/editor/){:target="_blank"}, або [офлайн](https://scratch.mit.edu/download/){:target="_blank"})
 
 \--- /collapse \---
