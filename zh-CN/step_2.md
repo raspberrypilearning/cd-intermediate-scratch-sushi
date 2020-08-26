@@ -4,7 +4,19 @@
 
 \--- task \---
 
-打开一个新的 Scratch 文件，选择 Scratch 猫精灵，然后拖动一些你可能已经看到的块，直到看起来像这样：
+Open a new Scratch project.
+
+**Online:** open a new online Scratch project at [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
+
+**Offline:** open a new project in the offline editor.
+
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
+
+\--- /task \---
+
+\--- task \---
+
+Select the Scratch Cat sprite, and drag in a few blocks you may have already seen, until it looks like this:
 
 ```blocks3
     when green flag clicked
@@ -15,25 +27,25 @@
 
 \--- /task \---
 
-现在是测试画笔的时候了！
+Now, time to test out the pen!
 
-要在 Scratch 中使用画笔块，你需要添加 **画笔扩展**。
+To use the Pen blocks in Scratch, you need add the **Pen extension**.
 
 \--- task \---
 
-点击左下角的 **添加扩展** 按钮。
+Click on the **Add extension** button in the bottom left-hand corner.
 
-![添加扩展按钮高亮图示](images/add-extension-annotated.png)
+![add extension button highlighted](images/add-extension-annotated.png)
 
-点一下 **画笔** 扩展就可以添加它。
+Click on the **Pen** extension to add it.
 
-![画笔扩展高亮图示](images/click-pen-annotated.png)
+![pen extension highlighted](images/click-pen-annotated.png)
 
-然后画笔积木就会出现在代码菜单的底部。
+The Pen section then appears at the bottom of the blocks menu.
 
-![画笔扩展积木](images/pen-extension-blocks.png)
+![pen extension blocks](images/pen-extension-blocks.png)
 
-从**画笔**部分中，选择`下笔` {：class =“ block3extensions”}块并将其添加到程序的开头，如下所示：
+From the **Pen** section, select the `pen down`{:class="block3extensions"} block and add it to the start of your program, like this:
 
 ```blocks3
     when green flag clicked
@@ -45,17 +57,17 @@
 
 \--- task \---
 
-现在，点击绿色旗子几次，然后看看会发生什么。
+Now click the green flag a few times and watch what happens.
 
 \--- /task \---
 
-如果你可以看到猫精灵后面的线条，则说明笔正在工作，你就可以用它来绘制出非常酷的图案。
+If you can see the lines behind the cat sprite, then the pen is working and you can start making it draw really cool patterns.
 
-首先，你应该移除掉精灵。 因为它会妨碍到绘图！
+First, you should get rid of the sprite. It’s getting in the way of the drawing!
 
 \--- task \---
 
-从** 外观**中选择并添加`隐藏` {：class =“ block3looks”}块到程序的开头，精灵就会消失。
+Add a `hide`{:class="block3looks"} block from **Looks** to the start of the program and it’ll disappear.
 
 ```blocks3
     when green flag clicked
@@ -65,7 +77,7 @@
 
 \--- /task \---
 
-现在，你可以从**画笔**部分用另一个模块更改笔的颜色， 注意它与你看到的其他方块有些不同。 这是`将笔的颜色设置为` {：class =“ block3extensions”}，如下所示：
+Now, you can change the colour of the pen with another block from the **Pen** section, but the block is a little different to the others you’ve seen. It’s the `set pen color to`{:class="block3extensions"} block and looks like this:
 
 ```blocks3
     set pen color to [#4a6cd4]
@@ -73,7 +85,7 @@
 
 \--- task \---
 
-把`将笔的颜色设为` {：class =“ block3extensions”}拖动到你的精灵面板，并将其卡进`落笔` {：class =“ block3extensions”}块。
+Drag a `set pen color to`{:class="block3extensions"} block into your sprite panel, and snap it in above the `pen down`{:class="block3extensions"} block.
 
 ```blocks3
     when green flag clicked
@@ -82,15 +94,15 @@
     pen down
 ```
 
-现在，单击颜色框（在上面的代码中为蓝色），然后选择一种颜色。
+Now, click on the box of colour (in the code above it’s the blue one), and choose a colour.
 
 \--- /task \---
 
-如果你已经单击绿色旗子来测试您的代码，你会注意到用笔绘制的图不会消失。
+If you’ve been clicking on the green flag to test your code, you’ll have noticed that the drawings the pen makes don’t go away.
 
 \--- task \---
 
-从**画笔**部分添加一个`全部擦除`{:class="block3extensions"} 块到你的代码开头，请注意：
+Add a `clear`{:class="block3extensions"} block from the **Pen** section to the start of your code to take care of that:
 
 ```blocks3
     when green flag clicked
