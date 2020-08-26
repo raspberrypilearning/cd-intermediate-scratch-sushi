@@ -4,7 +4,19 @@ El proyecto que vas a realizar se basa en la herramienta **Lápiz**, que dibuja 
 
 \--- task \---
 
-Crea un archivo nuevo en Scratch, selecciona el gato Scratch (nota: el gato anaranjado u Objeto1) y arrastra dentro algunos bloques que posiblemente ya hayas visto, hasta que se vea así:
+Open a new Scratch project.
+
+**Online:** open a new online Scratch project at [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
+
+**Offline:** open a new project in the offline editor.
+
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
+
+\--- /task \---
+
+\--- task \---
+
+Select the Scratch Cat sprite, and drag in a few blocks you may have already seen, until it looks like this:
 
 ```blocks3
     when green flag clicked
@@ -15,25 +27,25 @@ Crea un archivo nuevo en Scratch, selecciona el gato Scratch (nota: el gato anar
 
 \--- /task \---
 
-Ahora, ¡es hora de probar el lápiz!
+Now, time to test out the pen!
 
-Para usar los bloques lápiz en Scratch, necesitarás añadir la **Extensión Lápiz**.
+To use the Pen blocks in Scratch, you need add the **Pen extension**.
 
 \--- task \---
 
-Haz click en el botón **Añadir Extensión** en la esquina inferior izquierda.
+Click on the **Add extension** button in the bottom left-hand corner.
 
-![botón añadir extensión resaltado](images/add-extension-annotated.png)
+![add extension button highlighted](images/add-extension-annotated.png)
 
-Haz click en la extensión **Lápiz** para añadirla.
+Click on the **Pen** extension to add it.
 
-![extensión Lápiz resaltada](images/click-pen-annotated.png)
+![pen extension highlighted](images/click-pen-annotated.png)
 
-La sección Lápiz aparecerá en la parte inferior del menú de bloques.
+The Pen section then appears at the bottom of the blocks menu.
 
-![bloques de extensión lápiz](images/pen-extension-blocks.png)
+![pen extension blocks](images/pen-extension-blocks.png)
 
-En la sección **lápiz**, selecciona el bloque `bajar lápiz`{:class="block3extensions"} y agrégalo al inicio del programa, de esta manera:
+From the **Pen** section, select the `pen down`{:class="block3extensions"} block and add it to the start of your program, like this:
 
 ```blocks3
     when green flag clicked
@@ -45,17 +57,17 @@ En la sección **lápiz**, selecciona el bloque `bajar lápiz`{:class="block3ext
 
 \--- task \---
 
-Ahora haz clic en la bandera verde unas cuantas veces y observa lo que sucede.
+Now click the green flag a few times and watch what happens.
 
 \--- /task \---
 
-Si puedes ver las líneas detrás del gato, entonces el lápiz está funcionando y puedes comenzar a dibujar patrones realmente geniales.
+If you can see the lines behind the cat sprite, then the pen is working and you can start making it draw really cool patterns.
 
-Primero, debes deshacerte del objeto. ¡Se está interponiendo en el camino del dibujo!
+First, you should get rid of the sprite. It’s getting in the way of the drawing!
 
 \--- task \---
 
-Agrega un bloque `esconder`{:class="block3looks"} desde **Apariencia** al inicio del programa y desaparecerá.
+Add a `hide`{:class="block3looks"} block from **Looks** to the start of the program and it’ll disappear.
 
 ```blocks3
     when green flag clicked
@@ -65,7 +77,7 @@ Agrega un bloque `esconder`{:class="block3looks"} desde **Apariencia** al inicio
 
 \--- /task \---
 
-Ahora, puedes cambiar el color del lápiz con otro bloque de la sección **Lápiz**, pero el bloque es un poco diferente a los otros que has visto. Es el bloque `fijar color de lápiz a`{:class="block3extensions"} y se ve así:
+Now, you can change the colour of the pen with another block from the **Pen** section, but the block is a little different to the others you’ve seen. It’s the `set pen color to`{:class="block3extensions"} block and looks like this:
 
 ```blocks3
     set pen color to [#4a6cd4]
@@ -73,7 +85,7 @@ Ahora, puedes cambiar el color del lápiz con otro bloque de la sección **Lápi
 
 \--- task \---
 
-Arrastra un bloque `fijar color de lápiz a `{:class="block3extensions"} a tu panel de objetos, y pégalo por encima del bloque `bajar lápiz`{:class="block3extensions"}.
+Drag a `set pen color to`{:class="block3extensions"} block into your sprite panel, and snap it in above the `pen down`{:class="block3extensions"} block.
 
 ```blocks3
     when green flag clicked
@@ -82,15 +94,15 @@ Arrastra un bloque `fijar color de lápiz a `{:class="block3extensions"} a tu pa
     pen down
 ```
 
-Ahora, haz clic en el cuadro de color (en el código de arriba es el azul) y elije un color.
+Now, click on the box of colour (in the code above it’s the blue one), and choose a colour.
 
 \--- /task \---
 
-Si has hecho clic en la bandera verde para probar tu código, te habrás dado cuenta de que los dibujos que hace el lápiz no desaparecen.
+If you’ve been clicking on the green flag to test your code, you’ll have noticed that the drawings the pen makes don’t go away.
 
 \--- task \---
 
-Agrega un bloque `borrar todo`{:class="block3extensions"} de la sección **lápiz** al principio de tu código para que se encargue de eso:
+Add a `clear`{:class="block3extensions"} block from the **Pen** section to the start of your code to take care of that:
 
 ```blocks3
     when green flag clicked
