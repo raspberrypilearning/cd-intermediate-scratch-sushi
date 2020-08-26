@@ -1,12 +1,12 @@
-## Randomise the whole thing
+## Зроби випадковим усе
 
-You can actually use random numbers to make the whole program run over and over, changing the pattern each time! It'll look a bit like screen savers did in the 1990s...which you probably won't remember, but ask one of your parents!
+Насправді ти можеш використовувати випадкові числа, щоб змусити всю програму працювати знову і знову, змінюючи шаблон кожного разу! Це буде схоже на заставки екрану з 1990-х… чого ти, мабуть, не пам’ятаєш, але можеш запитати когось із батьків!
 
-You need a few changes to make this happen. The first one is that you need to set the `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} variables randomly rather than asking for them from the user. So you need to change some of your code blocks.
+Потрібно кілька змін, щоб зробити це. По-перше, потрібно встановити значення змінних `приріст`{:class="block3variables"} та `градуси`{:class="block3variables"} випадковими, а не запитувати їх у користувача. Так що потрібно змінити деякі блоки коду.
 
 \--- task \---
 
-Remove the questions from your code, and update it to use random numbers instead.
+Видали питання з коду і онови його, щоб використовувати випадкові числа натомість.
 
 ```blocks3
     when green flag clicked
@@ -20,13 +20,13 @@ Remove the questions from your code, and update it to use random numbers instead
 
 \--- /task \---
 
-If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
+Якщо запустити програму зараз, можна помітити, що вона малює випадковий візерунок, але лише один раз. Як думаєш, чому це так?
 
-It’s because the loop only runs until it reaches the edge of the Stage.
+Це тому, що цикл виконується, лише до тих пір, поки не досягне краю Сцени.
 
 \--- task \---
 
-You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
+Тобі потрібен ще один цикл, який працює вічно (значить цикл `завжди`{:class="block3control"}) зовні поточного циклу, щоб продовжувати виконання програми знову і знову. Просто перетягни такий цикл з розділу **Керування** та помісти в нього весь інший код.
 
 ```blocks3
     when green flag clicked
@@ -50,8 +50,8 @@ You need another loop that runs forever (so a `forever`{:class="block3control"} 
 
 \--- /task \---
 
-Now you’ve really got something awesome to look at!
+Тепер це дійсно виглядає дивовижно!
 
-However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
+Однак, можна помітити, що час від часу комп'ютер малює щось, що виглядає досить...погано. Це відбувається тому, що деякі значення для тих змінних — це просто поганий вибір, а також деякі **комбінації цих чисел** є поганими варіантами.
 
-On the next card, you'll help the computer to pick only good combinations!
+В наступному розділі ти допоможеш комп’ютеру вибирати лише хороші комбінації!
