@@ -1,16 +1,16 @@
-## Asking for input
+## Запит на введення даних
 
-Ok, this is getting pretty cool, but it’s a bit boring to have to edit your code every time you want to draw a different pattern. Wouldn’t it be good to get the program to ask you for values to use? You can do that!
+Гаразд, це виглядає досить круто, але трохи нудно редагувати код кожного разу, коли хочеться намалювати інший візерунок. Чи не було б краще, щоб програма запитувала в тебе, які значення використовувати? Ти можеш це зробити!
 
 \--- task \---
 
-First, go to the **Variables** section and create variables called `degrees`{:class="block3variables"} and `increase`{:class="block3variables"}.
+Спочатку перейди у розділ **Змінні** та створи змінні з назвами `градуси`{:class="block3variables"} та `приріст`{:class="block3variables"}.
 
 \--- /task \---
 
 \--- task \---
 
-Now add the new variables to your code like this:
+Тепер додай нові змінні до свого коду наступним чином:
 
 ```blocks3
     repeat until <touching [edge v] ?> 
@@ -22,13 +22,13 @@ Now add the new variables to your code like this:
 
 \--- /task \---
 
-Now you need to ask for values for these two variables and store them. You do this using a **Sensing** block called `Ask and wait`{:class="block3sensing"}, which you can type a question into.
+Тепер тобі потрібно запитати значення для цих двох змінних і зберегти їх. Це можна зробити використовуючи блок `запитати і чекати`{:class="block3sensing"} з розділу **Датчики**, куди можна ввести запитання.
 
 \--- task \---
 
-Pull the `Ask and wait`{:class="block3sensing"} block into your sprite panel and change the question to `How many steps should I grow by?`{:class="block3sensing"}
+Перетягни блок `запити і чекати`{:class="block3sensing"} до панелі спрайтів та заміни запитання на `На скільки кроків збільшуватись?`{:class="block3sensing"}
 
-Then add it to your program, just after you set `steps`{:class="block3variables"} to `0`, like this:
+Потім додай цей блок до програми, одразу після встановлення значення для змінної `кроки`{:class="block3variables"} до `0`, ось так:
 
 ```blocks3
     when green flag clicked
@@ -39,11 +39,11 @@ Then add it to your program, just after you set `steps`{:class="block3variables"
 
 \--- /task \---
 
-Now you’ve got your program asking a question, you need it to remember the answer! It turns out that Scratch has a special variable called `answer`{:class="block3sensing"}, where it stores the most recent answer it has received. You can find this variable among the **Sensing** blocks.
+Зараз у тебе є програма, яка задає питання, а тепер потрібно, щоб вона запам'ятала відповідь! Виявляється, що Скретч має спеціальну змінну під назвою `відповідь`{:class="block3sensing"}, де зберігається остання відповідь, яку отримала програма. Ти знайдеш цю змінну серед блоків розділу **Датчики**.
 
 \--- task \---
 
-Using a `set to`{:class="block3variables"} block from **Variables**, take the value of `answer`{:class="block3sensing"} and store it in the `increase`{:class="block3variables"} variable like so:
+Використовуючи блок `надати значення`{:class="block3variables"} з розділу **Змінні**, візьми значення `відповідь`{:class="block3sensing"} і збережи його у змінній `приріст`{:class="block3variables"} як тут:
 
 ```blocks3
     ask [How many steps should I grow by?] and wait
@@ -54,7 +54,7 @@ Using a `set to`{:class="block3variables"} block from **Variables**, take the va
 
 \--- task \---
 
-Now, do the same thing with `degrees`{:class="block3variables"}, asking `How many degrees should I turn?`{:class="block3sensing"} and storing the value of `answer`{:class="block3sensing"} in `degrees`{:class="block3variables"}:
+Тепер зроби те ж саме зі змінною `градуси`{:class="block3variables"}, запитуючи `На скільки градусів повертати?`{:class="block3sensing"} і зберігаючи значення `відповідь`{:class="block3sensing"} у змінній `градуси`{:class="block3variables"}:
 
 ```blocks3
     set [increase v] to (answer)
@@ -66,7 +66,7 @@ Now, do the same thing with `degrees`{:class="block3variables"}, asking `How man
 
 \--- task \---
 
-Check your program now looks like the one below, and run it a few times with different numbers. Write down the answers that make the coolest pictures. You’ll need them in a later step!
+Перевір, чи виглядає твоя програма так, як наведено нижче, і запусти її кілька разів з різними числами. Запиши відповіді, які створюють найкрутіші малюнки. Вони знадобляться тобі на наступному кроці!
 
 ```blocks3
     when green flag clicked
