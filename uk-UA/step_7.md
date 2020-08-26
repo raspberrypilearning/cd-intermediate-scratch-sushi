@@ -1,54 +1,54 @@
-## Helping the computer
+## Допоможи комп’ютеру
 
-Do you remember a few steps back, where I told you to write down some of your favourite values for `increase`{:class="block3variables"} and `degrees`{:class="block3variables"}, the ones that gave the best-looking patterns? If you didn't do this, don’t worry: you can just watch the random program run for a while now and write down the combinations that give great results.
+Пам'ятаєш, кілька кроків назад ти записував свої улюбленні значення для змінних `приріст`{:class="block3variables"} та `градуси`{:class="block3variables"}, такі, що дають найкращі візерунки? Якщо ти цього не зробив(-ла), не хвилюйся: зараз ти можеш просто деякий час спостерігати за виконанням випадкової програми і записувати комбінації, які дають чудові результати.
 
-You’re going to teach Scratch those combinations of values, so it can use them to make nothing but awesome pictures!
+Ти можеш навчити Скретч обирати ці комбінації значень для створення дивовижних зображень!
 
-To do this, you’ll need a **list**. You’ll find lists with the variables in the **Variables** section. Just like you did with your variables, you’ll need to create your list first!
+Для цього тобі знадобиться **список**. Ти знайдеш списки зі змінними у розділі **Змінні**. Як і зі змінними, тобі спочатку потрібно створити свій список!
 
 \--- task \---
 
-Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
+Натисни **Створити список** та назви його `Список градусів`{:class="block3variables"}.
 
 ![](images/makeAList.png)
 
 \--- /task \---
 
-Your list, which is empty at the moment, will appear on the Stage, and you'll see a bunch of blocks for it in **Variables**.
+Твій список, наразі порожній, з’явиться на Сцені, і ти побачиш купу блоків для нього у розділі **Змінні**.
 
 ![](images/listBlocks.png)
 
 \--- task \---
 
-Make another list called `Increase List`{:class="block3variables"}
+Створи інший список з назвою `Список приростів`{:class="block3variables"}
 
 \--- /task \---
 
 \--- task \---
 
-Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
+Тепер, натиснувши на знак "плюс" (**+**) у нижній частині списків, додай першу пару значень змінних `приріст`{:class="block3variables"} та `градуси`{:class="block3variables"} які тобі сподобались, кожне значення у відповідній список. Зроби те саме ще раз, щоб додати другу пару значень. Наразі цього буде достатньо — ти зможеш пізніше додати решту пар значень, які тобі подобаються!
 
 ![](images/helping2.png)
 
-Make sure that the `degrees`{:class="block3variables"} value and the `increase`{:class="block3variables"} value that worked well together are at the same position in the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. They need to be there so your program can match them up again using their position!
+Переконайся, що значення `градуси` {:class="block3variables"} та значення `приріст`{:class="block3variables"}, які добре працювали разом, знаходяться на однакових позиціях у списках `Список градусів`{:class="block3variables"} та `Список приростів`{:class="block3variables"}. Вони повинні бути там, щоб програма могла їх співставити знову, використовуючи їх положення!
 
 \--- /task \---
 
-Now you have the lists, you just need to get your code to read them and loop over them! To do this, you’re going to use a new variable to act as a counter, some **incrementing**, and an `if then`{:class="block3control"} **Control** block.
+Тепер, коли у тебе є списки, тобі потрібно просто організувати свій код так, щоб він читав їх у циклі! Для цього тобі потрібно використовувати нову змінну у якості лічильника для **збільшення**, а також блок `якщо то` {: class = "block3control"} з розділу **Керування**.
 
 ## \--- collapse \---
 
-## title: What does incrementing mean?
+## title: Що означає збільшення?
 
-To increment something means to add something to it.
+Для того, щоб щось збільшити, треба додати щось до нього.
 
-You will use a variable to act as a counter to keep track of what position you're at in your lists. To move through the lists, you'll keep incrementing the counter by `1` (so, adding `1` to it) until you get to the end of the list.
+Ти будеш використовувати цю змінну у якості лічильника, щоб відстежувати, на якій позиції ти знаходишся у своїх списках. Для переміщення у списках продовжуй збільшувати лічильник на `1` (додаючи `1` до нього), поки не дістанешся кінця списку.
 
 \--- /collapse \---
 
 \--- task \---
 
-Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
+Створи нову змінну під назвою `лічильник`{:class="block3variables"} та онови свій код таким чином:
 
 ```blocks3
     when green flag clicked
@@ -77,45 +77,45 @@ Create a new variable called `counter`{:class="block3variables"}, and update you
 
 \--- /task \---
 
-Notice the new blocks that:
+Зверни увагу на нові блоки:
 
-1. Set `counter`{:class="block3variables"} to `0`, outside all the loops.
-2. Check if the number stored in `counter`{:class="block3variables"} is the length of the list, and if so, set `counter`{:class="block3variables"} to `0`. This means that this variable will always be the number of a position in the lists, and won't get any bigger than that.
-3. Add `1` to `counter`{:class="block3variables"}.
-4. Pick the item from `Increase List`{:class="block3variables"} that is at the position described by `counter`{:class="block3variables"}, and put it in the `increase`{:class="block3variables"} variable. Do the same for the `Degrees List`{:class="block3variables"} and `degrees`{:class="block3variables"} variable.
+1. Зовні всіх циклів встанови значення `лічильник`{:class="block3variables"} у `0`.
+2. Перевір, чи значення у `лічильнику`{:class="block3variables"} дорівнює довжині списку, і якщо так, то встанови `лічильник`{:class="block3variables"} у `0`. Це означає, що ця змінна завжди буде номером позиції у списках, і не вийде за їх межі.
+3. Додай `1` до `лічильника`{:class="block3variables"}.
+4. Вибери елемент зі `Списку приростів`{:class="block3variables"}, що відповідає позиції `лічильника`{:class="block3variables"}, і запиши його у змінну `приріст`{:class="block3variables"}. Зроби те ж саме для `Списку градусів`{:class="block3variables"} та змінної `градуси`{:class="block3variables"}.
 
 ## \--- collapse \---
 
-## title: How does the code work?
+## title: Як працює код?
 
-This is what happens when you run your program:
+Ось що відбувається, коли ти запускаєш програму:
 
-1. Set `counter`{:class="block3variables"} to `0`.
-2. Start the `forever`{:class="block3control"} loop.
-3. Check if `counter`{:class="block3variables"} (`0`) is the same as the length of `Increase List`{:class="block3variables"} (`2`). It isn’t.
-4. Change `counter`{:class="block3variables"} by `1`. Now `counter`{:class="block3variables"} = `1`.
-5. Set `steps`{:class="block3variables"} to `0`.
-6. Get the item at the position named by `counter`{:class="block3variables"} (`1`) in the `Increase List`{:class="block3variables"}, and put it in `increase`{:class="block3variables"}.
-7. Get the item at the position named by `counter`{:class="block3variables"} (`1`) in the `Degrees List`{:class="block3variables"}, and put it in `degrees`{:class="block3variables"}.
-8. Do all the stuff related to drawing the patterns.
-9. Restart the `forever`{:class="block3control"} loop:
-10. Check if `counter`{:class="block3variables"} (`1`) is the same as the length of `Increase List`{:class="block3variables"} (`2`). It isn’t.
-11. Change `counter`{:class="block3variables"} by `1`. Now `counter`{:class="block3variables"} = `2`.
-12. Set `steps`{:class="block3variables"} to `0`.
-13. Get the item at the position named by `counter`{:class="block3variables"} (`2`) in the `Increase List`{:class="block3variables"}, and put it in `increase`{:class="block3variables"}.
-14. Get the item at the position named by `counter`{:class="block3variables"} (`2`) in the `Degrees List`{:class="block3variables"}, and put it in `degrees`{:class="block3variables"}.
-15. Do all the stuff related to drawing the patterns.
-16. Restart the `forever`{:class="block3control"} loop:
-17. Check if `counter`{:class="block3variables"} (`2`) is the same as the length of the `Increase List`{:class="block3variables"} (`2`). It is!
-18. Set `counter`{:class="block3variables"} to `0`.
-19. Continue from **step 4** of this list, in a never-ending loop!
+1. Встановлюється `лічильник`{:class="block3variables"} у `0`.
+2. Запускається цикл `завжди`{:class="block3control"}.
+3. Перевіряється, чи `лічильник`{:class="block3variables"} (`0`) дорівнює довжині `Списку приростів`{:class="block3variables"} (`2`). Це не так.
+4. Змінна `лічильник`{:class="block3variables"} збільшується на `1`. Тепер `лічильник`{:class="block3variables"} = `1`.
+5. Змінна `кроки`{:class="block3variables"} встановлюється у `0`.
+6. Отримується елемент, який знаходиться на позиції, відповідній до значення `лічильника`{:class="block3variables"} (`1`) у `Списку приростів`{:class="block3variables"}, і записується у змінну `приріст`{:class="block3variables"}.
+7. Отримується елемент, який знаходиться на позиції, відповідній до значення `лічильника`{:class="block3variables"} (`1`) у `Списку градусів`{:class="block3variables"}, і записується у змінну `градуси`{:class="block3variables"}.
+8. Відбувається все, що пов’язано з малюванням візерунків.
+9. Перезапускається цикл `завжди` {:class="block3control"}:
+10. Перевіряється, чи `лічильник`{:class="block3variables"} (`1`) дорівнює довжині `Списку приростів`{:class="block3variables"} (`2`). Це не так.
+11. Змінна `лічильник`{:class="block3variables"} збільшується на `1`. Тепер `лічильник`{:class="block3variables"} = `2`.
+12. Змінна `кроки`{:class="block3variables"} встановлюється у `0`.
+13. Отримується елемент, який знаходиться на позиції, відповідній до значення `лічильника`{:class="block3variables"} (`2`) у `Списку приростів`{:class="block3variables"}, і записується у змінну `приріст`{:class="block3variables"}.
+14. Отримується елемент, який знаходиться на позиції, відповідній до значення `лічильника`{:class="block3variables"} (`2`) у `Списку градусів`{:class="block3variables"}, і записується у змінну `градуси`{:class="block3variables"}.
+15. Відбувається все, що пов’язано з малюванням візерунків.
+16. Перезапускається цикл `завжди` {:class="block3control"}:
+17. Перевіряється, чи `лічильник`{:class="block3variables"} (`2`) дорівнює довжині `Списку приростів`{:class="block3variables"} (`2`). Це так!
+18. Встановлюється `лічильник`{:class="block3variables"} у `0`.
+19. Програма продовжується з **кроку 4** цього списку, в нескінченному циклі!
 
 \--- /collapse \---
 
 \--- task \---
 
-Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}.
+Як тільки вигляд твого коду тебе задовільнить, додай решту пар значень, які тобі сподобались, до `Списку градусів`{:class="block3variables"} та `Списку приростів`{:class="block3variables"}.
 
 \--- /task \---
 
-That's it! Sit back and watch your program keep drawing lovely patterns in a never-ending loop! If you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
+Ось і все! Сідай відпочити та дивись, як твоя програма продовжує малювати чудові візерунки у нескінченному циклі! Якщо хочеш додати більше візерунків, можна просто додати ще декілька пар значень у два списки та перезапустити програму.
