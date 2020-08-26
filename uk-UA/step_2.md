@@ -4,19 +4,19 @@
 
 \--- task \---
 
-Open a new Scratch project.
+Відкрий новий проєкт Скретч.
 
-**Online:** open a new online Scratch project at [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
+**Онлайн:** відкрий новий онлайн проєкт Скретч на [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
 
-**Offline:** open a new project in the offline editor.
+**Офлайн:** відкрий новий проєкт в офлайн-редакторі.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
+Якщо тобі треба завантажити та встановити офлайн-редактор Скретч, то ти можеш його знайти на [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
 
 \--- /task \---
 
 \--- task \---
 
-Select the Scratch Cat sprite, and drag in a few blocks you may have already seen, until it looks like this:
+Вибери спрайт Кота, і перетягни кілька блоків, які тобі вже зустрічались раніше, поки не отримаєш щось подібне:
 
 ```blocks3
     when green flag clicked
@@ -27,25 +27,25 @@ Select the Scratch Cat sprite, and drag in a few blocks you may have already see
 
 \--- /task \---
 
-Now, time to test out the pen!
+Тепер, час випробувати Олівець!
 
-To use the Pen blocks in Scratch, you need add the **Pen extension**.
+Для того, щоб використовувати блоки інструменту Олівець у Скретч, потрібно додати розширення **Олівець**.
 
 \--- task \---
 
-Click on the **Add extension** button in the bottom left-hand corner.
+Натисни на кнопку **Додати розширення** у нижньому лівому куті.
 
-![add extension button highlighted](images/add-extension-annotated.png)
+![виділена кнопка додавання розширення](images/add-extension-annotated.png)
 
-Click on the **Pen** extension to add it.
+Натисни на розширення **Олівець**, щоб додати його.
 
-![pen extension highlighted](images/click-pen-annotated.png)
+![розширення Олівець виділено](images/click-pen-annotated.png)
 
-The Pen section then appears at the bottom of the blocks menu.
+Розділ Олівець з’явиться у меню блоків знизу.
 
-![pen extension blocks](images/pen-extension-blocks.png)
+![блоки розширення Олівець](images/pen-extension-blocks.png)
 
-From the **Pen** section, select the `pen down`{:class="block3extensions"} block and add it to the start of your program, like this:
+З розділу **Олівець** візьми блок `опустити олівець`{:class="block3extensions"} і додай його до початку програми, як тут:
 
 ```blocks3
     when green flag clicked
@@ -57,17 +57,17 @@ From the **Pen** section, select the `pen down`{:class="block3extensions"} block
 
 \--- task \---
 
-Now click the green flag a few times and watch what happens.
+А зараз натисни кілька разів на зелений прапорець і подивися, що станеться.
 
 \--- /task \---
 
-If you can see the lines behind the cat sprite, then the pen is working and you can start making it draw really cool patterns.
+Якщо ти бачиш лінії за спрайтом Кота, значить олівець працює, і ти можеш почати малювати ним дійсно круті візерунки.
 
-First, you should get rid of the sprite. It’s getting in the way of the drawing!
+Спочатку слід позбутися спрайта. Він заважає малюванню!
 
 \--- task \---
 
-Add a `hide`{:class="block3looks"} block from **Looks** to the start of the program and it’ll disappear.
+Додай блок `сховати`{:class="block3looks"} з розділу **Вигляд** на початок програми, і він зникне.
 
 ```blocks3
     when green flag clicked
@@ -77,7 +77,7 @@ Add a `hide`{:class="block3looks"} block from **Looks** to the start of the prog
 
 \--- /task \---
 
-Now, you can change the colour of the pen with another block from the **Pen** section, but the block is a little different to the others you’ve seen. It’s the `set pen color to`{:class="block3extensions"} block and looks like this:
+Тепер ти можеш змінити колір олівця за допомогою іншого блоку з розділу **Олівець**, але цей блок трохи відрізняється від інших, які тобі зустрічалися раніше. Це блок `надати олівцю колір`{:class="block3extensions"} і виглядає він так:
 
 ```blocks3
     set pen color to [#4a6cd4]
@@ -85,7 +85,7 @@ Now, you can change the colour of the pen with another block from the **Pen** se
 
 \--- task \---
 
-Drag a `set pen color to`{:class="block3extensions"} block into your sprite panel, and snap it in above the `pen down`{:class="block3extensions"} block.
+Перетягни блок `надати олівцю колір`{:class="block3extensions"} до панелі спрайта і прикріпи його над блоком `опустити олівець`{:class="block3extensions"}.
 
 ```blocks3
     when green flag clicked
@@ -94,15 +94,15 @@ Drag a `set pen color to`{:class="block3extensions"} block into your sprite pane
     pen down
 ```
 
-Now, click on the box of colour (in the code above it’s the blue one), and choose a colour.
+Тепер натисни на поле кольору (у коді, написаному вище, цей колір синій), та обери колір.
 
 \--- /task \---
 
-If you’ve been clicking on the green flag to test your code, you’ll have noticed that the drawings the pen makes don’t go away.
+Натискаючи зелений прапорець, щоб перевірити свій код, можна помітити, що малюнки, зроблені олівцем, не зникають.
 
 \--- task \---
 
-Add a `clear`{:class="block3extensions"} block from the **Pen** section to the start of your code to take care of that:
+Додай блок `очистити все`{:class="block3extensions"} з розділу **Олівець** до початку свого коду, щоб позбавитись цього:
 
 ```blocks3
     when green flag clicked
