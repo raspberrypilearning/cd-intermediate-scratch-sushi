@@ -1,8 +1,8 @@
-## Cooler lines
+## Ще крутіші лініі
 
-Time to add colour! Right now, your line is one colour, but the **Pen** has blocks that can change its colour. And with the right **Operator** block, you can even change the colour randomly!
+Час додати колір! Зараз твоя лінія одного кольору, але **Олівець** має блоки, які можуть змінювати його колір. А з правильним блоком з розділу **Оператори**, ти навіть можеш змінювати колір випадковим чином!
 
-The block for changing the **Pen** colour is `change pen color by`{:class="block3extensions"}:
+Для зміни кольору **Олівця** є блок `змінити колір олівця на`{:class="block3extensions"}:
 
 ```blocks3
     change pen color by (10)
@@ -10,7 +10,7 @@ The block for changing the **Pen** colour is `change pen color by`{:class="block
 
 \--- task \---
 
-Grab one of those blocks and put it into your `repeat until`{:class="block3control"} loop, like this:
+Візьми такий блок і помісти його у цикл `повторити до`{:class="block3control"}:
 
 ```blocks3
     repeat until <touching [edge v] ?> 
@@ -23,11 +23,11 @@ Grab one of those blocks and put it into your `repeat until`{:class="block3contr
 
 \--- /task \---
 
-That’s cool, but a bit predictable. You can make it a bit more fun if you add a random number into it, so the colour changes randomly.
+Це круто, але трохи передбачувано. Можна зробити це трохи веселіше, якщо вставити випадкове число, щоб колір змінювався випадковим чином.
 
 \--- task \---
 
-Put the random number **Operator** block into the `change pen color by`{:class="block3extensions"} block and pick some values to go in it. I'd try `1` and `100` to start.
+Помісти блок випадкових чисел з розділу **Оператори** у блок `змінити колір олівця на `{:class="block3extensions"} і вибери для нього деякі значення. Для початку можна спробувати від `1` до `100`.
 
 ```blocks3
     repeat until <touching [edge v] ?> 
@@ -42,6 +42,6 @@ Put the random number **Operator** block into the `change pen color by`{:class="
 
 \--- task \---
 
-Try running it again, and watch the random rainbow!
+Спробуй запустити програму ще раз і дивись на випадкову веселку!
 
 \--- /task \---
