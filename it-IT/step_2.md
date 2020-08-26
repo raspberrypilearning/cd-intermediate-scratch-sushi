@@ -4,7 +4,19 @@ Il progetto che farai si basa sullo strumento **Penna**, che disegna una linea d
 
 \--- task \---
 
-Apri un nuovo file di Scratch, seleziona lo sprite del gatto e trascina alcuni blocchi che potresti aver già visto, finchè non ottieni questo:
+Open a new Scratch project.
+
+**Online:** open a new online Scratch project at [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
+
+**Offline:** open a new project in the offline editor.
+
+If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
+
+\--- /task \---
+
+\--- task \---
+
+Select the Scratch Cat sprite, and drag in a few blocks you may have already seen, until it looks like this:
 
 ```blocks3
     when green flag clicked
@@ -15,25 +27,25 @@ Apri un nuovo file di Scratch, seleziona lo sprite del gatto e trascina alcuni b
 
 \--- /task \---
 
-Ed ora, è tempo di testare la penna!
+Now, time to test out the pen!
 
-Per utilizzare i blocchi penna in Scratch, è necessario aggiungere **l'estensione Penna**.
+To use the Pen blocks in Scratch, you need add the **Pen extension**.
 
 \--- task \---
 
-Fai clic sul pulsante **Aggiungi estensione** nell'angolo in basso a sinistra.
+Click on the **Add extension** button in the bottom left-hand corner.
 
-![aggiungi il pulsante di estensione evidenziato](images/add-extension-annotated.png)
+![add extension button highlighted](images/add-extension-annotated.png)
 
-Fai clic sull'estensione **Penna** per aggiungerla.
+Click on the **Pen** extension to add it.
 
-![estensione penna evidenziata](images/click-pen-annotated.png)
+![pen extension highlighted](images/click-pen-annotated.png)
 
-La sezione Penna viene visualizzata nella parte inferiore del menu dei blocchi.
+The Pen section then appears at the bottom of the blocks menu.
 
-![blocchi dell'estensione Penna](images/pen-extension-blocks.png)
+![pen extension blocks](images/pen-extension-blocks.png)
 
-Dalla sezione **Penna**, seleziona il blocco `penna giù`{: class = "block3extensions"} e aggiungilo all'inizio del tuo programma, in questo modo:
+From the **Pen** section, select the `pen down`{:class="block3extensions"} block and add it to the start of your program, like this:
 
 ```blocks3
     when green flag clicked
@@ -45,17 +57,17 @@ Dalla sezione **Penna**, seleziona il blocco `penna giù`{: class = "block3exten
 
 \--- task \---
 
-Ora fai clic sulla bandiera verde alcune volte e guarda cosa succede.
+Now click the green flag a few times and watch what happens.
 
 \--- /task \---
 
-Se riesci a vedere le linee dietro al gatto, allora la penna sta funzionando e puoi iniziare a creare disegni davvero fantastici.
+If you can see the lines behind the cat sprite, then the pen is working and you can start making it draw really cool patterns.
 
-Innanzitutto, dovresti sbarazzarti dello sprite. Impedisce di vedere il disegno!
+First, you should get rid of the sprite. It’s getting in the way of the drawing!
 
 \--- task \---
 
-Aggiungi un blocco ` nascondi ` {: class = "block3looks"} dal gruppo ** Aspetto ** all'inizio del programma e scomparirà.
+Add a `hide`{:class="block3looks"} block from **Looks** to the start of the program and it’ll disappear.
 
 ```blocks3
     when green flag clicked
@@ -65,7 +77,7 @@ Aggiungi un blocco ` nascondi ` {: class = "block3looks"} dal gruppo ** Aspetto 
 
 \--- /task \---
 
-Ora puoi cambiare il colore della penna con un altro blocco dalla sezione **Penna**, ma il blocco è leggermente diverso dagli altri che hai visto. È il blocco `porta colore penna a`{: class = "block3extensions"} e assomiglia a questo:
+Now, you can change the colour of the pen with another block from the **Pen** section, but the block is a little different to the others you’ve seen. It’s the `set pen color to`{:class="block3extensions"} block and looks like this:
 
 ```blocks3
     imposta il colore della penna su [# 4a6cd4]
@@ -73,7 +85,7 @@ Ora puoi cambiare il colore della penna con un altro blocco dalla sezione **Penn
 
 \--- task \---
 
-Trascina un `porta colore penna a`{: class = "block3extensions"} nel tuo pannello sprite, e aggancialo al di sopra del blocco `penna giù`{: class = "block3extensions"}.
+Drag a `set pen color to`{:class="block3extensions"} block into your sprite panel, and snap it in above the `pen down`{:class="block3extensions"} block.
 
 ```blocks3
     when green flag clicked
@@ -82,15 +94,15 @@ Trascina un `porta colore penna a`{: class = "block3extensions"} nel tuo pannell
     pen down
 ```
 
-Ora, fai clic sulla casella del colore (nel codice sopra è blu) e scegli un colore.
+Now, click on the box of colour (in the code above it’s the blue one), and choose a colour.
 
 \--- /task \---
 
-Se hai fatto clic sulla bandiera verde per testare il tuo codice, avrai notato che i disegni realizzati dalla penna non spariscono.
+If you’ve been clicking on the green flag to test your code, you’ll have noticed that the drawings the pen makes don’t go away.
 
 \--- task \---
 
-Aggiungi un blocco `pulisci`{: class = "block3extensions"} dalla sezione **Penna** all'inizio del tuo codice:
+Add a `clear`{:class="block3extensions"} block from the **Pen** section to the start of your code to take care of that:
 
 ```blocks3
     when green flag clicked
