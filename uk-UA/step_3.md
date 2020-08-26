@@ -1,12 +1,12 @@
-## Drawing patterns
+## Малювання візерунків
 
-Now you’ve got a program that draws a line, but it only draws one line. That’s a bit dull! You could use `forever`{:class="block3control"} loop to draw something over and over again, but then you’ll get drawings that go off the Stage!
+Тепер у тебе є програма, яка малює лінію, але вона малює лише одну лінію. Це трохи нудно! Ти можеш використовувати цикл `завжди`{:class="block3control"}, щоб малювати щось знову і знову, але тоді ти отримаєш малюнки, які вилазять за межі Сцени!
 
-So you need use a different type of loop called `repeat until`{:class="block3control"}, which you’ll also find in the **Control** section. This type of loop will do something over and over again, **until** a True/False condition is met.
+Тому потрібно використовувати інший тип циклу, який називається `повторити до `{:class="block3control"}, який також можна знайти в розділі **Керування**. Цей тип циклу буде робити щось знову і знову, **поки** на задовільниться його умова.
 
 \--- task \---
 
-Take a `repeat until`{:class="block3control"} block from the **Control** section, and put the `move`{:class="block3motion"} and `turn`{:class="block3motion"} blocks inside it, like so:
+Візьми блок `повторити до`{:class="block3control"} з розділу **Керування** та помісти блоки `перемістити`{:class="block3motion"} та `поворот`{:class="block3motion"} всередині нього так:
 
 ```blocks3
 +    repeat until <> 
@@ -19,31 +19,31 @@ Take a `repeat until`{:class="block3control"} block from the **Control** section
 
 \--- task \---
 
-Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge.
+Тепер натисни зелений прапорець кілька разів, щоб запустити програму і подивися, що станеться. Ти помітиш дві речі: олівець завжди починає малювання лінії в напрямку до середини Сцени, і він не зупиняється на межі.
 
 \--- /task \---
 
 ## \--- collapse \---
 
-## title: Why does the pen do this?
+## title: Чому олівець це робить?
 
-The pen always starts drawing in the direction of the middle, because the first **Motion** block that runs after the `pen down`{:class="block3extensions"} block is `go to x: 0 y: 0`{:class="block3motion"}. So the pen will draw a line as it moves to the centre of the Stage.
+Олівець завжди починає малювати у напрямку до середини, тому що перший блок **Руху**, що виконується після блоку `опустити олівець`{:block3extensions"}, є блок `перемістити в x: 0 y: 0`{:class="block3motion"}. Отже, олівець буде малювати лінію, рухаючись до центру Сцени.
 
-The pen doesn't stop at the edge of the Stage, because you haven’t yet told the `repeat until`{:class="block3control"} loop what condition it’s checking. This means the condition can never be met, so the loop will run on and on. This means that right now, the loop is working like a `forever`{:class="block3control"} loop.
+Олівець не зупиняється на межі Сцени, тому що у циклі `повторити до`{:class="block3control"} не було вказано, яка умова перевіряється. Значить, умова ніколи не може бути виконана, тому цикл буде працювати і далі. Це означає, що зараз цикл працює як цикл `завжди`{:class="block3control"}.
 
 \--- /collapse \---
 
 \--- task \---
 
-Move the `go to x: 0 y: 0`{:class="block3motion"} block to before the `pen down`{:class="block3extensions"} block and add, from the **Pen** section, a `pen up`{:class="block3extensions"} block right at the start of your code.
+Постав блок `перемістити в x: 0 y: 0`{:class="block3motion"} перед блоком `опустити олівець`{:class="block3extensions"} та додай з розділу **Олівець** блок `підняти олівець`{:class="block3extensions"} на початку коду.
 
 \--- /task \---
 
-Time to fix your `repeat until`{:class="block3control"} loop so that it stops when you want it to. You’re looking to figure out if the (invisible) sprite is touching the edge of the Stage, so you need a **Sensing** block — in this case, the `touching ?`{:class="block3sensing"} block.
+Час виправити цикл `повторити до`{:class="block3control"}, щоб він зупинився, коли тобі потрібно. Тобі потрібно з'ясувати, чи (невидимий) спрайт торкається краю Сцени, тому тобі потрібен блок з розділу **Датчики** — в даному випадку блок `торкається ?`{:class="block3sensing"}.
 
 \--- task \---
 
-Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class="block3control"} loop, and select `edge`{:class="block3sensing"} . Then the loop with run **until** the (invisible) sprite touches the edge of the Stage.
+Додай блок `торкається ?`{:class="block3sensing"} до циклу `повторити до`{:class="block3control"} та обери пункт `межа`{:class="block3sensing"} . Тоді цикл буде працювати **доки** (невидимий) спрайт не торкнеться краю Сцени.
 
 ```blocks3
     pen down
@@ -57,7 +57,7 @@ Add a `touching ?`{:class="block3sensing"} block into your `repeat until`{:class
 
 \--- task \---
 
-Change the number of steps in the `move`{:class="block3motion"} block to `5`, and check that your program matches this one before you test it:
+Зміни кількість кроків у блоці `перемістити на`{:class="block3motion"} на `5`, та переконайся перед тестуванням, що твоя програма відповідає коду нижче:
 
 ```blocks3
     when green flag clicked
@@ -75,15 +75,15 @@ Change the number of steps in the `move`{:class="block3motion"} block to `5`, an
 
 \--- /task \---
 
-If you run the code now, you’ll see that the drawing the pen makes stays on the Stage.
+Якщо зараз запустити код, ти побачиш, що малюнки, які робить олівець, залишаються на Сцені.
 
-Not only that, but your program has turned into a circle-drawing program! What's happening here is that those 15-degree turns eventually add up to 360 degrees, and so your pen turns in a full circle. You're going to change the way it moves slightly to make it take slightly a longer step each time, so it spirals out. For this, you’re going to need a **variable**.
+Крім того, твоя програма перетворилася в програму для малювання кола! А відбувається ось що: ці 15-градусні повороти в кінцевому підсумку становлять 360 градусів, і тому твій олівець рухається повним колом. Тобі потрібно трошки змінити спосіб, яким він рухається, щоб його крок тривав довше кожного разу, і щоб він закручувався у спираль. Для цього тобі знадобиться **змінна**.
 
-Variables are basically labeled places to store numbers or other information that you care about. You can create them in the **Variables** blocks section.
+Змінні — це ніби помічені ящики для зберігання чисел або іншої інформації, яка тобі потрібна. Їх можна створити у розділі блоків **Змінні**.
 
 \--- task \---
 
-Make a variable called `steps`{:class="block3variables"}, and then add a `set steps to 0`{:class="block3variables"} block at the start of your program.
+Створи змінну з іменем `кроки`{:class="block3variables"}, а потім додай блок `надати значення 0`{:class="block3variables"} на початку програми.
 
 ```blocks3
     when green flag clicked
@@ -95,7 +95,7 @@ Make a variable called `steps`{:class="block3variables"}, and then add a `set st
 
 \--- task \---
 
-Then use the value of `steps`{:class="block3variables"} instead of the `5` in the `move`{:class="block3motion"} block, and add `change steps by 1`{:class="block3variables"} as part of your loop:
+Потім використовуй значення змінної `кроки`{:class="block3variables"} замість `5` в блоці `перемістити на`{:class="block3motion"} та додай блок `змінити кроки на 1`{:class="block3variables"} як частину циклу:
 
 ```blocks3
     pen down
@@ -108,22 +108,22 @@ Then use the value of `steps`{:class="block3variables"} instead of the `5` in th
 
 \--- /task \---
 
-Do you think it matters where in the loop you put the `change steps by 1`{:class="block3variables"} block?
+Як ти вважаєш, чи має значення, куди саме в циклі поставити блок `змінити кроки на 1`{:class="block3variables"}?
 
 ## \--- collapse \---
 
-## title: Putting code in the right order
+## title: Розміщення коду в правильному порядку
 
-When you're deciding which order to put blocks in, think about what each block does and what you want your code to do.
+Коли вирішуєш, в якому порядку розміщувати блоки, подумай над тим, що робить кожен блок, і що ти хочеш щоб твій код робив.
 
-In this case, you want the pen to move, then turn, over and over. Each time it does this, you want to move one extra step.
+У даному випадку тобі потрібно, щоб олівець рухався, потім повертав, і так знову і знову. Кожного разу як він робить це, тобі потрібно перемістити його ще на один додатковий крок.
 
-So it makes sense to put the `change steps by 1`{:class="block3variables"} block **after** the `move`{:class="block3motion"} block. However, after moving, it doesn't really matter if the pen turns first and then the number of steps changes, or if the number of steps changes first and then the pen turns instead.
+Тому доцільно буде розмістити блок `змінити кроки на 1`{:class="block3variables"} **після** блоку `перемістити на`{:class="block3motion"}. Однак після переміщення вже не має особливого значення, чи олівець повертає спочатку, а потім змінюється кількість кроків, чи спочатку змінюється кількість кроків, а потім повертає олівець.
 
 \--- /collapse \---
 
 \--- task \---
 
-Now run the program, and also try changing the number of degrees around (try `76` and `120`)!
+Тепер запусти програму, а також спробуй змінити кількість градусів (спробуй `76` та `120`)!
 
 \--- /task \---
