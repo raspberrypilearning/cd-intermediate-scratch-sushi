@@ -1,0 +1,15 @@
+steps
+
+degrees
+
+increase
+
+किती स्टेप्सने पुढे जायचे?
+
+किती degree ने वळायचे?
+
+Increase list
+
+Degrees list
+
+counter
