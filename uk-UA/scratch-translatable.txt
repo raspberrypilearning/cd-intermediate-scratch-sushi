@@ -1,15 +1,15 @@
-steps
+кроки
 
-degrees
+градуси
 
-increase
+приріст
 
-How many steps should I grow by?
+На скільки кроків збільшуватись?
 
-How many degrees should I turn?
+На скільки градусів повертати?
 
-Increase list
+Список приростів
 
-Degrees list
+Список градусів
 
-counter
+лічильник
