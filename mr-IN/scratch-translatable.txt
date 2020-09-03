@@ -4,9 +4,9 @@ degrees
 
 increase
 
-किती स्टेप्सने पुढे जायचे?
+How many steps should I grow by?
 
-किती degree ने वळायचे?
+How many degrees should I turn?
 
 Increase list
 
