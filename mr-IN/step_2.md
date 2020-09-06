@@ -4,19 +4,19 @@
 
 \--- task \---
 
-Open a new Scratch project.
+एक नवीन रिक्त Scratch प्रोजेक्ट उघडा.
 
-**Online:** open a new online Scratch project at [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
+**Online:** [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_ blank"} वर एक नवीन ऑनलाइन scratch प्रकल्प उघडा.
 
-**Offline:** open a new project in the offline editor.
+**Offline:** ऑफलाइन संपादकात एक नवीन प्रकल्प उघडा.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
+आपल्याला Scratch ऑफलाइन संपादक डाउनलोड आणि स्थापित करण्याची आवश्यकता असल्यास, आपण [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"} वर शोधू शकता.
 
 \--- /task \---
 
 \--- task \---
 
-Select the Scratch Cat sprite, and drag in a few blocks you may have already seen, until it looks like this:
+एक नवीन Scratch फाइल उघडा, Scratch मांजर sprite निवडा, आणि जोपर्यंत हे असे दिसत नाही तो पर्यन्त आपण आधी पाहिलेले काही ब्लॉक्स ओढा:
 
 ```blocks3
     when green flag clicked
@@ -27,25 +27,25 @@ Select the Scratch Cat sprite, and drag in a few blocks you may have already see
 
 \--- /task \---
 
-Now, time to test out the pen!
+आता तुमचा पेन तपासण्याची वेळ आली आहे!
 
-To use the Pen blocks in Scratch, you need add the **Pen extension**.
+Scratch मधील पेन ब्लॉक्स वापरण्यासाठी आपल्याला **Pen extension** जोडावा लागेल.
 
 \--- task \---
 
-Click on the **Add extension** button in the bottom left-hand corner.
+तळाशी डाव्या हाताच्या कोपर्यात असलेल्या **Add extension** बटण क्लिक करा.
 
 ![add extension button highlighted](images/add-extension-annotated.png)
 
-Click on the **Pen** extension to add it.
+जोडण्यासाठी **pen** विस्तारावर क्लिक करा.
 
 ![pen extension highlighted](images/click-pen-annotated.png)
 
-The Pen section then appears at the bottom of the blocks menu.
+पेन विभाग नंतर ब्लॉक मेनूच्या तळाशी दिसतो.
 
 ![pen extension blocks](images/pen-extension-blocks.png)
 
-From the **Pen** section, select the `pen down`{:class="block3extensions"} block and add it to the start of your program, like this:
+**Pen** विभागातून, `Pen down`{:class="block3extensions"} ब्लॉक निवडा आणि आपल्या प्रोग्रामच्या सुरुवातीस अश्या प्रकारे जोडा:
 
 ```blocks3
     when green flag clicked
@@ -57,17 +57,17 @@ From the **Pen** section, select the `pen down`{:class="block3extensions"} block
 
 \--- task \---
 
-Now click the green flag a few times and watch what happens.
+आता काही वेळा हिरव्या झेंड्यावर क्लिक करा आणि काय होते ते पहा.
 
 \--- /task \---
 
-If you can see the lines behind the cat sprite, then the pen is working and you can start making it draw really cool patterns.
+जर आपण sprite मांजरीच्या मागे रेषा पाहू शकत असाल तर पेन काम करत आहे आणि आपण छान नमुने तयार करण्यास सुरु करू शकता.
 
-First, you should get rid of the sprite. It’s getting in the way of the drawing!
+प्रथम, आपण sprite पासून सुटका करून घेऊया. हे चित्र काढण्याच्या मार्गात अडथळा आहे!
 
 \--- task \---
 
-Add a `hide`{:class="block3looks"} block from **Looks** to the start of the program and it’ll disappear.
+ह्याकरिता **Looks** मधून `hide`{:class="block3looks"} ब्लॉक प्रोग्रॅमच्या सुरुवातीला जोडा आणि ते अद्रुश्य होईल.
 
 ```blocks3
     when green flag clicked
@@ -77,7 +77,7 @@ Add a `hide`{:class="block3looks"} block from **Looks** to the start of the prog
 
 \--- /task \---
 
-Now, you can change the colour of the pen with another block from the **Pen** section, but the block is a little different to the others you’ve seen. It’s the `set pen color to`{:class="block3extensions"} block and looks like this:
+आता आपण **Pen** विभागा मधून दुसर्‍या ब्लॉकसह पेनचा रंग बदलू शकतो, परंतु आपण पाहिलेल्या इतरांपेक्षा हा ब्लॉक थोडा वेगळा आहे. ह्या करीता `set pen color to`{:class="block3extensions"} हा ब्लॉक निवडा जो असा दिसेल:
 
 ```blocks3
     set pen color to [#4a6cd4]
@@ -85,7 +85,7 @@ Now, you can change the colour of the pen with another block from the **Pen** se
 
 \--- task \---
 
-Drag a `set pen color to`{:class="block3extensions"} block into your sprite panel, and snap it in above the `pen down`{:class="block3extensions"} block.
+हा `set pen color to`{:class="block3extensions"} ब्लॉक आपल्या स्प्राइट पॅनेलमध्ये `pen down`{:class="block3extensions"} ह्या ब्लॉक वर जोडा.
 
 ```blocks3
     when green flag clicked
@@ -94,15 +94,15 @@ Drag a `set pen color to`{:class="block3extensions"} block into your sprite pane
     pen down
 ```
 
-Now, click on the box of colour (in the code above it’s the blue one), and choose a colour.
+आता, रंगाच्या बॉक्सवर क्लिक करा (वरील कोडमध्ये तो निळा आहे), आणि एक रंग निवडा.
 
 \--- /task \---
 
-If you’ve been clicking on the green flag to test your code, you’ll have noticed that the drawings the pen makes don’t go away.
+आपल्या कोडची चाचणी करण्यासाठी आपण हिरव्या झेंड्यावर क्लिक करत असाल तर आपल्या लक्षात आले असेल की पेनने काढलेले रेखाचित्र निघत नाहीत.
 
 \--- task \---
 
-Add a `clear`{:class="block3extensions"} block from the **Pen** section to the start of your code to take care of that:
+ह्याकरीता **Pen** विभागातून `clear`{:class="block3extensions"} ब्लॉक कोडच्या सुरुवातीला जोडा:
 
 ```blocks3
     when green flag clicked
