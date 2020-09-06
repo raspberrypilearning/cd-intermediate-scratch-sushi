@@ -38,7 +38,7 @@
 
 ## \--- collapse \---
 
-## शीर्षक: वाढीचा (incrementing) अर्थ काय?
+## title: वाढीचा (incrementing) अर्थ काय?
 
 काहीतरी वाढविणे (increment) म्हणजे आहे त्यामध्ये काहीतरी जोडणे.
 
@@ -86,14 +86,14 @@
 
 ## \--- collapse \---
 
-## शीर्षक: कोड कार्य कसे करतो?
+## title: कोड कार्य कसे करतो?
 
 आपण आपला प्रोग्राम चालविता तेव्हा पुढील होते:
 
 1. `counter`{:class="block3variables"} ला `0` वर सेट करा.
 2. `forever`{:class="block3control"} लूप सुरु करा.
 3. `counter`{:class="block3variables"} (`0`) ची लांबी `Increase List`{:class="block3variables"} (`2`) एवढीच आहे कि नाही ते तपासून घ्या. लांबी समान नाही.
-4. `counter`{:class="block3variables"} ला `1` नि बदला. Now `counter`{:class="block3variables"} = `1`.
+4. `counter`{:class="block3variables"} ला `1` नि बदला. आता `counter`{:class="block3variables"} = `1`.
 5. `steps`{:class="block3variables"} ला `0` वर सेट करा.
 6. `Increase List`{:class="block3variables"} मधील `counter`{:class="block3variables"} (`1`) जागेवरील आयटमला `increase`{:class="block3variables"} मध्ये ठेवा.
 7. `Degrees List`{:class="block3variables"} मधील `counter`{:class="block3variables"} (`1`) जागेवरील आयटमला `degrees`{:class="block3variables"} मध्ये ठेवा.
