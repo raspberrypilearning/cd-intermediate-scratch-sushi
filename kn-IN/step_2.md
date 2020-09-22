@@ -4,13 +4,13 @@
 
 \--- task \---
 
-Open a new Scratch project.
+ಹೊಸ ಸ್ಕ್ರ್ಯಾಚ್ ಯೋಜನೆಯನ್ನು ತೆರೆಯಿರಿ.
 
-**Online:** open a new online Scratch project at [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
+**ಆನ್‌ಲೈನ್:** ಹೊಸ ಆನ್‌ಲೈನ್ ತೆರೆಯಿರಿ Scratch ನಲ್ಲಿ ಯೋಜನೆ [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
 
-**Offline:** open a new project in the offline editor.
+** ಆಫ್‌ಲೈನ್: ** ಆಫ್‌ಲೈನ್ ಸಂಪಾದಕದಲ್ಲಿ ಹೊಸ ಯೋಜನೆಯನ್ನು ತೆರೆಯಿರಿ.
 
-If you need to download and install the Scratch offline editor, you can find it at [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
+ನೀವು ಸ್ಕ್ರ್ಯಾಚ್ ಆಫ್‌ಲೈನ್ ಸಂಪಾದಕವನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ ಸ್ಥಾಪಿಸಬೇಕಾದರೆ, ನೀವು ಅದನ್ನು [ rpf.io/scratchoff ನಲ್ಲಿ ಕಾಣಬಹುದು ](http://rpf.io/scratchoff) {:target="_blank"}.
 
 \--- /task \---
 
@@ -27,25 +27,25 @@ Select the Scratch Cat sprite, and drag in a few blocks you may have already see
 
 \--- /task \---
 
-Now, time to test out the pen!
+ಈಗ, ಪೆನ್ನು ಪರೀಕ್ಷಿಸುವ ಸಮಯ!
 
-To use the Pen blocks in Scratch, you need add the **Pen extension**.
+Scratch‌ನಲ್ಲಿ ಪೆನ್ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಬಳಸಲು, ನೀವು **Pen extension** ಸೇರಿಸಬೇಕು.
 
 \--- task \---
 
-Click on the **Add extension** button in the bottom left-hand corner.
+ಕ್ಲಿಕ್ ಮಾಡಿ **Add extension** ಬಟನ್ ಕೆಳಗಿನ ಎಡಗೈ ಮೂಲೆಯಲ್ಲಿ.
 
-![add extension button highlighted](images/add-extension-annotated.png)
+![ಹೈಲೈಟ್ ಮಾಡಿದ add extension (ಆಡ್ ಎಕ್ಸಟೆನ್ಶನ್) ಬಟನ್ ಸೇರಿಸಿ](images/add-extension-annotated.png)
 
-Click on the **Pen** extension to add it.
+ಕ್ಲಿಕ್ ಮಾಡಿ **Pen** ವಿಸ್ತರಣೆ ಅದನ್ನು ಸೇರಿಸಲು.
 
-![pen extension highlighted](images/click-pen-annotated.png)
+![ಪೆನ್ ವಿಸ್ತರಣೆಯನ್ನು ಹೈಲೈಟ್ ಮಾಡಲಾಗಿದೆ](images/click-pen-annotated.png)
 
-The Pen section then appears at the bottom of the blocks menu.
+ಪೆನ್ ವಿಭಾಗವು ಬ್ಲಾಕ್ಗಳ ಮೆನುವಿನ ಕೆಳಭಾಗದಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ.
 
-![pen extension blocks](images/pen-extension-blocks.png)
+![ಪೆನ್ ವಿಸ್ತರಣೆ blocks](images/pen-extension-blocks.png)
 
-From the **Pen** section, select the `pen down`{:class="block3extensions"} block and add it to the start of your program, like this:
+**Pen** ವಿಭಾಗದಿಂದ, `pen down`{:class="block3extensions"} ಬ್ಲಾಕ್ ಮತ್ತು ಅದನ್ನು ನಿಮ್ಮ ಪ್ರೋಗ್ರಾಮ್ ನ ಪ್ರಾರಂಭಕ್ಕೆ ಸೇರಿಸಿ, ಈ ರೀತಿಯಾಗಿ:
 
 ```blocks3
     when green flag clicked
@@ -57,17 +57,17 @@ From the **Pen** section, select the `pen down`{:class="block3extensions"} block
 
 \--- task \---
 
-Now click the green flag a few times and watch what happens.
+ಈಗ ಹಸಿರು ಧ್ವಜವನ್ನು ಕೆಲವು ಬಾರಿ ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು ಏನಾಗುತ್ತದೆ ಎಂಬುದನ್ನು ನೋಡಿ.
 
 \--- /task \---
 
-If you can see the lines behind the cat sprite, then the pen is working and you can start making it draw really cool patterns.
+ಬೆಕ್ಕಿನ sprite ಹಿಂದಿನ ರೇಖೆಗಳನ್ನು ನೀವು ನೋಡಬಹುದಾದರೆ, ಪೆನ್ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿದೆ ಮತ್ತು ನೀವು ಅದನ್ನು ನಿಜವಾಗಿಯೂ ಚೆನ್ನಾಗಿರುವ ಮಾದರಿಗಳನ್ನು ಸೆಳೆಯಲು ಪ್ರಾರಂಭಿಸಬಹುದು.
 
-First, you should get rid of the sprite. It’s getting in the way of the drawing!
+ಮೊದಲಿಗೆ, ನೀವು sprite ಅನ್ನು ತಡೆದುಹಾಕಬೇಕು. ಇದು ರೇಖಾಚಿತ್ರದ ಅಡ್ಡಿಯಲ್ಲಿದೆ!
 
 \--- task \---
 
-Add a `hide`{:class="block3looks"} block from **Looks** to the start of the program and it’ll disappear.
+`hide`{:class="block3looks"}ಬ್ಲಾಕ್ ನಿಂದ **Looks** ಪ್ರೋಗ್ರಾಮ್ ನ ಪ್ರಾರಂಭಕ್ಕೆ ಸೇರಿಸಿ, ಕಣ್ಮರೆಯಾಗುತ್ತದೆ.
 
 ```blocks3
     when green flag clicked
@@ -77,7 +77,7 @@ Add a `hide`{:class="block3looks"} block from **Looks** to the start of the prog
 
 \--- /task \---
 
-Now, you can change the colour of the pen with another block from the **Pen** section, but the block is a little different to the others you’ve seen. It’s the `set pen color to`{:class="block3extensions"} block and looks like this:
+ಈಗ, ನೀವು ಪೆನ್ನ ಬಣ್ಣವನ್ನು **Pen** ವಿಭಾಗದಿಂದ ಮತ್ತೊಂದು ಬ್ಲಾಕ್ನೊಂದಿಗೆ ಬದಲಾಯಿಸಬಹುದು, ಆದರೆ ನೀವು ನೋಡಿದ ಇತರರಿಗೆ ಬ್ಲಾಕ್ ಸ್ವಲ್ಪ ಭಿನ್ನವಾಗಿರುತ್ತದೆ. ಇದು `set pen color to`{:class="block3extensions"} block ಮತ್ತು ಈ ರೀತಿ ಕಾಣುತ್ತದೆ:
 
 ```blocks3
     set pen color to [#4a6cd4]
@@ -85,7 +85,7 @@ Now, you can change the colour of the pen with another block from the **Pen** se
 
 \--- task \---
 
-Drag a `set pen color to`{:class="block3extensions"} block into your sprite panel, and snap it in above the `pen down`{:class="block3extensions"} block.
+`set pen color to`{:class="block3extensions"} ಬ್ಲಾಕ್ ಅನ್ನು ಎಳೆಯಿರಿ ನಿಮ್ಮ sprite ಪ್ಯಾನೆಲ್‌ಗೆ, ಮತ್ತು ಅದನ್ನು `pen down`{:class="block3extensions"} ಬ್ಲಾಕ್ ಮೇಲೆ ಅಂಟಿಸಿ.
 
 ```blocks3
     when green flag clicked
@@ -94,15 +94,15 @@ Drag a `set pen color to`{:class="block3extensions"} block into your sprite pane
     pen down
 ```
 
-Now, click on the box of colour (in the code above it’s the blue one), and choose a colour.
+ಈಗ, ಬಣ್ಣದ ಪೆಟ್ಟಿಗೆಯ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ (ಮೇಲಿನ code‌ ನಲ್ಲಿ ಅದು ನೀಲಿ ಬಣ್ಣದ್ದಾಗಿದೆ), ಮತ್ತು ಬಣ್ಣವನ್ನು ಆರಿಸಿ.
 
 \--- /task \---
 
-If you’ve been clicking on the green flag to test your code, you’ll have noticed that the drawings the pen makes don’t go away.
+ನಿಮ್ಮ ಕೋಡ್ ಅನ್ನು ಪರೀಕ್ಷಿಸಲು ನೀವು ಹಸಿರು ಧ್ವಜದ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡುತ್ತಿದ್ದರೆ, ಪೆನ್ ಮಾಡುವ ರೇಖಾಚಿತ್ರಗಳು ಹೋಗುವುದಿಲ್ಲ ಎಂದು ನೀವು ಗಮನಿಸಿದ್ದೀರಿ.
 
 \--- task \---
 
-Add a `clear`{:class="block3extensions"} block from the **Pen** section to the start of your code to take care of that:
+ನಿಮ್ಮ code ಅನ್ನು ಪ್ರಾರಂಭದಿಂದ ನೋಡಿಕೊಳ್ಳಲು `clear`{:class="block3extensions"} ಬ್ಲಾಕ್ ಅನ್ನು **Pen** ವಿಭಾಗದಿಂದ ಸೇರಿಸಿ:
 
 ```blocks3
     when green flag clicked
