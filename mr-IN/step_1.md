@@ -42,6 +42,6 @@
 
 ### सॉफ्टवेअर
 
-+ Scratch 3 (एकतर [online](https://scratch.mit.edu/projects/editor/){:target="_blank"} किंवा [offline](https://scratch.mit.edu/download/){:target="_blank"})
++ Scratch 3 (एकतर [ऑनलाइन](https://scratch.mit.edu/projects/editor/){:target="_blank"} किंवा [ऑफलाइन](https://scratch.mit.edu/download/){:target="_blank"})
 
 \--- /collapse \---
