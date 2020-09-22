@@ -6,9 +6,9 @@
 
 एक नवीन रिक्त Scratch प्रोजेक्ट उघडा.
 
-**Online:** [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_ blank"} वर एक नवीन ऑनलाइन scratch प्रकल्प उघडा.
+**ऑनलाईन:** [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_ blank"} वर एक नवीन ऑनलाइन scratch प्रकल्प उघडा.
 
-**Offline:** ऑफलाइन संपादकात एक नवीन प्रकल्प उघडा.
+**ऑफलाइन:** ऑफलाइन संपादकात एक नवीन प्रकल्प उघडा.
 
 आपल्याला Scratch ऑफलाइन संपादक डाउनलोड आणि स्थापित करण्याची आवश्यकता असल्यास, आपण [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"} वर शोधू शकता.
 
