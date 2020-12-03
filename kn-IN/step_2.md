@@ -16,7 +16,7 @@
 
 \--- task \---
 
-Select the Scratch Cat sprite, and drag in a few blocks you may have already seen, until it looks like this:
+Scratch ಕ್ಯಾಟ್ sprite ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಿ ಮತ್ತು ನೀವು ಈಗಾಗಲೇ ನೋಡಿದ ಕೆಲವು blocks ಎಳೆಯಿರಿ, ಅದು ಈ ರೀತಿ ಕಾಣುವವರೆಗೆ:
 
 ```blocks3
     when green flag clicked
