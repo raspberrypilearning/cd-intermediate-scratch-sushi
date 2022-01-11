@@ -2,7 +2,7 @@
 title: Візерунки олівцем
 hero_image: images/banner.png
 description: Зроби крутий генератор візерунків
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -16,10 +16,12 @@ software: scratch
 version: 4.0.0
 last_tested: 2017-01-01
 steps:
-  - title: Вступ
-  - title: Використання інструменту "Олівець"
-  - title: Малювання візерунків
-  - title: Запит на введення даних
-  - title: Ще крутіші лініі
-  - title: Зроби випадковим усе
-  - title: Допоможи комп’ютеру
+- title: Вступ
+  completion: engaged
+- title: Використання інструменту "Олівець"
+- title: Малювання візерунків
+- title: Запит на введення даних
+- title: Ще крутіші лініі
+- title: Зроби випадковим усе
+  completion: internal
+- title: Допоможи комп’ютеру

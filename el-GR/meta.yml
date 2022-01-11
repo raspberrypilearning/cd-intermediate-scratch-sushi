@@ -2,7 +2,7 @@
 title: Φτιάξε μοτίβα με την πένα
 hero_image: images/banner.png
 description: Δημιούργησε μια εντυπωσιακή γεννήτρια μοτίβων
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -16,10 +16,12 @@ software: scratch
 version: 4.0.0
 last_tested: 2017-01-01
 steps:
-  - title: Εισαγωγή
-  - title: Χρήση του εργαλείου πένας
-  - title: Ζωγραφίζοντας μοτίβα
-  - title: Εισαγωγή τιμών από το χρήστη
-  - title: Ακόμη πιο εντυπωσιακές γραμμές
-  - title: Φτιάχνοντας τυχαία μοτίβα
-  - title: Βοηθώντας τον υπολογιστή
+- title: Εισαγωγή
+  completion: engaged
+- title: Χρήση του εργαλείου πένας
+- title: Ζωγραφίζοντας μοτίβα
+- title: Εισαγωγή τιμών από το χρήστη
+- title: Ακόμη πιο εντυπωσιακές γραμμές
+- title: Φτιάχνοντας τυχαία μοτίβα
+  completion: internal
+- title: Βοηθώντας τον υπολογιστή

@@ -2,7 +2,7 @@
 title: Musterstift
 hero_image: images/banner.png
 description: Erstelle einen coolen Muster-Generator
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -16,10 +16,12 @@ software: scratch
 version: 4.0.0
 last_tested: 2017-01-01
 steps:
-  - title: Einleitung
-  - title: Das Stiftwerkzeug verwenden
-  - title: Muster zeichnen
-  - title: Bitte um Eingabe
-  - title: Coolere Linien
-  - title: Mache das Ganze zufällig
-  - title: Hilf dem Computer
+- title: Einleitung
+  completion: engaged
+- title: Das Stiftwerkzeug verwenden
+- title: Muster zeichnen
+- title: Bitte um Eingabe
+- title: Coolere Linien
+- title: Mache das Ganze zufällig
+  completion: internal
+- title: Hilf dem Computer

@@ -2,7 +2,7 @@
 title: 图案笔
 hero_image: images/banner.png
 description: 制作一个很酷的图案生成器
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -16,10 +16,12 @@ software: scratch
 version: 4.0.0
 last_tested: 2017-01-01
 steps:
-  - title: 介绍
-  - title: 使用画笔工具
-  - title: 绘制图案
-  - title: 要求输入
-  - title: 更酷的线条
-  - title: 随机呈现整个内容
-  - title: 帮助计算机
+- title: 介绍
+  completion: engaged
+- title: 使用画笔工具
+- title: 绘制图案
+- title: 要求输入
+- title: 更酷的线条
+- title: 随机呈现整个内容
+  completion: internal
+- title: 帮助计算机

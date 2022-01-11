@@ -2,7 +2,7 @@
 title: 패턴 펜
 hero_image: images/banner.png
 description: 멋진 패턴 생성기 만들기
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -16,10 +16,12 @@ software: scratch
 version: 4.0.0
 last_tested: 2017-01-01
 steps:
-  - title: 소개
-  - title: 펜 도구 사용
-  - title: 그림 패턴
-  - title: 입력 요청
-  - title: 멋진 라인
-  - title: 모든 것을 무작위로
-  - title: 컴퓨터 도와 주기
+- title: 소개
+  completion: engaged
+- title: 펜 도구 사용
+- title: 그림 패턴
+- title: 입력 요청
+- title: 멋진 라인
+- title: 모든 것을 무작위로
+  completion: internal
+- title: 컴퓨터 도와 주기
