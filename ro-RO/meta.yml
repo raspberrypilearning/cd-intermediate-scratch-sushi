@@ -11,15 +11,19 @@ curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
 interests: artă
 technologies: scratch
 site_areas: coderdojo
-hardware:
+hardware: 
 software: scratch
 version: 4.0.0
 last_tested: 2017-01-01
 steps:
-  - title: Introducere
-  - title: Utilizarea instrumentului Stilou
-  - title: Șabloane de desen
-  - title: Obținerea datelor de intrare
-  - title: Linii mai interesante
-  - title: Fă totul aleatoriu
-  - title: Ajută computer-ul
+- title: Introducere
+- title: Utilizarea instrumentului Stilou
+- title: Șabloane de desen
+  completion:
+  - engaged
+- title: Obținerea datelor de intrare
+- title: Linii mai interesante
+- title: Fă totul aleatoriu
+- title: Ajută computer-ul
+  completion:
+  - internal

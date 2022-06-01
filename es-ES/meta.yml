@@ -2,7 +2,7 @@
 title: Lápiz de patrones
 hero_image: images/banner.png
 description: Haz un generador de patrones genial
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -11,15 +11,19 @@ curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
 interests: art
 technologies: scratch
 site_areas: coderdojo
-hardware:
+hardware: 
 software: scratch
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: Introducción
-  - title: Cómo utilizar la herramienta Lápiz
-  - title: Patrones de dibujo
-  - title: Pidiendo valores de entrada
-  - title: Líneas más atractivas
-  - title: Aleatorizar todo
-  - title: Ayudando al ordenador
+- title: Introducción
+- title: Cómo utilizar la herramienta Lápiz
+- title: Patrones de dibujo
+  completion:
+  - engaged
+- title: Pidiendo valores de entrada
+- title: Líneas más atractivas
+- title: Aleatorizar todo
+- title: Ayudando al ordenador
+  completion:
+  - internal

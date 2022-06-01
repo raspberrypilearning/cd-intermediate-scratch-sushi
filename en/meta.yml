@@ -1,7 +1,8 @@
+---
 title: Pattern pen
 hero_image: images/banner.png
 description: Make a cool pattern generator
-theme: orange # possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -14,11 +15,15 @@ hardware:
 software: scratch
 version: 4.0.0
 last_tested: 2017-01-01
-steps: 
+steps:
 - title: Introduction
 - title: Using the Pen tool
 - title: Drawing patterns
+  completion:
+  - engaged
 - title: Asking for input
 - title: Cooler lines
 - title: Randomise the whole thing
 - title: Helping the computer
+  completion:
+  - internal

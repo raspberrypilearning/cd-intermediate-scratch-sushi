@@ -2,7 +2,7 @@
 title: Stylo à motif
 hero_image: images/banner.png
 description: Faire un générateur de motif cool
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -11,15 +11,19 @@ curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
 interests: art
 technologies: scratch
 site_areas: coderdojo
-hardware:
+hardware: 
 software: scratch
 version: 4.0.0
 last_tested: 01/01/2017
 steps:
-  - title: Introduction
-  - title: Utiliser l'outil Stylo
-  - title: Motifs de dessin
-  - title: Demande d'entrée
-  - title: Lignes plus cool
-  - title: Randomiser le tout
-  - title: Aider l'ordinateur
+- title: Introduction
+- title: Utiliser l'outil Stylo
+- title: Motifs de dessin
+  completion:
+  - engaged
+- title: Demande d'entrée
+- title: Lignes plus cool
+- title: Randomiser le tout
+- title: Aider l'ordinateur
+  completion:
+  - internal

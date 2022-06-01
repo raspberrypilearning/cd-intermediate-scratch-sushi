@@ -2,7 +2,7 @@
 title: ನಮೂನೆಯ ಪೆನ್
 hero_image: images/banner.png
 description: ಚೆನ್ನಾಗಿರುವ ನಮೂನೆ ಉತ್ಪದಕವನ್ನು ಮಾಡಿ
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -11,15 +11,19 @@ curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
 interests: art
 technologies: scratch
 site_areas: coderdojo
-hardware:
+hardware: 
 software: scratch
 version: 4.0.0
 last_tested: 2017-01-01
 steps:
-  - title: ಪರಿಚಯ
-  - title: ಪೆನ್ ಉಪಕರಣವನ್ನು ಬಳಸುವುದು
-  - title: ಡ್ರಾಯಿಂಗ್ ಪ್ಯಾಟರ್ನ್ಸ್
-  - title: ಇನ್ಪುಟ್ ಕೇಳುತ್ತಿದೆ
-  - title: ಚೆನ್ನಾಗಿರುವ ರೇಖೆಗಳು
-  - title: ಇಡೀ ವಿಷಯವನ್ನು ಯಾದೃಚಿಕಗೊಳಿಸಿ
-  - title: ಕಂಪ್ಯೂಟರ್ಗೆ ಸಹಾಯ ಮಾಡಲಾಗುತ್ತಿದೆ
+- title: ಪರಿಚಯ
+- title: ಪೆನ್ ಉಪಕರಣವನ್ನು ಬಳಸುವುದು
+- title: ಡ್ರಾಯಿಂಗ್ ಪ್ಯಾಟರ್ನ್ಸ್
+  completion:
+  - engaged
+- title: ಇನ್ಪುಟ್ ಕೇಳುತ್ತಿದೆ
+- title: ಚೆನ್ನಾಗಿರುವ ರೇಖೆಗಳು
+- title: ಇಡೀ ವಿಷಯವನ್ನು ಯಾದೃಚಿಕಗೊಳಿಸಿ
+- title: ಕಂಪ್ಯೂಟರ್ಗೆ ಸಹಾಯ ಮಾಡಲಾಗುತ್ತಿದೆ
+  completion:
+  - internal
