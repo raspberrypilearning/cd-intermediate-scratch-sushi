@@ -11,17 +11,19 @@ curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
 interests: art
 technologies: scratch
 site_areas: coderdojo
-hardware:
+hardware: 
 software: scratch
 version: 4.0.0
 last_tested: 2017-01-01
 steps:
 - title: Wprowadzenie
-  completion: engaged
 - title: Korzystanie z narzędzia Pióro
 - title: Rysowanie wzorów
+  completion:
+  - engaged
 - title: Pytanie o dane wejściowe
 - title: Ciekawsze linie
 - title: Ustaw wszystko losowo
-  completion: internal
 - title: Pomaganie komputerowi
+  completion:
+  - internal

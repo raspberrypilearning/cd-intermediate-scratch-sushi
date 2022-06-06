@@ -11,17 +11,19 @@ curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
 interests: art
 technologies: scratch
 site_areas: coderdojo
-hardware:
+hardware: 
 software: scratch
 version: 4.0.0
 last_tested: 01/01/2017
 steps:
 - title: Introduction
-  completion: engaged
 - title: Utiliser l'outil Stylo
 - title: Motifs de dessin
+  completion:
+  - engaged
 - title: Demande d'entrée
 - title: Lignes plus cool
 - title: Randomiser le tout
-  completion: internal
 - title: Aider l'ordinateur
+  completion:
+  - internal

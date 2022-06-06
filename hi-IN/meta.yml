@@ -11,17 +11,19 @@ curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
 interests: art and design
 technologies: scratch
 site_areas: coderdojo
-hardware:
+hardware: 
 software: scratch
 version: 4.0.0
 last_tested: 2017-01-01
 steps:
 - title: परिचय
-  completion: engaged
 - title: पेन टूल का उपयोग करना
 - title: ड्राइंग पैटर्न
+  completion:
+  - engaged
 - title: इनपुट के लिए पूछ रहा है
 - title: मजे की लाइनें
 - title: पूरी बात बेतरतीब ढंग से
-  completion: internal
 - title: कंप्यूटर की मदद करना
+  completion:
+  - internal

@@ -11,17 +11,19 @@ curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
 interests: art
 technologies: scratch
 site_areas: coderdojo
-hardware:
+hardware: 
 software: scratch
 version: 4.0.0
 last_tested: 2017-01-01
 steps:
 - title: Εισαγωγή
-  completion: engaged
 - title: Χρήση του εργαλείου πένας
 - title: Ζωγραφίζοντας μοτίβα
+  completion:
+  - engaged
 - title: Εισαγωγή τιμών από το χρήστη
 - title: Ακόμη πιο εντυπωσιακές γραμμές
 - title: Φτιάχνοντας τυχαία μοτίβα
-  completion: internal
 - title: Βοηθώντας τον υπολογιστή
+  completion:
+  - internal

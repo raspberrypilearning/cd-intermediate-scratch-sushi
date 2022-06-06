@@ -11,17 +11,19 @@ curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
 interests: art
 technologies: scratch
 site_areas: coderdojo
-hardware:
+hardware: 
 software: scratch
 version: 4.0.0
 last_tested: 2017-01-01
 steps:
 - title: Вступ
-  completion: engaged
 - title: Використання інструменту "Олівець"
 - title: Малювання візерунків
+  completion:
+  - engaged
 - title: Запит на введення даних
 - title: Ще крутіші лініі
 - title: Зроби випадковим усе
-  completion: internal
 - title: Допоможи комп’ютеру
+  completion:
+  - internal

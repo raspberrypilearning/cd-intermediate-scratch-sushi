@@ -11,17 +11,19 @@ curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
 interests: art
 technologies: scratch
 site_areas: coderdojo
-hardware:
+hardware: 
 software: scratch
 version: 4.0.0
 last_tested: 2017-01-01
 steps:
 - title: 소개
-  completion: engaged
 - title: 펜 도구 사용
 - title: 그림 패턴
+  completion:
+  - engaged
 - title: 입력 요청
 - title: 멋진 라인
 - title: 모든 것을 무작위로
-  completion: internal
 - title: 컴퓨터 도와 주기
+  completion:
+  - internal

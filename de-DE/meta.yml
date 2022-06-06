@@ -11,17 +11,19 @@ curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
 interests: art
 technologies: scratch
 site_areas: coderdojo
-hardware:
+hardware: 
 software: scratch
 version: 4.0.0
 last_tested: 2017-01-01
 steps:
 - title: Einleitung
-  completion: engaged
 - title: Das Stiftwerkzeug verwenden
 - title: Muster zeichnen
+  completion:
+  - engaged
 - title: Bitte um Eingabe
 - title: Coolere Linien
 - title: Mache das Ganze zufällig
-  completion: internal
 - title: Hilf dem Computer
+  completion:
+  - internal
