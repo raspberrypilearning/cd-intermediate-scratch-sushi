@@ -1,15 +1,15 @@
-steps
+단계
 
-degrees
+각도
 
-increase
+증가
 
-How many steps should I grow by?
+몇 단계를 거쳐야합니까?
 
-How many degrees should I turn?
+몇 도를 돌려야합니까?
 
-Increase list
+리스트 늘리기
 
-Degrees list
+각도 목록
 
-counter
+카운터
