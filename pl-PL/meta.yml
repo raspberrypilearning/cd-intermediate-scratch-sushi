@@ -2,7 +2,7 @@
 title: Wzór pióra
 hero_image: images/banner.png
 description: Stwórz generator fajnych wzorów
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -22,6 +22,8 @@ steps:
     title: Korzystanie z narzędzia Pióro
   - 
     title: Rysowanie wzorów
+    completion:
+      - engaged
   - 
     title: Pytanie o dane wejściowe
   - 
@@ -30,3 +32,5 @@ steps:
     title: Ustaw wszystko losowo
   - 
     title: Pomaganie komputerowi
+    completion:
+      - internal
