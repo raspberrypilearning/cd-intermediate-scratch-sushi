@@ -6,7 +6,7 @@ Ceci est la version **Scratch 3** du projet. Il existe également une version [S
 
 ## Introduction
 
-Tu as déjà appris les bases de Scratch (et si tu ne l'as pas déjà fait, consulte les cartes pour débutants Scratch Sushi) pour créer ton premier jeu Scratch. Here you’re going to learn a few more cool tricks and make one of my favourite Scratch projects: it draws colourful patterns and, if you set it up right, can be really cool to watch.
+Tu as déjà appris les bases de Scratch (et si tu ne l'as pas déjà fait, consulte les cartes pour débutants Scratch Sushi) pour créer ton premier jeu Scratch. Ici, tu vas apprendre quelques astuces supplémentaires et réaliser l'un de mes projets Scratch préférés: il dessine des motifs colorés et, si tu le configure correctement, il peut être vraiment cool à regarder.
 
 ![](images/pen1.png)
 
