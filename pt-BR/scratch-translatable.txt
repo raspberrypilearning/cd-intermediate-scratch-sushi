@@ -1,15 +1,15 @@
-steps
+passos
 
-degrees
+graus
 
-increase
+incremento
 
-How many steps should I grow by?
+Em quantos passos devo incrementar?
 
-How many degrees should I turn?
+Quantos graus eu devo virar?
 
-Increase list
+Lista de Incremento
 
-Degrees list
+Lista de graus
 
-counter
+contador
