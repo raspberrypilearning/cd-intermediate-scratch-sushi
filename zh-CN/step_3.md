@@ -6,7 +6,7 @@
 
 \--- task \---
 
-从**控制**中拖一个`重复执行直到`{:class="block3control"}块出来 ，然后放置`移动`{:class="block3motion"} 和 `左转`{:class="block3motion"} 块，就像这样：
+从**控制**中拖一个`重复执行直到`{:class="block3control"}块出来 ，然后放置`移动`{:class="block3motion"} 和 `右转`{:class="block3motion"} 块，就像这样：
 
 ```blocks3
 +    repeat until <> 
@@ -35,7 +35,7 @@
 
 \--- task \---
 
-把`移到 x: 0 y`{:class="block3motion"} 块挪到 `画笔 `{:class="block3extensions"} 块之前，并从**画笔**部分拿一个`抬笔`{:class="block3extensions"} 块到右端代码的开头。
+把`移到 x: 0 y：0`{:class="block3motion"} 块挪到 `画笔 `{:class="block3extensions"} 块之前，并从**画笔**部分拿一个`抬笔`{:class="block3extensions"} 块到右端代码的开头。
 
 \--- /task \---
 
