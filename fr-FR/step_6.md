@@ -6,7 +6,7 @@ Tu as besoin de quelques modifications pour y arriver. La première consiste à 
 
 \--- task \---
 
-Remove the questions from your code, and update it to use random numbers instead.
+Supprime les questions de ton code et mets-le à jour afin qu'il utilise des nombres aléatoires.
 
 ```blocks3
     lorsque le drapeau vert est cliqué
@@ -20,13 +20,13 @@ Remove the questions from your code, and update it to use random numbers instead
 
 \--- /task \---
 
-If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
+Si tu exécutes ton programme maintenant, tu constateras qu'il dessine un motif aléatoire, mais une seule fois. Pourquoi penses-tu que c'est le cas ?
 
-It’s because the loop only runs until it reaches the edge of the Stage.
+C'est parce que la boucle s’exécute seulement jusqu'à ce qu'elle atteigne le bord de la scène.
 
 \--- task \---
 
-You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
+Tu as besoin d'une autre boucle qui tourne pour toujours (donc un bloc `répéter indéfiniment`{:class="block3control"}!) en dehors de la boucle actuelle pour qu'elle continue encore et encore. Il suffit de faire glisser l’un des éléments de la section **Contrôle** et d’y ajouter tous tes autres codes.
 
 ```blocks3
     lorsque le drapeau vert est cliqué 
@@ -50,8 +50,8 @@ You need another loop that runs forever (so a `forever`{:class="block3control"} 
 
 \--- /task \---
 
-Now you’ve really got something awesome to look at!
+Maintenant, tu as vraiment quelque chose de génial à regarder !
 
-However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
+Cependant, tu remarqueras peut-être que de temps en temps, l'ordinateur dessine quelque chose qui a l'air plutôt… bizarre. En effet, certains nombres pour certaines de ces variables ne sont que de mauvais choix, et certaines **combinaisons** sont également de mauvais choix.
 
-On the next card, you'll help the computer to pick only good combinations!
+Sur la carte suivante, tu aideras l'ordinateur à choisir uniquement les bonnes combinaisons !
