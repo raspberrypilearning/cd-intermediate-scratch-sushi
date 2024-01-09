@@ -1,8 +1,8 @@
-## Drawing patterns
+## 그림 패턴
 
-Now you’ve got a program that draws a line, but it only draws one line. That’s a bit dull! You could use `forever`{:class="block3control"} loop to draw something over and over again, but then you’ll get drawings that go off the Stage!
+우리는 선을 그리는 프로그램을 제작했지만 이 프로그램은 한 행만 그립니다. 약간 지루하네요! `무한 반복`{: class = "block3control"} 블록을 사용하여 루프를 반복 사용하여 그릴 수 있지만 무대 바깥으로 그림이 넘어갈 수 있습니다!
 
-So you need use a different type of loop called `repeat until`{:class="block3control"}, which you’ll also find in the **Control** section. This type of loop will do something over and over again, **until** a True/False condition is met.
+그래서, 우리는 `까지 반복하기`{:class="block3control"} 블록을 사용해야 합니다. 이 블록은 **제어** 카테고리에서 찾을 수 있습니다. 이 유형의 블록은 조건문이 True / False 로 충족 될 때까지 **반복문 안에 있는 명령어**를 반복해서 수행합니다.
 
 \--- task \---
 
@@ -19,13 +19,13 @@ So you need use a different type of loop called `repeat until`{:class="block3con
 
 \--- task \---
 
-Now click the green flag to run the program a few times and see what happens. You’ll notice two things: the pen always starts by drawing a line towards the middle of the Stage, and it doesn’t stop at the edge.
+이제 녹색 깃발을 클릭하여 프로그램을 몇 번 실행하고 어떤 일이 발생하는지 봅니다. 두 가지 사실을 알게 될 것입니다. 스테이지의 중앙을 향해 항상 선을 긋는 것으로 시작하며, 가장자리에서는 멈추지 않습니다.
 
 \--- /task \---
 
 ## \--- collapse \---
 
-## title: Why does the pen do this?
+## title: 펜은 왜 이렇게 되나요?
 
 펜은 항상 중앙에서 그리기를 시작하게 됩니다. 왜냐하면 첫 번째 **동작** 블록이 `펜 내리기`{:class="block3extensions"} 블록과 `x: 0 y: 0 으로 이동하기`{:class="block3motion"} 블록 이후에 실행됩니다. 따라서 펜은 스테이지의 가운데로 이동할 때 선을 그립니다.
 
@@ -112,7 +112,7 @@ Now click the green flag to run the program a few times and see what happens. Yo
 
 ## \--- collapse \---
 
-## title: Putting code in the right order
+## title : 올바른 순서로 코드 삽입하기
 
 블록을 넣을 순서를 결정할 때 각 블록이 하는 일과 코드에서 수행 할 작업을 생각합니다.
 
