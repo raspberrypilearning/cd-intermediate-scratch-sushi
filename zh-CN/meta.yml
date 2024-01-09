@@ -2,7 +2,7 @@
 title: 图案笔
 hero_image: images/banner.png
 description: 制作一个很酷的图案生成器
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -22,6 +22,8 @@ steps:
     title: 使用画笔工具
   - 
     title: 绘制图案
+    completion:
+      - engaged
   - 
     title: 要求输入
   - 
@@ -30,3 +32,5 @@ steps:
     title: 随机呈现整个内容
   - 
     title: 帮助计算机
+    completion:
+      - internal
