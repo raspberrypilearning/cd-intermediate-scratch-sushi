@@ -2,7 +2,7 @@
 title: もようを作るペン
 hero_image: images/banner.png
 description: カッコいいもようを作るジェネレーターを作ろう
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -22,6 +22,8 @@ steps:
     title: ペンツールを使用する
   - 
     title: もようをかく
+    completion:
+      - engaged
   - 
     title: 入力をもとめる
   - 
@@ -30,3 +32,5 @@ steps:
     title: すべてをランダムにする
   - 
     title: コンピューターを手助けする
+    completion:
+      - internal
