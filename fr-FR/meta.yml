@@ -2,7 +2,7 @@
 title: Stylo à motif
 hero_image: images/banner.png
 description: Faire un générateur de motif cool
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -22,6 +22,8 @@ steps:
     title: Utiliser l'outil Plume
   - 
     title: Motifs de dessin
+    completion:
+      - engaged
   - 
     title: Demander une contribution
   - 
@@ -30,3 +32,5 @@ steps:
     title: Randomiser le tout
   - 
     title: Aider l'ordinateur
+    completion:
+      - internal
