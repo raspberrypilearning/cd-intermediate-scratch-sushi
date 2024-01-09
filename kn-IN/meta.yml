@@ -2,7 +2,7 @@
 title: ನಮೂನೆಯ ಪೆನ್
 hero_image: images/banner.png
 description: ಚೆನ್ನಾಗಿರುವ ನಮೂನೆ ಉತ್ಪದಕವನ್ನು ಮಾಡಿ
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -22,6 +22,8 @@ steps:
     title: ಪೆನ್ ಉಪಕರಣವನ್ನು ಬಳಸುವುದು
   - 
     title: ನಮೂನೆಗಳನ್ನು ಚಿತ್ರಿಸುವುದು
+    completion:
+      - engaged
   - 
     title: ಇನ್ಪುಟ್ ಕೇಳುತ್ತಿದೆ
   - 
@@ -30,3 +32,5 @@ steps:
     title: ಇಡೀ ವಿಷಯವನ್ನು ಯಾದೃಚಿಕಗೊಳಿಸಿ
   - 
     title: ಕಂಪ್ಯೂಟರ್ಗೆ ಸಹಾಯ ಮಾಡಲಾಗುತ್ತಿದೆ
+    completion:
+      - internal
