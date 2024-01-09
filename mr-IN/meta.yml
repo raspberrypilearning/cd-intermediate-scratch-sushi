@@ -2,7 +2,7 @@
 title: पॅटर्न पेन
 hero_image: images/banner.png
 description: छान पॅटर्न जनरेटर बनवा
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -22,6 +22,8 @@ steps:
     title: पेन टूल वापरणे
   - 
     title: रेखांकन नमुने
+    completion:
+      - engaged
   - 
     title: इनपुट मागत आहे
   - 
@@ -30,3 +32,5 @@ steps:
     title: संपूर्ण गोष्ट अनियमित रित्या
   - 
     title: संगणकास मदत करणे
+    completion:
+      - internal
