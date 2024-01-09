@@ -2,7 +2,7 @@
 title: पैटर्न कलम
 hero_image: images/banner.png
 description: एक मजेदार​ पैटर्न जनरेटर बनाओ
-theme: नारंगी #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: नारंगी
 duration: 2
 listed: true
 ingredient: false
@@ -22,6 +22,8 @@ steps:
     title: पेन टूल का उपयोग करना
   - 
     title: ड्राइंग पैटर्न
+    completion:
+      - engaged
   - 
     title: इनपुट के लिए पूछ रहा है
   - 
@@ -30,3 +32,5 @@ steps:
     title: पूरी बात बेतरतीब ढंग से
   - 
     title: कंप्यूटर की मदद करना
+    completion:
+      - internal
