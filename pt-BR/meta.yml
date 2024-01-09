@@ -1,8 +1,8 @@
 ---
-title: Pattern pen
+title: Caneta de padrões
 hero_image: images/banner.png
-description: Make a cool pattern generator
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+description: Faça um gerador de padrões legal
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -17,16 +17,20 @@ version: 4.0.0
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: Introdução
   - 
-    title: Using the Pen tool
+    title: Usando a ferramenta Caneta
   - 
-    title: Drawing patterns
+    title: Desenhando padrões
+    completion:
+      - engaged
   - 
-    title: Asking for input
+    title: Pedindo valores de entrada
   - 
-    title: Cooler lines
+    title: Linhas mais legais
   - 
-    title: Randomise the whole thing
+    title: Torne tudo aleatório
   - 
-    title: Helping the computer
+    title: Ajudando o computador
+    completion:
+      - internal
