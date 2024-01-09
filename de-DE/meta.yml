@@ -2,7 +2,7 @@
 title: Musterstift
 hero_image: images/banner.png
 description: Erstelle einen coolen Muster-Generator
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -22,6 +22,8 @@ steps:
     title: Das Stiftwerkzeug verwenden
   - 
     title: Muster zeichnen
+    completion:
+      - engaged
   - 
     title: Bitte um Eingabe
   - 
@@ -30,3 +32,5 @@ steps:
     title: Mache das Ganze zufällig
   - 
     title: Hilf dem Computer
+    completion:
+      - internal
