@@ -2,7 +2,7 @@
 title: Stiloul cu șabloane
 hero_image: images/banner.png
 description: Construiește un generator de șabloane interesante
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -22,6 +22,8 @@ steps:
     title: Utilizarea instrumentului Stilou
   - 
     title: Șabloane de desen
+    completion:
+      - engaged
   - 
     title: Obținerea datelor de intrare
   - 
@@ -30,3 +32,5 @@ steps:
     title: Fă totul aleatoriu
   - 
     title: Ajută computer-ul
+    completion:
+      - internal
