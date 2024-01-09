@@ -2,7 +2,7 @@
 title: Patroonpen
 hero_image: images/banner.png
 description: Maak een gave patroongenerator
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -22,6 +22,8 @@ steps:
     title: De Pen gebruiken
   - 
     title: Patronen tekenen
+    completion:
+      - engaged
   - 
     title: Input vragen
   - 
@@ -30,3 +32,5 @@ steps:
     title: Alles willekeurig maken
   - 
     title: De computer helpen
+    completion:
+      - internal
