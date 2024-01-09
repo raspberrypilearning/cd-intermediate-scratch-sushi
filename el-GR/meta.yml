@@ -2,7 +2,7 @@
 title: Φτιάξε μοτίβα με την πένα
 hero_image: images/banner.png
 description: Δημιούργησε μια εντυπωσιακή γεννήτρια μοτίβων
-theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -22,6 +22,8 @@ steps:
     title: Χρήση του εργαλείου πένας
   - 
     title: Ζωγραφίζοντας μοτίβα
+    completion:
+      - engaged
   - 
     title: Εισαγωγή τιμών από το χρήστη
   - 
@@ -30,3 +32,5 @@ steps:
     title: Φτιάχνοντας τυχαία μοτίβα
   - 
     title: Βοηθώντας τον υπολογιστή
+    completion:
+      - internal
