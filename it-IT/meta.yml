@@ -2,7 +2,7 @@
 title: Penna modello
 hero_image: images/banner.png
 description: Crea un fantastico generatore di modelli
-theme: arancio #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: arancio
 duration: 2
 listed: true
 ingredient: false
@@ -22,6 +22,8 @@ steps:
     title: Usare lo strumento Penna
   - 
     title: Disegno dei modelli
+    completion:
+      - engaged
   - 
     title: Richiesta di immissione
   - 
@@ -30,3 +32,5 @@ steps:
     title: Rimescolare il tutto
   - 
     title: Aiutare il computer
+    completion:
+      - internal
