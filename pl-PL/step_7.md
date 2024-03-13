@@ -8,47 +8,47 @@ Aby to zrobić, będziesz potrzebować **listy**. Listę zmiennych najdziesz w s
 
 \--- task \---
 
-Click **Make a List**, and enter `Degrees List`{:class="block3variables"} as the name.
+Kliknij **Utwórz listę**i wprowadź tekst `Lista stopni`{:class="block3variables"} jako nazwę.
 
 ![](images/makeAList.png)
 
 \--- /task \---
 
-Your list, which is empty at the moment, will appear on the Stage, and you'll see a bunch of blocks for it in **Variables**.
+Twoja lista, która jest w tej chwili pusta, pojawi się na scenie, i zobaczysz kilka bloków dla tej listy w sekcji **Zmienne**.
 
 ![](images/listBlocks.png)
 
 \--- task \---
 
-Make another list called `Increase List`{:class="block3variables"}
+Zrób kolejną listę o nazwie `Lista powiększenia`{:class="block3variables"}
 
 \--- /task \---
 
 \--- task \---
 
-Now, by clicking on the little plus sign (**+**) at the bottom of the lists, add in the first pair of values of `increase`{:class="block3variables"} and `degrees`{:class="block3variables"} you liked, each value into the right list. Do this again to add the second pair of values. This will be enough for now — you'll add the rest of the value pairs you like later!
+Teraz, klikając mały znak plus (**+**) na dole list, dodaj pierwszą parę ulubionych wartości `powiększenie`{:class="block3variables"} i `stopnie`{:class="block3variables"}, każdą wartość do odpowiedniej listy. Zrób to ponownie, aby dodać drugą parę wartości. Na razie to wystarczy - resztę par ulubionych wartości dodasz później!
 
 ![](images/helping2.png)
 
-Make sure that the `degrees`{:class="block3variables"} value and the `increase`{:class="block3variables"} value that worked well together are at the same position in the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}. They need to be there so your program can match them up again using their position!
+Upewnij się, że wartość `stopnie`{:class="block3variables"} i wartość `powiększenie`{:class="block3variables"}, które działały dobrze, są w tej samej pozycji na `Liście stopni`{:class="block3variables"} i `Liście powiększenia`{:class="block3variables"}. Muszą tam być, aby Twój program mógł je ponownie dopasować, wykorzystując ich pozycję!
 
 \--- /task \---
 
-Now you have the lists, you just need to get your code to read them and loop over them! To do this, you’re going to use a new variable to act as a counter, some **incrementing**, and an `if then`{:class="block3control"} **Control** block.
+Teraz, gdy masz już listy, musisz tylko określić swój kod do odczytania i zapętlenia ich! Aby to zrobić, użyjesz nowej zmiennej, która będzie działać jako licznik, niektórych **zwiększających** i bloku `jeżeli to`{:class="block3control"} z sekcji **Kontrola**.
 
 ## \--- collapse \---
 
-## title: Co oznacza zwiększające?
+## title: Co oznacza zwiększanie?
 
-To increment something means to add something to it.
+Zwiększenie czegoś oznacza dodanie do niego czegoś.
 
-You will use a variable to act as a counter to keep track of what position you're at in your lists. To move through the lists, you'll keep incrementing the counter by `1` (so, adding `1` to it) until you get to the end of the list.
+Użyjesz zmiennej, która będzie działać jako licznik, aby śledzić, na której pozycji w twoich listach jesteś. Aby poruszać się po listach, będziesz zwiększał licznik o `1` (tak więc dodając do niego `1`), aż dojdziesz do końca listy.
 
 \--- /collapse \---
 
 \--- task \---
 
-Create a new variable called `counter`{:class="block3variables"}, and update your code to look like this:
+Utwórz nową zmienną o nazwie `licznik`{:class="block3variables"} i zaktualizuj swój kod, aby wyglądał tak:
 
 ```blocks3
     kiedy kliknięto zieloną flagę
@@ -77,7 +77,7 @@ Create a new variable called `counter`{:class="block3variables"}, and update you
 
 \--- /task \---
 
-Notice the new blocks that:
+Zwróć uwagę na nowe bloki, które:
 
 1. Ustawiają `licznik`{:class="block3variables"} na `0`, poza wszystkimi pętlami.
 2. Sprawdzają, czy liczba zapisana w zmiennej `licznik`{:class="block3variables"} jest długością listy, a jeśli tak, ustawiają zmienną `licznik`{:class="block3variables"} na `0`. Oznacza to, że ta zmienna zawsze będzie numerem pozycji na listach i nie będzie większa.
@@ -88,7 +88,7 @@ Notice the new blocks that:
 
 ## title: Jak działa ten kod?
 
-This is what happens when you run your program:
+Oto co dzieje się po uruchomieniu programu:
 
 1. Ustaw `licznik`{:class="block3variables"} na `0`.
 2. Uruchom pętlę `zawsze`{:class="block3control"}.
@@ -114,8 +114,8 @@ This is what happens when you run your program:
 
 \--- task \---
 
-Once you're happy with the code, go ahead and add the rest of the pairs of values you noted down to the `Degrees List`{:class="block3variables"} and the `Increase List`{:class="block3variables"}.
+Gdy jesteś zadowolony ze swojego kodu, dodaj pozostałe pary zapisanych wartości do `Listy Stopni`{:class="block3variables"} i `Listy powiększenia`{:class="block3variables"}.
 
 \--- /task \---
 
-That's it! Sit back and watch your program keep drawing lovely patterns in a never-ending loop! If you want to add more patterns, you can: just add more pairs of numbers to the two lists and restart the program.
+Gotowe! Usiądź wygodnie i obserwuj, jak twój program rysuje piękne wzory w niekończącej się pętli! Jeśli chcesz dodać więcej wzorów, możesz: po prostu dodaj więcej par liczb do dwóch list i uruchom ponownie program.
