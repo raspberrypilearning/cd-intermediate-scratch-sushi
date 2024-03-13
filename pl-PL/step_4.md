@@ -4,13 +4,13 @@ Ok, robi się całkiem fajnie, ale nudne jest edytowanie kodu za każdym razem, 
 
 \--- task \---
 
-First, go to the **Variables** section and create variables called `degrees`{:class="block3variables"} and `increase`{:class="block3variables"}.
+Najpierw przejdź do sekcji **Zmienne** i utwórz zmienne o nazwie `stopnie`{:class="block3variables"} i `powiększenie`{:class="block3variables"}.
 
 \--- /task \---
 
 \--- task \---
 
-Now add the new variables to your code like this:
+Teraz dodaj nowe zmienne do swojego kodu w następujący sposób:
 
 ```blocks3
     powtarzaj aż <touching [edge v] ?> 
@@ -22,13 +22,13 @@ Now add the new variables to your code like this:
 
 \--- /task \---
 
-Now you need to ask for values for these two variables and store them. You do this using a **Sensing** block called `Ask and wait`{:class="block3sensing"}, which you can type a question into.
+Teraz musisz poprosić o wartości dla tych dwóch zmiennych i zapisać je. Robisz to za pomocą bloku z sekcji **Czujniki** o nazwie `Zapytaj i czekaj`{:class="block3sensing"}, do którego możesz wpisać pytanie.
 
 \--- task \---
 
-Pull the `Ask and wait`{:class="block3sensing"} block into your sprite panel and change the question to `How many steps should I grow by?`{:class="block3sensing"}
+Przeciągnij blok `Zapytaj i czekaj`{:class="block3sensing"} do panelu duszka i zmień pytanie na `O ile kroków powinienem się powiększyć?`{:class="block3sensing"}
 
-Then add it to your program, just after you set `steps`{:class="block3variables"} to `0`, like this:
+Następnie dodaj go do swojego programu, zaraz po ustawieniu `kroki`{:class="block3variables"} na `0`, tak:
 
 ```blocks3
     kiedy kliknięto zieloną flagę
@@ -39,11 +39,11 @@ Then add it to your program, just after you set `steps`{:class="block3variables"
 
 \--- /task \---
 
-Now you’ve got your program asking a question, you need it to remember the answer! It turns out that Scratch has a special variable called `answer`{:class="block3sensing"}, where it stores the most recent answer it has received. You can find this variable among the **Sensing** blocks.
+Teraz twój program potrafi zadać pytanie, potrzebujesz jeszcze, żeby zapamiętał odpowiedź! Okazuje się, że Scratch ma specjalną zmienną o nazwie `odpowiedź`{:class="block3sensing"}, w której przechowuje najnowszą odpowiedź, którą otrzymał. Możesz znaleźć tę zmienną wśród bloków w sekcji **Czujniki**.
 
 \--- task \---
 
-Using a `set to`{:class="block3variables"} block from **Variables**, take the value of `answer`{:class="block3sensing"} and store it in the `increase`{:class="block3variables"} variable like so:
+Używając bloku `ustaw na`{:class="block3variables"} z sekcji **Zmienne**, weź wartość `odpowiedź`{:class="block3sensing"} i zapisz ją w zmiennej `powiększenie`{:class="block3variables"} tak jak poniżej:
 
 ```blocks3
     zapytaj [o ile kroków powinienem się powiększyć?] i czekaj
@@ -54,7 +54,7 @@ Using a `set to`{:class="block3variables"} block from **Variables**, take the va
 
 \--- task \---
 
-Now, do the same thing with `degrees`{:class="block3variables"}, asking `How many degrees should I turn?`{:class="block3sensing"} and storing the value of `answer`{:class="block3sensing"} in `degrees`{:class="block3variables"}:
+Zrób teraz to samo ze zmienną `stopnie`{:class="block3variables"}, pytając `Ile stopni powinienem się obrócić?`{:class="block3sensing"} i przechowaj wartość `odpowiedź`{:class="block3sensing"} w zmiennej `stopnie`{:class="block3variables"}:
 
 ```blocks3
     ustaw [powiększenie v] na (odpowiedź)
@@ -66,7 +66,7 @@ Now, do the same thing with `degrees`{:class="block3variables"}, asking `How man
 
 \--- task \---
 
-Check your program now looks like the one below, and run it a few times with different numbers. Write down the answers that make the coolest pictures. You’ll need them in a later step!
+Sprawdź, czy twój program wygląda teraz tak jak ten poniżej i uruchom go kilka razy używając różnych wartości. Zapisz odpowiedzi, które robią najfajniejsze obrazki. Będziesz ich potrzebować w późniejszym kroku!
 
 ```blocks3
     kiedy kliknięto zieloną flagę
