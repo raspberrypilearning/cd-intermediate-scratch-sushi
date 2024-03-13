@@ -6,7 +6,7 @@ Potrzebujesz kilku zmian, aby tak się stało. Pierwszą z nich jest to, że mus
 
 \--- task \---
 
-Remove the questions from your code, and update it to use random numbers instead.
+Usuń pytania z kodu i zaktualizuj je, aby zamiast nich, używać liczb losowych.
 
 ```blocks3
     kiedy kliknięto zieloną flagę
@@ -20,13 +20,13 @@ Remove the questions from your code, and update it to use random numbers instead
 
 \--- /task \---
 
-If you run your program now, you’ll find that it does draw a random pattern, but only once. Why do you think that is?
+Jeśli teraz uruchomisz program, przekonasz się, że rysuje losowy wzór, ale tylko raz. Jak myślisz, dlaczego tak jest?
 
-It’s because the loop only runs until it reaches the edge of the Stage.
+To dlatego, że pętla działa tylko do momentu, kiedy dojdzie do krawędzi sceny.
 
 \--- task \---
 
-You need another loop that runs forever (so a `forever`{:class="block3control"} block then!) outside the current one to keep it going over and over. Just drag one out of the **Control** section, and add all your other code into it.
+Potrzebujesz kolejnej pętli, która działa wiecznie (a więc blok `zawsze`{:class="block3control"}) na zewnątrz bieżącej pętli, aby ciągle się powtarzała. Po prostu przeciągnij jedną z sekcji **Kontrola** i dodaj do niej cały swój kod.
 
 ```blocks3
     kiedy kliknięto zieloną flagę
@@ -50,8 +50,8 @@ You need another loop that runs forever (so a `forever`{:class="block3control"} 
 
 \--- /task \---
 
-Now you’ve really got something awesome to look at!
+Teraz naprawdę masz coś niesamowitego do oglądania!
 
-However, you may notice that, every now and then, the computer draws something that looks pretty...bad. This is because some numbers for some of those variables are just bad choices, and some **combinations of those numbers** are also bad choices.
+Jednak możesz zauważyć, że od czasu do czasu komputer rysuje coś, co wygląda kiepsko. Dzieje się tak, ponieważ czasami wartości dla niektórych z tych zmiennych są po prostu złymi wyborami, a niektóre **kombinacje tych wartości** to także zły wybór.
 
-On the next card, you'll help the computer to pick only good combinations!
+Na następnej karcie pomożesz komputerowi wybrać tylko dobre kombinacje!
