@@ -26,7 +26,7 @@ Upewnij się, że wartość `stopnie`{:class="block3variables"} i wartość `pow
 
 --- /task ---
 
-Teraz, gdy masz już listy, musisz tylko zmusić swój kod do odczytania i zapętlenia ich! Aby to zrobić, użyjesz nowej zmiennej, która będzie działać jako licznik, niektórych **zwiększających** i bloku `jeżeli to`{:class="block3control"} z sekcji **Kontrola**.
+Teraz, gdy masz już listy, musisz tylko określić swój kod do odczytania i zapętlenia ich! Aby to zrobić, użyjesz nowej zmiennej, która będzie działać jako licznik, niektórych **zwiększających** i bloku `jeżeli to`{:class="block3control"} z sekcji **Kontrola**.
 
 --- collapse ---
 ---

@@ -24,7 +24,7 @@ title: Dlaczego pióro tak się zachowuje?
 
 Pióro zawsze zaczyna rysować w kierunku środka, ponieważ pierwszy blok **Ruch**, który wykonuje się po bloku `przyłóż pisak`{:class="block3extensions"} to `idź do x: 0 y: 0`{:class="block3motion"}. Tak więc pióro narysuje linię, przesuwając się do środka sceny.
 
-Pióro nie zatrzymuje się na krawędzi sceny, ponieważ jeszcze nie powiedziałaś pętli `powtarzaj aż`{:class="block3control"}, jaki warunek ma sprawdzać. Oznacza to, że warunek nigdy nie zostanie spełniony, więc pętla będzie działać w nieskończoność. To znaczy, że teraz pętla działa jak pętla `zawsze`{:class="block3control"}.
+Pióro nie zatrzymuje się na krawędzi sceny, ponieważ jeszcze nie określono jaki warunek ma sprawdzać pętla `powtarzaj aż`{:class="block3control"}. Oznacza to, że warunek nigdy nie zostanie spełniony, więc pętla będzie działać w nieskończoność. To znaczy, że teraz pętla działa jak pętla `zawsze`{:class="block3control"}.
 
 --- /collapse ---
 
@@ -64,7 +64,7 @@ Czas naprawić Twoją pętlę `powtarzaj aż`{:class="block3control"}, aby się 
 
 Jeśli uruchomisz kod teraz to zobaczysz, że rysunek wykonany za pomocą pióra pozostaje na scenie.
 
-Nie tylko to, ale twój program stał się również programem do rysowania kół! Dzieje się tak dlatego, że te 15-stopniowe obroty ostatecznie sumują się do 360 stopni, a więc twoje pióro zatacza pełen okrąg. Zmienisz nieco sposób, w jaki się porusza tak, aby za każdym razem krok był nieco dłuższy, na tyle, że wymknie się spod kontroli. W tym celu będziesz potrzebował **zmiennej**.
+Nie tylko to, ale twój program stał się również programem do rysowania kół! Dzieje się tak dlatego, że te 15-stopniowe obroty ostatecznie sumują się do 360 stopni, a więc twoje pióro zatacza pełen okrąg. Zmienisz nieco sposób, w jaki się porusza tak, aby za każdym razem krok był nieco dłuższy, a pióro będzie się kręciło, tworząc spirale. W tym celu będziesz potrzebował **zmiennej**.
 
 Zmienne są oznaczonymi miejscami do przechowywania numerów lub innych informacji, na których Ci zależy. Możesz je utworzyć w sekcji bloków **Zmienne**.
 

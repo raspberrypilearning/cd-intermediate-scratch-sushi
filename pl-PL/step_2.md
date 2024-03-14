@@ -2,7 +2,21 @@
 
 Projekt, który zamierzasz wykonać, opiera się na narzędziu **Pióro**, które rysuje linię za środkiem duszka, gdy się porusza. Nauczysz się go teraz używać!
 
---- task --- Otwórz nowy plik Scratch, wybierz duszka Kot Scratch i dodaj kilka bloków, które być może już widziałeś, aż będzie wyglądać tak:
+--- task ---
+
+Otwórz nowy projekt Scratch.
+
+**Online:** otwórz nowy projekt Scratch na stronie [rpf.io/scratch-new](http://rpf.io/scratch-new){:target="_blank"}.
+
+**Offline:** otwórz nowy projekt w edytorze offline.
+
+Jeśli musisz pobrać i zainstalować edytor Scratcha, znajdziesz go na stronie [rpf.io/scratchoff](http://rpf.io/scratchoff){:target="_blank"}.
+
+--- /task ---
+
+--- task ---
+
+Wybierz duszka Kot Scratch i dodaj kilka bloków, które być może już widziałeś, aż będzie wyglądać tak:
 
 ```blocks3
     kiedy kliknięto zieloną flagę
@@ -17,7 +31,9 @@ Teraz czas na przetestowanie pióra!
 
 Aby użyć bloków Pióra w Scratch, musisz dodać **rozszerzenie Pióro**.
 
---- task --- Kliknij przycisk **Dodaj rozszerzenie** w lewym dolnym rogu.
+--- task ---
+
+Kliknij przycisk **Dodaj rozszerzenie** w lewym dolnym rogu.
 
 ![podświetlony przycisk Dodaj rozszerzenie](images/add-extension-annotated.png)
 
