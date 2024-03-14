@@ -23,7 +23,9 @@ Blok do zmiany koloru **Pióra** to `zmień kolor pisaka o`{:class="block3extens
 
 To jest fajne, ale trochę przewidywalne. Możesz sprawić, że będzie zabawniej, jeśli dodasz do kodu losową liczbę tak, że kolor zmieni się losowo.
 
---- task --- Wstaw blok **Wyrażenie** wybierający losowy numer do bloku `zmień kolor pisaka o`{:class="block3extensions"} i wybierz jakieś wartości. Na początek możesz spróbować `1` i `100`.
+--- task ---
+
+Wstaw blok **Wyrażenie** wybrane przez ciebie losowe numery do bloku `zmień kolor pisaka o`{:class="block3extensions"} i wybierz jakieś wartości. Na początek możesz spróbować `1` i `100`.
 
 ```blocks3
     powtarzaj aż <dotyka [krawędź v] ?> 
